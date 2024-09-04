@@ -1,0 +1,91 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Kris\\source\\repos\\HealthCare\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{4F4AABB1-96B0-4368-9E7F-A1D6F1B2DCD4}|HealthCare.csproj|c:\\users\\kris\\source\\repos\\healthcare\\views\\servicespage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{4F4AABB1-96B0-4368-9E7F-A1D6F1B2DCD4}|HealthCare.csproj|solutionrelative:views\\servicespage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4F4AABB1-96B0-4368-9E7F-A1D6F1B2DCD4}|HealthCare.csproj|c:\\users\\kris\\source\\repos\\healthcare\\views\\welcomepage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4F4AABB1-96B0-4368-9E7F-A1D6F1B2DCD4}|HealthCare.csproj|solutionrelative:views\\welcomepage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4F4AABB1-96B0-4368-9E7F-A1D6F1B2DCD4}|HealthCare.csproj|c:\\users\\kris\\source\\repos\\healthcare\\views\\welcomepage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{4F4AABB1-96B0-4368-9E7F-A1D6F1B2DCD4}|HealthCare.csproj|solutionrelative:views\\welcomepage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4F4AABB1-96B0-4368-9E7F-A1D6F1B2DCD4}|HealthCare.csproj|c:\\users\\kris\\source\\repos\\healthcare\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4F4AABB1-96B0-4368-9E7F-A1D6F1B2DCD4}|HealthCare.csproj|solutionrelative:app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "WelcomePage.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Kris\\source\\repos\\HealthCare\\Views\\WelcomePage.xaml.cs",
+              "RelativeDocumentMoniker": "Views\\WelcomePage.xaml.cs",
+              "ToolTip": "C:\\Users\\Kris\\source\\repos\\HealthCare\\Views\\WelcomePage.xaml.cs",
+              "RelativeToolTip": "Views\\WelcomePage.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-28T22:32:47.774Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "WelcomePage.xaml",
+              "DocumentMoniker": "C:\\Users\\Kris\\source\\repos\\HealthCare\\Views\\WelcomePage.xaml",
+              "RelativeDocumentMoniker": "Views\\WelcomePage.xaml",
+              "ToolTip": "C:\\Users\\Kris\\source\\repos\\HealthCare\\Views\\WelcomePage.xaml",
+              "RelativeToolTip": "Views\\WelcomePage.xaml",
+              "ViewState": "AgIAACcAAAAAAAAAAAAAAC8AAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-08-28T06:18:31.804Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ServicesPage.xaml",
+              "DocumentMoniker": "C:\\Users\\Kris\\source\\repos\\HealthCare\\Views\\ServicesPage.xaml",
+              "RelativeDocumentMoniker": "Views\\ServicesPage.xaml",
+              "ToolTip": "C:\\Users\\Kris\\source\\repos\\HealthCare\\Views\\ServicesPage.xaml",
+              "RelativeToolTip": "Views\\ServicesPage.xaml",
+              "ViewState": "AgIAAEUAAAAAAAAAAAAAAEMAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-08-28T06:18:29.558Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "App.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Kris\\source\\repos\\HealthCare\\App.xaml.cs",
+              "RelativeDocumentMoniker": "App.xaml.cs",
+              "ToolTip": "C:\\Users\\Kris\\source\\repos\\HealthCare\\App.xaml.cs",
+              "RelativeToolTip": "App.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-28T06:16:46.018Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

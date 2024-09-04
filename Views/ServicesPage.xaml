@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="HealthCare.Views.ServicesPage"
+             BackgroundColor="#E0F7FA">
+
+    <ScrollView>
+        <VerticalStackLayout Padding="20" Spacing="15">
+            <Label Text="Servicios HealthCare"
+                   FontSize="24"
+                   FontAttributes="Bold"
+                   TextColor="#004D40"
+                   HorizontalOptions="Center"
+                   Margin="0,0,0,20"/>
+            
+            <Frame BackgroundColor="#E3F2FD"
+                   CornerRadius="15"
+                   HasShadow="True"
+                   Padding="10"
+                   Margin="0,5">
+                <HorizontalStackLayout Spacing="15">
+                    <Image Source="perfilverde.png"
+                           WidthRequest="50"
+                           HeightRequest="50"
+                           />
+                    <Label Text="Inicio de sesión"
+                           FontSize="18"
+                           TextColor="#1B5E20"
+                           VerticalOptions="Center"/>
+                </HorizontalStackLayout>
+            </Frame>
+
+
+            <Frame BackgroundColor="#E8F5E9"
+                   CornerRadius="15"
+                   HasShadow="True"
+                   Padding="10"
+                   Margin="0,5">
+                <HorizontalStackLayout Spacing="15">
+                    <Image Source="receta.png"
+                           WidthRequest="50"
+                           HeightRequest="50"
+                           />
+
+                    <Label Text="Recetas Médicas"
+                           FontSize="18"
+                           TextColor="#1B5E20"
+                           VerticalOptions="Center"/>
+                </HorizontalStackLayout>
+            </Frame>
+
+            <Frame BackgroundColor="#F1F8E9"
+                   CornerRadius="15"
+                   HasShadow="True"
+                   Padding="10"
+                   Margin="0,5">
+                <HorizontalStackLayout Spacing="15">
+                    <Image Source="consulta.png"
+                           WidthRequest="50"
+                           HeightRequest="50"
+                           />
+
+                    <Label Text="Consultas Médicas"
+                           FontSize="18"
+                           TextColor="#1B5E20"
+                           VerticalOptions="Center"/>
+                </HorizontalStackLayout>
+            </Frame>
+
+            <Frame BackgroundColor="#E3F2FD"
+       CornerRadius="15"
+       HasShadow="True"
+       Padding="10"
+       Margin="0,5">
+                <HorizontalStackLayout Spacing="15">
+                    <Image Source="presion.png"
+               WidthRequest="50"
+               HeightRequest="50"
+               />
+                    <Label Text="Toma de presión"
+               FontSize="18"
+               TextColor="#1B5E20"
+               VerticalOptions="Center"/>
+                </HorizontalStackLayout>
+            </Frame>
+
+            <Frame BackgroundColor="#E8F5E9"
+       CornerRadius="15"
+       HasShadow="True"
+       Padding="10"
+       Margin="0,5">
+                <HorizontalStackLayout Spacing="15">
+                    <Image Source="pesoytalla.png"
+               WidthRequest="50"
+               HeightRequest="50"
+               />
+
+                    <Label Text="Control de peso"
+               FontSize="18"
+               TextColor="#1B5E20"
+               VerticalOptions="Center"/>
+                </HorizontalStackLayout>
+            </Frame>
+
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>
