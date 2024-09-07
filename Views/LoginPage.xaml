@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="HealthCare.Views.LoginPage"
+             BackgroundColor="#014671">
+    <AbsoluteLayout>
+        <Image Source="backgroundlogin.png"
+               Aspect="AspectFill"
+               AbsoluteLayout.LayoutBounds="0,0,1,1"
+               AbsoluteLayout.LayoutFlags="All"/>
+        
+        <!-- Formulario de Inicio de sesión :) -->
+        <Frame BackgroundColor="#fff"
+               CornerRadius="15"
+               HasShadow="True"
+               WidthRequest="300"
+               AbsoluteLayout.LayoutBounds="0.5,0.5,-1,-1"
+               AbsoluteLayout.LayoutFlags="PositionProportional">
+
+            <VerticalStackLayout Padding="20" Spacing="10">
+                <Image Source="logo2.png"
+                       WidthRequest="100"
+                       HeightRequest="100"
+                       HorizontalOptions="Center"/>
+                
+                <Entry Placeholder="Cédula o correo" 
+                       BackgroundColor="#F5F5F5"
+                       TextColor="#000"
+                       Margin="0,5"/>
+
+                <Entry Placeholder="Contraseña" 
+                       IsPassword="True"
+                       BackgroundColor="#F5F5F5"
+                       TextColor="#000"
+                       Margin="0,5"/>
+                
+                <!-- Botones -->
+                <StackLayout Orientation="Vertical" HorizontalOptions="Center">
+                    <Button Text="Login" 
+                            BackgroundColor="#4FB9FB" 
+                            TextColor="White"
+                            CornerRadius="10"
+                            Margin="5"
+                            WidthRequest="120"/>
+                    <Button Text="Register" 
+                            BackgroundColor="#FFFFFF"
+                            TextColor="#014671"
+                            BorderColor="#014671"
+                            BorderWidth="1"
+                            CornerRadius="10"
+                            Margin="5"
+                            WidthRequest="130"/>
+                </StackLayout>
+
+                <Label Text="¿Olvidaste la contraseña?" 
+                       TextColor="#014671"
+                       FontSize="12"
+                       HorizontalOptions="Center"
+                       VerticalOptions="EndAndExpand"/>
+            </VerticalStackLayout> 
+        </Frame>
+    </AbsoluteLayout> 
+</ContentPage>

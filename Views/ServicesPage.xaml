@@ -2,14 +2,15 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="HealthCare.Views.ServicesPage"
-             BackgroundColor="#E0F7FA">
+             BackgroundColor="#FFF">
 
     <ScrollView>
         <VerticalStackLayout Padding="20" Spacing="15">
             <Label Text="Servicios HealthCare"
-                   FontSize="24"
-                   FontAttributes="Bold"
-                   TextColor="#004D40"
+                   FontSize="35"
+                   FontFamily="MojariRegular"
+                   FontAttributes="Italic, Bold"
+                   TextColor="#000"
                    HorizontalOptions="Center"
                    Margin="0,0,0,20"/>
             
@@ -18,6 +19,9 @@
                    HasShadow="True"
                    Padding="10"
                    Margin="0,5">
+                <Frame.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="Login" />
+                </Frame.GestureRecognizers>
                 <HorizontalStackLayout Spacing="15">
                     <Image Source="perfilverde.png"
                            WidthRequest="50"

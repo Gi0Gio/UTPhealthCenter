@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Kris\\source\\repos\\HealthCare\\HealthCare.csproj": {}
+    "C:\\Users\\Kris\\source\\repos\\HealthCareGithub\\UTPhealthCenter\\HealthCare.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Kris\\source\\repos\\HealthCare\\HealthCare.csproj": {
+    "C:\\Users\\Kris\\source\\repos\\HealthCareGithub\\UTPhealthCenter\\HealthCare.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Kris\\source\\repos\\HealthCare\\HealthCare.csproj",
+        "projectUniqueName": "C:\\Users\\Kris\\source\\repos\\HealthCareGithub\\UTPhealthCenter\\HealthCare.csproj",
         "projectName": "HealthCare",
-        "projectPath": "C:\\Users\\Kris\\source\\repos\\HealthCare\\HealthCare.csproj",
+        "projectPath": "C:\\Users\\Kris\\source\\repos\\HealthCareGithub\\UTPhealthCenter\\HealthCare.csproj",
         "packagesPath": "C:\\Users\\Kris\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Kris\\source\\repos\\HealthCare\\obj\\",
+        "outputPath": "C:\\Users\\Kris\\source\\repos\\HealthCareGithub\\UTPhealthCenter\\obj\\",
         "projectStyle": "PackageReference",
         "crossTargeting": true,
         "fallbackFolders": [

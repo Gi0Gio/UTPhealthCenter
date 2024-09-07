@@ -13,6 +13,8 @@ namespace HealthCare
                 {
                     fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");
                     fonts.AddFont("OpenSans-Semibold.ttf", "OpenSansSemibold");
+                    fonts.AddFont("Manjari-Regular.ttf", "ManjariRegular");
+                    fonts.AddFont("Mohave-Regular.ttf", "MohaveRegular");
                 });
 
 #if DEBUG

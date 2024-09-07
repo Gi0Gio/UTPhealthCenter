@@ -1,1 +1,1 @@
-C:\Users\Kris\source\repos\HealthCare\HealthCare.csproj;x64
+C:\Users\Kris\source\repos\HealthCareGithub\UTPhealthCenter\HealthCare.csproj;x64

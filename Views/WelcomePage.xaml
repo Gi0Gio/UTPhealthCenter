@@ -1,75 +1,80 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="HealthCare.Views.WelcomePage"
-             BackgroundColor="#E0F7FA"
+             BackgroundColor="#FFF"
              >
-    <VerticalStackLayout VerticalOptions="Center" HorizontalOptions="Center" Padding="30">
+    <ScrollView VerticalOptions="Center" HorizontalOptions="Center">
+        <VerticalStackLayout VerticalOptions="Center" HorizontalOptions="Center" Padding="30">
 
-        <!-- Logo Circular -->
-        <Frame BackgroundColor="White"
-               CornerRadius="75"
-               HeightRequest="250"
-               WidthRequest="250"
-               HorizontalOptions="Center"
-               VerticalOptions="Center"
-               Padding="0">
-            <Image Source="healthcare.png"
-                   HeightRequest="350"
-                   WidthRequest="250"
-                   Aspect="AspectFit"/>
-        </Frame>
-        
-
-        <Label 
-            Text="UTP Health Care"
-            FontSize="34"
-            FontFamily="Roboto"
-            VerticalOptions="Center" 
+            <!-- Logo Circular -->
+            <Frame BackgroundColor="White"
+            CornerRadius="75"
+            HeightRequest="250"
+            WidthRequest="250"
             HorizontalOptions="Center"
-            TextColor="#004D40"
-            FontAttributes="Bold"
-            Margin="0,10,0,10"/>
+            VerticalOptions="Center"
+            Padding="0">
+                <Image Source="logo2.png"
+                HeightRequest="350"
+                WidthRequest="250"
+                Aspect="AspectFit"/>
+            </Frame>
 
-        <!-- Descripción -->
-        <Label Text="App Médica Estudiantil"
-               FontSize="24"
-               FontFamily="Roboto"
-               TextColor="#004D40"
-               HorizontalOptions="Center"
-               Margin="0,10,0,10"/>
-        <Frame BackgroundColor="White"
-       CornerRadius="75"
-       HeightRequest="150"
-       WidthRequest="150"
-       HorizontalOptions="Center"
-       VerticalOptions="Center"
-       Padding="0">
-            <Image Source="doctol.png"
-           HeightRequest="140"
-           WidthRequest="140"
-           Aspect="AspectFit"/>
-        </Frame>
-
-        <Label Text="Lo mejor para una vida universitaria sana"
-               FontSize="18"
-               FontFamily="Roboto"
-               TextColor="#00796B"
-               HorizontalOptions="Center"
-               HorizontalTextAlignment="Center"
-               Margin="0,10,0,20"/>
-
-        <!-- Botón con Icono (Al final me rendí con el icono, queda a futuro) -->
-        <Button Text="Nuestros Servicios"
-                BackgroundColor="#004D40"
+            <Border Stroke="#014671"
+            StrokeThickness="2"
+            StrokeShape="RoundRectangle 40,0,0,40"
+            Background="#0084D6"
+            Padding="16,8"
+            HorizontalOptions="Center">
+            <Label Text="UTP HEALTH CARE"
                 TextColor="White"
-                FontSize="18"
-                FontFamily="Roboto"
-                Padding="10"
-                CornerRadius="25"
-                HeightRequest="50"
-                WidthRequest="200"
-                HorizontalOptions="Center"
-                Clicked="ParaServicios">
-        </Button>
-    </VerticalStackLayout>
+                FontSize="34"
+                FontFamily="MohaveRegular"
+                FontAttributes="Bold" />
+        </Border>
+
+            <!-- Descripción -->
+            <Label Text=""
+            FontSize="24"
+            FontFamily="Roboto"
+            TextColor="#004D40"
+            HorizontalOptions="Center"
+            Margin="0,10,0,10"/>
+            <Frame BackgroundColor="White"
+    CornerRadius="75"
+    HeightRequest="150"
+    WidthRequest="150"
+    HorizontalOptions="Center"
+    VerticalOptions="Center"
+    Padding="0">
+                <Image Source="doctol.png"
+        HeightRequest="140"
+        WidthRequest="140"
+        Aspect="AspectFit"/>
+            </Frame>
+
+            <Label Text="Lo mejor para una vida universitaria sana"
+            FontSize="18"
+            FontFamily="MohaveRegular"
+            TextColor="#000000"
+            HorizontalOptions="Center"
+            HorizontalTextAlignment="Center"
+            Margin="0,10,0,20"/>
+
+            <!-- Botón con Icono (Al final me rendí con el icono, queda a futuro) -->
+            <Button Text="Nuestros Servicios"
+             BackgroundColor="#014671"
+             TextColor="White"
+             FontSize="25"
+             FontFamily="MohaveRegular"
+             Padding="10"
+             CornerRadius="25"
+             HeightRequest="70"
+             WidthRequest="300"
+             HorizontalOptions="Center"
+             Clicked="ParaServicios">
+            </Button>
+        </VerticalStackLayout>
+    </ScrollView>
+   
 </ContentPage>

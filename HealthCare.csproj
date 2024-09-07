@@ -40,11 +40,10 @@
 
 	<ItemGroup>
 		<!-- App Icon -->
-		<MauiIcon Include="Resources\AppIcon\icono.png" ForegroundFile="Resources\AppIcon\icono.png" Color="White" ForegroundScale="0.65" />
-		
+		<MauiIcon Include="Resources\AppIcon\logo3.png" ForegroundFile="Resources\AppIcon\logo3.png" Color="White" ForegroundScale="0.65" />
 
 		<!-- Splash Screen -->
-		<MauiSplashScreen Include="Resources\Splash\iconoa.png" Color="White" BaseSize="428,428" />
+		<MauiSplashScreen Include="Resources\Splash\logo1.png" Color="White" BaseSize="828,828" />
 		
 
 		<!-- Images -->
@@ -60,9 +59,13 @@
 
 	<ItemGroup>
 	  <None Remove="Resources\AppIcon\icono.png" />
+	  <None Remove="Resources\AppIcon\logo3.png" />
+	  <None Remove="Resources\Fonts\Manjari-Regular.ttf" />
+	  <None Remove="Resources\Fonts\Mohave-Regular.ttf" />
 	  <None Remove="Resources\Images\doctol.png" />
 	  <None Remove="Resources\Images\healthcare.png" />
 	  <None Remove="Resources\Splash\iconoa.png" />
+	  <None Remove="Resources\Splash\logo1.png" />
 	</ItemGroup>
 
 	<ItemGroup>
@@ -72,6 +75,9 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <MauiXaml Update="Views\LoginPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
 	  <MauiXaml Update="Views\ServicesPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
