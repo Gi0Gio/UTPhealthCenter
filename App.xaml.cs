@@ -1,5 +1,4 @@
-﻿using Microsoft.Maui.Controls;
-namespace HealthCare
+﻿namespace HealthCare
 {
     public partial class App : Application
     {

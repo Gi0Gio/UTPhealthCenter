@@ -1,7 +1,20 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\Kris\\source\\repos\\HealthCareGithub\\UTPhealthCenter\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{4F4AABB1-96B0-4368-9E7F-A1D6F1B2DCD4}|HealthCare.csproj|c:\\users\\kris\\source\\repos\\healthcaregithub\\utphealthcenter\\views\\citaspage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{4F4AABB1-96B0-4368-9E7F-A1D6F1B2DCD4}|HealthCare.csproj|solutionrelative:views\\citaspage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4F4AABB1-96B0-4368-9E7F-A1D6F1B2DCD4}|HealthCare.csproj|c:\\users\\kris\\source\\repos\\healthcaregithub\\utphealthcenter\\views\\citaspage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4F4AABB1-96B0-4368-9E7F-A1D6F1B2DCD4}|HealthCare.csproj|solutionrelative:views\\citaspage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4F4AABB1-96B0-4368-9E7F-A1D6F1B2DCD4}|HealthCare.csproj|c:\\users\\kris\\source\\repos\\healthcaregithub\\utphealthcenter\\views\\welcomepage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{4F4AABB1-96B0-4368-9E7F-A1D6F1B2DCD4}|HealthCare.csproj|solutionrelative:views\\welcomepage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,11 +22,56 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "WelcomePage.xaml",
+              "DocumentMoniker": "C:\\Users\\Kris\\source\\repos\\HealthCareGithub\\UTPhealthCenter\\Views\\WelcomePage.xaml",
+              "RelativeDocumentMoniker": "Views\\WelcomePage.xaml",
+              "ToolTip": "C:\\Users\\Kris\\source\\repos\\HealthCareGithub\\UTPhealthCenter\\Views\\WelcomePage.xaml",
+              "RelativeToolTip": "Views\\WelcomePage.xaml",
+              "ViewState": "AgIAADMAAAAAAAAAAAAIwEQAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-09-15T21:24:35.645Z",
+              "EditorCaption": ""
+            }
+          ]
+        },
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "CitasPage.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Kris\\source\\repos\\HealthCareGithub\\UTPhealthCenter\\Views\\CitasPage.xaml.cs",
+              "RelativeDocumentMoniker": "Views\\CitasPage.xaml.cs",
+              "ToolTip": "C:\\Users\\Kris\\source\\repos\\HealthCareGithub\\UTPhealthCenter\\Views\\CitasPage.xaml.cs",
+              "RelativeToolTip": "Views\\CitasPage.xaml.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAgwAYAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-15T21:39:13.22Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "CitasPage.xaml",
+              "DocumentMoniker": "C:\\Users\\Kris\\source\\repos\\HealthCareGithub\\UTPhealthCenter\\Views\\CitasPage.xaml",
+              "RelativeDocumentMoniker": "Views\\CitasPage.xaml",
+              "ToolTip": "C:\\Users\\Kris\\source\\repos\\HealthCareGithub\\UTPhealthCenter\\Views\\CitasPage.xaml",
+              "RelativeToolTip": "Views\\CitasPage.xaml",
+              "ViewState": "AgIAACwAAAAAAAAAAAAUwDsAAAClAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-09-15T21:36:51.599Z",
+              "EditorCaption": ""
             }
           ]
         }

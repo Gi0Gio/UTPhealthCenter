@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="HealthCare.Views.CitasPage"
+             BackgroundColor="#FFFFFF">
+
+    <VerticalStackLayout Padding="10">
+
+        
+        <HorizontalStackLayout HorizontalOptions="Center" Spacing="25">
+            <Button Text="Citas Pendientes"
+                    Clicked="ShowPendingCitas"
+                    BackgroundColor="#014671"
+                    TextColor="White"
+                    FontSize="25"
+                    FontFamily="MohaveRegular"
+                    BorderWidth="1"
+                    CornerRadius="10"
+                    Margin="5"
+                    WidthRequest="130"
+            />
+            <Button Text="Citas Programadas"
+                    Clicked="ShowScheduledCitas"
+                    BackgroundColor="#014671"
+                    TextColor="White"
+                    FontSize="25"
+                    FontFamily="MohaveRegular"
+                    CornerRadius="10"/>
+        </HorizontalStackLayout>
+
+        <!-- Citas Pendientes -->
+        <VerticalStackLayout x:Name="PendingCitasSection" IsVisible="True" Padding="20">
+            <Label Text="Citas Pendientes" FontSize="24" FontAttributes="Bold" TextColor="#000"/>
+            <Frame BackgroundColor="#E3F2FD" CornerRadius="10" Padding="10">
+                <HorizontalStackLayout>
+                    <Image Source="calendarioicono.png" WidthRequest="30" HeightRequest="30"/>
+                    <VerticalStackLayout>
+                        <Label Text="Giovanny Jovane" FontSize="18" TextColor="#000"/>
+                        <Label Text="Colonscopia" FontSize="16" TextColor="#666"/>
+                    </VerticalStackLayout>
+                    <Label Text="Sept 08" FontSize="18" FontAttributes="Bold" TextColor="#000" HorizontalOptions="EndAndExpand"/>
+                </HorizontalStackLayout>
+                <HorizontalStackLayout HorizontalOptions="End">
+                    <Button Text="✔" BackgroundColor="#51A837" TextColor="White" CornerRadius="10"/>
+                    <Button Text="✖" BackgroundColor="#E53935" TextColor="White" CornerRadius="10"/>
+                </HorizontalStackLayout>
+            </Frame>
+        </VerticalStackLayout>
+
+        <!-- Citas Programadas -->
+        <VerticalStackLayout x:Name="ScheduledCitasSection" IsVisible="False" Padding="20">
+            <Label Text="Citas Programadas" FontSize="24" FontAttributes="Bold" TextColor="#000"/>
+            <Frame BackgroundColor="#E3F2FD" CornerRadius="10" Padding="10">
+                <HorizontalStackLayout>
+                    <Image Source="consulta.png" WidthRequest="30" HeightRequest="30"/>
+                    <VerticalStackLayout>
+                        <Label Text="Kant Diego" FontSize="18" TextColor="#000" FontFamily="ManjariRegular"/>
+                        <Label Text="Revisión médica general" FontSize="16" TextColor="#666" FontFamily="MohaveRegular"/>
+                    </VerticalStackLayout>
+                    <Label Text="SEPT 06" FontSize="18" FontAttributes="Bold" TextColor="#000" FontFamily="MohaveRegular" HorizontalOptions="EndAndExpand" Margin="20"/>
+                </HorizontalStackLayout>
+            </Frame>
+
+            <Frame BackgroundColor="#E3F2FD" CornerRadius="10" Padding="10">
+                <HorizontalStackLayout>
+                    <Image Source="consulta.png" WidthRequest="30" HeightRequest="30"/>
+                    <VerticalStackLayout>
+                        <Label Text="Kristopher Castillo" FontSize="18" TextColor="#000" FontFamily="MoanjariRegular"/>
+                        <Label Text="Extracción de cuchillo" FontSize="16" TextColor="#666" FontFamily="MohaveRegular"/>
+                    </VerticalStackLayout>
+                    <Label Text="SEPT 07" FontSize="18" FontAttributes="Bold" TextColor="#000" HorizontalOptions="EndAndExpand" FontFamily="MohaveRegular" Margin="20"/>
+                </HorizontalStackLayout>
+            </Frame>
+        </VerticalStackLayout>
+    </VerticalStackLayout>
+</ContentPage>

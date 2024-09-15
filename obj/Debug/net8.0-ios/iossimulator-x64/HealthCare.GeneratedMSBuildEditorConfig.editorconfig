@@ -46,6 +46,12 @@ build_metadata.AdditionalFiles.ManifestResourceName = HealthCare.Resources.Style
 build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Styles.xaml
 build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Styles.xaml
 
+[C:/Users/Kris/source/repos/HealthCareGithub/UTPhealthCenter/Views/CitasPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = HealthCare.Views.CitasPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\CitasPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\CitasPage.xaml
+
 [C:/Users/Kris/source/repos/HealthCareGithub/UTPhealthCenter/Views/LoginPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = HealthCare.Views.LoginPage.xaml

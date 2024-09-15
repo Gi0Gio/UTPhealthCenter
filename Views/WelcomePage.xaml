@@ -26,12 +26,12 @@
             Background="#0084D6"
             Padding="16,8"
             HorizontalOptions="Center">
-            <Label Text="UTP HEALTH CARE"
+                <Label Text="UTP HEALTH CARE"
                 TextColor="White"
                 FontSize="34"
                 FontFamily="MohaveRegular"
                 FontAttributes="Bold" />
-        </Border>
+            </Border>
 
             <!-- Descripción -->
             <Label Text=""
@@ -76,5 +76,5 @@
             </Button>
         </VerticalStackLayout>
     </ScrollView>
-   
+
 </ContentPage>

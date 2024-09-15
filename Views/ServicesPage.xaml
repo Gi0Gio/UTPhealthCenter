@@ -2,109 +2,115 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="HealthCare.Views.ServicesPage"
-             BackgroundColor="#FFF">
+             BackgroundColor="White">
+  
 
     <ScrollView>
         <VerticalStackLayout Padding="20" Spacing="15">
+            
             <Label Text="Servicios HealthCare"
                    FontSize="35"
                    FontFamily="MojariRegular"
                    FontAttributes="Italic, Bold"
-                   TextColor="#000"
-                   HorizontalOptions="Center"
+                   TextColor="#3E4A59" 
+                HorizontalOptions="Center"
                    Margin="0,0,0,20"/>
-            
-            <Frame BackgroundColor="#E3F2FD"
-                   CornerRadius="15"
+
+
+            <Frame BackgroundColor="#E6EFF8" 
+                    CornerRadius="15"
                    HasShadow="True"
                    Padding="10"
                    Margin="0,5">
-                <Frame.GestureRecognizers>
-                    <TapGestureRecognizer Tapped="Login" />
-                </Frame.GestureRecognizers>
-                <HorizontalStackLayout Spacing="15">
-                    <Image Source="perfilverde.png"
+                    <Frame.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="Login" />
+                    </Frame.GestureRecognizers>
+                    <HorizontalStackLayout Spacing="15">
+                        <Image Source="perfilverde.png"
                            WidthRequest="50"
-                           HeightRequest="50"
-                           />
-                    <Label Text="Inicio de sesión"
-                           FontSize="18"
-                           TextColor="#1B5E20"
-                           VerticalOptions="Center"/>
-                </HorizontalStackLayout>
-            </Frame>
+                           HeightRequest="50"/>
+                        <Label Text="Inicio de sesión"
+                           FontSize="30"
+                           FontFamily="Mohave-Regular"
+                           TextColor="Black" 
+                            VerticalOptions="Center"/>
+                    </HorizontalStackLayout>
+                </Frame>
 
-
-            <Frame BackgroundColor="#E8F5E9"
-                   CornerRadius="15"
+               
+                <Frame BackgroundColor="#FAF4D3" 
+                    CornerRadius="15"
                    HasShadow="True"
                    Padding="10"
                    Margin="0,5">
-                <HorizontalStackLayout Spacing="15">
-                    <Image Source="receta.png"
+                    <HorizontalStackLayout Spacing="15">
+                        <Image Source="receta.png"
                            WidthRequest="50"
-                           HeightRequest="50"
-                           />
+                           HeightRequest="50"/>
+                        <Label Text="Recetas Médicas"
+                           FontSize="30"
+FontFamily="Mohave-Regular"
+TextColor="Black" 
+                            VerticalOptions="Center"/>
+                    </HorizontalStackLayout>
+                </Frame>
 
-                    <Label Text="Recetas Médicas"
-                           FontSize="18"
-                           TextColor="#1B5E20"
-                           VerticalOptions="Center"/>
-                </HorizontalStackLayout>
-            </Frame>
 
-            <Frame BackgroundColor="#F1F8E9"
-                   CornerRadius="15"
+            <Frame BackgroundColor="#E6EFF8"
+                    CornerRadius="15"
                    HasShadow="True"
                    Padding="10"
                    Margin="0,5">
-                <HorizontalStackLayout Spacing="15">
-                    <Image Source="consulta.png"
+                    <Frame.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="Citas" />
+                    </Frame.GestureRecognizers>
+                    <HorizontalStackLayout Spacing="15">
+                        <Image Source="consulta.png"
                            WidthRequest="50"
-                           HeightRequest="50"
-                           />
+                           HeightRequest="50"/>
+                        <Label Text="Consultas Médicas"
+                          FontSize="30"
+FontFamily="Mohave-Regular"
+TextColor="Black" 
+                            VerticalOptions="Center"/>
+                    </HorizontalStackLayout>
+                </Frame>
 
-                    <Label Text="Consultas Médicas"
-                           FontSize="18"
-                           TextColor="#1B5E20"
-                           VerticalOptions="Center"/>
-                </HorizontalStackLayout>
-            </Frame>
+                
+                <Frame BackgroundColor="#E6EFF8" 
+                    CornerRadius="15"
+                   HasShadow="True"
+                   Padding="10"
+                   Margin="0,5">
+                    <HorizontalStackLayout Spacing="15">
+                        <Image Source="presion.png"
+                           WidthRequest="50"
+                           HeightRequest="50"/>
+                        <Label Text="Toma de presión"
+                           FontSize="30"
+FontFamily="Mohave-Regular"
+TextColor="Black" 
+                            VerticalOptions="Center"/>
+                    </HorizontalStackLayout>
+                </Frame>
 
-            <Frame BackgroundColor="#E3F2FD"
-       CornerRadius="15"
-       HasShadow="True"
-       Padding="10"
-       Margin="0,5">
-                <HorizontalStackLayout Spacing="15">
-                    <Image Source="presion.png"
-               WidthRequest="50"
-               HeightRequest="50"
-               />
-                    <Label Text="Toma de presión"
-               FontSize="18"
-               TextColor="#1B5E20"
-               VerticalOptions="Center"/>
-                </HorizontalStackLayout>
-            </Frame>
-
-            <Frame BackgroundColor="#E8F5E9"
-       CornerRadius="15"
-       HasShadow="True"
-       Padding="10"
-       Margin="0,5">
-                <HorizontalStackLayout Spacing="15">
-                    <Image Source="pesoytalla.png"
-               WidthRequest="50"
-               HeightRequest="50"
-               />
-
-                    <Label Text="Control de peso"
-               FontSize="18"
-               TextColor="#1B5E20"
-               VerticalOptions="Center"/>
-                </HorizontalStackLayout>
-            </Frame>
+                <!-- Frame para Control de peso -->
+                <Frame BackgroundColor="#FAF4D3" 
+                    CornerRadius="15"
+                   HasShadow="True"
+                   Padding="10"
+                   Margin="0,5">
+                    <HorizontalStackLayout Spacing="15">
+                        <Image Source="pesoytalla.png"
+                           WidthRequest="50"
+                           HeightRequest="50"/>
+                        <Label Text="Control de peso"
+                           FontSize="30"
+FontFamily="Mohave-Regular"
+TextColor="Black" 
+                            VerticalOptions = "Center"/>
+                    </HorizontalStackLayout>
+                </Frame>
 
         </VerticalStackLayout>
     </ScrollView>
