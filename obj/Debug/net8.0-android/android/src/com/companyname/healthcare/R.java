@@ -11600,13 +11600,14 @@ public final class R {
     public static final int notification_template_icon_low_bg=0x7f0700e9;
     public static final int notification_tile_bg=0x7f0700ea;
     public static final int notify_panel_notification_icon_bg=0x7f0700eb;
-    public static final int perfilverde=0x7f0700ec;
-    public static final int pesoytalla=0x7f0700ed;
-    public static final int presion=0x7f0700ee;
-    public static final int receta=0x7f0700ef;
-    public static final int test_level_drawable=0x7f0700f0;
-    public static final int tooltip_frame_dark=0x7f0700f1;
-    public static final int tooltip_frame_light=0x7f0700f2;
+    public static final int perfil=0x7f0700ec;
+    public static final int perfilverde=0x7f0700ed;
+    public static final int pesoytalla=0x7f0700ee;
+    public static final int presion=0x7f0700ef;
+    public static final int receta=0x7f0700f0;
+    public static final int test_level_drawable=0x7f0700f1;
+    public static final int tooltip_frame_dark=0x7f0700f2;
+    public static final int tooltip_frame_light=0x7f0700f3;
   }
   public static final class id {
     public static final int ALT=0x7f080000;

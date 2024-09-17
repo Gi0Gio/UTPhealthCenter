@@ -17,4 +17,14 @@ public partial class ServicesPage : ContentPage
     {
         await Navigation.PushAsync(new CitasPage());
     }
+
+    private async void Profile(object sender, EventArgs e)
+    {
+        await Navigation.PushAsync(new ProfilePage());
+    }
+
+    private async void StudentRegister(object sender, EventArgs e)
+    {
+        await Navigation.PushAsync(new StudentRegisterPage());
+    }
 }

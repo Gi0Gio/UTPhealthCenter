@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="HealthCare.Views.ProfilePage"
+             BackgroundColor="#F5F5F5">
+
+    <!-- Envolvemos todo en ScrollView para hacer la página deslizable -->
+    <ScrollView>
+        <VerticalStackLayout Padding="20" Spacing="15">
+
+            <!-- Imagen y Nombre del Paciente -->
+            <Frame BackgroundColor="#E6EFF8"
+                   CornerRadius="15"
+                   Padding="20"
+                   Margin="0,5">
+                <HorizontalStackLayout Spacing="15">
+                    <Image Source="perfil.png"
+                           WidthRequest="80"
+                           HeightRequest="80"
+                           HorizontalOptions="Start"/>
+                    <VerticalStackLayout>
+                        <Label Text="Kant P, Diego A."
+                               FontSize="24"
+                               FontAttributes="Bold"
+                               FontFamily="ManjariRegular"
+                               TextColor="#3E4A59"/>
+                        <Label Text="Lic. en Desarrollo de Software"
+                               FontSize="18"
+                               FontFamily="MohaveRegular"
+                               FontAttributes="Italic"
+                               TextColor="#00796B"/>
+                    </VerticalStackLayout>
+                </HorizontalStackLayout>
+            </Frame>
+
+            <!-- Información del Paciente -->
+            <Frame BackgroundColor="White"
+                   CornerRadius="10"
+                   HasShadow="True"
+                   Padding="10"
+                   Margin="0,5">
+                <Grid RowDefinitions="Auto, Auto, Auto, Auto" ColumnDefinitions="*,*">
+
+                    <!-- Tipo de Sangre y Nacimiento/Edad -->
+                    <Label Grid.Row="0" Grid.Column="0" Text="Tipo de Sangre" FontFamily="MohaveRegular"
+                           FontSize="16" FontAttributes="Bold" TextColor="#3E4A59"/>
+                    <Label Grid.Row="0" Grid.Column="1" Text="Nacimiento / Edad" FontFamily="MohaveRegular"
+                           FontSize="16" FontAttributes="Bold" TextColor="#3E4A59"/>
+                    <Label Grid.Row="1" Grid.Column="0" Text="O+" FontFamily="MohaveRegular"
+                           FontSize="16" TextColor="#3E4A59"/>
+                    <Label Grid.Row="1" Grid.Column="1" Text="12/12/1990, 33 años" FontFamily="MohaveRegular"
+                           FontSize="16" TextColor="#3E4A59"/>
+
+                    <!-- Alergias -->
+                    <Label Grid.Row="2" Grid.Column="0" Text="Alergias" FontFamily="MohaveRegular"
+                           FontSize="16" FontAttributes="Bold" TextColor="#3E4A59" Grid.ColumnSpan="2"/>
+                    <Label Grid.Row="3" Grid.Column="0" Text="Ninguna" FontFamily="MohaveRegular"
+                           FontSize="16" TextColor="#3E4A59" Grid.ColumnSpan="2"/>
+                </Grid>
+            </Frame>
+
+            <!-- Condiciones Médicas -->
+            <Frame BackgroundColor="White"
+                   CornerRadius="10"
+                   HasShadow="True"
+                   Padding="10"
+                   Margin="0,5">
+                <VerticalStackLayout>
+                    <Label Text="Condiciones Médicas"
+                           FontFamily="MohaveRegular"
+                           FontSize="16"
+                           FontAttributes="Bold"
+                           TextColor="#3E4A59"/>
+                    <Label Text="Hipertensión, Diabetes"
+                           FontFamily="MohaveRegular"
+                           FontSize="16"
+                           TextColor="#3E4A59"/>
+                </VerticalStackLayout>
+            </Frame>
+
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>

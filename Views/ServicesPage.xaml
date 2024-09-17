@@ -10,7 +10,7 @@
             
             <Label Text="Servicios HealthCare"
                    FontSize="35"
-                   FontFamily="MojariRegular"
+                   FontFamily="MohaveRegular"
                    FontAttributes="Italic, Bold"
                    TextColor="#3E4A59" 
                 HorizontalOptions="Center"
@@ -88,13 +88,13 @@ TextColor="Black"
                            HeightRequest="50"/>
                         <Label Text="Toma de presión"
                            FontSize="30"
-FontFamily="Mohave-Regular"
-TextColor="Black" 
+                            FontFamily="Mohave-Regular"
+                            TextColor="Black" 
                             VerticalOptions="Center"/>
                     </HorizontalStackLayout>
                 </Frame>
 
-                <!-- Frame para Control de peso -->
+                
                 <Frame BackgroundColor="#FAF4D3" 
                     CornerRadius="15"
                    HasShadow="True"
@@ -106,11 +106,52 @@ TextColor="Black"
                            HeightRequest="50"/>
                         <Label Text="Control de peso"
                            FontSize="30"
-FontFamily="Mohave-Regular"
-TextColor="Black" 
+                            FontFamily="Mohave-Regular"
+                            TextColor="Black" 
                             VerticalOptions = "Center"/>
                     </HorizontalStackLayout>
                 </Frame>
+
+            <Frame BackgroundColor="#E3F2FD"
+       CornerRadius="15"
+       HasShadow="True"
+       Padding="10"
+       Margin="0,5">
+                <Frame.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="StudentRegister" />
+                </Frame.GestureRecognizers>
+                <HorizontalStackLayout Spacing="15">
+                    <Image Source="perfilverde.png"
+               WidthRequest="50"
+               HeightRequest="50"/>
+                    <Label Text="Registrar Estudiante"
+               FontSize="30"
+                 FontFamily="Mohave-Regular"
+                 TextColor="Black" 
+               VerticalOptions="Center"/>
+                </HorizontalStackLayout>
+            </Frame>
+
+
+            <Frame BackgroundColor="#E6EFF8"
+                   CornerRadius="15"
+                   HasShadow="True"
+                   Padding="10"
+                   Margin="0,5">
+                <Frame.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="Profile" />
+                </Frame.GestureRecognizers>
+                <HorizontalStackLayout Spacing="15">
+                    <Image Source="perfil.png"
+                           WidthRequest="50"
+                           HeightRequest="50"/>
+                    <Label Text="Perfil del Estudiante"
+                           FontSize="30"
+                           FontFamily="Mohave-Regular"
+                           TextColor="Black" 
+                           VerticalOptions="Center"/>
+                </HorizontalStackLayout>
+            </Frame>
 
         </VerticalStackLayout>
     </ScrollView>

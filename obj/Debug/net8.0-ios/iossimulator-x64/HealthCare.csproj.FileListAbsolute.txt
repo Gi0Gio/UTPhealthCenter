@@ -581,7 +581,6 @@ C:\Users\Kris\source\repos\HealthCareGithub\UTPhealthCenter\bin\Debug\net8.0-ios
 C:\Users\Kris\source\repos\HealthCareGithub\UTPhealthCenter\bin\Debug\net8.0-ios\iossimulator-x64\libxamarin-dotnet-nativeaot.a
 C:\Users\Kris\source\repos\HealthCareGithub\UTPhealthCenter\bin\Debug\net8.0-ios\iossimulator-x64\libxamarin-dotnet.a
 C:\Users\Kris\source\repos\HealthCareGithub\UTPhealthCenter\bin\Debug\net8.0-ios\iossimulator-x64\libxamarin-dotnet.dylib
-C:\Users\Kris\source\repos\HealthCareGithub\UTPhealthCenter\obj\Debug\net8.0-ios\iossimulator-x64\build-signature\signature
 C:\Users\Kris\source\repos\HealthCareGithub\UTPhealthCenter\obj\Debug\net8.0-ios\iossimulator-x64\mauiimage.inputs
 C:\Users\Kris\source\repos\HealthCareGithub\UTPhealthCenter\obj\Debug\net8.0-ios\iossimulator-x64\mauifont.inputs
 C:\Users\Kris\source\repos\HealthCareGithub\UTPhealthCenter\obj\Debug\net8.0-ios\iossimulator-x64\mauisplash.inputs
@@ -650,3 +649,5 @@ C:\Users\Kris\source\repos\HealthCareGithub\UTPhealthCenter\obj\Debug\net8.0-ios
 C:\Users\Kris\source\repos\HealthCareGithub\UTPhealthCenter\obj\Debug\net8.0-ios\iossimulator-x64\ref\HealthCare.dll
 C:\Users\Kris\source\repos\HealthCareGithub\UTPhealthCenter\obj\Debug\net8.0-ios\iossimulator-x64\resizetizer\r\Resources\backgroundcitas.png
 C:\Users\Kris\source\repos\HealthCareGithub\UTPhealthCenter\obj\Debug\net8.0-ios\iossimulator-x64\resizetizer\r\Resources\calendarioicono.png
+C:\Users\Kris\source\repos\HealthCareGithub\UTPhealthCenter\obj\Debug\net8.0-ios\iossimulator-x64\resizetizer\r\Resources\perfil.png
+C:\Users\Kris\source\repos\HealthCareGithub\UTPhealthCenter\obj\Debug\net8.0-ios\iossimulator-x64\build-signature\signature

@@ -49,7 +49,8 @@
                             BorderWidth="1"
                             CornerRadius="10"
                             Margin="5"
-                            WidthRequest="130"/>
+                            WidthRequest="130"
+                            Clicked="AdminRegister"/>
                 </StackLayout>
 
                 <Label Text="¿Olvidaste la contraseña?" 

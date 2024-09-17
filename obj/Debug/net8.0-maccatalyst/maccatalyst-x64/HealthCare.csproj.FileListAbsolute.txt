@@ -624,3 +624,4 @@ C:\Users\Kris\source\repos\HealthCareGithub\UTPhealthCenter\obj\Debug\net8.0-mac
 C:\Users\Kris\source\repos\HealthCareGithub\UTPhealthCenter\obj\Debug\net8.0-maccatalyst\maccatalyst-x64\ref\HealthCare.dll
 C:\Users\Kris\source\repos\HealthCareGithub\UTPhealthCenter\obj\Debug\net8.0-maccatalyst\maccatalyst-x64\resizetizer\r\Resources\backgroundcitas.png
 C:\Users\Kris\source\repos\HealthCareGithub\UTPhealthCenter\obj\Debug\net8.0-maccatalyst\maccatalyst-x64\resizetizer\r\Resources\calendarioicono.png
+C:\Users\Kris\source\repos\HealthCareGithub\UTPhealthCenter\obj\Debug\net8.0-maccatalyst\maccatalyst-x64\resizetizer\r\Resources\perfil.png
