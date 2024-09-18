@@ -3,49 +3,39 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="HealthCare.Views.StudentRegisterPage"
              BackgroundColor="#FFF">
-
     <ScrollView>
         <VerticalStackLayout Padding="20" Spacing="15">
             <Label Text="Registro de Estudiantes/Pacientes"
                    FontSize="35"
-                   FontFamily="MohaveRegular"
-                    FontAttributes="Bold"
-                    TextColor="#014671"
-                   HorizontalOptions="Center"/>
-
-            <Entry Placeholder="ID Usuario"
-                   x:Name="StudentId"
-                   FontSize="20"
-FontFamily="MohaveRegular"
-TextColor="#014671"/>
+                   FontAttributes="Bold"
+                   TextColor="#014671"
+                   HorizontalOptions="Center" />
 
             <Entry Placeholder="Nombre"
-                   x:Name="StudentName"
+                   Text="{Binding Name}"
                    FontSize="20"
-FontFamily="MohaveRegular"
-TextColor="#014671"/>
+                   TextColor="#014671" />
 
             <Entry Placeholder="Apellido"
-                   x:Name="StudentLastName"
+                   Text="{Binding LastName}"
                    FontSize="20"
-FontFamily="MohaveRegular"
-TextColor="#014671"/>
+                   TextColor="#014671" />
 
             <Entry Placeholder="DNI"
-                   x:Name="StudentDNI"
-                   FontSize="18"/>
+                   Text="{Binding DNI}"
+                   FontSize="18"
+                   TextColor="#014671"/>
 
             <Entry Placeholder="Localización"
-                   x:Name="StudentLocation"
+                   Text="{Binding Location}"
                    FontSize="20"
-FontFamily="MohaveRegular"
-TextColor="#014671"/>
+                   TextColor="#014671" />
 
             <Button Text="Registrar Estudiante"
                     BackgroundColor="#014671"
                     TextColor="#FFFFFF"
                     FontSize="20"
-                    FontFamily="MohaveRegular"/>
+                    Clicked="OnRegisterClicked" />
         </VerticalStackLayout>
     </ScrollView>
 </ContentPage>
