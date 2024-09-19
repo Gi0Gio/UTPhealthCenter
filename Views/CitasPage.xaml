@@ -27,8 +27,9 @@
                         <Frame BackgroundColor="#E3F2FD" CornerRadius="10" Padding="10">
                             <HorizontalStackLayout>
                                 <VerticalStackLayout>
-                                    <Label Text="{Binding PatientName}" FontSize="18" />
-                                    <Label Text="{Binding Description}" FontSize="16" />
+                                    <Label Text="{Binding patientId}" FontSize="18" TextColor="#000" />
+                                    <Label Text="{Binding description}" FontSize="16" TextColor="#000"/>
+                                    <Label Text="{Binding AppointmentDate}" FontSize="16" TextColor="#000"/>
                                 </VerticalStackLayout>
                                 <Button Text="✖" BackgroundColor="#E53935" TextColor="White" CornerRadius="10" Command="{Binding BindingContext.DeleteAppointmentCommand, Source={x:Reference CitasPage}}" CommandParameter="{Binding}" />
                             </HorizontalStackLayout>
@@ -47,8 +48,8 @@
                         <Frame BackgroundColor="#E3F2FD" CornerRadius="10" Padding="10">
                             <HorizontalStackLayout>
                                 <VerticalStackLayout>
-                                    <Label Text="{Binding PatientName}" FontSize="18" />
-                                    <Label Text="{Binding Description}" FontSize="16" />
+                                    <Label Text="{Binding patientId}" FontSize="18" />
+                                    <Label Text="{Binding description}" FontSize="16" />
                                 </VerticalStackLayout>
                                 <Button Text="✖" BackgroundColor="#E53935" TextColor="White" CornerRadius="10" Clicked="OnDeleteAppointment" CommandParameter="{Binding}" />
                             </HorizontalStackLayout>
@@ -63,13 +64,13 @@
             <Label Text="Crear Cita" FontSize="24" FontAttributes="Bold" TextColor="Black" />
 
             <!-- Campo Patient ID -->
-            <Entry Placeholder="ID del Paciente" Text="{Binding NewAppointment.PatientId}" TextColor="Black" />
+            <Entry Placeholder="ID del Paciente" Text="{Binding NewAppointment.patientId}" TextColor="Black" />
 
             <!-- Campo Appointment Date -->
             <DatePicker Date="{Binding NewAppointment.AppointmentDate}" TextColor="Black" />
 
             <!-- Campo Descripción -->
-            <Entry Placeholder="Descripción" Text="{Binding NewAppointment.Description}" TextColor="Black" />
+            <Entry Placeholder="Descripción" Text="{Binding NewAppointment.description}" TextColor="Black" />
 
             <!-- Botón para Guardar -->
             <Button Text="Guardar Cita" Clicked="OnSaveAppointment" Command="{Binding SaveAppointmentCommand}" TextColor="White" BackgroundColor="#014671"/>

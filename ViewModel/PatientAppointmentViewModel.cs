@@ -2,16 +2,18 @@
 using System.Text;
 using System.Text.Json;
 using System.Collections.ObjectModel;
+using HealthCare.Models;
 
 namespace HealthCare.ViewModel
 {
     public class AppointmentDto
     {
-        public int Id { get; set; }
-        public int PatientId { get; set; }
-        public string PatientName { get; set; }
+        public int id { get; set; }
+        public int patientId { get; set; }
         public DateTime AppointmentDate { get; set; }
-        public string Description { get; set; }
+        public string description { get; set; }
+
+        public string patients { get; set; }
     }
 
     public class PatientAppointmentViewModel : INotifyPropertyChanged
@@ -80,16 +82,20 @@ namespace HealthCare.ViewModel
                         PendingAppointments.Add(appointment);
                     }
                 }
+
+                Console.WriteLine(appointments);
             }
+
+            
         }
 
         public async Task SaveAppointment()
         {
             var appointment = new
             {
-                patientId = NewAppointment.PatientId,
+                patientId = NewAppointment.patientId,
                 appointmentDate = NewAppointment.AppointmentDate,
-                description = NewAppointment.Description
+                description = NewAppointment.description
             };
 
             using (var httpClient = new HttpClient())
@@ -107,6 +113,7 @@ namespace HealthCare.ViewModel
                 else
                 {
                     await Application.Current.MainPage.DisplayAlert("Error", "Failed to save appointment", "OK");
+                    
                 }
             }
         }
@@ -115,7 +122,7 @@ namespace HealthCare.ViewModel
         {
             using (var httpClient = new HttpClient())
             {
-                var response = await httpClient.DeleteAsync($"https://giowebtestapinstance.azurewebsites.net/api/Appointments/{appointment.Id}");
+                var response = await httpClient.DeleteAsync($"https://giowebtestapinstance.azurewebsites.net/api/Appointments/{appointment.id}");
 
                 if (response.IsSuccessStatusCode)
                 {
