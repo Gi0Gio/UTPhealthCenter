@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<FlyoutPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="HealthCare.Components.SideMenu">
+
+    <!-- Menu lateral -->
+    <FlyoutPage.Flyout>
+        <ContentPage Title="Menú">
+            <VerticalStackLayout Spacing="20" Padding="10">
+                <Button Text="INICIO" FontSize="18" />
+                <Button Text="SERVICIOS" FontSize="18" />
+                <Button Text="CITAS" FontSize="18" />
+                <Button Text="REGISTROS" FontSize="18" />
+            </VerticalStackLayout>
+        </ContentPage>
+    </FlyoutPage.Flyout>
+
+    <!-- Contenido principal -->
+    <FlyoutPage.Detail>
+        <NavigationPage>
+            <x:Arguments>
+                <ContentPage>
+                    <Grid Padding="10,5" VerticalOptions="Start" HorizontalOptions="FillAndExpand">
+                        <HorizontalStackLayout HorizontalOptions="Start" VerticalOptions="Center">
+                            <ImageButton Source="hamburgericon.png" HeightRequest="30" WidthRequest="30" Clicked="OpenMenu"/>
+                        </HorizontalStackLayout>
+
+                        <!-- Título del menú -->
+                        <Label Text="UTP Health Care" 
+                               FontSize="20" 
+                               FontAttributes="Bold"
+                               HorizontalOptions="Center"
+                               VerticalOptions="Center"
+                               TextColor="Black"/>
+
+                        <!-- Íconos de perfil a la derecha -->
+                        <HorizontalStackLayout HorizontalOptions="End" VerticalOptions="Center">
+                            <ImageButton Source="profileicon.png" HeightRequest="30" WidthRequest="30" />
+                        </HorizontalStackLayout>
+                    </Grid>
+                </ContentPage>
+            </x:Arguments>
+        </NavigationPage>
+    </FlyoutPage.Detail>
+
+</FlyoutPage>
+

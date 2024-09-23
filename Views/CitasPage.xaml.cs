@@ -1,4 +1,3 @@
-using Microsoft.Maui.Controls;
 using HealthCare.ViewModel;
 
 namespace HealthCare.Views

@@ -5,7 +5,6 @@
 
     <ScrollView>
         <VerticalStackLayout VerticalOptions="{OnIdiom Phone=Center, Desktop=FillAndExpand}" HorizontalOptions="Center" Padding="60" Spacing="25">
-
             <!-- Layout para Escritorio -->
             <OnIdiom x:TypeArguments="View">
                 <OnIdiom.Desktop>
@@ -29,9 +28,9 @@
 
                                 <!-- Logo Circular -->
                                 <Frame BackgroundColor="White" CornerRadius="75"
-            HeightRequest="150" WidthRequest="150"
-            BorderColor="white"
-            HorizontalOptions="Start" VerticalOptions="Center" Padding="0">
+                                    HeightRequest="150" WidthRequest="150"
+                                    BorderColor="white"
+                                    HorizontalOptions="Start" VerticalOptions="Center" Padding="0">
                                     <Image Source="logo2.png" Aspect="AspectFit"/>
                                 </Frame>
 

@@ -2,7 +2,6 @@ Manjari-Regular.ttf
 Mohave-Regular.ttf
 OpenSans-Regular.ttf
 OpenSans-Semibold.ttf
-backgroundcitas.scale-100.png
 backgroundlogin.scale-100.png
 buenaconsulta.scale-100.png
 calendarioicono.scale-100.png
@@ -13,7 +12,10 @@ dotnet_bot.scale-125.png
 dotnet_bot.scale-150.png
 dotnet_bot.scale-200.png
 dotnet_bot.scale-400.png
+estudiante.scale-100.png
+estudianteicono.scale-100.png
 healthcare.scale-100.png
+logo.scale-100.png
 logo2.scale-100.png
 logo3.ico
 logo3LargeTile.scale-100.png
@@ -63,10 +65,9 @@ logo3WideTile.scale-200.png
 logo3WideTile.scale-400.png
 micrologo.scale-100.png
 perfil.scale-100.png
-perfilverde.scale-100.png
 pesoytalla.scale-100.png
-presion.scale-100.png
-receta.scale-100.png
+pulso.scale-100.png
+receta2.scale-100.png
 logo1SplashScreen.scale-100.png
 logo1SplashScreen.scale-125.png
 logo1SplashScreen.scale-150.png

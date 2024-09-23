@@ -10,7 +10,7 @@
     <PackageArchitecture>x64</PackageArchitecture>
     <PackageIdentityName>com.companyname.healthcare</PackageIdentityName>
     <PackageIdentityPublisher>CN=User Name</PackageIdentityPublisher>
-    <IntermediateOutputPath>C:\Users\Kris\source\repos\proyectiyo\UTPhealthCenter\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\</IntermediateOutputPath>
+    <IntermediateOutputPath>C:\Users\Kris\source\repos\GithubUTPhealthCare\UTPhealthCenter\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\</IntermediateOutputPath>
     <RemoteDeploymentType>CopyToDevice</RemoteDeploymentType>
     <PackageRegistrationPath>
     </PackageRegistrationPath>
@@ -18,7 +18,7 @@
     <DeployOptionalPackages>false</DeployOptionalPackages>
     <WindowsSdkPath>
     </WindowsSdkPath>
-    <LayoutDir>C:\Users\Kris\source\repos\proyectiyo\UTPhealthCenter\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\AppX</LayoutDir>
+    <LayoutDir>C:\Users\Kris\source\repos\GithubUTPhealthCare\UTPhealthCenter\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\AppX</LayoutDir>
     <RegisteredManifestChecksum>8A148EDFE45533C2AEF080CF7947D8E11A35D93CB7ED7085D9428152CE4A2239</RegisteredManifestChecksum>
     <RegisteredPackageMoniker>com.companyname.healthcare_1.0.0.1_x64__9zz4h110yvjzm</RegisteredPackageMoniker>
     <RegisteredUserModeAppID>com.companyname.healthcare_9zz4h110yvjzm!App</RegisteredUserModeAppID>
@@ -27,332 +27,336 @@
     <RegisteredVersion>1.0.0.1</RegisteredVersion>
   </PropertyGroup>
   <ItemGroup>
-    <AppXManifest Include="C:\Users\Kris\source\repos\proyectiyo\UTPhealthCenter\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\AppxManifest.xml">
+    <AppXManifest Include="C:\Users\Kris\source\repos\GithubUTPhealthCare\UTPhealthCenter\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2024-09-18T23:02:50.810</Modified>
+      <Modified>2024-09-23T03:13:54.925</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
-    <AppxPackagedFile Include="C:\Users\Kris\source\repos\proyectiyo\UTPhealthCenter\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\resources.pri">
+    <AppxPackagedFile Include="C:\Users\Kris\source\repos\GithubUTPhealthCare\UTPhealthCenter\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2024-09-18T22:16:22.105</Modified>
+      <Modified>2024-09-23T02:48:17.668</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Kris\source\repos\proyectiyo\UTPhealthCenter\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\HealthCare.runtimeconfig.json">
+    <AppxPackagedFile Include="C:\Users\Kris\source\repos\GithubUTPhealthCare\UTPhealthCenter\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\HealthCare.runtimeconfig.json">
       <PackagePath>HealthCare.runtimeconfig.json</PackagePath>
-      <Modified>2024-09-18T22:18:45.604</Modified>
+      <Modified>2024-09-23T03:13:54.566</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Kris\source\repos\proyectiyo\UTPhealthCenter\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\HealthCare.dll">
+    <AppxPackagedFile Include="C:\Users\Kris\source\repos\GithubUTPhealthCare\UTPhealthCenter\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\HealthCare.dll">
       <PackagePath>HealthCare.dll</PackagePath>
-      <Modified>2024-09-18T23:02:50.077</Modified>
+      <Modified>2024-09-23T02:48:16.323</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Kris\source\repos\proyectiyo\UTPhealthCenter\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\apphost.exe">
+    <AppxPackagedFile Include="C:\Users\Kris\source\repos\GithubUTPhealthCare\UTPhealthCenter\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\apphost.exe">
       <PackagePath>HealthCare.exe</PackagePath>
-      <Modified>2024-09-18T23:02:50.123</Modified>
+      <Modified>2024-09-23T02:48:16.376</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Kris\source\repos\proyectiyo\UTPhealthCenter\Resources\Raw\AboutAssets.txt">
+    <AppxPackagedFile Include="C:\Users\Kris\source\repos\GithubUTPhealthCare\UTPhealthCenter\Resources\Raw\AboutAssets.txt">
       <PackagePath>AboutAssets.txt</PackagePath>
-      <Modified>2024-09-18T22:12:50.232</Modified>
+      <Modified>2024-09-20T14:47:10.764</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Kris\source\repos\proyectiyo\UTPhealthCenter\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\sp\logo1SplashScreen.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\Kris\source\repos\GithubUTPhealthCare\UTPhealthCenter\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\sp\logo1SplashScreen.scale-100.png">
       <PackagePath>logo1SplashScreen.scale-100.png</PackagePath>
-      <Modified>2024-09-18T22:16:16.704</Modified>
+      <Modified>2024-09-23T02:48:13.361</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Kris\source\repos\proyectiyo\UTPhealthCenter\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\sp\logo1SplashScreen.scale-125.png">
+    <AppxPackagedFile Include="C:\Users\Kris\source\repos\GithubUTPhealthCare\UTPhealthCenter\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\sp\logo1SplashScreen.scale-125.png">
       <PackagePath>logo1SplashScreen.scale-125.png</PackagePath>
-      <Modified>2024-09-18T22:16:16.712</Modified>
+      <Modified>2024-09-23T02:48:13.377</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Kris\source\repos\proyectiyo\UTPhealthCenter\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\sp\logo1SplashScreen.scale-150.png">
+    <AppxPackagedFile Include="C:\Users\Kris\source\repos\GithubUTPhealthCare\UTPhealthCenter\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\sp\logo1SplashScreen.scale-150.png">
       <PackagePath>logo1SplashScreen.scale-150.png</PackagePath>
-      <Modified>2024-09-18T22:16:16.742</Modified>
+      <Modified>2024-09-23T02:48:13.401</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Kris\source\repos\proyectiyo\UTPhealthCenter\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\sp\logo1SplashScreen.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\Kris\source\repos\GithubUTPhealthCare\UTPhealthCenter\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\sp\logo1SplashScreen.scale-200.png">
       <PackagePath>logo1SplashScreen.scale-200.png</PackagePath>
-      <Modified>2024-09-18T22:16:16.793</Modified>
+      <Modified>2024-09-23T02:48:13.447</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Kris\source\repos\proyectiyo\UTPhealthCenter\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\sp\logo1SplashScreen.scale-400.png">
+    <AppxPackagedFile Include="C:\Users\Kris\source\repos\GithubUTPhealthCare\UTPhealthCenter\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\sp\logo1SplashScreen.scale-400.png">
       <PackagePath>logo1SplashScreen.scale-400.png</PackagePath>
-      <Modified>2024-09-18T22:16:16.968</Modified>
+      <Modified>2024-09-23T02:48:13.589</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Kris\source\repos\proyectiyo\UTPhealthCenter\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\f\Manjari-Regular.ttf">
+    <AppxPackagedFile Include="C:\Users\Kris\source\repos\GithubUTPhealthCare\UTPhealthCenter\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\f\Manjari-Regular.ttf">
       <PackagePath>Manjari-Regular.ttf</PackagePath>
-      <Modified>2024-09-18T22:12:50.214</Modified>
+      <Modified>2024-09-20T14:47:10.743</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Kris\source\repos\proyectiyo\UTPhealthCenter\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\f\Mohave-Regular.ttf">
+    <AppxPackagedFile Include="C:\Users\Kris\source\repos\GithubUTPhealthCare\UTPhealthCenter\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\f\Mohave-Regular.ttf">
       <PackagePath>Mohave-Regular.ttf</PackagePath>
-      <Modified>2024-09-18T22:12:50.217</Modified>
+      <Modified>2024-09-20T14:47:10.743</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Kris\source\repos\proyectiyo\UTPhealthCenter\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\f\OpenSans-Regular.ttf">
+    <AppxPackagedFile Include="C:\Users\Kris\source\repos\GithubUTPhealthCare\UTPhealthCenter\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\f\OpenSans-Regular.ttf">
       <PackagePath>OpenSans-Regular.ttf</PackagePath>
-      <Modified>2024-09-18T22:12:50.219</Modified>
+      <Modified>2024-09-20T14:47:10.743</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Kris\source\repos\proyectiyo\UTPhealthCenter\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\f\OpenSans-Semibold.ttf">
+    <AppxPackagedFile Include="C:\Users\Kris\source\repos\GithubUTPhealthCare\UTPhealthCenter\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\f\OpenSans-Semibold.ttf">
       <PackagePath>OpenSans-Semibold.ttf</PackagePath>
-      <Modified>2024-09-18T22:12:50.219</Modified>
+      <Modified>2024-09-20T14:47:10.747</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Kris\source\repos\proyectiyo\UTPhealthCenter\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\backgroundcitas.scale-100.png">
-      <PackagePath>backgroundcitas.scale-100.png</PackagePath>
-      <Modified>2024-09-18T22:16:19.151</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Kris\source\repos\proyectiyo\UTPhealthCenter\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\backgroundlogin.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\Kris\source\repos\GithubUTPhealthCare\UTPhealthCenter\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\backgroundlogin.scale-100.png">
       <PackagePath>backgroundlogin.scale-100.png</PackagePath>
-      <Modified>2024-09-18T22:16:19.163</Modified>
+      <Modified>2024-09-23T02:48:16.057</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Kris\source\repos\proyectiyo\UTPhealthCenter\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\buenaconsulta.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\Kris\source\repos\GithubUTPhealthCare\UTPhealthCenter\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\buenaconsulta.scale-100.png">
       <PackagePath>buenaconsulta.scale-100.png</PackagePath>
-      <Modified>2024-09-18T22:16:19.163</Modified>
+      <Modified>2024-09-23T02:48:16.065</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Kris\source\repos\proyectiyo\UTPhealthCenter\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\calendarioicono.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\Kris\source\repos\GithubUTPhealthCare\UTPhealthCenter\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\calendarioicono.scale-100.png">
       <PackagePath>calendarioicono.scale-100.png</PackagePath>
-      <Modified>2024-09-18T22:16:19.151</Modified>
+      <Modified>2024-09-23T02:48:16.058</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Kris\source\repos\proyectiyo\UTPhealthCenter\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\consulta.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\Kris\source\repos\GithubUTPhealthCare\UTPhealthCenter\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\consulta.scale-100.png">
       <PackagePath>consulta.scale-100.png</PackagePath>
-      <Modified>2024-09-18T22:16:19.163</Modified>
+      <Modified>2024-09-23T02:48:16.057</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Kris\source\repos\proyectiyo\UTPhealthCenter\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\doctol.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\Kris\source\repos\GithubUTPhealthCare\UTPhealthCenter\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\doctol.scale-100.png">
       <PackagePath>doctol.scale-100.png</PackagePath>
-      <Modified>2024-09-18T22:16:19.163</Modified>
+      <Modified>2024-09-23T02:48:16.065</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Kris\source\repos\proyectiyo\UTPhealthCenter\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\Kris\source\repos\GithubUTPhealthCare\UTPhealthCenter\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-100.png">
       <PackagePath>dotnet_bot.scale-100.png</PackagePath>
-      <Modified>2024-09-18T22:16:19.163</Modified>
+      <Modified>2024-09-23T02:48:16.065</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Kris\source\repos\proyectiyo\UTPhealthCenter\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-125.png">
+    <AppxPackagedFile Include="C:\Users\Kris\source\repos\GithubUTPhealthCare\UTPhealthCenter\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-125.png">
       <PackagePath>dotnet_bot.scale-125.png</PackagePath>
-      <Modified>2024-09-18T22:16:19.163</Modified>
+      <Modified>2024-09-23T02:48:16.065</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Kris\source\repos\proyectiyo\UTPhealthCenter\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-150.png">
+    <AppxPackagedFile Include="C:\Users\Kris\source\repos\GithubUTPhealthCare\UTPhealthCenter\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-150.png">
       <PackagePath>dotnet_bot.scale-150.png</PackagePath>
-      <Modified>2024-09-18T22:16:19.163</Modified>
+      <Modified>2024-09-23T02:48:16.065</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Kris\source\repos\proyectiyo\UTPhealthCenter\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\Kris\source\repos\GithubUTPhealthCare\UTPhealthCenter\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-200.png">
       <PackagePath>dotnet_bot.scale-200.png</PackagePath>
-      <Modified>2024-09-18T22:16:19.163</Modified>
+      <Modified>2024-09-23T02:48:16.065</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Kris\source\repos\proyectiyo\UTPhealthCenter\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-400.png">
+    <AppxPackagedFile Include="C:\Users\Kris\source\repos\GithubUTPhealthCare\UTPhealthCenter\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-400.png">
       <PackagePath>dotnet_bot.scale-400.png</PackagePath>
-      <Modified>2024-09-18T22:16:19.163</Modified>
+      <Modified>2024-09-23T02:48:16.065</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Kris\source\repos\proyectiyo\UTPhealthCenter\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\healthcare.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\Kris\source\repos\GithubUTPhealthCare\UTPhealthCenter\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\estudiante.scale-100.png">
+      <PackagePath>estudiante.scale-100.png</PackagePath>
+      <Modified>2024-09-23T02:48:16.065</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Kris\source\repos\GithubUTPhealthCare\UTPhealthCenter\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\estudianteicono.scale-100.png">
+      <PackagePath>estudianteicono.scale-100.png</PackagePath>
+      <Modified>2024-09-23T02:48:16.057</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Kris\source\repos\GithubUTPhealthCare\UTPhealthCenter\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\healthcare.scale-100.png">
       <PackagePath>healthcare.scale-100.png</PackagePath>
-      <Modified>2024-09-18T22:16:19.151</Modified>
+      <Modified>2024-09-23T02:48:16.057</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Kris\source\repos\proyectiyo\UTPhealthCenter\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\logo2.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\Kris\source\repos\GithubUTPhealthCare\UTPhealthCenter\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\logo.scale-100.png">
+      <PackagePath>logo.scale-100.png</PackagePath>
+      <Modified>2024-09-23T02:48:16.058</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Kris\source\repos\GithubUTPhealthCare\UTPhealthCenter\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\logo2.scale-100.png">
       <PackagePath>logo2.scale-100.png</PackagePath>
-      <Modified>2024-09-18T22:16:19.151</Modified>
+      <Modified>2024-09-23T02:48:16.063</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Kris\source\repos\proyectiyo\UTPhealthCenter\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\logo3.ico">
+    <AppxPackagedFile Include="C:\Users\Kris\source\repos\GithubUTPhealthCare\UTPhealthCenter\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\logo3.ico">
       <PackagePath>logo3.ico</PackagePath>
-      <Modified>2024-09-18T22:16:19.163</Modified>
+      <Modified>2024-09-23T02:48:16.063</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Kris\source\repos\proyectiyo\UTPhealthCenter\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\logo3LargeTile.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\Kris\source\repos\GithubUTPhealthCare\UTPhealthCenter\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\logo3LargeTile.scale-100.png">
       <PackagePath>logo3LargeTile.scale-100.png</PackagePath>
-      <Modified>2024-09-18T22:16:19.151</Modified>
+      <Modified>2024-09-23T02:48:16.058</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Kris\source\repos\proyectiyo\UTPhealthCenter\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\logo3LargeTile.scale-125.png">
+    <AppxPackagedFile Include="C:\Users\Kris\source\repos\GithubUTPhealthCare\UTPhealthCenter\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\logo3LargeTile.scale-125.png">
       <PackagePath>logo3LargeTile.scale-125.png</PackagePath>
-      <Modified>2024-09-18T22:16:19.151</Modified>
+      <Modified>2024-09-23T02:48:16.058</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Kris\source\repos\proyectiyo\UTPhealthCenter\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\logo3LargeTile.scale-150.png">
+    <AppxPackagedFile Include="C:\Users\Kris\source\repos\GithubUTPhealthCare\UTPhealthCenter\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\logo3LargeTile.scale-150.png">
       <PackagePath>logo3LargeTile.scale-150.png</PackagePath>
-      <Modified>2024-09-18T22:16:19.151</Modified>
+      <Modified>2024-09-23T02:48:16.058</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Kris\source\repos\proyectiyo\UTPhealthCenter\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\logo3LargeTile.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\Kris\source\repos\GithubUTPhealthCare\UTPhealthCenter\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\logo3LargeTile.scale-200.png">
       <PackagePath>logo3LargeTile.scale-200.png</PackagePath>
-      <Modified>2024-09-18T22:16:19.151</Modified>
+      <Modified>2024-09-23T02:48:16.058</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Kris\source\repos\proyectiyo\UTPhealthCenter\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\logo3LargeTile.scale-400.png">
+    <AppxPackagedFile Include="C:\Users\Kris\source\repos\GithubUTPhealthCare\UTPhealthCenter\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\logo3LargeTile.scale-400.png">
       <PackagePath>logo3LargeTile.scale-400.png</PackagePath>
-      <Modified>2024-09-18T22:16:19.151</Modified>
+      <Modified>2024-09-23T02:48:16.058</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Kris\source\repos\proyectiyo\UTPhealthCenter\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\logo3Logo.altform-lightunplated_targetsize-16.png">
+    <AppxPackagedFile Include="C:\Users\Kris\source\repos\GithubUTPhealthCare\UTPhealthCenter\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\logo3Logo.altform-lightunplated_targetsize-16.png">
       <PackagePath>logo3Logo.altform-lightunplated_targetsize-16.png</PackagePath>
-      <Modified>2024-09-18T22:16:19.163</Modified>
+      <Modified>2024-09-23T02:48:16.061</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Kris\source\repos\proyectiyo\UTPhealthCenter\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\logo3Logo.altform-lightunplated_targetsize-24.png">
+    <AppxPackagedFile Include="C:\Users\Kris\source\repos\GithubUTPhealthCare\UTPhealthCenter\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\logo3Logo.altform-lightunplated_targetsize-24.png">
       <PackagePath>logo3Logo.altform-lightunplated_targetsize-24.png</PackagePath>
-      <Modified>2024-09-18T22:16:19.163</Modified>
+      <Modified>2024-09-23T02:48:16.061</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Kris\source\repos\proyectiyo\UTPhealthCenter\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\logo3Logo.altform-lightunplated_targetsize-256.png">
+    <AppxPackagedFile Include="C:\Users\Kris\source\repos\GithubUTPhealthCare\UTPhealthCenter\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\logo3Logo.altform-lightunplated_targetsize-256.png">
       <PackagePath>logo3Logo.altform-lightunplated_targetsize-256.png</PackagePath>
-      <Modified>2024-09-18T22:16:19.163</Modified>
+      <Modified>2024-09-23T02:48:16.061</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Kris\source\repos\proyectiyo\UTPhealthCenter\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\logo3Logo.altform-lightunplated_targetsize-32.png">
+    <AppxPackagedFile Include="C:\Users\Kris\source\repos\GithubUTPhealthCare\UTPhealthCenter\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\logo3Logo.altform-lightunplated_targetsize-32.png">
       <PackagePath>logo3Logo.altform-lightunplated_targetsize-32.png</PackagePath>
-      <Modified>2024-09-18T22:16:19.163</Modified>
+      <Modified>2024-09-23T02:48:16.061</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Kris\source\repos\proyectiyo\UTPhealthCenter\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\logo3Logo.altform-lightunplated_targetsize-48.png">
+    <AppxPackagedFile Include="C:\Users\Kris\source\repos\GithubUTPhealthCare\UTPhealthCenter\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\logo3Logo.altform-lightunplated_targetsize-48.png">
       <PackagePath>logo3Logo.altform-lightunplated_targetsize-48.png</PackagePath>
-      <Modified>2024-09-18T22:16:19.163</Modified>
+      <Modified>2024-09-23T02:48:16.061</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Kris\source\repos\proyectiyo\UTPhealthCenter\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\logo3Logo.altform-unplated_targetsize-16.png">
+    <AppxPackagedFile Include="C:\Users\Kris\source\repos\GithubUTPhealthCare\UTPhealthCenter\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\logo3Logo.altform-unplated_targetsize-16.png">
       <PackagePath>logo3Logo.altform-unplated_targetsize-16.png</PackagePath>
-      <Modified>2024-09-18T22:16:19.163</Modified>
+      <Modified>2024-09-23T02:48:16.062</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Kris\source\repos\proyectiyo\UTPhealthCenter\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\logo3Logo.altform-unplated_targetsize-24.png">
+    <AppxPackagedFile Include="C:\Users\Kris\source\repos\GithubUTPhealthCare\UTPhealthCenter\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\logo3Logo.altform-unplated_targetsize-24.png">
       <PackagePath>logo3Logo.altform-unplated_targetsize-24.png</PackagePath>
-      <Modified>2024-09-18T22:16:19.163</Modified>
+      <Modified>2024-09-23T02:48:16.062</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Kris\source\repos\proyectiyo\UTPhealthCenter\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\logo3Logo.altform-unplated_targetsize-256.png">
+    <AppxPackagedFile Include="C:\Users\Kris\source\repos\GithubUTPhealthCare\UTPhealthCenter\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\logo3Logo.altform-unplated_targetsize-256.png">
       <PackagePath>logo3Logo.altform-unplated_targetsize-256.png</PackagePath>
-      <Modified>2024-09-18T22:16:19.163</Modified>
+      <Modified>2024-09-23T02:48:16.062</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Kris\source\repos\proyectiyo\UTPhealthCenter\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\logo3Logo.altform-unplated_targetsize-32.png">
+    <AppxPackagedFile Include="C:\Users\Kris\source\repos\GithubUTPhealthCare\UTPhealthCenter\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\logo3Logo.altform-unplated_targetsize-32.png">
       <PackagePath>logo3Logo.altform-unplated_targetsize-32.png</PackagePath>
-      <Modified>2024-09-18T22:16:19.163</Modified>
+      <Modified>2024-09-23T02:48:16.062</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Kris\source\repos\proyectiyo\UTPhealthCenter\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\logo3Logo.altform-unplated_targetsize-48.png">
+    <AppxPackagedFile Include="C:\Users\Kris\source\repos\GithubUTPhealthCare\UTPhealthCenter\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\logo3Logo.altform-unplated_targetsize-48.png">
       <PackagePath>logo3Logo.altform-unplated_targetsize-48.png</PackagePath>
-      <Modified>2024-09-18T22:16:19.163</Modified>
+      <Modified>2024-09-23T02:48:16.062</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Kris\source\repos\proyectiyo\UTPhealthCenter\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\logo3Logo.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\Kris\source\repos\GithubUTPhealthCare\UTPhealthCenter\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\logo3Logo.scale-100.png">
       <PackagePath>logo3Logo.scale-100.png</PackagePath>
-      <Modified>2024-09-18T22:16:19.163</Modified>
+      <Modified>2024-09-23T02:48:16.063</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Kris\source\repos\proyectiyo\UTPhealthCenter\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\logo3Logo.scale-125.png">
+    <AppxPackagedFile Include="C:\Users\Kris\source\repos\GithubUTPhealthCare\UTPhealthCenter\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\logo3Logo.scale-125.png">
       <PackagePath>logo3Logo.scale-125.png</PackagePath>
-      <Modified>2024-09-18T22:16:19.163</Modified>
+      <Modified>2024-09-23T02:48:16.063</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Kris\source\repos\proyectiyo\UTPhealthCenter\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\logo3Logo.scale-150.png">
+    <AppxPackagedFile Include="C:\Users\Kris\source\repos\GithubUTPhealthCare\UTPhealthCenter\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\logo3Logo.scale-150.png">
       <PackagePath>logo3Logo.scale-150.png</PackagePath>
-      <Modified>2024-09-18T22:16:19.163</Modified>
+      <Modified>2024-09-23T02:48:16.063</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Kris\source\repos\proyectiyo\UTPhealthCenter\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\logo3Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\Kris\source\repos\GithubUTPhealthCare\UTPhealthCenter\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\logo3Logo.scale-200.png">
       <PackagePath>logo3Logo.scale-200.png</PackagePath>
-      <Modified>2024-09-18T22:16:19.163</Modified>
+      <Modified>2024-09-23T02:48:16.063</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Kris\source\repos\proyectiyo\UTPhealthCenter\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\logo3Logo.scale-400.png">
+    <AppxPackagedFile Include="C:\Users\Kris\source\repos\GithubUTPhealthCare\UTPhealthCenter\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\logo3Logo.scale-400.png">
       <PackagePath>logo3Logo.scale-400.png</PackagePath>
-      <Modified>2024-09-18T22:16:19.163</Modified>
+      <Modified>2024-09-23T02:48:16.063</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Kris\source\repos\proyectiyo\UTPhealthCenter\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\logo3Logo.targetsize-16.png">
+    <AppxPackagedFile Include="C:\Users\Kris\source\repos\GithubUTPhealthCare\UTPhealthCenter\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\logo3Logo.targetsize-16.png">
       <PackagePath>logo3Logo.targetsize-16.png</PackagePath>
-      <Modified>2024-09-18T22:16:19.163</Modified>
+      <Modified>2024-09-23T02:48:16.063</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Kris\source\repos\proyectiyo\UTPhealthCenter\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\logo3Logo.targetsize-24.png">
+    <AppxPackagedFile Include="C:\Users\Kris\source\repos\GithubUTPhealthCare\UTPhealthCenter\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\logo3Logo.targetsize-24.png">
       <PackagePath>logo3Logo.targetsize-24.png</PackagePath>
-      <Modified>2024-09-18T22:16:19.163</Modified>
+      <Modified>2024-09-23T02:48:16.063</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Kris\source\repos\proyectiyo\UTPhealthCenter\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\logo3Logo.targetsize-256.png">
+    <AppxPackagedFile Include="C:\Users\Kris\source\repos\GithubUTPhealthCare\UTPhealthCenter\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\logo3Logo.targetsize-256.png">
       <PackagePath>logo3Logo.targetsize-256.png</PackagePath>
-      <Modified>2024-09-18T22:16:19.163</Modified>
+      <Modified>2024-09-23T02:48:16.062</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Kris\source\repos\proyectiyo\UTPhealthCenter\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\logo3Logo.targetsize-32.png">
+    <AppxPackagedFile Include="C:\Users\Kris\source\repos\GithubUTPhealthCare\UTPhealthCenter\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\logo3Logo.targetsize-32.png">
       <PackagePath>logo3Logo.targetsize-32.png</PackagePath>
-      <Modified>2024-09-18T22:16:19.163</Modified>
+      <Modified>2024-09-23T02:48:16.063</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Kris\source\repos\proyectiyo\UTPhealthCenter\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\logo3Logo.targetsize-48.png">
+    <AppxPackagedFile Include="C:\Users\Kris\source\repos\GithubUTPhealthCare\UTPhealthCenter\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\logo3Logo.targetsize-48.png">
       <PackagePath>logo3Logo.targetsize-48.png</PackagePath>
-      <Modified>2024-09-18T22:16:19.163</Modified>
+      <Modified>2024-09-23T02:48:16.062</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Kris\source\repos\proyectiyo\UTPhealthCenter\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\logo3MediumTile.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\Kris\source\repos\GithubUTPhealthCare\UTPhealthCenter\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\logo3MediumTile.scale-100.png">
       <PackagePath>logo3MediumTile.scale-100.png</PackagePath>
-      <Modified>2024-09-18T22:16:19.160</Modified>
+      <Modified>2024-09-23T02:48:16.059</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Kris\source\repos\proyectiyo\UTPhealthCenter\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\logo3MediumTile.scale-125.png">
+    <AppxPackagedFile Include="C:\Users\Kris\source\repos\GithubUTPhealthCare\UTPhealthCenter\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\logo3MediumTile.scale-125.png">
       <PackagePath>logo3MediumTile.scale-125.png</PackagePath>
-      <Modified>2024-09-18T22:16:19.160</Modified>
+      <Modified>2024-09-23T02:48:16.059</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Kris\source\repos\proyectiyo\UTPhealthCenter\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\logo3MediumTile.scale-150.png">
+    <AppxPackagedFile Include="C:\Users\Kris\source\repos\GithubUTPhealthCare\UTPhealthCenter\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\logo3MediumTile.scale-150.png">
       <PackagePath>logo3MediumTile.scale-150.png</PackagePath>
-      <Modified>2024-09-18T22:16:19.160</Modified>
+      <Modified>2024-09-23T02:48:16.059</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Kris\source\repos\proyectiyo\UTPhealthCenter\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\logo3MediumTile.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\Kris\source\repos\GithubUTPhealthCare\UTPhealthCenter\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\logo3MediumTile.scale-200.png">
       <PackagePath>logo3MediumTile.scale-200.png</PackagePath>
-      <Modified>2024-09-18T22:16:19.160</Modified>
+      <Modified>2024-09-23T02:48:16.059</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Kris\source\repos\proyectiyo\UTPhealthCenter\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\logo3MediumTile.scale-400.png">
+    <AppxPackagedFile Include="C:\Users\Kris\source\repos\GithubUTPhealthCare\UTPhealthCenter\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\logo3MediumTile.scale-400.png">
       <PackagePath>logo3MediumTile.scale-400.png</PackagePath>
-      <Modified>2024-09-18T22:16:19.160</Modified>
+      <Modified>2024-09-23T02:48:16.059</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Kris\source\repos\proyectiyo\UTPhealthCenter\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\logo3SmallTile.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\Kris\source\repos\GithubUTPhealthCare\UTPhealthCenter\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\logo3SmallTile.scale-100.png">
       <PackagePath>logo3SmallTile.scale-100.png</PackagePath>
-      <Modified>2024-09-18T22:16:19.162</Modified>
+      <Modified>2024-09-23T02:48:16.060</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Kris\source\repos\proyectiyo\UTPhealthCenter\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\logo3SmallTile.scale-125.png">
+    <AppxPackagedFile Include="C:\Users\Kris\source\repos\GithubUTPhealthCare\UTPhealthCenter\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\logo3SmallTile.scale-125.png">
       <PackagePath>logo3SmallTile.scale-125.png</PackagePath>
-      <Modified>2024-09-18T22:16:19.160</Modified>
+      <Modified>2024-09-23T02:48:16.060</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Kris\source\repos\proyectiyo\UTPhealthCenter\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\logo3SmallTile.scale-150.png">
+    <AppxPackagedFile Include="C:\Users\Kris\source\repos\GithubUTPhealthCare\UTPhealthCenter\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\logo3SmallTile.scale-150.png">
       <PackagePath>logo3SmallTile.scale-150.png</PackagePath>
-      <Modified>2024-09-18T22:16:19.160</Modified>
+      <Modified>2024-09-23T02:48:16.060</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Kris\source\repos\proyectiyo\UTPhealthCenter\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\logo3SmallTile.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\Kris\source\repos\GithubUTPhealthCare\UTPhealthCenter\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\logo3SmallTile.scale-200.png">
       <PackagePath>logo3SmallTile.scale-200.png</PackagePath>
-      <Modified>2024-09-18T22:16:19.160</Modified>
+      <Modified>2024-09-23T02:48:16.060</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Kris\source\repos\proyectiyo\UTPhealthCenter\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\logo3SmallTile.scale-400.png">
+    <AppxPackagedFile Include="C:\Users\Kris\source\repos\GithubUTPhealthCare\UTPhealthCenter\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\logo3SmallTile.scale-400.png">
       <PackagePath>logo3SmallTile.scale-400.png</PackagePath>
-      <Modified>2024-09-18T22:16:19.160</Modified>
+      <Modified>2024-09-23T02:48:16.060</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Kris\source\repos\proyectiyo\UTPhealthCenter\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\logo3StoreLogo.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\Kris\source\repos\GithubUTPhealthCare\UTPhealthCenter\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\logo3StoreLogo.scale-100.png">
       <PackagePath>logo3StoreLogo.scale-100.png</PackagePath>
-      <Modified>2024-09-18T22:16:19.163</Modified>
+      <Modified>2024-09-23T02:48:16.061</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Kris\source\repos\proyectiyo\UTPhealthCenter\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\logo3StoreLogo.scale-125.png">
+    <AppxPackagedFile Include="C:\Users\Kris\source\repos\GithubUTPhealthCare\UTPhealthCenter\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\logo3StoreLogo.scale-125.png">
       <PackagePath>logo3StoreLogo.scale-125.png</PackagePath>
-      <Modified>2024-09-18T22:16:19.162</Modified>
+      <Modified>2024-09-23T02:48:16.061</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Kris\source\repos\proyectiyo\UTPhealthCenter\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\logo3StoreLogo.scale-150.png">
+    <AppxPackagedFile Include="C:\Users\Kris\source\repos\GithubUTPhealthCare\UTPhealthCenter\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\logo3StoreLogo.scale-150.png">
       <PackagePath>logo3StoreLogo.scale-150.png</PackagePath>
-      <Modified>2024-09-18T22:16:19.162</Modified>
+      <Modified>2024-09-23T02:48:16.061</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Kris\source\repos\proyectiyo\UTPhealthCenter\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\logo3StoreLogo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\Kris\source\repos\GithubUTPhealthCare\UTPhealthCenter\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\logo3StoreLogo.scale-200.png">
       <PackagePath>logo3StoreLogo.scale-200.png</PackagePath>
-      <Modified>2024-09-18T22:16:19.162</Modified>
+      <Modified>2024-09-23T02:48:16.060</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Kris\source\repos\proyectiyo\UTPhealthCenter\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\logo3StoreLogo.scale-400.png">
+    <AppxPackagedFile Include="C:\Users\Kris\source\repos\GithubUTPhealthCare\UTPhealthCenter\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\logo3StoreLogo.scale-400.png">
       <PackagePath>logo3StoreLogo.scale-400.png</PackagePath>
-      <Modified>2024-09-18T22:16:19.162</Modified>
+      <Modified>2024-09-23T02:48:16.060</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Kris\source\repos\proyectiyo\UTPhealthCenter\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\logo3WideTile.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\Kris\source\repos\GithubUTPhealthCare\UTPhealthCenter\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\logo3WideTile.scale-100.png">
       <PackagePath>logo3WideTile.scale-100.png</PackagePath>
-      <Modified>2024-09-18T22:16:19.160</Modified>
+      <Modified>2024-09-23T02:48:16.059</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Kris\source\repos\proyectiyo\UTPhealthCenter\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\logo3WideTile.scale-125.png">
+    <AppxPackagedFile Include="C:\Users\Kris\source\repos\GithubUTPhealthCare\UTPhealthCenter\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\logo3WideTile.scale-125.png">
       <PackagePath>logo3WideTile.scale-125.png</PackagePath>
-      <Modified>2024-09-18T22:16:19.160</Modified>
+      <Modified>2024-09-23T02:48:16.059</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Kris\source\repos\proyectiyo\UTPhealthCenter\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\logo3WideTile.scale-150.png">
+    <AppxPackagedFile Include="C:\Users\Kris\source\repos\GithubUTPhealthCare\UTPhealthCenter\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\logo3WideTile.scale-150.png">
       <PackagePath>logo3WideTile.scale-150.png</PackagePath>
-      <Modified>2024-09-18T22:16:19.160</Modified>
+      <Modified>2024-09-23T02:48:16.059</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Kris\source\repos\proyectiyo\UTPhealthCenter\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\logo3WideTile.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\Kris\source\repos\GithubUTPhealthCare\UTPhealthCenter\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\logo3WideTile.scale-200.png">
       <PackagePath>logo3WideTile.scale-200.png</PackagePath>
-      <Modified>2024-09-18T22:16:19.160</Modified>
+      <Modified>2024-09-23T02:48:16.058</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Kris\source\repos\proyectiyo\UTPhealthCenter\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\logo3WideTile.scale-400.png">
+    <AppxPackagedFile Include="C:\Users\Kris\source\repos\GithubUTPhealthCare\UTPhealthCenter\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\logo3WideTile.scale-400.png">
       <PackagePath>logo3WideTile.scale-400.png</PackagePath>
-      <Modified>2024-09-18T22:16:19.151</Modified>
+      <Modified>2024-09-23T02:48:16.058</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Kris\source\repos\proyectiyo\UTPhealthCenter\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\micrologo.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\Kris\source\repos\GithubUTPhealthCare\UTPhealthCenter\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\micrologo.scale-100.png">
       <PackagePath>micrologo.scale-100.png</PackagePath>
-      <Modified>2024-09-18T22:16:19.163</Modified>
+      <Modified>2024-09-23T02:48:16.065</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Kris\source\repos\proyectiyo\UTPhealthCenter\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\perfil.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\Kris\source\repos\GithubUTPhealthCare\UTPhealthCenter\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\perfil.scale-100.png">
       <PackagePath>perfil.scale-100.png</PackagePath>
-      <Modified>2024-09-18T22:16:19.163</Modified>
+      <Modified>2024-09-23T02:48:16.057</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Kris\source\repos\proyectiyo\UTPhealthCenter\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\perfilverde.scale-100.png">
-      <PackagePath>perfilverde.scale-100.png</PackagePath>
-      <Modified>2024-09-18T22:16:19.163</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Kris\source\repos\proyectiyo\UTPhealthCenter\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\pesoytalla.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\Kris\source\repos\GithubUTPhealthCare\UTPhealthCenter\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\pesoytalla.scale-100.png">
       <PackagePath>pesoytalla.scale-100.png</PackagePath>
-      <Modified>2024-09-18T22:16:19.151</Modified>
+      <Modified>2024-09-23T02:48:16.065</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Kris\source\repos\proyectiyo\UTPhealthCenter\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\presion.scale-100.png">
-      <PackagePath>presion.scale-100.png</PackagePath>
-      <Modified>2024-09-18T22:16:19.163</Modified>
+    <AppxPackagedFile Include="C:\Users\Kris\source\repos\GithubUTPhealthCare\UTPhealthCenter\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\pulso.scale-100.png">
+      <PackagePath>pulso.scale-100.png</PackagePath>
+      <Modified>2024-09-23T02:48:16.065</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Kris\source\repos\proyectiyo\UTPhealthCenter\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\receta.scale-100.png">
-      <PackagePath>receta.scale-100.png</PackagePath>
-      <Modified>2024-09-18T22:16:19.151</Modified>
+    <AppxPackagedFile Include="C:\Users\Kris\source\repos\GithubUTPhealthCare\UTPhealthCenter\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\receta2.scale-100.png">
+      <PackagePath>receta2.scale-100.png</PackagePath>
+      <Modified>2024-09-23T02:48:16.057</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Kris\source\repos\proyectiyo\UTPhealthCenter\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\HealthCare.deps.json">
+    <AppxPackagedFile Include="C:\Users\Kris\source\repos\GithubUTPhealthCare\UTPhealthCenter\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\HealthCare.deps.json">
       <PackagePath>HealthCare.deps.json</PackagePath>
-      <Modified>2024-09-18T22:18:45.595</Modified>
+      <Modified>2024-09-23T03:13:54.415</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Kris\.nuget\packages\microsoft.windows.sdk.net.ref\10.0.19041.34\lib\net6.0\Microsoft.Windows.SDK.NET.dll">
       <PackagePath>Microsoft.Windows.SDK.NET.dll</PackagePath>

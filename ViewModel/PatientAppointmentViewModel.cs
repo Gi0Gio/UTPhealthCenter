@@ -1,8 +1,7 @@
-﻿using System.ComponentModel;
+﻿using System.Collections.ObjectModel;
+using System.ComponentModel;
 using System.Text;
 using System.Text.Json;
-using System.Collections.ObjectModel;
-using HealthCare.Models;
 
 namespace HealthCare.ViewModel
 {
@@ -86,7 +85,7 @@ namespace HealthCare.ViewModel
                 Console.WriteLine(appointments);
             }
 
-            
+
         }
 
         public async Task SaveAppointment()
@@ -113,7 +112,7 @@ namespace HealthCare.ViewModel
                 else
                 {
                     await Application.Current.MainPage.DisplayAlert("Error", "Failed to save appointment", "OK");
-                    
+
                 }
             }
         }

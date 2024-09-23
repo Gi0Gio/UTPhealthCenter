@@ -6,6 +6,6 @@
         public int patientId { get; set; }
         public DateTime AppointmentDate { get; set; }
         public string description { get; set; }
-        public object patients { get; set; }    
+        public object patients { get; set; }
     }
 }
