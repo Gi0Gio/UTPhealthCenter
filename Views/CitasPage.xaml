@@ -8,7 +8,7 @@
     <ContentPage.BindingContext>
         <vm:PatientAppointmentViewModel />
     </ContentPage.BindingContext>
-
+    <ScrollView>
     <VerticalStackLayout Padding="10">
 
         <!-- Botones de navegación -->
@@ -27,31 +27,14 @@
                         <Frame BackgroundColor="#E3F2FD" CornerRadius="10" Padding="10">
                             <HorizontalStackLayout>
                                 <VerticalStackLayout>
-                                    <Label Text="{Binding patientId}" FontSize="18" TextColor="#000" />
+                                        <Label Text="{Binding patientId}" FontSize="18" TextColor="#000" />
+                                        <Label Text="{Binding doctorId}" FontSize="18" TextColor="#000" />
                                     <Label Text="{Binding description}" FontSize="16" TextColor="#000"/>
                                     <Label Text="{Binding AppointmentDate}" FontSize="16" TextColor="#000"/>
                                 </VerticalStackLayout>
-                                <Button Text="✖" BackgroundColor="#E53935" TextColor="White" CornerRadius="10" Command="{Binding BindingContext.DeleteAppointmentCommand, Source={x:Reference CitasPage}}" CommandParameter="{Binding}" />
-                            </HorizontalStackLayout>
-                        </Frame>
-                    </DataTemplate>
-                </CollectionView.ItemTemplate>
-            </CollectionView>
-        </VerticalStackLayout>
-
-        <!-- Citas Programadas -->
-        <VerticalStackLayout x:Name="ScheduledCitasSection" IsVisible="False" Padding="20">
-            <Label Text="Citas Programadas" FontSize="24" FontAttributes="Bold" />
-            <CollectionView ItemsSource="{Binding ScheduledAppointments}">
-                <CollectionView.ItemTemplate>
-                    <DataTemplate>
-                        <Frame BackgroundColor="#E3F2FD" CornerRadius="10" Padding="10">
-                            <HorizontalStackLayout>
-                                <VerticalStackLayout>
-                                    <Label Text="{Binding patientId}" FontSize="18" />
-                                    <Label Text="{Binding description}" FontSize="16" />
-                                </VerticalStackLayout>
-                                <Button Text="✖" BackgroundColor="#E53935" TextColor="White" CornerRadius="10" Clicked="OnDeleteAppointment" CommandParameter="{Binding}" />
+                                <Button Text="✖" BackgroundColor="#E53935" TextColor="White" CornerRadius="10" 
+                                        Command="{Binding BindingContext.DeleteAppointmentCommand, Source={x:Reference CitasPage}}"
+                                        CommandParameter="{Binding}" />
                             </HorizontalStackLayout>
                         </Frame>
                     </DataTemplate>
@@ -63,18 +46,26 @@
         <VerticalStackLayout x:Name="AppointmentFormSection" IsVisible="False" Padding="20">
             <Label Text="Crear Cita" FontSize="24" FontAttributes="Bold" TextColor="Black" />
 
-            <!-- Campo Patient ID -->
-            <Entry Placeholder="ID del Paciente" Text="{Binding NewAppointment.patientId}" TextColor="Black" />
+            <!-- Seleccionar paciente-->
+            <Picker Title="Seleccione un paciente" ItemsSource="{Binding Patients}" ItemDisplayBinding="{Binding name}" SelectedItem="{Binding NewAppointment.patientId}" /> 
+            <Entry Placeholder="Descripción" Text="{Binding NewAppointment.patientId}" TextColor="Black" />
+            <Entry Placeholder="Descripción" Text="{Binding NewAppointment.doctorId}" TextColor="Black" />
 
-            <!-- Campo Appointment Date -->
+
+                <!-- Seleccionar fecha de cita -->
             <DatePicker Date="{Binding NewAppointment.AppointmentDate}" TextColor="Black" />
 
             <!-- Campo Descripción -->
             <Entry Placeholder="Descripción" Text="{Binding NewAppointment.description}" TextColor="Black" />
 
+            <!-- Seleccionar tipo de cita -->
+            <Picker Title="Seleccione tipo de cita" ItemsSource="{Binding AppointmentTypes}" SelectedItem="{Binding NewAppointment.type}" />
+            
+
             <!-- Botón para Guardar -->
-            <Button Text="Guardar Cita" Clicked="OnSaveAppointment" Command="{Binding SaveAppointmentCommand}" TextColor="White" BackgroundColor="#014671"/>
+            <Button Text="Guardar Cita" Clicked="OnSaveAppointment" TextColor="White" BackgroundColor="#014671"/>
         </VerticalStackLayout>
 
     </VerticalStackLayout>
+    </ScrollView>
 </ContentPage>
