@@ -1312,7 +1312,6 @@ C:\Users\Kris\source\repos\GithubUTPhealthCare\UTPhealthCenter\obj\Debug\net8.0-
 C:\Users\Kris\source\repos\GithubUTPhealthCare\UTPhealthCenter\obj\Debug\net8.0-ios\iossimulator-x64\resizetizer\r\Resources\buenaconsulta.png
 C:\Users\Kris\source\repos\GithubUTPhealthCare\UTPhealthCenter\obj\Debug\net8.0-ios\iossimulator-x64\resizetizer\r\Resources\calendarioicono.png
 C:\Users\Kris\source\repos\GithubUTPhealthCare\UTPhealthCenter\obj\Debug\net8.0-ios\iossimulator-x64\resizetizer\r\Resources\perfil.png
-C:\Users\Kris\source\repos\GithubUTPhealthCare\UTPhealthCenter\obj\Debug\net8.0-ios\iossimulator-x64\resizetizer\r\Resources\healthcare.png
 C:\Users\Kris\source\repos\GithubUTPhealthCare\UTPhealthCenter\obj\Debug\net8.0-ios\iossimulator-x64\resizetizer\r\Assets.xcassets\logo3.appiconset\logo3ItunesArtwork.png
 C:\Users\Kris\source\repos\GithubUTPhealthCare\UTPhealthCenter\obj\Debug\net8.0-ios\iossimulator-x64\resizetizer\r\Assets.xcassets\logo3.appiconset\logo383.5x83.5@2x.png
 C:\Users\Kris\source\repos\GithubUTPhealthCare\UTPhealthCenter\obj\Debug\net8.0-ios\iossimulator-x64\resizetizer\r\Assets.xcassets\logo3.appiconset\logo376x76@2x.png
@@ -1325,9 +1324,6 @@ C:\Users\Kris\source\repos\GithubUTPhealthCare\UTPhealthCenter\obj\Debug\net8.0-
 C:\Users\Kris\source\repos\GithubUTPhealthCare\UTPhealthCenter\obj\Debug\net8.0-ios\iossimulator-x64\resizetizer\r\Assets.xcassets\logo3.appiconset\logo320x20@3x.png
 C:\Users\Kris\source\repos\GithubUTPhealthCare\UTPhealthCenter\obj\Debug\net8.0-ios\iossimulator-x64\resizetizer\r\Assets.xcassets\logo3.appiconset\logo320x20@2x.png
 C:\Users\Kris\source\repos\GithubUTPhealthCare\UTPhealthCenter\obj\Debug\net8.0-ios\iossimulator-x64\resizetizer\r\Assets.xcassets\logo3.appiconset\Contents.json
-C:\Users\Kris\source\repos\GithubUTPhealthCare\UTPhealthCenter\obj\Debug\net8.0-ios\iossimulator-x64\resizetizer\r\dotnet_bot@3x.png
-C:\Users\Kris\source\repos\GithubUTPhealthCare\UTPhealthCenter\obj\Debug\net8.0-ios\iossimulator-x64\resizetizer\r\dotnet_bot@2x.png
-C:\Users\Kris\source\repos\GithubUTPhealthCare\UTPhealthCenter\obj\Debug\net8.0-ios\iossimulator-x64\resizetizer\r\dotnet_bot.png
 C:\Users\Kris\source\repos\GithubUTPhealthCare\UTPhealthCenter\obj\Debug\net8.0-ios\iossimulator-x64\mauiimage.stamp
 C:\Users\Kris\source\repos\GithubUTPhealthCare\UTPhealthCenter\obj\Debug\net8.0-ios\iossimulator-x64\mauiimage.outputs
 C:\Users\Kris\source\repos\GithubUTPhealthCare\UTPhealthCenter\obj\Debug\net8.0-ios\iossimulator-x64\mauifont.stamp
@@ -1700,3 +1696,6 @@ C:\Users\Gio\Desktop\UTPhealthCenter\obj\Debug\net8.0-ios\iossimulator-x64\refin
 C:\Users\Gio\Desktop\UTPhealthCenter\obj\Debug\net8.0-ios\iossimulator-x64\HealthCare.pdb
 C:\Users\Gio\Desktop\UTPhealthCenter\obj\Debug\net8.0-ios\iossimulator-x64\HealthCare.genruntimeconfig.cache
 C:\Users\Gio\Desktop\UTPhealthCenter\obj\Debug\net8.0-ios\iossimulator-x64\ref\HealthCare.dll
+C:\Users\Kris\source\repos\GithubUTPhealthCare\UTPhealthCenter\obj\Debug\net8.0-ios\iossimulator-x64\resizetizer\r\Resources\hamburger.png
+C:\Users\Kris\source\repos\GithubUTPhealthCare\UTPhealthCenter\obj\Debug\net8.0-ios\iossimulator-x64\resizetizer\r\Resources\logo5.png
+C:\Users\Kris\source\repos\GithubUTPhealthCare\UTPhealthCenter\obj\Debug\net8.0-ios\iossimulator-x64\resizetizer\r\Resources\fondete.jpeg

@@ -8,7 +8,7 @@
     <ContentPage.BindingContext>
         <vm:PatientAppointmentViewModel />
     </ContentPage.BindingContext>
-    <ScrollView>
+  <ScrollView>
     <VerticalStackLayout Padding="10">
 
         <!-- Botones de navegación -->
@@ -67,5 +67,5 @@
         </VerticalStackLayout>
 
     </VerticalStackLayout>
-    </ScrollView>
+  </ScrollView>
 </ContentPage>

@@ -1,17 +1,9 @@
-namespace HealthCare.Components
-{
-    public partial class SideMenu : FlyoutPage
-    {
-        public SideMenu()
-        {
-            InitializeComponent();
-        }
+namespace HealthCare.Components;
 
-        // Evento para abrir el menú lateral
-        private void OpenMenu(object sender, EventArgs e)
-        {
-            IsPresented = !IsPresented;
-        }
+public partial class SideMenu : ContentView
+{
+    public SideMenu()
+    {
+        InitializeComponent();
     }
 }
-

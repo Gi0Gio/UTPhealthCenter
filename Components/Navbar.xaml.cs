@@ -15,7 +15,7 @@ namespace HealthCare.Components
         }
         private async void ServicePage(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new ServicesPage()); 
+            await Navigation.PushAsync(new ServicesPage());
         }
 
     }

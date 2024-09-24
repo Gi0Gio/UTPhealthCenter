@@ -1,47 +1,62 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<FlyoutPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+<ContentView xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="HealthCare.Components.SideMenu">
 
-    <!-- Menu lateral -->
-    <FlyoutPage.Flyout>
-        <ContentPage Title="Menú">
-            <VerticalStackLayout Spacing="20" Padding="10">
-                <Button Text="INICIO" FontSize="18" />
-                <Button Text="SERVICIOS" FontSize="18" />
-                <Button Text="CITAS" FontSize="18" />
-                <Button Text="REGISTROS" FontSize="18" />
-            </VerticalStackLayout>
-        </ContentPage>
-    </FlyoutPage.Flyout>
+    <Frame BackgroundColor="#F5F5F5" 
+           CornerRadius="15"
+           HasShadow="True"
+           Padding="10"
+           Margin="0,5">
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="Auto"/>
+            </Grid.ColumnDefinitions>
 
-    <!-- Contenido principal -->
-    <FlyoutPage.Detail>
-        <NavigationPage>
-            <x:Arguments>
-                <ContentPage>
-                    <Grid Padding="10,5" VerticalOptions="Start" HorizontalOptions="FillAndExpand">
-                        <HorizontalStackLayout HorizontalOptions="Start" VerticalOptions="Center">
-                            <ImageButton Source="hamburgericon.png" HeightRequest="30" WidthRequest="30" Clicked="OpenMenu"/>
-                        </HorizontalStackLayout>
+            <!-- Botón Hamburguesa -->
+            <ImageButton Grid.Column="0"
+                         Source="hamburger.png"
+                         BackgroundColor="Transparent"
+                         HeightRequest="40"
+                         WidthRequest="40"
+                         HorizontalOptions="Start"
+                         VerticalOptions="Center" />
 
-                        <!-- Título del menú -->
-                        <Label Text="UTP Health Care" 
-                               FontSize="20" 
-                               FontAttributes="Bold"
-                               HorizontalOptions="Center"
-                               VerticalOptions="Center"
-                               TextColor="Black"/>
+            <!-- Logo en el centro -->
+            <Frame Grid.Column="1"
+                   BackgroundColor="#F5F5F5"
+                   CornerRadius="75"
+                   HeightRequest="75"
+                   WidthRequest="75"
+                   BorderColor="#F5F5F5"
+                   HorizontalOptions="Center" 
+                   VerticalOptions="Center"
+                   Padding="0">
+                <Image Source="logo5.png"
+                       Aspect="AspectFit"
+                       HorizontalOptions="Center"
+                       VerticalOptions="Center"/>
+            </Frame>
 
-                        <!-- Íconos de perfil a la derecha -->
-                        <HorizontalStackLayout HorizontalOptions="End" VerticalOptions="Center">
-                            <ImageButton Source="profileicon.png" HeightRequest="30" WidthRequest="30" />
-                        </HorizontalStackLayout>
-                    </Grid>
-                </ContentPage>
-            </x:Arguments>
-        </NavigationPage>
-    </FlyoutPage.Detail>
+            <!-- Perfil con Dropdown -->
+            <Grid Grid.Column="2" HorizontalOptions="End" VerticalOptions="Center">
+                <Image Source="perfil.png"
+                       HeightRequest="50"
+                       WidthRequest="50"
+                       VerticalOptions="Center"
+                       HorizontalOptions="End" />
+                <!-- Ícono de dropdown debajo de la imagen de perfil -->
+                <Image Source="dropdownicon.png"
+                       HeightRequest="20"
+                       WidthRequest="20"
+                       VerticalOptions="Center"
+                       HorizontalOptions="Start"
+                       Margin="0,0,5,0"/>
+            </Grid>
+        </Grid>
+    </Frame>
+</ContentView>
 
-</FlyoutPage>
 

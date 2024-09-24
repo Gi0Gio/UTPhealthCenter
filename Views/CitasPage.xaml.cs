@@ -30,7 +30,7 @@ namespace HealthCare.Views
         private void ShowAppointmentForm(object sender, EventArgs e)
         {
             PendingCitasSection.IsVisible = false;
-           // ScheduledCitasSection.IsVisible = false;
+            // ScheduledCitasSection.IsVisible = false;
             AppointmentFormSection.IsVisible = true;
         }
 

@@ -876,12 +876,6 @@ C:\Users\Kris\source\repos\GithubUTPhealthCare\UTPhealthCenter\obj\Debug\net8.0-
 C:\Users\Kris\source\repos\GithubUTPhealthCare\UTPhealthCenter\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\calendarioicono.scale-100.png
 C:\Users\Kris\source\repos\GithubUTPhealthCare\UTPhealthCenter\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\consulta.scale-100.png
 C:\Users\Kris\source\repos\GithubUTPhealthCare\UTPhealthCenter\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\doctol.scale-100.png
-C:\Users\Kris\source\repos\GithubUTPhealthCare\UTPhealthCenter\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-100.png
-C:\Users\Kris\source\repos\GithubUTPhealthCare\UTPhealthCenter\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-125.png
-C:\Users\Kris\source\repos\GithubUTPhealthCare\UTPhealthCenter\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-150.png
-C:\Users\Kris\source\repos\GithubUTPhealthCare\UTPhealthCenter\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-200.png
-C:\Users\Kris\source\repos\GithubUTPhealthCare\UTPhealthCenter\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-400.png
-C:\Users\Kris\source\repos\GithubUTPhealthCare\UTPhealthCenter\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\healthcare.scale-100.png
 C:\Users\Kris\source\repos\GithubUTPhealthCare\UTPhealthCenter\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\logo2.scale-100.png
 C:\Users\Kris\source\repos\GithubUTPhealthCare\UTPhealthCenter\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\logo3.ico
 C:\Users\Kris\source\repos\GithubUTPhealthCare\UTPhealthCenter\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\logo3LargeTile.scale-100.png
@@ -1163,3 +1157,6 @@ C:\Users\Gio\Desktop\UTPhealthCenter\obj\Debug\net8.0-windows10.0.19041.0\win10-
 C:\Users\Gio\Desktop\UTPhealthCenter\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\qualifiers.txt.intermediate
 C:\Users\Gio\Desktop\UTPhealthCenter\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\MultipleQualifiersPerDimensionFound.txt
 C:\Users\Gio\Desktop\UTPhealthCenter\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\ProjectArchitectures.txt
+C:\Users\Kris\source\repos\GithubUTPhealthCare\UTPhealthCenter\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\hamburger.scale-100.png
+C:\Users\Kris\source\repos\GithubUTPhealthCare\UTPhealthCenter\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\logo5.scale-100.png
+C:\Users\Kris\source\repos\GithubUTPhealthCare\UTPhealthCenter\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\fondete.scale-100.jpeg
