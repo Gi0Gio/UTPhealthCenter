@@ -3,8 +3,21 @@
   "WorkspaceRootPath": "C:\\Users\\Kris\\source\\repos\\GithubUTPhealthCare\\UTPhealthCenter\\",
   "Documents": [
     {
+<<<<<<< HEAD
       "AbsoluteMoniker": "D:0:0:{4F4AABB1-96B0-4368-9E7F-A1D6F1B2DCD4}|HealthCare.csproj|c:\\users\\kris\\source\\repos\\githubutphealthcare\\utphealthcenter\\views\\servicespage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{4F4AABB1-96B0-4368-9E7F-A1D6F1B2DCD4}|HealthCare.csproj|solutionrelative:views\\servicespage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+=======
+      "AbsoluteMoniker": "D:0:0:{4F4AABB1-96B0-4368-9E7F-A1D6F1B2DCD4}|HealthCare.csproj|c:\\users\\gio\\desktop\\utphealthcenter\\views\\citaspage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{4F4AABB1-96B0-4368-9E7F-A1D6F1B2DCD4}|HealthCare.csproj|solutionrelative:views\\citaspage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4F4AABB1-96B0-4368-9E7F-A1D6F1B2DCD4}|HealthCare.csproj|c:\\users\\gio\\desktop\\utphealthcenter\\viewmodel\\patientappointmentviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4F4AABB1-96B0-4368-9E7F-A1D6F1B2DCD4}|HealthCare.csproj|solutionrelative:viewmodel\\patientappointmentviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4F4AABB1-96B0-4368-9E7F-A1D6F1B2DCD4}|HealthCare.csproj|c:\\users\\gio\\desktop\\utphealthcenter\\views\\citaspage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4F4AABB1-96B0-4368-9E7F-A1D6F1B2DCD4}|HealthCare.csproj|solutionrelative:views\\citaspage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+>>>>>>> fc19865d9c15926d229227a0be8d67da5ef76cf6
     }
   ],
   "DocumentGroupContainers": [
@@ -22,6 +35,7 @@
             },
             {
               "$type": "Document",
+<<<<<<< HEAD
               "DocumentIndex": 0,
               "Title": "ServicesPage.xaml",
               "DocumentMoniker": "C:\\Users\\Kris\\source\\repos\\GithubUTPhealthCare\\UTPhealthCenter\\Views\\ServicesPage.xaml",
@@ -29,6 +43,41 @@
               "ToolTip": "C:\\Users\\Kris\\source\\repos\\GithubUTPhealthCare\\UTPhealthCenter\\Views\\ServicesPage.xaml",
               "RelativeToolTip": "Views\\ServicesPage.xaml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+=======
+              "DocumentIndex": 2,
+              "Title": "CitasPage.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Gio\\Desktop\\UTPhealthCenter\\Views\\CitasPage.xaml.cs",
+              "RelativeDocumentMoniker": "Views\\CitasPage.xaml.cs",
+              "ToolTip": "C:\\Users\\Gio\\Desktop\\UTPhealthCenter\\Views\\CitasPage.xaml.cs",
+              "RelativeToolTip": "Views\\CitasPage.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-23T22:15:54.3Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "PatientAppointmentViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\Gio\\Desktop\\UTPhealthCenter\\ViewModel\\PatientAppointmentViewModel.cs",
+              "RelativeDocumentMoniker": "ViewModel\\PatientAppointmentViewModel.cs",
+              "ToolTip": "C:\\Users\\Gio\\Desktop\\UTPhealthCenter\\ViewModel\\PatientAppointmentViewModel.cs",
+              "RelativeToolTip": "ViewModel\\PatientAppointmentViewModel.cs",
+              "ViewState": "AgIAAOcAAAAAAAAAAAAkwAoBAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-23T16:21:07.079Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "CitasPage.xaml",
+              "DocumentMoniker": "C:\\Users\\Gio\\Desktop\\UTPhealthCenter\\Views\\CitasPage.xaml",
+              "RelativeDocumentMoniker": "Views\\CitasPage.xaml",
+              "ToolTip": "C:\\Users\\Gio\\Desktop\\UTPhealthCenter\\Views\\CitasPage.xaml",
+              "RelativeToolTip": "Views\\CitasPage.xaml",
+              "ViewState": "AgIAACEAAAAAAAAAAAAkwEMAAAAIAAAAAAAAAA==",
+>>>>>>> fc19865d9c15926d229227a0be8d67da5ef76cf6
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2024-09-24T15:04:00.257Z",
               "EditorCaption": ""

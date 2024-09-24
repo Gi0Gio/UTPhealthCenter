@@ -9,23 +9,30 @@ namespace HealthCare.ViewModel
     {
         public int id { get; set; }
         public int patientId { get; set; }
+        public string patientName { get; set; }
+        public string doctorName { get; set; }
         public int doctorId { get; set; }
-        public DateTime AppointmentDate { get; set; }
+        public DateTime AppointmentDate { get; set; }   
         public string description { get; set; }
         public string type { get; set; }
 
     }
-
-    public class PatientDto
+    public class DoctorsDto
     {
         public int id { get; set; }
         public string name { get; set; }
         public string lastName { get; set; }
     }
-
+    public class PatientDto
+    {
+        public int id { get; set; }
+        public string name { get; set; }
+        public string lastName { get; set; }
+    }    
     public class PatientAppointmentViewModel : INotifyPropertyChanged
     {
         public event PropertyChangedEventHandler PropertyChanged;
+
 
         // New Appointment
         private AppointmentDto _newAppointment;
@@ -38,6 +45,8 @@ namespace HealthCare.ViewModel
                 OnPropertyChanged(nameof(NewAppointment));
             }
         }
+
+
 
         // Appointments Collections
         private ObservableCollection<AppointmentDto> _pendingAppointments = new ObservableCollection<AppointmentDto>();
@@ -117,12 +126,35 @@ namespace HealthCare.ViewModel
                 {
                     var response = await httpClient.GetStringAsync("https://giowebtestapinstance.azurewebsites.net/api/Appointments");
                     var appointments = JsonSerializer.Deserialize<List<AppointmentDto>>(response);
+                    // 2. Cargar los pacientes desde el API
+                    var patientsResponse = await httpClient.GetStringAsync("https://giowebtestapinstance.azurewebsites.net/api/Patients");
+                    var patients = JsonSerializer.Deserialize<List<PatientDto>>(patientsResponse);
+
+                    var doctorsResponse = await httpClient.GetStringAsync("https://giowebtestapinstance.azurewebsites.net/api/Doctors");
+                    var doctors = JsonSerializer.Deserialize<List<DoctorsDto>>(doctorsResponse);
+
 
                     PendingAppointments.Clear();
                     ScheduledAppointments.Clear();
 
                     foreach (var appointment in appointments)
                     {
+                       
+                        // Encontrar el paciente correspondiente
+                        var patient = patients.FirstOrDefault(p => p.id == appointment.patientId);
+                        var doctor = doctors.FirstOrDefault(d => d.id == appointment.doctorId);
+                        if (patient != null)
+                        {
+                            // Asignar el nombre completo del paciente
+                            appointment.patientName = $"{patient.name} {patient.lastName}";
+                        }
+                        if (doctor != null)
+                        {
+                            // Asignar el nombre completo del paciente
+                            appointment.doctorName = $"{doctor.name} {doctor.lastName}";
+                        }
+
+                        // Clasificar la cita entre pendientes y programadas
                         if (appointment.AppointmentDate >= DateTime.Now)
                         {
                             ScheduledAppointments.Add(appointment);
@@ -196,7 +228,7 @@ namespace HealthCare.ViewModel
             {
                 var appointment = new
                 {
-                    patientId = NewAppointment.patientId,  // Convertir a entero
+                    patientId = NewAppointment.patientId,  // 
                     doctorId = NewAppointment.doctorId,    // Convertir a entero
                     appointmentDate = NewAppointment.AppointmentDate.ToString("yyyy-MM-ddTHH:mm:ss"), // Formato correcto
                     description = NewAppointment.description,
