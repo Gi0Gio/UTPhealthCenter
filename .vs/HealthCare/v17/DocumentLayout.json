@@ -11,8 +11,8 @@
       "RelativeMoniker": "D:0:0:{4F4AABB1-96B0-4368-9E7F-A1D6F1B2DCD4}|HealthCare.csproj|solutionrelative:viewmodel\\patientappointmentviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4F4AABB1-96B0-4368-9E7F-A1D6F1B2DCD4}|HealthCare.csproj|c:\\users\\gio\\desktop\\utphealthcenter\\viewmodel\\studentregisterviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4F4AABB1-96B0-4368-9E7F-A1D6F1B2DCD4}|HealthCare.csproj|solutionrelative:viewmodel\\studentregisterviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4F4AABB1-96B0-4368-9E7F-A1D6F1B2DCD4}|HealthCare.csproj|c:\\users\\gio\\desktop\\utphealthcenter\\views\\citaspage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4F4AABB1-96B0-4368-9E7F-A1D6F1B2DCD4}|HealthCare.csproj|solutionrelative:views\\citaspage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -31,14 +31,14 @@
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "StudentRegisterViewModel.cs",
-              "DocumentMoniker": "C:\\Users\\Gio\\Desktop\\UTPhealthCenter\\ViewModel\\StudentRegisterViewModel.cs",
-              "RelativeDocumentMoniker": "ViewModel\\StudentRegisterViewModel.cs",
-              "ToolTip": "C:\\Users\\Gio\\Desktop\\UTPhealthCenter\\ViewModel\\StudentRegisterViewModel.cs",
-              "RelativeToolTip": "ViewModel\\StudentRegisterViewModel.cs",
-              "ViewState": "AgIAABsAAAAAAAAAAAAYwEAAAAAAAAAAAAAAAA==",
+              "Title": "CitasPage.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Gio\\Desktop\\UTPhealthCenter\\Views\\CitasPage.xaml.cs",
+              "RelativeDocumentMoniker": "Views\\CitasPage.xaml.cs",
+              "ToolTip": "C:\\Users\\Gio\\Desktop\\UTPhealthCenter\\Views\\CitasPage.xaml.cs",
+              "RelativeToolTip": "Views\\CitasPage.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-23T18:56:26.359Z",
+              "WhenOpened": "2024-09-23T22:15:54.3Z",
               "EditorCaption": ""
             },
             {
@@ -49,7 +49,7 @@
               "RelativeDocumentMoniker": "ViewModel\\PatientAppointmentViewModel.cs",
               "ToolTip": "C:\\Users\\Gio\\Desktop\\UTPhealthCenter\\ViewModel\\PatientAppointmentViewModel.cs",
               "RelativeToolTip": "ViewModel\\PatientAppointmentViewModel.cs",
-              "ViewState": "AgIAAMAAAAAAAAAAAAAAAMQAAAANAAAAAAAAAA==",
+              "ViewState": "AgIAAOcAAAAAAAAAAAAkwAoBAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-23T16:21:07.079Z",
               "EditorCaption": ""
@@ -62,7 +62,7 @@
               "RelativeDocumentMoniker": "Views\\CitasPage.xaml",
               "ToolTip": "C:\\Users\\Gio\\Desktop\\UTPhealthCenter\\Views\\CitasPage.xaml",
               "RelativeToolTip": "Views\\CitasPage.xaml",
-              "ViewState": "AgIAABUAAAAAAAAAAAAAwDIAAABrAAAAAAAAAA==",
+              "ViewState": "AgIAACAAAAAAAAAAAAAkwEMAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2024-09-23T16:56:30.755Z",
               "EditorCaption": ""
