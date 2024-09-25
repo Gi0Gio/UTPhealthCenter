@@ -49,5 +49,42 @@ namespace HealthCare.Views
                 await _viewModel.DeleteAppointment(appointment);
             }
         }
+        private void OnFramePointerEntered(object sender, PointerEventArgs e)
+        {
+            var frame = sender as Frame;
+            if (frame != null)
+            {
+                frame.BackgroundColor = Colors.LightGray; // Cambiar color al hacer hover
+            }
+        }
+
+        private void OnFramePointerExited(object sender, PointerEventArgs e)
+        {
+            var frame = sender as Frame;
+            if (frame != null)
+            {
+                frame.BackgroundColor = Color.FromArgb("#E3F2FD"); // Volver al color original
+            }
+        }
+
+        // Cambiar el color del botón al hacer hover
+        private void OnButtonPointerEntered(object sender, PointerEventArgs e)
+        {
+            var button = sender as Button;
+            if (button != null)
+            {
+                button.BackgroundColor = Colors.DarkRed; // Cambiar color del botón al hacer hover
+            }
+        }
+
+        private void OnButtonPointerExited(object sender, PointerEventArgs e)
+        {
+            var button = sender as Button;
+            if (button != null)
+            {
+                button.BackgroundColor = Color.FromArgb("#E53935"); // Volver al color original
+            }
+        }
+
     }
 }

@@ -12,7 +12,7 @@ namespace HealthCare.ViewModel
         public string patientName { get; set; }
         public string doctorName { get; set; }
         public int doctorId { get; set; }
-        public DateTime AppointmentDate { get; set; }   
+        public DateTime AppointmentDate { get; set; }
         public string description { get; set; }
         public string type { get; set; }
 
@@ -28,7 +28,7 @@ namespace HealthCare.ViewModel
         public int id { get; set; }
         public string name { get; set; }
         public string lastName { get; set; }
-    }    
+    }
     public class PatientAppointmentViewModel : INotifyPropertyChanged
     {
         public event PropertyChangedEventHandler PropertyChanged;
@@ -139,7 +139,7 @@ namespace HealthCare.ViewModel
 
                     foreach (var appointment in appointments)
                     {
-                       
+
                         // Encontrar el paciente correspondiente
                         var patient = patients.FirstOrDefault(p => p.id == appointment.patientId);
                         var doctor = doctors.FirstOrDefault(d => d.id == appointment.doctorId);

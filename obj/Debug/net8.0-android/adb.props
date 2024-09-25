@@ -1,6 +1,2 @@
-<<<<<<< HEAD
-AdbTarget=
-=======
-AdbTarget=-s RFCW41MRJHX
->>>>>>> fc19865d9c15926d229227a0be8d67da5ef76cf6
+AdbTarget=-s R58NB1KFFAP
 AdbOptions=
