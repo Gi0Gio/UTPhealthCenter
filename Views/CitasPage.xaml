@@ -20,7 +20,7 @@
                    FontAttributes="Bold,Italic"
                    TextColor="#000" 
                    HorizontalOptions="Center"
-                   FontSize="{OnIdiom Phone=29, Desktop=24}" />
+                   FontSize="{OnIdiom Phone=29, Desktop=35}" />
 
             <!-- Botones de navegación -->
             <OnIdiom x:TypeArguments="Layout">

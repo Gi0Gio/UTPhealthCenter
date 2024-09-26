@@ -2,40 +2,70 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="HealthCare.Views.StudentRegisterPage"
-             BackgroundColor="#FFF">
+             xmlns:components="clr-namespace:HealthCare.Components"
+             BackgroundImageSource="fondete.jpeg"
+             Padding="40">
+
     <ScrollView>
         <VerticalStackLayout Padding="20" Spacing="15">
-            <Label Text="Registro de Estudiantes/Pacientes"
-                   FontSize="35"
-                   FontAttributes="Bold"
-                   TextColor="#014671"
-                   HorizontalOptions="Center" />
 
+            <components:Navbar IsVisible="{OnIdiom Desktop=true, Phone=false, Tablet=false}" />
+            <components:SideMenu IsVisible="{OnIdiom Desktop=false, Phone=true, Tablet=true}" />
+            <!-- Título -->
+            <Label Text="Registro de Estudiantes/Pacientes"
+                   FontFamily="MohaveRegular"
+                   FontSize="{OnIdiom Phone=28, Desktop=35}"
+                   FontAttributes="Bold,Italic"
+                   TextColor="#000"
+                   HorizontalOptions="Center" 
+                   Margin="0,0,0,20"/>
+
+            <!-- Nombre -->
             <Entry Placeholder="Nombre"
                    Text="{Binding Name}"
-                   FontSize="20"
-                   TextColor="#014671" />
+                   FontSize="{OnIdiom Phone=18, Desktop=20}"
+                   TextColor="Black"
+                   FontFamily="MohaveRegular"
+                   BackgroundColor="#E3F2FD"
+                   PlaceholderColor="#014671" />
 
+            <!-- Apellido -->
             <Entry Placeholder="Apellido"
                    Text="{Binding LastName}"
-                   FontSize="20"
-                   TextColor="#014671" />
+                   FontSize="{OnIdiom Phone=18, Desktop=20}"
+                   TextColor="Black"
+                   FontFamily="MohaveRegular"
+                   BackgroundColor="#E3F2FD"
+                   PlaceholderColor="#014671" />
 
+            <!-- DNI -->
             <Entry Placeholder="DNI"
                    Text="{Binding DNI}"
-                   FontSize="18"
-                   TextColor="#014671"/>
+                   FontSize="{OnIdiom Phone=16, Desktop=18}"
+                   TextColor="Black"
+                   FontFamily="MohaveRegular"
+                   BackgroundColor="#E3F2FD"
+                   PlaceholderColor="#014671" />
 
+            <!-- Localización -->
             <Entry Placeholder="Localización"
                    Text="{Binding Location}"
-                   FontSize="20"
-                   TextColor="#014671" />
+                   FontSize="{OnIdiom Phone=18, Desktop=20}"
+                   TextColor="Black"
+                   FontFamily="MohaveRegular"
+                   BackgroundColor="#E3F2FD"
+                   PlaceholderColor="#014671" />
 
+            <!-- Botón de Registrar -->
             <Button Text="Registrar Estudiante"
                     BackgroundColor="#014671"
-                    TextColor="#FFFFFF"
-                    FontSize="20"
-                    Clicked="OnRegisterClicked" />
+                    TextColor="White"
+                    CornerRadius="10"
+                    FontFamily="MohaveRegular"
+                    FontSize="{OnIdiom Phone=18, Desktop=20}"
+                    HeightRequest="50"
+                    Clicked="OnRegisterClicked"
+                    Margin="0,20,0,0"/>
         </VerticalStackLayout>
     </ScrollView>
 </ContentPage>
