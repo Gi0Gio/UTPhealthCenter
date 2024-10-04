@@ -13,7 +13,7 @@
         <Frame BackgroundColor="#fff"
                CornerRadius="15"
                HasShadow="True"
-               WidthRequest="300"
+               WidthRequest="500"
                AbsoluteLayout.LayoutBounds="0.5,0.5,-1,-1"
                AbsoluteLayout.LayoutFlags="PositionProportional">
 
@@ -25,25 +25,34 @@
                 
                 <Entry Placeholder="Cédula o correo" 
                        BackgroundColor="#F5F5F5"
+                       FontFamily="MohaveRegular"
+                       FontSize="20"
                        TextColor="#000"
                        Margin="0,5"/>
 
                 <Entry Placeholder="Contraseña" 
                        IsPassword="True"
+                       FontFamily="MohaveRegular"
                        BackgroundColor="#F5F5F5"
+                       FontSize="20"
                        TextColor="#000"
                        Margin="0,5"/>
                 
                 <!-- Botones -->
                 <StackLayout Orientation="Vertical" HorizontalOptions="Center">
                     <Button Text="Login" 
+                            FontFamily="MohaveRegular"     
+                            FontSize="20"
                             BackgroundColor="#4FB9FB" 
                             TextColor="White"
                             CornerRadius="10"
                             Margin="5"
+                            Clicked="ToServices"
                             WidthRequest="120"/>
                     <Button Text="Register" 
                             BackgroundColor="#FFFFFF"
+                            FontFamily="MohaveRegular"
+                            FontSize="20"
                             TextColor="#014671"
                             BorderColor="#014671"
                             BorderWidth="1"

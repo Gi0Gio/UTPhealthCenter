@@ -1,4 +1,3 @@
-C:\Users\Kris\source\repos\GithubUTPhealthCare\UTPhealthCenter\obj\Debug\net8.0-ios\iossimulator-x64\build-signature\signature
 C:\Users\Kris\source\repos\GithubUTPhealthCare\UTPhealthCenter\obj\Debug\net8.0-ios\iossimulator-x64\mauiimage.inputs
 C:\Users\Kris\source\repos\GithubUTPhealthCare\UTPhealthCenter\obj\Debug\net8.0-ios\iossimulator-x64\mauifont.inputs
 C:\Users\Kris\source\repos\GithubUTPhealthCare\UTPhealthCenter\obj\Debug\net8.0-ios\iossimulator-x64\mauisplash.inputs

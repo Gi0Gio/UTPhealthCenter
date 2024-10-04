@@ -10,4 +10,8 @@ public partial class WelcomePage : ContentPage
     {
         await Navigation.PushAsync(new ServicesPage());
     }
+    private async void ParaLogin(object sender, EventArgs e)
+    {
+        await Navigation.PushAsync(new LoginPage());
+    }
 }

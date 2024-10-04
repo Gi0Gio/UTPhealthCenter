@@ -2,48 +2,86 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="HealthCare.Views.AdminRegisterPage"
-             BackgroundColor="#FFF">
+             BackgroundImageSource="backgroundlogin.png">
 
-    <ScrollView>
-        <VerticalStackLayout Padding="20" Spacing="15">
-            <Label Text="Registro de Administrador"
-                   FontSize="35"
-                   FontFamily="MohaveRegular"
-                   FontAttributes="Bold"
-                   TextColor="#014671"
+    <AbsoluteLayout>
+        <Image Source="backgroundlogin.png"
+           Aspect="AspectFill"
+           AbsoluteLayout.LayoutBounds="0,0,1,1"
+           AbsoluteLayout.LayoutFlags="All"/>
+
+        <!-- Formulario de Inicio de sesión :) -->
+        <Frame BackgroundColor="#fff"
+           CornerRadius="15"
+           HasShadow="True"
+           WidthRequest="500"
+           AbsoluteLayout.LayoutBounds="0.5,0.5,-1,-1"
+           AbsoluteLayout.LayoutFlags="PositionProportional">
+
+            <VerticalStackLayout Padding="20" Spacing="10">
+                <Image Source="logo2.png"
+                   WidthRequest="100"
+                   HeightRequest="100"
                    HorizontalOptions="Center"/>
 
-            <Entry Placeholder="Nombre"
-                   x:Name="AdminName"
-                   FontSize="20"
+                <Entry Placeholder="Nombre" 
+                   BackgroundColor="#F5F5F5"
                    FontFamily="MohaveRegular"
-                   TextColor="#014671"/>
-
-            <Entry Placeholder="Apellido"
-                   x:Name="AdminLastName"
                    FontSize="20"
-FontFamily="MohaveRegular"
-TextColor="#014671"/>
+                   TextColor="#000"
+                   Margin="0,5"/>
 
-            <Entry Placeholder="Correo Electrónico"
-                   x:Name="AdminEmail"
+                <Entry Placeholder="Apellido"
+                       BackgroundColor="#F5F5F5"
+                       FontFamily="MohaveRegular"
+                       FontSize="20"
+                       TextColor="#000"
+                       Margin="0,5"
+                       />
+                <Entry Placeholder="Cédula(ID)"
+                       Keyboard="Numeric"
+                       BackgroundColor="#F5F5F5"
+                       FontFamily="MohaveRegular"
+                       FontSize="20"
+                       TextColor="#000"
+                       Margin="0,5"
+                       />
+
+                <Entry Placeholder="Contraseña" 
+                   IsPassword="True"
+                   FontFamily="MohaveRegular"
+                   BackgroundColor="#F5F5F5"
                    FontSize="20"
-FontFamily="MohaveRegular"
-TextColor="#014671"
-                   Keyboard="Email"/>
+                   TextColor="#000"
+                   Margin="0,5"/>
 
-            <Entry Placeholder="Contraseña"
-                   x:Name="AdminPassword"
-                  FontSize="20"
-FontFamily="MohaveRegular"
-TextColor="#014671"
-                   IsPassword="True"/>
+                <!-- Botones -->
+                <StackLayout Orientation="Vertical" HorizontalOptions="Center">
+                    <Button Text="Registrar Usuario" 
+                            MinimumWidthRequest="200"
+                        FontFamily="MohaveRegular"     
+                        FontSize="20"
+                        BackgroundColor="#4FB9FB" 
+                        TextColor="White"
+                        CornerRadius="10"
+                        Margin="5"
+                        Clicked="ToServices"
+                        WidthRequest="120"/>
+                    <Button Text="Tengo una cuenta" 
+                        MinimumWidthRequest="200"
+                        BackgroundColor="#FFFFFF"
+                        FontFamily="MohaveRegular"
+                        FontSize="20"
+                        TextColor="#014671"
+                        BorderColor="#014671"
+                        BorderWidth="1"
+                        CornerRadius="10"
+                        Margin="5"
+                        WidthRequest="130"
+                        Clicked="ToLogin"/>
+                </StackLayout>
+            </VerticalStackLayout>
+        </Frame>
+    </AbsoluteLayout>
 
-            <Button Text="Registrarse"
-                    BackgroundColor="#014671"
-                    TextColor="#FFFFFF"
-                    FontFamily="MohaveRegular"
-                    FontSize="20"/>
-        </VerticalStackLayout>
-    </ScrollView>
 </ContentPage>
