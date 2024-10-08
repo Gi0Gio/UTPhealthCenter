@@ -13,6 +13,10 @@ public partial class ServicesPage : ContentPage
         await Navigation.PushAsync(new LoginPage());
     }
 
+    private async void Recetas(object sender, EventArgs e)
+    {
+        await Navigation.PushAsync(new MedicinesPage());   
+    }
     private async void Citas(object sender, EventArgs e)
     {
         await Navigation.PushAsync(new CitasPage());

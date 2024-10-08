@@ -328,3 +328,4 @@ C:\Users\Kris\source\repos\GithubUTPhealthCare\UTPhealthCenter\obj\Debug\net8.0-
 C:\Users\Kris\source\repos\GithubUTPhealthCare\UTPhealthCenter\obj\Debug\net8.0-ios\iossimulator-x64\HealthCare.pdb
 C:\Users\Kris\source\repos\GithubUTPhealthCare\UTPhealthCenter\obj\Debug\net8.0-ios\iossimulator-x64\HealthCare.genruntimeconfig.cache
 C:\Users\Kris\source\repos\GithubUTPhealthCare\UTPhealthCenter\obj\Debug\net8.0-ios\iossimulator-x64\ref\HealthCare.dll
+C:\Users\Kris\source\repos\GithubUTPhealthCare\UTPhealthCenter\obj\Debug\net8.0-ios\iossimulator-x64\build-signature\signature
