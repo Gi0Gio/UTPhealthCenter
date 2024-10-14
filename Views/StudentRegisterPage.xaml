@@ -4,7 +4,9 @@
              x:Class="HealthCare.Views.StudentRegisterPage"
              xmlns:components="clr-namespace:HealthCare.Components"
              BackgroundImageSource="fondete.jpeg"
-             Padding="40">
+             Padding="40"
+             NavigationPage.HasBackButton="False"
+             NavigationPage.HasNavigationBar="False">
 
     <ScrollView>
         <VerticalStackLayout Padding="20" Spacing="15">

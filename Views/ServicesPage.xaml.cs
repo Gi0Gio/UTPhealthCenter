@@ -24,7 +24,7 @@ public partial class ServicesPage : ContentPage
 
     private async void Profile(object sender, EventArgs e)
     {
-        await Navigation.PushAsync(new ProfilePage());
+        await Navigation.PushAsync(new ProfileSelectionPage());
     }
 
     private async void StudentRegister(object sender, EventArgs e)

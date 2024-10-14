@@ -3,7 +3,9 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:components="clr-namespace:HealthCare.Components"
              x:Class="HealthCare.Views.MedicinesPage"
-             BackgroundImageSource="fondete.jpeg">
+             BackgroundImageSource="fondete.jpeg"
+             NavigationPage.HasBackButton="False"
+             NavigationPage.HasNavigationBar="False">
     <ScrollView>
         <VerticalStackLayout Padding="10" Spacing="10">
             <!-- Navbar and SideMenu (if needed for navigation) -->

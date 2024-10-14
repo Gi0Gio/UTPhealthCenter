@@ -84,6 +84,12 @@ build_metadata.AdditionalFiles.ManifestResourceName = HealthCare.Views.ProfilePa
 build_metadata.AdditionalFiles.TargetPath = Views\ProfilePage.xaml
 build_metadata.AdditionalFiles.RelativePath = Views\ProfilePage.xaml
 
+[C:/Users/Kris/source/repos/GithubUTPhealthCare/UTPhealthCenter/Views/ProfileSelectionPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = HealthCare.Views.ProfileSelectionPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\ProfileSelectionPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\ProfileSelectionPage.xaml
+
 [C:/Users/Kris/source/repos/GithubUTPhealthCare/UTPhealthCenter/Views/ServicesPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = HealthCare.Views.ServicesPage.xaml

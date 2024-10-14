@@ -1,7 +1,10 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="HealthCare.Views.WelcomePage"
-             BackgroundColor="{OnIdiom Phone=#fff, Desktop=#a1c5c5}">
+             BackgroundColor="{OnIdiom Phone=#fff, Desktop=#a1c5c5}"
+             NavigationPage.HasBackButton="False"
+             NavigationPage.HasNavigationBar="False">
+    
 
     <ScrollView>
         <VerticalStackLayout VerticalOptions="{OnIdiom Phone=Center, Desktop=FillAndExpand}" HorizontalOptions="Center" Padding="60" Spacing="25">

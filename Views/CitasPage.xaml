@@ -4,7 +4,9 @@
              xmlns:vm="clr-namespace:HealthCare.ViewModel"
              xmlns:components="clr-namespace:HealthCare.Components"
              x:Class="HealthCare.Views.CitasPage"
-             BackgroundImageSource="fondete.jpeg">
+             BackgroundImageSource="fondete.jpeg"
+             NavigationPage.HasBackButton="False"
+             NavigationPage.HasNavigationBar="False">
 
     <ContentPage.BindingContext>
         <vm:PatientAppointmentViewModel />

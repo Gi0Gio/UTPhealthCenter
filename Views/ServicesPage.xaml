@@ -4,7 +4,10 @@
              xmlns:components="clr-namespace:HealthCare.Components"
              x:Class="HealthCare.Views.ServicesPage"
              BackgroundImageSource="fondete.jpeg"
-             BackgroundColor="{OnIdiom Phone=#fff, Desktop=#fff}">
+             BackgroundColor="{OnIdiom Phone=#fff, Desktop=#fff}"
+             NavigationPage.HasBackButton="False"
+             NavigationPage.HasNavigationBar="False">
+   
 
     <ScrollView>
         <!-- Uso de OnIdiom para diferenciar diseño móvil y escritorio -->

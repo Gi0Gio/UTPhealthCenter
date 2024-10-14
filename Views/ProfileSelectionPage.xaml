@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:components="clr-namespace:HealthCare.Components"
+             x:Class="HealthCare.Views.ProfileSelectionPage"
+             BackgroundImageSource="fondete.jpeg"
+             NavigationPage.HasBackButton="False"
+             NavigationPage.HasNavigationBar="False"
+             Title="ProfileSelectionPage">
+    <StackLayout Padding="10" Spacing="20">
+    <components:Navbar IsVisible="{OnIdiom Desktop=true, Phone=false, Tablet=false}" />
+        <!-- Título centrado -->
+        <Label Text="Selección de Usuario" 
+               FontSize="Large" 
+               HorizontalOptions="Center"
+               TextColor="White"
+               Margin="20,10"/>
+
+        <!-- ScrollView para la selección de perfiles -->
+        <ScrollView Orientation="Horizontal">
+            <StackLayout Orientation="Horizontal" Spacing="200" HorizontalOptions="CenterAndExpand">
+
+                <!-- Primer perfil -->
+                <StackLayout HorizontalOptions="Center" VerticalOptions="Center">
+                    <ImageButton Source="perfil.png"
+                                 Command="{Binding SelectProfileCommand}"
+                                 CommandParameter="Dr Shean"
+                                 BackgroundColor="Transparent"
+                                 WidthRequest="100" HeightRequest="100"/>
+                    <Label Text="Dr Shean"
+                           HorizontalTextAlignment="Center"
+                           TextColor="White"/>
+                </StackLayout>
+
+                <!-- Segundo perfil -->
+                <StackLayout HorizontalOptions="Center" VerticalOptions="Center">
+                    <ImageButton Source="perfil.png"
+                                 Command="{Binding SelectProfileCommand}"
+                                 CommandParameter="Diego Kant"
+                                 BackgroundColor="Transparent"
+                                 WidthRequest="100" HeightRequest="100"/>
+                    <Label Text="Diego Kant"
+                           HorizontalTextAlignment="Center"
+                           TextColor="White"/>
+                </StackLayout>
+
+                <!-- Tercer perfil -->
+                <StackLayout HorizontalOptions="Center" VerticalOptions="Center">
+                    <ImageButton Source="perfil.png"
+                                 Command="{Binding SelectProfileCommand}"
+                                 CommandParameter="Kristopher Castillo"
+                                 BackgroundColor="Transparent"
+                                 WidthRequest="100" HeightRequest="100"/>
+                    <Label Text="Kristopher Castillo"
+                           HorizontalTextAlignment="Center"
+                           TextColor="White"/>
+                </StackLayout>
+
+                <!-- Cuarto perfil -->
+                <StackLayout HorizontalOptions="Center" VerticalOptions="Center">
+                    <ImageButton Source="perfil.png"
+                                 Command="{Binding SelectProfileCommand}"
+                                 CommandParameter="Giovanny Jovane"
+                                 BackgroundColor="Transparent"
+                                 WidthRequest="100" HeightRequest="100"/>
+                    <Label Text="Giovanny Jovane"
+                           HorizontalTextAlignment="Center"
+                           TextColor="White"/>
+                </StackLayout>
+
+            </StackLayout>
+        </ScrollView>
+
+        <!-- Botón de selección centrado -->
+        <Button Text="Seleccionar"
+                Margin="100"
+                Command="{Binding NavigateToProfileCommand}"
+                HorizontalOptions="Center"
+                WidthRequest="150"
+                BackgroundColor="#A8A8A8"
+                TextColor="White"/>
+    </StackLayout>
+</ContentPage>
+

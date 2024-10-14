@@ -14,5 +14,8 @@
     <MauiXaml Update="Views\MedicinesPage.xaml">
       <SubType>Designer</SubType>
     </MauiXaml>
+    <MauiXaml Update="Views\ProfileSelectionPage.xaml">
+      <SubType>Designer</SubType>
+    </MauiXaml>
   </ItemGroup>
 </Project>

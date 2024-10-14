@@ -1,0 +1,15 @@
+[33md5e74[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m Adding the MedicineRegisterPage, and editing some color paletes of the section
+[33m965e4[m changing the navegation routes
+[33m69966[m Editing the styles in StudentRegisterPage
+[33m20a32[m The CitasPage has been remodeled, new desing and fixing the delete appointments function, the Navbar and the SideMenu component has been remodeled as well, now with a proper padding, still have to add functionality to the SideMenu for mobile tho
+[33mfe177[m mergin stuff
+[33m68508[m Editing for the ninth time the ServicePage View, and adding the navbar and SideMenu of the different desktop and phone views
+[33mfc198[m Mapping for doctors and patients id, on appointment
+[33m084c8[m Appointment History, Registration, and patient Magagement.
+[33m00a10[m Creating Navbar, and SideMenu Components, made for be incorporated in different pages, redesing of the ServicePage has been made
+[33maa24b[m Fixing stuff
+[33mfe232[m Uploading new files
+[33m787a3[m AdminRegisterPage and StudentRegisterPage were created, adding also the ProfilePage
+[33m63497[m Creating the CitasPage section, changing and editing the old pages(WelcomePage, ServicesPage, LoginPage), adding some new colors to the palete
+[33m71e21[m Adding the new color palette, new fonts and the login view is now created on the project
+[33m2ac67[m just an early prototipe
