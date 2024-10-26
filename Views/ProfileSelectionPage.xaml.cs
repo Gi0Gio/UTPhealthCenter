@@ -6,4 +6,8 @@ public partial class ProfileSelectionPage : ContentPage
 	{
 		InitializeComponent();
 	}
+    private async void ToProfile(object sender, EventArgs e)
+    {
+        await Navigation.PushAsync(new ProfilePage());
+    }
 }

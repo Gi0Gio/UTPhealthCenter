@@ -72,9 +72,9 @@
         </ScrollView>
 
         <!-- Botón de selección centrado -->
-        <Button Text="Seleccionar"
+        <Button Text="Ver Perfil"
                 Margin="100"
-                Command="{Binding NavigateToProfileCommand}"
+                Clicked ="ToProfile"
                 HorizontalOptions="Center"
                 WidthRequest="150"
                 BackgroundColor="#A8A8A8"
