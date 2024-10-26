@@ -1,6 +1,3 @@
-using System;
-using Microsoft.Maui.Controls;
-
 namespace HealthCare.Views
 {
     public partial class MedicinesPage : ContentPage

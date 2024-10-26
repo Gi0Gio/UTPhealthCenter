@@ -15,7 +15,7 @@ public partial class ServicesPage : ContentPage
 
     private async void Recetas(object sender, EventArgs e)
     {
-        await Navigation.PushAsync(new MedicinesPage());   
+        await Navigation.PushAsync(new MedicinesPage());
     }
     private async void Citas(object sender, EventArgs e)
     {

@@ -3,24 +3,24 @@
   "WorkspaceRootPath": "C:\\Users\\Kris\\source\\repos\\GithubUTPhealthCare\\UTPhealthCenter\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{4F4AABB1-96B0-4368-9E7F-A1D6F1B2DCD4}|HealthCare.csproj|c:\\users\\kris\\source\\repos\\githubutphealthcare\\utphealthcenter\\views\\profileselectionpage.xaml.cs||{8B382828-6202-11D1-8870-0000F87579D2}|",
-      "RelativeMoniker": "D:0:0:{4F4AABB1-96B0-4368-9E7F-A1D6F1B2DCD4}|HealthCare.csproj|solutionrelative:views\\profileselectionpage.xaml.cs||{8B382828-6202-11D1-8870-0000F87579D2}|"
+      "AbsoluteMoniker": "D:0:0:{4F4AABB1-96B0-4368-9E7F-A1D6F1B2DCD4}|HealthCare.csproj|c:\\users\\kris\\source\\repos\\githubutphealthcare\\utphealthcenter\\views\\specialitypage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{4F4AABB1-96B0-4368-9E7F-A1D6F1B2DCD4}|HealthCare.csproj|solutionrelative:views\\specialitypage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4F4AABB1-96B0-4368-9E7F-A1D6F1B2DCD4}|HealthCare.csproj|c:\\users\\kris\\source\\repos\\githubutphealthcare\\utphealthcenter\\views\\profileselectionpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{4F4AABB1-96B0-4368-9E7F-A1D6F1B2DCD4}|HealthCare.csproj|solutionrelative:views\\profileselectionpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{4F4AABB1-96B0-4368-9E7F-A1D6F1B2DCD4}|HealthCare.csproj|c:\\users\\kris\\source\\repos\\githubutphealthcare\\utphealthcenter\\views\\certificatespage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{4F4AABB1-96B0-4368-9E7F-A1D6F1B2DCD4}|HealthCare.csproj|solutionrelative:views\\certificatespage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4F4AABB1-96B0-4368-9E7F-A1D6F1B2DCD4}|HealthCare.csproj|c:\\users\\kris\\source\\repos\\githubutphealthcare\\utphealthcenter\\views\\welcomepage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{4F4AABB1-96B0-4368-9E7F-A1D6F1B2DCD4}|HealthCare.csproj|solutionrelative:views\\welcomepage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{4F4AABB1-96B0-4368-9E7F-A1D6F1B2DCD4}|HealthCare.csproj|c:\\users\\kris\\source\\repos\\githubutphealthcare\\utphealthcenter\\viewmodel\\certificatesviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4F4AABB1-96B0-4368-9E7F-A1D6F1B2DCD4}|HealthCare.csproj|solutionrelative:viewmodel\\certificatesviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4F4AABB1-96B0-4368-9E7F-A1D6F1B2DCD4}|HealthCare.csproj|c:\\users\\kris\\source\\repos\\githubutphealthcare\\utphealthcenter\\views\\servicespage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{4F4AABB1-96B0-4368-9E7F-A1D6F1B2DCD4}|HealthCare.csproj|solutionrelative:views\\servicespage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{4F4AABB1-96B0-4368-9E7F-A1D6F1B2DCD4}|HealthCare.csproj|c:\\users\\kris\\source\\repos\\githubutphealthcare\\utphealthcenter\\viewmodel\\patientappointmentviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4F4AABB1-96B0-4368-9E7F-A1D6F1B2DCD4}|HealthCare.csproj|solutionrelative:viewmodel\\patientappointmentviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4F4AABB1-96B0-4368-9E7F-A1D6F1B2DCD4}|HealthCare.csproj|c:\\users\\kris\\source\\repos\\githubutphealthcare\\utphealthcenter\\views\\servicespage.xaml.cs||{8B382828-6202-11D1-8870-0000F87579D2}|",
-      "RelativeMoniker": "D:0:0:{4F4AABB1-96B0-4368-9E7F-A1D6F1B2DCD4}|HealthCare.csproj|solutionrelative:views\\servicespage.xaml.cs||{8B382828-6202-11D1-8870-0000F87579D2}|"
+      "AbsoluteMoniker": "D:0:0:{4F4AABB1-96B0-4368-9E7F-A1D6F1B2DCD4}|HealthCare.csproj|c:\\users\\kris\\source\\repos\\githubutphealthcare\\utphealthcenter\\viewmodel\\studentregisterviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4F4AABB1-96B0-4368-9E7F-A1D6F1B2DCD4}|HealthCare.csproj|solutionrelative:viewmodel\\studentregisterviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,75 +30,75 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 0,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "SpecialityPage.xaml",
+              "DocumentMoniker": "C:\\Users\\Kris\\source\\repos\\GithubUTPhealthCare\\UTPhealthCenter\\Views\\SpecialityPage.xaml",
+              "RelativeDocumentMoniker": "Views\\SpecialityPage.xaml",
+              "ToolTip": "C:\\Users\\Kris\\source\\repos\\GithubUTPhealthCare\\UTPhealthCenter\\Views\\SpecialityPage.xaml",
+              "RelativeToolTip": "Views\\SpecialityPage.xaml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-10-26T06:44:17.273Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "StudentRegisterViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\Kris\\source\\repos\\GithubUTPhealthCare\\UTPhealthCenter\\ViewModel\\StudentRegisterViewModel.cs",
+              "RelativeDocumentMoniker": "ViewModel\\StudentRegisterViewModel.cs",
+              "ToolTip": "C:\\Users\\Kris\\source\\repos\\GithubUTPhealthCare\\UTPhealthCenter\\ViewModel\\StudentRegisterViewModel.cs",
+              "RelativeToolTip": "ViewModel\\StudentRegisterViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-26T06:38:28.771Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "PatientAppointmentViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\Kris\\source\\repos\\GithubUTPhealthCare\\UTPhealthCenter\\ViewModel\\PatientAppointmentViewModel.cs",
+              "RelativeDocumentMoniker": "ViewModel\\PatientAppointmentViewModel.cs",
+              "ToolTip": "C:\\Users\\Kris\\source\\repos\\GithubUTPhealthCare\\UTPhealthCenter\\ViewModel\\PatientAppointmentViewModel.cs",
+              "RelativeToolTip": "ViewModel\\PatientAppointmentViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-26T06:38:14.596Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "CertificatesViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\Kris\\source\\repos\\GithubUTPhealthCare\\UTPhealthCenter\\ViewModel\\CertificatesViewModel.cs",
+              "RelativeDocumentMoniker": "ViewModel\\CertificatesViewModel.cs",
+              "ToolTip": "C:\\Users\\Kris\\source\\repos\\GithubUTPhealthCare\\UTPhealthCenter\\ViewModel\\CertificatesViewModel.cs",
+              "RelativeToolTip": "ViewModel\\CertificatesViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-26T06:32:51.352Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "WelcomePage.xaml",
-              "DocumentMoniker": "C:\\Users\\Kris\\source\\repos\\GithubUTPhealthCare\\UTPhealthCenter\\Views\\WelcomePage.xaml",
-              "RelativeDocumentMoniker": "Views\\WelcomePage.xaml",
-              "ToolTip": "C:\\Users\\Kris\\source\\repos\\GithubUTPhealthCare\\UTPhealthCenter\\Views\\WelcomePage.xaml",
-              "RelativeToolTip": "Views\\WelcomePage.xaml",
-              "ViewState": "AgIAACoAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-10-26T05:04:28.665Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "ProfileSelectionPage.xaml",
-              "DocumentMoniker": "C:\\Users\\Kris\\source\\repos\\GithubUTPhealthCare\\UTPhealthCenter\\Views\\ProfileSelectionPage.xaml",
-              "RelativeDocumentMoniker": "Views\\ProfileSelectionPage.xaml",
-              "ToolTip": "C:\\Users\\Kris\\source\\repos\\GithubUTPhealthCare\\UTPhealthCenter\\Views\\ProfileSelectionPage.xaml",
-              "RelativeToolTip": "Views\\ProfileSelectionPage.xaml",
-              "ViewState": "AgIAAEIAAAAAAAAAAAAAAEcAAAAVAAAAAAAAAA==",
+              "Title": "CertificatesPage.xaml",
+              "DocumentMoniker": "C:\\Users\\Kris\\source\\repos\\GithubUTPhealthCare\\UTPhealthCenter\\Views\\CertificatesPage.xaml",
+              "RelativeDocumentMoniker": "Views\\CertificatesPage.xaml",
+              "ToolTip": "C:\\Users\\Kris\\source\\repos\\GithubUTPhealthCare\\UTPhealthCenter\\Views\\CertificatesPage.xaml",
+              "RelativeToolTip": "Views\\CertificatesPage.xaml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-10-14T15:28:19.12Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "ProfileSelectionPage.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\Kris\\source\\repos\\GithubUTPhealthCare\\UTPhealthCenter\\Views\\ProfileSelectionPage.xaml.cs",
-              "RelativeDocumentMoniker": "Views\\ProfileSelectionPage.xaml.cs",
-              "ToolTip": "C:\\Users\\Kris\\source\\repos\\GithubUTPhealthCare\\UTPhealthCenter\\Views\\ProfileSelectionPage.xaml.cs",
-              "RelativeToolTip": "Views\\ProfileSelectionPage.xaml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAA8AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-26T05:00:34.954Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "ServicesPage.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\Kris\\source\\repos\\GithubUTPhealthCare\\UTPhealthCenter\\Views\\ServicesPage.xaml.cs",
-              "RelativeDocumentMoniker": "Views\\ServicesPage.xaml.cs",
-              "ToolTip": "C:\\Users\\Kris\\source\\repos\\GithubUTPhealthCare\\UTPhealthCenter\\Views\\ServicesPage.xaml.cs",
-              "RelativeToolTip": "Views\\ServicesPage.xaml.cs",
-              "ViewState": "AgIAABMAAAAAAAAAAAAAAB0AAAAEAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-14T15:30:04.005Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "ServicesPage.xaml",
-              "DocumentMoniker": "C:\\Users\\Kris\\source\\repos\\GithubUTPhealthCare\\UTPhealthCenter\\Views\\ServicesPage.xaml",
-              "RelativeDocumentMoniker": "Views\\ServicesPage.xaml",
-              "ToolTip": "C:\\Users\\Kris\\source\\repos\\GithubUTPhealthCare\\UTPhealthCenter\\Views\\ServicesPage.xaml",
-              "RelativeToolTip": "Views\\ServicesPage.xaml",
-              "ViewState": "AgIAAGMAAAAAAAAAAAAAAGsAAAA4AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-10-14T15:29:31.512Z",
+              "WhenOpened": "2024-10-26T06:30:31.942Z",
               "EditorCaption": ""
             }
           ]
