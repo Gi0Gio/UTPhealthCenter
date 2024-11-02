@@ -124,13 +124,13 @@ namespace HealthCare.ViewModel
             {
                 using (var httpClient = new HttpClient())
                 {
-                    var response = await httpClient.GetStringAsync("https://giowebtestapinstance.azurewebsites.net/api/Appointments");
+                    var response = await httpClient.GetStringAsync("https://giohealthcareservice-e0hba0b3f2d0bsh6.canadacentral-01.azurewebsites.net/api/appointments");
                     var appointments = JsonSerializer.Deserialize<List<AppointmentDto>>(response);
                     // 2. Cargar los pacientes desde el API
-                    var patientsResponse = await httpClient.GetStringAsync("https://giowebtestapinstance.azurewebsites.net/api/Patients");
+                    var patientsResponse = await httpClient.GetStringAsync("https://giohealthcareservice-e0hba0b3f2d0bsh6.canadacentral-01.azurewebsites.net/api/patients");
                     var patients = JsonSerializer.Deserialize<List<PatientDto>>(patientsResponse);
 
-                    var doctorsResponse = await httpClient.GetStringAsync("https://giowebtestapinstance.azurewebsites.net/api/Doctors");
+                    var doctorsResponse = await httpClient.GetStringAsync("https://giohealthcareservice-e0hba0b3f2d0bsh6.canadacentral-01.azurewebsites.net/api/doctors");
                     var doctors = JsonSerializer.Deserialize<List<DoctorsDto>>(doctorsResponse);
 
 
@@ -179,7 +179,7 @@ namespace HealthCare.ViewModel
             {
                 using (var httpClient = new HttpClient())
                 {
-                    var response = await httpClient.GetStringAsync("https://giowebtestapinstance.azurewebsites.net/api/Patients");
+                    var response = await httpClient.GetStringAsync("https://giohealthcareservice-e0hba0b3f2d0bsh6.canadacentral-01.azurewebsites.net/api/patients");
                     var patients = JsonSerializer.Deserialize<List<PatientDto>>(response);
 
                     Patients.Clear();
@@ -202,7 +202,7 @@ namespace HealthCare.ViewModel
             {
                 using (var httpClient = new HttpClient())
                 {
-                    var response = await httpClient.DeleteAsync($"https://giowebtestapinstance.azurewebsites.net/api/Appointments/{appointment.id}");
+                    var response = await httpClient.DeleteAsync($"https://giohealthcareservice-e0hba0b3f2d0bsh6.canadacentral-01.azurewebsites.net/Appointments/{appointment.id}");
 
                     if (response.IsSuccessStatusCode)
                     {
@@ -240,7 +240,7 @@ namespace HealthCare.ViewModel
                     var json = JsonSerializer.Serialize(appointment);
                     var content = new StringContent(json, Encoding.UTF8, "application/json");
 
-                    var response = await httpClient.PostAsync("https://giowebtestapinstance.azurewebsites.net/api/Appointments", content);
+                    var response = await httpClient.PostAsync("https://giohealthcareservice-e0hba0b3f2d0bsh6.canadacentral-01.azurewebsites.net/Appointments", content);
 
                     if (response.IsSuccessStatusCode)
                     {

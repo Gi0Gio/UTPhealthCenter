@@ -10,8 +10,8 @@ public partial class LoginPage : ContentPage
     {
         await Navigation.PushAsync(new ServicesPage());
     }
-    private async void AdminRegister(object sender, EventArgs e)
+    private async void UserRegister(object sender, EventArgs e)
     {
-        await Navigation.PushAsync(new AdminRegisterPage());
+        await Navigation.PushAsync(new UserRegisterPage());
     }
 }

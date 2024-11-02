@@ -11,16 +11,31 @@
     <DebuggerFlavor>ProjectDebugger</DebuggerFlavor>
   </PropertyGroup>
   <ItemGroup>
-    <MauiXaml Update="Views\CertificatesPage.xaml">
+    <MauiXaml Update="Views\Doctors\CertificatesPage.xaml">
       <SubType>Designer</SubType>
     </MauiXaml>
-    <MauiXaml Update="Views\MedicinesPage.xaml">
+    <MauiXaml Update="Views\Clinic\MedicinesPage.xaml">
       <SubType>Designer</SubType>
     </MauiXaml>
-    <MauiXaml Update="Views\ProfileSelectionPage.xaml">
+    <MauiXaml Update="Views\Clinic\ProfileSelectionPage.xaml">
       <SubType>Designer</SubType>
     </MauiXaml>
-    <MauiXaml Update="Views\SpecialityPage.xaml">
+    <MauiXaml Update="Views\Doctors\DoctorHomePage.xaml">
+      <SubType>Designer</SubType>
+    </MauiXaml>
+    <MauiXaml Update="Views\Doctors\DoctorRegisterPage.xaml">
+      <SubType>Designer</SubType>
+    </MauiXaml>
+    <MauiXaml Update="Views\Doctors\SpecialityPage.xaml">
+      <SubType>Designer</SubType>
+    </MauiXaml>
+    <MauiXaml Update="Views\Students\PatientRegisterPage.xaml">
+      <SubType>Designer</SubType>
+    </MauiXaml>
+    <MauiXaml Update="Views\Students\StudentHomePage.xaml">
+      <SubType>Designer</SubType>
+    </MauiXaml>
+    <MauiXaml Update="Views\UserRegisterPage.xaml">
       <SubType>Designer</SubType>
     </MauiXaml>
   </ItemGroup>

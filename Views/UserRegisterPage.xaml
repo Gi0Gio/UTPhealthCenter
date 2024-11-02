@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="HealthCare.Views.UserRegisterPage"
+             BackgroundColor="#014671"
+             NavigationPage.HasBackButton="False"
+             NavigationPage.HasNavigationBar="False">
+    <AbsoluteLayout>
+        <Image Source="backgroundlogin.png"
+           Aspect="AspectFill"
+           AbsoluteLayout.LayoutBounds="0,0,1,1"
+           AbsoluteLayout.LayoutFlags="All"/>
+
+        <!-- Formulario de Inicio de sesión :) -->
+        <Frame BackgroundColor="#fff"
+           CornerRadius="15"
+           HasShadow="True"
+           WidthRequest="500"
+           AbsoluteLayout.LayoutBounds="0.5,0.5,-1,-1"
+           AbsoluteLayout.LayoutFlags="PositionProportional">
+
+            <VerticalStackLayout Padding="20" Spacing="10">
+                <Image Source="logo2.png"
+                   WidthRequest="100"
+                   HeightRequest="100"
+                   HorizontalOptions="Center"/>
+
+                <Entry Placeholder="Nombre de Usuario" 
+                   BackgroundColor="#F5F5F5"
+                   FontFamily="MohaveRegular"
+                   FontSize="20"
+                   TextColor="#000"
+                   Margin="0,5"/>
+
+                <Entry Placeholder="Correo Electronico"
+                       BackgroundColor="#F5F5F5"
+                       FontFamily="MohaveRegular"
+                       FontSize="20"
+                       TextColor="#000"
+                       Margin="0,5"/>
+
+                <Entry Placeholder="Contraseña" 
+                   IsPassword="True"
+                   FontFamily="MohaveRegular"
+                   BackgroundColor="#F5F5F5"
+                   FontSize="20"
+                   TextColor="#000"
+                   Margin="0,5"/>
+
+                <Picker x:Name="UserTypePicker"
+                        Title="Seleccione el tipo de usuario"
+                        TextColor="#000"
+                        TitleColor="#000"
+                        FontFamily="MohaveRegular"
+                        FontSize="20"
+                        BackgroundColor="#f2f2f2">
+                   <Picker.ItemsSource>
+                        <x:Array Type="{x:Type x:String}">
+                            <x:String>Doctor</x:String>
+                            <x:String>Paciente</x:String>
+                        </x:Array>
+                   </Picker.ItemsSource>
+                </Picker>
+
+                <!-- Botones -->
+                <StackLayout Orientation="Vertical" HorizontalOptions="Center">
+                    <Button Text="Siguiente" 
+                        FontFamily="MohaveRegular"     
+                        FontSize="20"
+                        BackgroundColor="#4FB9FB" 
+                        TextColor="White"
+                        CornerRadius="10"
+                        Margin="5"
+                        WidthRequest="120"
+                        Clicked="NextButton"/>
+                    
+                    <Button Text="Ir a Login" 
+                        BackgroundColor="#FFFFFF"
+                        FontFamily="MohaveRegular"
+                        FontSize="20"
+                        TextColor="#014671"
+                        BorderColor="#014671"
+                        BorderWidth="1"
+                        CornerRadius="10"
+                        Margin="5"
+                        WidthRequest="130"
+                        Clicked="ToLogin"/>
+                </StackLayout>
+
+                <Label Text="¿Ya tienes una cuenta?" 
+                   TextColor="#014671"
+                   FontSize="12"
+                   HorizontalOptions="Center"
+                   VerticalOptions="EndAndExpand"/>
+            </VerticalStackLayout>
+        </Frame>
+    </AbsoluteLayout>
+</ContentPage>
