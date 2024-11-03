@@ -18,22 +18,32 @@ public partial class UserRegisterPage : ContentPage
 
     private async void NextButton(object sender, EventArgs e)
     {
+        if (string.IsNullOrWhiteSpace(UsernameEntry.Text) ||
+               string.IsNullOrWhiteSpace(EmailEntry.Text) ||
+               string.IsNullOrWhiteSpace(PasswordEntry.Text) ||
+               UserTypePicker.SelectedItem == null)
+        {
+            // Muestra un mensaje de advertencia si algún campo está vacío
+            await DisplayAlert("Campos requeridos", "Por favor, completa todos los campos antes de continuar.", "OK");
+            return;
+        }
+
         // Verifica el tipo de usuario seleccionado en el Picker
         string selectedUserType = UserTypePicker.SelectedItem as string;
 
         if (selectedUserType == "Doctor")
         {
-            // Navega a la página de registro de doctor
+            
             await Navigation.PushAsync(new DoctorRegisterPage());
         }
         else if (selectedUserType == "Paciente")
         {
-            // Navega a la página de registro de paciente
+            
             await Navigation.PushAsync(new PatientRegisterPage());
         }
         else
         {
-            // Muestra un mensaje si no se selecciona ningún tipo de usuario
+            
             await DisplayAlert("Error", "Por favor, seleccione el tipo de usuario.", "OK");
         }
     }

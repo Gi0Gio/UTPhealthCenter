@@ -2,11 +2,85 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="HealthCare.Views.Doctors.DoctorRegisterPage"
-             Title="DoctorRegisterPage">
-    <VerticalStackLayout>
-        <Label 
-            Text="Welcome to .NET MAUI!"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
-    </VerticalStackLayout>
+             BackgroundColor="#014671"
+             NavigationPage.HasNavigationBar="False">
+
+    <AbsoluteLayout>
+        
+        <Image Source="backgroundlogin.png"
+           Aspect="AspectFill"
+           AbsoluteLayout.LayoutBounds="0,0,1,1"
+           AbsoluteLayout.LayoutFlags="All"/>
+
+        <Frame BackgroundColor="#fff"
+           CornerRadius="15"
+           HasShadow="True"
+           WidthRequest="500"
+           AbsoluteLayout.LayoutBounds="0.5,0.5,-1,-1"
+           AbsoluteLayout.LayoutFlags="PositionProportional">
+
+            <VerticalStackLayout Padding="20" Spacing="10">
+                <Image Source="logo2.png"
+                   WidthRequest="100"
+                   HeightRequest="100"
+                   HorizontalOptions="Center"/>
+
+                <Entry x:Name="NameEntry"
+                    Placeholder="Nombre" 
+                   BackgroundColor="#F5F5F5"
+                   FontFamily="MohaveRegular"
+                   FontSize="20"
+                   TextColor="#000"
+                   Margin="0,5"/>
+
+                <Entry x:Name="LastNameEntry" 
+                       Placeholder="Apellido" 
+                       BackgroundColor="#F5F5F5"
+                       FontFamily="MohaveRegular"
+                       FontSize="20"
+                       TextColor="#000"
+                       Margin="0,5"/>
+
+                <Entry x:Name="OfficeHoursEntry"
+                       Placeholder="Horario de Oficina" 
+                       BackgroundColor="#F5F5F5"
+                       FontFamily="MohaveRegular"
+                       FontSize="20"
+                       TextColor="#000"
+                       Margin="0,5"/>
+
+                <Entry  x:Name="SpecialityEntry"
+                           Placeholder="Especialidad" 
+                           BackgroundColor="#F5F5F5"
+                           FontFamily="MohaveRegular"
+                           FontSize="20"
+                           TextColor="#000"
+                           Margin="0,5"/>
+
+                <Entry x:Name="PhoneNumberEntry"
+                       Placeholder="Número de telefono" 
+                       BackgroundColor="#F5F5F5"
+                       FontFamily="MohaveRegular"
+                       FontSize="20"
+                       TextColor="#000"
+                       Margin="0,5"/>
+
+                <StackLayout Orientation="Vertical" HorizontalOptions="Center">
+                            <Button Text="Completar Registro"
+                                FontFamily="MohaveRegular"
+                                FontSize="20"
+                                BackgroundColor="#4FB9FB"
+                                TextColor="#fff"
+                                CornerRadius="10"
+                                Margin="5"
+                                Clicked="ToLogin"/>
+
+                </StackLayout>
+
+            </VerticalStackLayout>
+            
+
+        </Frame>
+        
+    </AbsoluteLayout>
 </ContentPage>

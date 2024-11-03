@@ -25,27 +25,31 @@
                    HeightRequest="100"
                    HorizontalOptions="Center"/>
 
-                <Entry Placeholder="Nombre de Usuario" 
+                <Entry x:Name="UsernameEntry"
+                   Placeholder="Nombre de Usuario" 
                    BackgroundColor="#F5F5F5"
                    FontFamily="MohaveRegular"
                    FontSize="20"
                    TextColor="#000"
                    Margin="0,5"/>
 
-                <Entry Placeholder="Correo Electronico"
-                       BackgroundColor="#F5F5F5"
-                       FontFamily="MohaveRegular"
-                       FontSize="20"
-                       TextColor="#000"
-                       Margin="0,5"/>
+                <Entry x:Name="EmailEntry"
+                   Placeholder="Correo Electronico" 
+                   BackgroundColor="#F5F5F5"
+                   FontFamily="MohaveRegular"
+                   FontSize="20"
+                   TextColor="#000"
+                   Margin="0,5"/>
 
-                <Entry Placeholder="Contraseña" 
+                <Entry x:Name="PasswordEntry"
+                   Placeholder="Contraseña" 
                    IsPassword="True"
                    FontFamily="MohaveRegular"
                    BackgroundColor="#F5F5F5"
                    FontSize="20"
                    TextColor="#000"
                    Margin="0,5"/>
+
 
                 <Picker x:Name="UserTypePicker"
                         Title="Seleccione el tipo de usuario"
