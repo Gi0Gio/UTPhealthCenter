@@ -1,13 +1,18 @@
 using HealthCare.Views.Doctors;
 using HealthCare.Views.Students;
+using HealthCare.ViewModel;
 
 namespace HealthCare.Views;
 
 public partial class UserRegisterPage : ContentPage
 {
+    private UserRegisterViewModel viewModel;
 	public UserRegisterPage()
 	{
 		InitializeComponent();
+        viewModel = new UserRegisterViewModel();
+        BindingContext = viewModel;
+
 	}
 
 
@@ -46,5 +51,12 @@ public partial class UserRegisterPage : ContentPage
             
             await DisplayAlert("Error", "Por favor, seleccione el tipo de usuario.", "OK");
         }
+
+        viewModel.Username = UsernameEntry.Text;
+        viewModel.Email = EmailEntry.Text;  
+        viewModel.Password = PasswordEntry.Text;
+        viewModel.SelectedUserType = UserTypePicker.SelectedItem as string;
+
+        await viewModel.RegisterUser();
     }
 }
