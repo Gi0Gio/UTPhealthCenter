@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 using System.Windows.Input;
 using HealthCare.Views.Doctors;
 using HealthCare.Views.Students;
+using HealthCare.Models;
 
 namespace HealthCare.ViewModel
 {
@@ -65,8 +66,8 @@ namespace HealthCare.ViewModel
             get => _isBusy;
             set
             {
-                _isBusy = value;    
-                PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(IsBusy)));    
+                _isBusy = value;
+                PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(IsBusy)));
             }
         }
 
@@ -86,14 +87,13 @@ namespace HealthCare.ViewModel
             try
             {
                 IsBusy = true;
-
-                int roleId = SelectedUserType == "Doctor" ? 2 : 3; 
+                int roleId = SelectedUserType == "Doctor" ? 2 : 3;
 
                 var userDto = new
                 {
                     Username = this.Username,
                     Email = this.Email,
-                    PasswordHash = this.Password, // Asumimos que el backend se encarga del hashing
+                    PasswordHash = this.Password,
                     RoleId = roleId
                 };
 
@@ -101,24 +101,43 @@ namespace HealthCare.ViewModel
                 var content = new StringContent(json, Encoding.UTF8, "application/json");
 
                 using var httpClient = new HttpClient();
+                httpClient.DefaultRequestHeaders.Accept.Add(new System.Net.Http.Headers.MediaTypeWithQualityHeaderValue("application/json"));
+
                 var response = await httpClient.PostAsync("https://giohealthcareservice-e0hba0b3f2d0bsh6.canadacentral-01.azurewebsites.net/api/users", content);
 
                 if (response.IsSuccessStatusCode)
                 {
-                    // Redirige a la página correspondiente
-                    if (SelectedUserType == "Doctor")
+                    var responseContent = await response.Content.ReadAsStringAsync();
+                    using (var document = JsonDocument.Parse(responseContent))
                     {
-                        await Application.Current.MainPage.Navigation.PushAsync(new DoctorRegisterPage());
-                    }
-                    else if (SelectedUserType == "Paciente")
-                    {
-                        await Application.Current.MainPage.Navigation.PushAsync(new PatientRegisterPage());
+                        var root = document.RootElement;
+
+                        int parsedUserId = root.GetProperty("id").GetInt32();
+                        int parsedRoleId = root.GetProperty("roleId").GetInt32();
+
+                        if (parsedRoleId > 0)
+                        {
+                            if (parsedRoleId == 2)
+                            {
+                                await Application.Current.MainPage.Navigation.PushAsync(new DoctorRegisterPage(parsedUserId));
+                            }
+                            else if (parsedRoleId == 3)
+                            {
+                                await Application.Current.MainPage.Navigation.PushAsync(new PatientRegisterPage(parsedUserId));
+                            }
+                        }
+                        else
+                        {
+                            await Application.Current.MainPage.DisplayAlert("Error", "No se pudo obtener el RoleId del usuario.", "OK");
+                        }
                     }
                 }
                 else
                 {
-                    await Application.Current.MainPage.DisplayAlert("Error", "No se pudo registrar el usuario. Intente nuevamente.", "OK");
+                    var errorContent = await response.Content.ReadAsStringAsync();
+                    await Application.Current.MainPage.DisplayAlert("Error", $"No se pudo registrar el usuario: {errorContent}", "OK");
                 }
+
             }
             catch (Exception ex)
             {

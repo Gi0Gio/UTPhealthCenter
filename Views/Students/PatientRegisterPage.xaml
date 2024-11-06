@@ -1,4 +1,3 @@
-<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="HealthCare.Views.Students.PatientRegisterPage"
@@ -9,7 +8,6 @@
            Aspect="AspectFill"
            AbsoluteLayout.LayoutBounds="0,0,1,1"
            AbsoluteLayout.LayoutFlags="All"/>
-
         <Frame BackgroundColor="#fff"
            CornerRadius="15"
            HasShadow="True"
@@ -23,70 +21,68 @@
                    HeightRequest="100"
                    HorizontalOptions="Center"/>
 
-                <Entry x:Name="NameEntry"
-                   Placeholder="Nombre de usuario"
-                   BackgroundColor="#F5F5F5"
-                   FontFamily="MohaveRegular"
-                   FontSize="20"
-                   TextColor="#000"
-                   Margin="0,5"/>
+                <Entry Placeholder="Nombre de usuario"
+                       Text="{Binding FirstName}"
+                       BackgroundColor="#F5F5F5"
+                       FontFamily="MohaveRegular"
+                       FontSize="20"
+                       TextColor="#000"
+                       Margin="0,5"/>
 
-                <Entry x:Name="LastNameEntry"
-                   Placeholder="Apellido"
-                   BackgroundColor="#F5F5F5"
-                   FontFamily="MohaveRegular"
-                   FontSize="20"
-                   TextColor="#000"
-                   Margin="0,5"/>
+                <Entry Placeholder="Apellido"
+                       Text="{Binding LastName}"
+                       BackgroundColor="#F5F5F5"
+                       FontFamily="MohaveRegular"
+                       FontSize="20"
+                       TextColor="#000"
+                       Margin="0,5"/>
 
-                <Entry x:Name="DNIEntry"
-                   Placeholder="Cédula(DNI)"
-                   BackgroundColor="#F5F5F5"
-                   FontFamily="MohaveRegular"
-                   FontSize="20"
-                   TextColor="#000"
-                   Margin="0,5"/>
+                <Entry Placeholder="Cédula (DNI)"
+                       Text="{Binding Dni}"
+                       BackgroundColor="#F5F5F5"
+                       FontFamily="MohaveRegular"
+                       FontSize="20"
+                       TextColor="#000"
+                       Margin="0,5"/>
 
-                <Entry x:Name="AddressEntry"
-                   Placeholder="Dirección"
-                   BackgroundColor="#F5F5F5"
-                   FontFamily="MohaveRegular"
-                   FontSize="20"
-                   TextColor="#000"
-                   Margin="0,5"/>
+                <Entry Placeholder="Dirección"
+                       Text="{Binding Address}"
+                       BackgroundColor="#F5F5F5"
+                       FontFamily="MohaveRegular"
+                       FontSize="20"
+                       TextColor="#000"
+                       Margin="0,5"/>
 
-                <Entry x:Name="PhoneNumberEntry"
-                   Placeholder="Número de Teléfono"
-                   BackgroundColor="#F5F5F5"
-                   FontFamily="MohaveRegular"
-                   FontSize="20"
-                   TextColor="#000"
-                   Margin="0,5"/>
+                <Entry Placeholder="Número de Teléfono"
+                       Text="{Binding PhoneNumber}"
+                       BackgroundColor="#F5F5F5"
+                       FontFamily="MohaveRegular"
+                       FontSize="20"
+                       TextColor="#000"
+                       Margin="0,5"/>
 
-                <Label 
-                    Text="Agrega Tu Fecha de Nacimiento"
-                    TextColor="#000"
-                    FontSize="20"
-                    FontFamily="MohaveRegular"
-                    Margin="0,5"/>
-
-                <DatePicker x:Name="BirthDatePicker"
-                        BackgroundColor="#F5F5F5"
-                        FontFamily="MohaveRegular"
-                        FontSize="20"
-                        TextColor="#000"
-                        Margin="0,5"
-                        Format="dd/MM/yyyy"/>
+                <Label Text="Fecha de Nacimiento"
+                       TextColor="#000"
+                       FontSize="20"
+                       FontFamily="MohaveRegular"
+                       Margin="0,5"/>
+                <DatePicker Date="{Binding BirthDate}"
+                            BackgroundColor="#F5F5F5"
+                            FontFamily="MohaveRegular"
+                            FontSize="20"
+                            TextColor="#000"
+                            Margin="0,5"
+                            Format="dd/MM/yyyy"/>
 
                 <StackLayout>
                     <Button Text="Completar Registro" 
-                        FontFamily="MohaveRegular"     
-                        FontSize="20"
-                        BackgroundColor="#4FB9FB" 
-                        TextColor="White"
-                        CornerRadius="10"
-                        Margin="5"
-                        Clicked="Register"/>
+                            FontFamily="MohaveRegular"     
+                            FontSize="20"
+                            BackgroundColor="#4FB9FB" 
+                            TextColor="White"
+                            CornerRadius="10"
+                            Margin="5"
+                            Command="{Binding RegisterCommand}"/>
                 </StackLayout>
             </VerticalStackLayout>
         </Frame>
