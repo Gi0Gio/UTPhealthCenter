@@ -1,27 +1,94 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using HealthCare.Views;
+using System;
 using System.ComponentModel;
-using System.Linq;
+using System.Net.Http;
 using System.Text;
 using System.Text.Json;
 using System.Threading.Tasks;
+using System.Windows.Input;
 
 public class DoctorRegisterViewModel : INotifyPropertyChanged
 {
-    private int _userId;
+    private readonly int _userId;
+
+    private string _firstName;
+    private string _lastName;
+    private string _officeHours;
+    private string _specialty;
+    private string _phoneNumber;
+
+    public event PropertyChangedEventHandler PropertyChanged;
+
+    public string FirstName
+    {
+        get => _firstName;
+        set
+        {
+            _firstName = value;
+            OnPropertyChanged(nameof(FirstName));
+        }
+    }
+
+    public string LastName
+    {
+        get => _lastName;
+        set
+        {
+            _lastName = value;
+            OnPropertyChanged(nameof(LastName));
+        }
+    }
+
+    public string OfficeHours
+    {
+        get => _officeHours;
+        set
+        {
+            _officeHours = value;
+            OnPropertyChanged(nameof(OfficeHours));
+        }
+    }
+
+    public string Specialty // Cambiado a 'Specialty'
+    {
+        get => _specialty;
+        set
+        {
+            _specialty = value;
+            OnPropertyChanged(nameof(Specialty));
+        }
+    }
+
+    public string PhoneNumber
+    {
+        get => _phoneNumber;
+        set
+        {
+            _phoneNumber = value;
+            OnPropertyChanged(nameof(PhoneNumber));
+        }
+    }
+
+    public ICommand RegisterCommand => new Command(async () => await RegisterDoctor());
+
     public DoctorRegisterViewModel(int userId)
     {
         _userId = userId;
     }
 
-    public event PropertyChangedEventHandler? PropertyChanged;
+    protected virtual void OnPropertyChanged(string propertyName) =>
+        PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
 
     public async Task RegisterDoctor()
     {
         var doctorDto = new
         {
             UserId = _userId,
-            // Otros datos del doctor
+            FirstName = this.FirstName,
+            LastName = this.LastName,
+            OfficeHours = this.OfficeHours,
+            Specialty = this.Specialty, // Cambiado a 'Specialty'
+            PhoneNumber = this.PhoneNumber
         };
 
         var jsonContent = JsonSerializer.Serialize(doctorDto);
@@ -35,10 +102,12 @@ public class DoctorRegisterViewModel : INotifyPropertyChanged
             if (response.IsSuccessStatusCode)
             {
                 await Application.Current.MainPage.DisplayAlert("Registro exitoso", "Doctor registrado exitosamente.", "OK");
+                await Application.Current.MainPage.Navigation.PushAsync(new LoginPage());
             }
             else
             {
-                await Application.Current.MainPage.DisplayAlert("Error", "No se pudo registrar al doctor.", "OK");
+                var errorMessage = await response.Content.ReadAsStringAsync();
+                await Application.Current.MainPage.DisplayAlert("Error", $"Hubo un problema al registrar al doctor: {errorMessage}", "OK");
             }
         }
         catch (Exception ex)
@@ -47,4 +116,3 @@ public class DoctorRegisterViewModel : INotifyPropertyChanged
         }
     }
 }
-

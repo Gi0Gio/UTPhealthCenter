@@ -6,7 +6,6 @@
              NavigationPage.HasNavigationBar="False">
 
     <AbsoluteLayout>
-        
         <Image Source="backgroundlogin.png"
            Aspect="AspectFill"
            AbsoluteLayout.LayoutBounds="0,0,1,1"
@@ -25,40 +24,41 @@
                    HeightRequest="100"
                    HorizontalOptions="Center"/>
 
-                <Entry x:Name="NameEntry"
-                    Placeholder="Nombre" 
-                   BackgroundColor="#F5F5F5"
-                   FontFamily="MohaveRegular"
-                   FontSize="20"
-                   TextColor="#000"
-                   Margin="0,5"/>
-
-                <Entry x:Name="LastNameEntry" 
-                       Placeholder="Apellido" 
+                <Entry Placeholder="Nombre"
+                       Text="{Binding FirstName}"
                        BackgroundColor="#F5F5F5"
                        FontFamily="MohaveRegular"
                        FontSize="20"
                        TextColor="#000"
                        Margin="0,5"/>
 
-                <Entry x:Name="OfficeHoursEntry"
-                       Placeholder="Horario de Oficina" 
+                <Entry Placeholder="Apellido"
+                       Text="{Binding LastName}"
                        BackgroundColor="#F5F5F5"
                        FontFamily="MohaveRegular"
                        FontSize="20"
                        TextColor="#000"
                        Margin="0,5"/>
 
-                <Entry  x:Name="SpecialityEntry"
-                           Placeholder="Especialidad" 
-                           BackgroundColor="#F5F5F5"
-                           FontFamily="MohaveRegular"
-                           FontSize="20"
-                           TextColor="#000"
-                           Margin="0,5"/>
+                <Entry Placeholder="Especialidad"
+                       Text="{Binding Specialty}"
+                       BackgroundColor="#F5F5F5"
+                       FontFamily="MohaveRegular"
+                       FontSize="20"
+                       TextColor="#000"
+                       Margin="0,5"/>
 
-                <Entry x:Name="PhoneNumberEntry"
-                       Placeholder="Número de telefono" 
+                <Entry Placeholder="Número de teléfono"
+                       Text="{Binding PhoneNumber}"
+                       BackgroundColor="#F5F5F5"
+                       FontFamily="MohaveRegular"
+                       FontSize="20"
+                       TextColor="#000"
+                       Margin="0,5"/>
+
+
+                <Entry Placeholder="Horario de Oficina"
+                       Text="{Binding OfficeHours}"
                        BackgroundColor="#F5F5F5"
                        FontFamily="MohaveRegular"
                        FontSize="20"
@@ -66,21 +66,16 @@
                        Margin="0,5"/>
 
                 <StackLayout Orientation="Vertical" HorizontalOptions="Center">
-                            <Button Text="Completar Registro"
-                                FontFamily="MohaveRegular"
-                                FontSize="20"
-                                BackgroundColor="#4FB9FB"
-                                TextColor="#fff"
-                                CornerRadius="10"
-                                Margin="5"
-                                Clicked="ToLogin"/>
-
+                    <Button Text="Completar Registro"
+                            FontFamily="MohaveRegular"
+                            FontSize="20"
+                            BackgroundColor="#4FB9FB"
+                            TextColor="#fff"
+                            CornerRadius="10"
+                            Margin="5"
+                            Command="{Binding RegisterCommand}"/>
                 </StackLayout>
-
             </VerticalStackLayout>
-            
-
         </Frame>
-        
     </AbsoluteLayout>
 </ContentPage>
