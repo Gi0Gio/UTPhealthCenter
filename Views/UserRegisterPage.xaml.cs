@@ -1,20 +1,17 @@
-using HealthCare.Views.Doctors;
-using HealthCare.Views.Students;
 using HealthCare.ViewModel;
-using HealthCare.Models;
 
 namespace HealthCare.Views;
 
 public partial class UserRegisterPage : ContentPage
 {
     private UserRegisterViewModel viewModel;
-	public UserRegisterPage()
-	{
-		InitializeComponent();
+    public UserRegisterPage()
+    {
+        InitializeComponent();
         viewModel = new UserRegisterViewModel();
         BindingContext = viewModel;
 
-	}
+    }
     private async void ToLogin(object sender, EventArgs e)
     {
         await Navigation.PushAsync(new LoginPage());

@@ -3,16 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\Kris\\source\\repos\\GithubUTPhealthCare\\UTPhealthCenter\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{4F4AABB1-96B0-4368-9E7F-A1D6F1B2DCD4}|HealthCare.csproj|c:\\users\\kris\\source\\repos\\githubutphealthcare\\utphealthcenter\\viewmodel\\doctorregisterviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4F4AABB1-96B0-4368-9E7F-A1D6F1B2DCD4}|HealthCare.csproj|solutionrelative:viewmodel\\doctorregisterviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4F4AABB1-96B0-4368-9E7F-A1D6F1B2DCD4}|HealthCare.csproj|c:\\users\\kris\\source\\repos\\githubutphealthcare\\utphealthcenter\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4F4AABB1-96B0-4368-9E7F-A1D6F1B2DCD4}|HealthCare.csproj|solutionrelative:app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4F4AABB1-96B0-4368-9E7F-A1D6F1B2DCD4}|HealthCare.csproj|c:\\users\\kris\\source\\repos\\githubutphealthcare\\utphealthcenter\\views\\doctors\\doctorregisterpage.xaml.cs||{8B382828-6202-11D1-8870-0000F87579D2}|",
-      "RelativeMoniker": "D:0:0:{4F4AABB1-96B0-4368-9E7F-A1D6F1B2DCD4}|HealthCare.csproj|solutionrelative:views\\doctors\\doctorregisterpage.xaml.cs||{8B382828-6202-11D1-8870-0000F87579D2}|"
+      "AbsoluteMoniker": "D:0:0:{4F4AABB1-96B0-4368-9E7F-A1D6F1B2DCD4}|HealthCare.csproj|c:\\users\\kris\\source\\repos\\githubutphealthcare\\utphealthcenter\\views\\students\\studenthomepage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{4F4AABB1-96B0-4368-9E7F-A1D6F1B2DCD4}|HealthCare.csproj|solutionrelative:views\\students\\studenthomepage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4F4AABB1-96B0-4368-9E7F-A1D6F1B2DCD4}|HealthCare.csproj|c:\\users\\kris\\source\\repos\\githubutphealthcare\\utphealthcenter\\views\\doctors\\doctorregisterpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{4F4AABB1-96B0-4368-9E7F-A1D6F1B2DCD4}|HealthCare.csproj|solutionrelative:views\\doctors\\doctorregisterpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{4F4AABB1-96B0-4368-9E7F-A1D6F1B2DCD4}|HealthCare.csproj|c:\\users\\kris\\source\\repos\\githubutphealthcare\\utphealthcenter\\views\\students\\studenthomepage.xaml.cs||{8B382828-6202-11D1-8870-0000F87579D2}|",
+      "RelativeMoniker": "D:0:0:{4F4AABB1-96B0-4368-9E7F-A1D6F1B2DCD4}|HealthCare.csproj|solutionrelative:views\\students\\studenthomepage.xaml.cs||{8B382828-6202-11D1-8870-0000F87579D2}|"
     }
   ],
   "DocumentGroupContainers": [
@@ -32,45 +32,45 @@
         },
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "DoctorRegisterPage.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\Kris\\source\\repos\\GithubUTPhealthCare\\UTPhealthCenter\\Views\\Doctors\\DoctorRegisterPage.xaml.cs",
-              "RelativeDocumentMoniker": "Views\\Doctors\\DoctorRegisterPage.xaml.cs",
-              "ToolTip": "C:\\Users\\Kris\\source\\repos\\GithubUTPhealthCare\\UTPhealthCenter\\Views\\Doctors\\DoctorRegisterPage.xaml.cs",
-              "RelativeToolTip": "Views\\Doctors\\DoctorRegisterPage.xaml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 2,
+              "Title": "StudentHomePage.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Kris\\source\\repos\\GithubUTPhealthCare\\UTPhealthCenter\\Views\\Students\\StudentHomePage.xaml.cs",
+              "RelativeDocumentMoniker": "Views\\Students\\StudentHomePage.xaml.cs",
+              "ToolTip": "C:\\Users\\Kris\\source\\repos\\GithubUTPhealthCare\\UTPhealthCenter\\Views\\Students\\StudentHomePage.xaml.cs",
+              "RelativeToolTip": "Views\\Students\\StudentHomePage.xaml.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAAABcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-06T14:54:08.148Z",
+              "WhenOpened": "2024-11-06T21:59:52.964Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "StudentHomePage.xaml",
+              "DocumentMoniker": "C:\\Users\\Kris\\source\\repos\\GithubUTPhealthCare\\UTPhealthCenter\\Views\\Students\\StudentHomePage.xaml",
+              "RelativeDocumentMoniker": "Views\\Students\\StudentHomePage.xaml",
+              "ToolTip": "C:\\Users\\Kris\\source\\repos\\GithubUTPhealthCare\\UTPhealthCenter\\Views\\Students\\StudentHomePage.xaml",
+              "RelativeToolTip": "Views\\Students\\StudentHomePage.xaml",
+              "ViewState": "AgIAAGwAAAAAAAAAAAAAAH0AAABzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-11-06T18:00:23.02Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "DoctorRegisterViewModel.cs",
-              "DocumentMoniker": "C:\\Users\\Kris\\source\\repos\\GithubUTPhealthCare\\UTPhealthCenter\\ViewModel\\DoctorRegisterViewModel.cs",
-              "RelativeDocumentMoniker": "ViewModel\\DoctorRegisterViewModel.cs",
-              "ToolTip": "C:\\Users\\Kris\\source\\repos\\GithubUTPhealthCare\\UTPhealthCenter\\ViewModel\\DoctorRegisterViewModel.cs",
-              "RelativeToolTip": "ViewModel\\DoctorRegisterViewModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAGsAAAANAAAAAAAAAA==",
+              "Title": "App.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Kris\\source\\repos\\GithubUTPhealthCare\\UTPhealthCenter\\App.xaml.cs",
+              "RelativeDocumentMoniker": "App.xaml.cs",
+              "ToolTip": "C:\\Users\\Kris\\source\\repos\\GithubUTPhealthCare\\UTPhealthCenter\\App.xaml.cs",
+              "RelativeToolTip": "App.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAABOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-06T14:54:45.302Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "DoctorRegisterPage.xaml",
-              "DocumentMoniker": "C:\\Users\\Kris\\source\\repos\\GithubUTPhealthCare\\UTPhealthCenter\\Views\\Doctors\\DoctorRegisterPage.xaml",
-              "RelativeDocumentMoniker": "Views\\Doctors\\DoctorRegisterPage.xaml",
-              "ToolTip": "C:\\Users\\Kris\\source\\repos\\GithubUTPhealthCare\\UTPhealthCenter\\Views\\Doctors\\DoctorRegisterPage.xaml",
-              "RelativeToolTip": "Views\\Doctors\\DoctorRegisterPage.xaml",
-              "ViewState": "AgIAABUAAAAAAAAAAAAAAA8AAAAbAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-11-06T14:53:41.384Z",
+              "WhenOpened": "2024-11-06T21:31:32.874Z",
               "EditorCaption": ""
             }
           ]

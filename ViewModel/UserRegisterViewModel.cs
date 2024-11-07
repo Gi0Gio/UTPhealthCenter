@@ -1,13 +1,9 @@
-﻿using System;
+﻿using HealthCare.Views.Doctors;
+using HealthCare.Views.Students;
 using System.ComponentModel;
-using System.Net.Http;
 using System.Text;
 using System.Text.Json;
-using System.Threading.Tasks;
 using System.Windows.Input;
-using HealthCare.Views.Doctors;
-using HealthCare.Views.Students;
-using HealthCare.Models;
 
 namespace HealthCare.ViewModel
 {
