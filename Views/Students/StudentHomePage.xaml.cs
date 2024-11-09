@@ -7,6 +7,7 @@ public partial class StudentHomePage : ContentPage
     public StudentHomePage()
     {
         InitializeComponent();
+
     }
     private async void Request(object sender, EventArgs e)
     {

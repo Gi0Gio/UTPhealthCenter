@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="HealthCare.Views.Doctors.Citas.Historial"
+             Title="Historial"
+             xmlns:components="clr-namespace:HealthCare.Components"
+             BackgroundImageSource="fondete.jpeg"
+             BackgroundColor="{OnIdiom Phone=#fff, Desktop=#fff, Tablet=#fff}"
+             NavigationPage.HasBackButton="False"
+             NavigationPage.HasNavigationBar="False">
+    <ScrollView>
+        <VerticalStackLayout Padding="20" Spacing="15">
+
+            <components:Navbar IsVisible="{OnIdiom Desktop=true, Phone=false, Tablet=true}" />
+            <components:SideMenu IsVisible="{OnIdiom Desktop=false, Phone=true, Tablet=false}" />
+
+            <Label Text="Historial de Citas"
+            FontSize="35"
+            FontAttributes="Bold"
+            TextColor="#000"
+            HorizontalOptions="Center"
+            Margin="0,0,0,20"/>
+
+            <OnIdiom x:TypeArguments="View">
+                <OnIdiom.Tablet>
+                </OnIdiom.Tablet>
+            </OnIdiom>
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

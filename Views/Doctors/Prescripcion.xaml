@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="HealthCare.Views.Doctors.Prescripcion"
+             Title="Prescripcion"
+             xmlns:components="clr-namespace:HealthCare.Components"
+             BackgroundImageSource="fondete.jpeg"
+             BackgroundColor="{OnIdiom Phone=#fff, Desktop=#fff, Tablet=#fff}"
+             NavigationPage.HasBackButton="False"
+             NavigationPage.HasNavigationBar="False">
+    <ScrollView>
+        <VerticalStackLayout Padding="20" Spacing="15">
+
+            <components:Navbar IsVisible="{OnIdiom Desktop=true, Phone=false, Tablet=true}" />
+            <components:SideMenu IsVisible="{OnIdiom Desktop=false, Phone=true, Tablet=false}" />
+
+            
+            <Label Text="Prescripciones"
+            FontSize="35"
+            FontAttributes="Bold"
+            TextColor="#000"
+            HorizontalOptions="Center"
+            Margin="0,0,0,20"/>
+
+            
+            <OnIdiom x:TypeArguments="View">
+                <OnIdiom.Tablet>
+                    <Grid ColumnDefinitions="*,*"
+                    RowDefinitions="Auto"
+                    ColumnSpacing="20">
+
+                        <Frame BackgroundColor="#fff" Grid.Column="0" CornerRadius="15" BorderColor="#fff">
+                            <ContentView BackgroundColor="#fff" Grid.Column="0" Padding="20">
+                                <VerticalStackLayout>
+                                    <Label Text="Crear Prescripción"
+                                    FontSize="24"
+                                    FontAttributes="Bold"
+                                    TextColor="#333"
+                                    Margin="0, 0, 0, 10"/>
+
+                                    <Label Text="Paciente" TextColor="Black" FontSize="18" FontAttributes="Bold" />
+                                    <Picker BackgroundColor="#f6f6f6" />
+
+                                    <Label Text="Medicamento" TextColor="Black" FontSize="18" FontAttributes="Bold" />
+                                    <Picker BackgroundColor="#f6f6f6" />
+
+                                        <Label Text="Dosis" TextColor="Black" FontSize="18" FontAttributes="Bold" />
+                                    <Entry Placeholder="Informe de la dosis" 
+                                    Text="" 
+                                    Keyboard="Text" 
+                                    TextColor="Black" 
+                                    FontSize="{OnIdiom Phone=22, Desktop=25}"
+                                    PlaceholderColor="#000" />
+
+                                    <Label Text="Descripción de la cita" TextColor="Black" FontSize="18" FontAttributes="Bold" />
+                                    <Entry Placeholder="Describa su necesidad" 
+                                    Text="" 
+                                    Keyboard="Text" 
+                                    TextColor="Black" 
+                                    FontSize="{OnIdiom Phone=22, Desktop=25}"
+                                    PlaceholderColor="#000" 
+                                    Margin="0, 0, 0, 10"/>
+
+                                    <Button Text="Asignar Prescripción" BackgroundColor="#006AAB" TextColor="White" />
+                                </VerticalStackLayout>
+                            </ContentView>
+                        </Frame>
+
+                        <Frame BackgroundColor="#fff" Grid.Column="1" CornerRadius="15" BorderColor="#fff">
+                            <ContentView Grid.Column="1" Padding="20">
+                                <VerticalStackLayout>
+                                    <Label Text="Lista de Prescripciones"
+                                    FontSize="24"
+                                    FontAttributes="Bold"
+                                    TextColor="#333" />
+
+
+                                    <Frame BackgroundColor="#f0efeb" CornerRadius="15" HasShadow="True" BorderColor="Transparent" Margin="0,10">
+                                        <VerticalStackLayout Padding="5">
+                                            <Grid RowDefinitions="Auto, Auto" ColumnDefinitions="Auto, Auto, Auto" VerticalOptions="Center" HorizontalOptions="Center">
+                                               
+                                                <Label Text="Paciente" TextColor="Black" FontAttributes="Bold" Grid.Row="0" Grid.Column="0" Margin="0, 0, 150, 0"/>
+                                                <Label Text="Giovanny" FontSize="14" TextColor="Black" Grid.Row="0" Grid.Column="0"  Margin="0, 20, 10, 10"/>
+                                                <Label Text="Medicamento" TextColor="Black" FontAttributes="Bold" Grid.Row="0" Grid.Column="1" Margin="0, 0, 150, 0"/>
+                                                <Label Text="Paracetamol" TextColor="Black" Grid.Row="0" Grid.Column="1" Margin="0, 20, 10, 10"/>
+                                                <Label Text="Dosis" TextColor="Black" FontAttributes="Bold" Grid.Row="0" Grid.Column="2"/>
+                                                <Label Text="200 mg cada 6-8 horas" TextColor="Black" Grid.Row="0" Grid.Column="2" Margin="0, 20, 10, 20"/>
+
+                                                
+                                                <Label Text="Descripción de la cita" TextColor="Black" FontAttributes="Bold" Grid.Row="1" Grid.Column="0"/>
+                                                <Label Text="Revisión boeeeee" TextColor="Black" Grid.Row="1" Grid.Column="0" Margin="0, 20, 10, 0"/>
+                                                <Button Text="Eliminar Prescripción" BackgroundColor="Red" TextColor="White" HeightRequest="20" WidthRequest="180" Grid.Row="1" Grid.Column="2" />
+                                            </Grid>
+
+                                        </VerticalStackLayout>
+                                    </Frame>
+                                </VerticalStackLayout>
+                            </ContentView>
+                        </Frame>
+                    </Grid>
+                </OnIdiom.Tablet>
+                <OnIdiom.Desktop>
+                    <Grid ColumnDefinitions="*,*"
+                        RowDefinitions="Auto"
+                        ColumnSpacing="20">
+
+                        <Frame BackgroundColor="#fff" Grid.Column="0" CornerRadius="15" BorderColor="#fff">
+                            <ContentView BackgroundColor="#fff" Grid.Column="0" Padding="20">
+                                <VerticalStackLayout>
+                                    <Label Text="Crear Prescripción"
+                                    FontSize="24"
+                                    FontAttributes="Bold"
+                                    TextColor="#333"
+                                    Margin="0, 0, 0, 10"/>
+
+                                    <Label Text="Paciente" TextColor="Black" FontSize="18" FontAttributes="Bold" />
+                                    <Picker BackgroundColor="#f6f6f6" />
+
+                                    <Label Text="Medicamento" TextColor="Black" FontSize="18" FontAttributes="Bold" />
+                                    <Picker BackgroundColor="#f6f6f6" />
+
+                                    <Label Text="Dosis" TextColor="Black" FontSize="18" FontAttributes="Bold" />
+                                    <Entry Placeholder="Informe de la dosis" 
+                                    Text="" 
+                                    Keyboard="Text" 
+                                    TextColor="Black" 
+                                    FontSize="{OnIdiom Phone=22, Desktop=25}"
+                                    PlaceholderColor="#000" />
+
+                                    <Label Text="Descripción de la cita" TextColor="Black" FontSize="18" FontAttributes="Bold" />
+                                    <Entry Placeholder="Describa su necesidad" 
+                                    Text="" 
+                                    Keyboard="Text" 
+                                    TextColor="Black" 
+                                    FontSize="{OnIdiom Phone=22, Desktop=25}"
+                                    PlaceholderColor="#000" 
+                                    Margin="0, 0, 0, 10"/>
+
+                                    <Button Text="Asignar Prescripción" BackgroundColor="#006AAB" TextColor="White" />
+                                </VerticalStackLayout>
+                            </ContentView>
+                        </Frame>
+
+                        <Frame BackgroundColor="#fff" Grid.Column="1" CornerRadius="15" BorderColor="#fff">
+                            <ContentView Grid.Column="1" Padding="20">
+                                <VerticalStackLayout>
+                                    <Label Text="Lista de Prescripciones"
+                                    FontSize="24"
+                                    FontAttributes="Bold"
+                                    TextColor="#333" />
+
+
+                                    <Frame BackgroundColor="#f0efeb" CornerRadius="15" HasShadow="True" BorderColor="Transparent" Margin="0,10">
+                                        <VerticalStackLayout Padding="5">
+                                            <Grid RowDefinitions="Auto, Auto" ColumnDefinitions="Auto, Auto, Auto" VerticalOptions="Center" HorizontalOptions="Center">
+
+                                                <Label Text="Paciente" TextColor="Black" FontAttributes="Bold" Grid.Row="0" Grid.Column="0" Margin="0, 0, 150, 0"/>
+                                                <Label Text="Giovanny" FontSize="14" TextColor="Black" Grid.Row="0" Grid.Column="0"  Margin="0, 20, 10, 10"/>
+                                                <Label Text="Medicamento" TextColor="Black" FontAttributes="Bold" Grid.Row="0" Grid.Column="1" Margin="0, 0, 150, 0"/>
+                                                <Label Text="Paracetamol" TextColor="Black" Grid.Row="0" Grid.Column="1" Margin="0, 20, 10, 10"/>
+                                                <Label Text="Dosis" TextColor="Black" FontAttributes="Bold" Grid.Row="0" Grid.Column="2"/>
+                                                <Label Text="200 mg cada 6-8 horas" TextColor="Black" Grid.Row="0" Grid.Column="2" Margin="0, 20, 10, 20"/>
+
+
+                                                <Label Text="Descripción de la cita" TextColor="Black" FontAttributes="Bold" Grid.Row="1" Grid.Column="0"/>
+                                                <Label Text="Revisión boeeeee" TextColor="Black" Grid.Row="1" Grid.Column="0" Margin="0, 20, 10, 0"/>
+                                                <Button Text="Eliminar Prescripción" BackgroundColor="Red" TextColor="White" HeightRequest="20" WidthRequest="180" Grid.Row="1" Grid.Column="2" />
+                                            </Grid>
+
+                                        </VerticalStackLayout>
+                                    </Frame>
+                                </VerticalStackLayout>
+                            </ContentView>
+                        </Frame>
+                    </Grid>
+                </OnIdiom.Desktop>
+            </OnIdiom>
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

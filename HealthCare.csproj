@@ -64,11 +64,15 @@
 	  <None Remove="Resources\Fonts\Mohave-Regular.ttf" />
 	  <None Remove="Resources\Images\doctol.png" />
 	  <None Remove="Resources\Images\healthcare.png" />
+	  <None Remove="Resources\Images\logoclinica.png" />
+	  <None Remove="Resources\Images\logouniver.png" />
 	  <None Remove="Resources\Splash\iconoa.png" />
 	  <None Remove="Resources\Splash\logo1.png" />
 	</ItemGroup>
 
 	<ItemGroup>
+		<PackageReference Include="itext.bouncy-castle-adapter" Version="8.0.5" />
+		<PackageReference Include="itext7" Version="8.0.5" />
 		<PackageReference Include="Microsoft.Maui.Controls" Version="$(MauiVersion)" />
 		<PackageReference Include="Microsoft.Maui.Controls.Compatibility" Version="$(MauiVersion)" />
 		<PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="8.0.0" />
@@ -84,16 +88,28 @@
 	  <MauiXaml Update="Views\Clinic\AdminRegisterPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="Views\Doctors\CertificatesPage.xaml">
+	  <MauiXaml Update="Views\Clinic\CitasPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="Views\Doctors\CitasPage.xaml">
+	  <MauiXaml Update="Views\Doctors\Citas\Historial.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Views\Doctors\Citas\TusCitas.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="Views\Doctors\DoctorHomePage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="Views\Doctors\DoctorRegisterPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Views\Doctors\Patients.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Views\Doctors\Prescripcion.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Views\Doctors\Referencia.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="Views\LoginPage.xaml">
@@ -109,9 +125,6 @@
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="Views\Clinic\ServicesPage.xaml">
-	    <Generator>MSBuild:Compile</Generator>
-	  </MauiXaml>
-	  <MauiXaml Update="Views\Doctors\SpecialityPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="Views\Students\Appointments\PatientHistoryPage.xaml">
