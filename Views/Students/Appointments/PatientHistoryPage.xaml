@@ -4,105 +4,129 @@
              x:Class="HealthCare.Views.Students.Appointments.PatientHistoryPage"
              xmlns:components="clr-namespace:HealthCare.Components"
              BackgroundColor="#fff">
-    <ScrollView>
-        <VerticalStackLayout Padding="20">
+    <!-- Main Layout -->
+    <Grid RowDefinitions="Auto,*,Auto" BackgroundColor="#ffffff">
+
+        <!-- Static Navbar/SideMenu at the Top -->
+        <StackLayout Grid.Row="0">
             <components:Navbar IsVisible="{OnIdiom Desktop=true, Phone=false, Tablet=true}" />
             <components:SideMenu IsVisible="{OnIdiom Desktop=false, Phone=true, Tablet=false}" />
+            <Label Text="Citas pendientes"
+                   FontSize="24"
+                   FontAttributes="Bold"
+                   HorizontalOptions="Center"
+                   TextColor="#000000"
+                   Margin="0,10,0,0" />
+        </StackLayout>
 
-            <Label Text="Historial de Citas"
-               FontSize="24"
-               FontAttributes="Bold"
-               HorizontalOptions="Center"
-               TextColor="#000000" />
-
-            <!-- Grid for Cards -->
-            <Grid ColumnDefinitions="*,*"
-              RowSpacing="20"
-              ColumnSpacing="20"
-              Padding="0,20,0,0">
+        <!-- Scrollable Content with Appointment Cards -->
+        <ScrollView Grid.Row="1" VerticalOptions="FillAndExpand">
+            <FlexLayout Padding="20,0"
+                        Wrap="Wrap"
+                        Direction="Row"
+                        AlignItems="Center"
+                        JustifyContent="SpaceEvenly">
 
                 <!-- Appointment Card 1 -->
-                <Frame BackgroundColor="#d9d9d9"
-                   CornerRadius="8"
-                   Padding="10"
-                   HasShadow="True"
-                   Grid.Row="0" Grid.Column="0">
+                <Frame WidthRequest="600" HeightRequest="200" BackgroundColor="#d9d9d9" CornerRadius="8" Padding="10" HasShadow="True"
+                       Margin="2">
                     <VerticalStackLayout>
-                        <Label Text="Doctor" FontAttributes="Bold" TextColor="#000000" />
-                        <Label Text="Chavarría" TextColor="#000000" />
-                        <Label Text="Estado de la cita" FontAttributes="Bold" TextColor="#000000" />
-                        <Label Text="Pendiente" TextColor="#000000" />
-                        <Label Text="Descripción de la cita" FontAttributes="Bold" TextColor="#000000" />
-                        <Label Text="Chequeo de seguimiento después de tratamiento" TextColor="#000000" />
-                        <Label Text="Día de la cita" FontAttributes="Bold" TextColor="#000000" />
-                        <Label Text="20/15/2024 14:12" TextColor="#000000" />
-                        <Label Text="Tipo de cita" FontAttributes="Bold" TextColor="#000000" />
-                        <Label Text="Seguimiento" TextColor="#000000" />
+                        <Label Text="Doctor" FontFamily="Mohave-Regular" FontAttributes="Bold" TextColor="#000000"/>
+                        <Label Text="Chavarría" FontFamily="Mohave-Regular" TextColor="#000000" />
+                        <Label Text="Estado de la cita" FontFamily="Mohave-Regular" FontAttributes="Bold" TextColor="#000000" />
+                        <Label Text="Pendiente" FontFamily="MohaveRegular" TextColor="#000000" />
+                        <Label Text="Descripción de la cita" FontFamily="MohaveRegular" FontAttributes="Bold" TextColor="#000000" />
+                        <Label Text="Chequeo de seguimiento después de tratamiento" FontFamily="MohaveRegular" TextColor="#000000" />
+                        <Label Text="Día de la cita" FontFamily="MohaveRegular" FontAttributes="Bold" TextColor="#000000" />
+                        <Label Text="20/15/2024 14:12" FontFamily="MohaveRegular" TextColor="#000000" />
+                        <Label Text="Tipo de cita" FontFamily="MohaveRegular" FontAttributes="Bold" TextColor="#000000" />
+                        <Label Text="Seguimiento" FontFamily="MohaveRegular" TextColor="#000000" />
                     </VerticalStackLayout>
                 </Frame>
 
                 <!-- Appointment Card 2 -->
-                <Frame BackgroundColor="#d9d9d9"
-                   CornerRadius="8"
-                   Padding="10"
-                   HasShadow="True"
-                   Grid.Row="0" Grid.Column="1">
+                <Frame WidthRequest="600" HeightRequest="200" BackgroundColor="#d9d9d9" CornerRadius="8" Padding="10" HasShadow="True"
+                        Margin="2">
                     <VerticalStackLayout>
-                        <Label Text="Doctor" FontAttributes="Bold" TextColor="#000000" />
-                        <Label Text="Chavarría" TextColor="#000000" />
-                        <Label Text="Estado de la cita" FontAttributes="Bold" TextColor="#000000" />
-                        <Label Text="Pendiente" TextColor="#000000" />
-                        <Label Text="Descripción de la cita" FontAttributes="Bold" TextColor="#000000" />
-                        <Label Text="Chequeo de seguimiento después de tratamiento" TextColor="#000000" />
-                        <Label Text="Día de la cita" FontAttributes="Bold" TextColor="#000000" />
-                        <Label Text="20/15/2024 14:12" TextColor="#000000" />
-                        <Label Text="Tipo de cita" FontAttributes="Bold" TextColor="#000000" />
-                        <Label Text="Seguimiento" TextColor="#000000" />
+                        <Label Text="Doctor" FontFamily="Mohave-Regular" FontAttributes="Bold" TextColor="#000000"/>
+                        <Label Text="Chavarría" FontFamily="Mohave-Regular" TextColor="#000000" />
+                        <Label Text="Estado de la cita" FontFamily="Mohave-Regular" FontAttributes="Bold" TextColor="#000000" />
+                        <Label Text="Pendiente" FontFamily="MohaveRegular" TextColor="#000000" />
+                        <Label Text="Descripción de la cita" FontFamily="MohaveRegular" FontAttributes="Bold" TextColor="#000000" />
+                        <Label Text="Chequeo de seguimiento después de tratamiento" FontFamily="MohaveRegular" TextColor="#000000" />
+                        <Label Text="Día de la cita" FontFamily="MohaveRegular" FontAttributes="Bold" TextColor="#000000" />
+                        <Label Text="20/15/2024 14:12" FontFamily="MohaveRegular" TextColor="#000000" />
+                        <Label Text="Tipo de cita" FontFamily="MohaveRegular" FontAttributes="Bold" TextColor="#000000" />
+                        <Label Text="Seguimiento" FontFamily="MohaveRegular" TextColor="#000000" />
                     </VerticalStackLayout>
                 </Frame>
 
-                <!-- Appointment Card 3 -->
-                <Frame BackgroundColor="#d9d9d9"
-                   CornerRadius="8"
-                   Padding="10"
-                   HasShadow="True"
-                   Grid.Row="1" Grid.Column="0">
+                <!-- Add more cards if needed -->
+                <Frame WidthRequest="600" HeightRequest="200" BackgroundColor="#d9d9d9" CornerRadius="8" Padding="10" HasShadow="True"
+                        Margin="2">
                     <VerticalStackLayout>
-                        <Label Text="Doctor" FontAttributes="Bold" TextColor="#000000" />
-                        <Label Text="Chavarría" TextColor="#000000" />
-                        <Label Text="Estado de la cita" FontAttributes="Bold" TextColor="#000000" />
-                        <Label Text="Pendiente" TextColor="#000000" />
-                        <Label Text="Descripción de la cita" FontAttributes="Bold" TextColor="#000000" />
-                        <Label Text="Chequeo de seguimiento después de tratamiento" TextColor="#000000" />
-                        <Label Text="Día de la cita" FontAttributes="Bold" TextColor="#000000" />
-                        <Label Text="20/15/2024 14:12" TextColor="#000000" />
-                        <Label Text="Tipo de cita" FontAttributes="Bold" TextColor="#000000" />
-                        <Label Text="Seguimiento" TextColor="#000000" />
+                        <Label Text="Doctor" FontFamily="Mohave-Regular" FontAttributes="Bold" TextColor="#000000"/>
+                        <Label Text="Chavarría" FontFamily="Mohave-Regular" TextColor="#000000" />
+                        <Label Text="Estado de la cita" FontFamily="Mohave-Regular" FontAttributes="Bold" TextColor="#000000" />
+                        <Label Text="Pendiente" FontFamily="MohaveRegular" TextColor="#000000" />
+                        <Label Text="Descripción de la cita" FontFamily="MohaveRegular" FontAttributes="Bold" TextColor="#000000" />
+                        <Label Text="Chequeo de seguimiento después de tratamiento" FontFamily="MohaveRegular" TextColor="#000000" />
+                        <Label Text="Día de la cita" FontFamily="MohaveRegular" FontAttributes="Bold" TextColor="#000000" />
+                        <Label Text="20/15/2024 14:12" FontFamily="MohaveRegular" TextColor="#000000" />
+                        <Label Text="Tipo de cita" FontFamily="MohaveRegular" FontAttributes="Bold" TextColor="#000000" />
+                        <Label Text="Seguimiento" FontFamily="MohaveRegular" TextColor="#000000" />
                     </VerticalStackLayout>
                 </Frame>
 
-                <!-- Appointment Card 4 -->
-                <Frame BackgroundColor="#d9d9d9"
-                   CornerRadius="8"
-                   Padding="10"
-                   HasShadow="True"
-                   Grid.Row="1" Grid.Column="1">
+                <Frame WidthRequest="600" HeightRequest="200" BackgroundColor="#d9d9d9" CornerRadius="8" Padding="10" HasShadow="True"
+                         Margin="2">
                     <VerticalStackLayout>
-                        <Label Text="Doctor" FontAttributes="Bold" TextColor="#000000" />
-                        <Label Text="Chavarría" TextColor="#000000" />
-                        <Label Text="Estado de la cita" FontAttributes="Bold" TextColor="#000000" />
-                        <Label Text="Pendiente" TextColor="#000000" />
-                        <Label Text="Descripción de la cita" FontAttributes="Bold" TextColor="#000000" />
-                        <Label Text="Chequeo de seguimiento después de tratamiento" TextColor="#000000" />
-                        <Label Text="Día de la cita" FontAttributes="Bold" TextColor="#000000" />
-                        <Label Text="20/15/2024 14:12" TextColor="#000000" />
-                        <Label Text="Tipo de cita" FontAttributes="Bold" TextColor="#000000" />
-                        <Label Text="Seguimiento" TextColor="#000000" />
+                        <Label Text="Doctor" FontFamily="Mohave-Regular" FontAttributes="Bold" TextColor="#000000"/>
+                        <Label Text="Chavarría" FontFamily="Mohave-Regular" TextColor="#000000" />
+                        <Label Text="Estado de la cita" FontFamily="Mohave-Regular" FontAttributes="Bold" TextColor="#000000" />
+                        <Label Text="Pendiente" FontFamily="MohaveRegular" TextColor="#000000" />
+                        <Label Text="Descripción de la cita" FontFamily="MohaveRegular" FontAttributes="Bold" TextColor="#000000" />
+                        <Label Text="Chequeo de seguimiento después de tratamiento" FontFamily="MohaveRegular" TextColor="#000000" />
+                        <Label Text="Día de la cita" FontFamily="MohaveRegular" FontAttributes="Bold" TextColor="#000000" />
+                        <Label Text="20/15/2024 14:12" FontFamily="MohaveRegular" TextColor="#000000" />
+                        <Label Text="Tipo de cita" FontFamily="MohaveRegular" FontAttributes="Bold" TextColor="#000000" />
+                        <Label Text="Seguimiento" FontFamily="MohaveRegular" TextColor="#000000" />
                     </VerticalStackLayout>
                 </Frame>
-            </Grid>
-            
-        </VerticalStackLayout>
+                <Frame WidthRequest="600" HeightRequest="200" BackgroundColor="#d9d9d9" CornerRadius="8" Padding="10" HasShadow="True"
+                         Margin="2">
+                    <VerticalStackLayout>
+                        <Label Text="Doctor" FontFamily="Mohave-Regular" FontAttributes="Bold" TextColor="#000000"/>
+                        <Label Text="Chavarría" FontFamily="Mohave-Regular" TextColor="#000000" />
+                        <Label Text="Estado de la cita" FontFamily="Mohave-Regular" FontAttributes="Bold" TextColor="#000000" />
+                        <Label Text="Pendiente" FontFamily="MohaveRegular" TextColor="#000000" />
+                        <Label Text="Descripción de la cita" FontFamily="MohaveRegular" FontAttributes="Bold" TextColor="#000000" />
+                        <Label Text="Chequeo de seguimiento después de tratamiento" FontFamily="MohaveRegular" TextColor="#000000" />
+                        <Label Text="Día de la cita" FontFamily="MohaveRegular" FontAttributes="Bold" TextColor="#000000" />
+                        <Label Text="20/15/2024 14:12" FontFamily="MohaveRegular" TextColor="#000000" />
+                        <Label Text="Tipo de cita" FontFamily="MohaveRegular" FontAttributes="Bold" TextColor="#000000" />
+                        <Label Text="Seguimiento" FontFamily="MohaveRegular" TextColor="#000000" />
+                    </VerticalStackLayout>
+                </Frame>
+                <Frame WidthRequest="600" HeightRequest="200" BackgroundColor="#d9d9d9" CornerRadius="8" Padding="10" HasShadow="True"
+                        Margin="2">
+                    <VerticalStackLayout>
+                        <Label Text="Doctor" FontFamily="Mohave-Regular" FontAttributes="Bold" TextColor="#000000"/>
+                        <Label Text="Chavarría" FontFamily="Mohave-Regular" TextColor="#000000" />
+                        <Label Text="Estado de la cita" FontFamily="Mohave-Regular" FontAttributes="Bold" TextColor="#000000" />
+                        <Label Text="Pendiente" FontFamily="MohaveRegular" TextColor="#000000" />
+                        <Label Text="Descripción de la cita" FontFamily="MohaveRegular" FontAttributes="Bold" TextColor="#000000" />
+                        <Label Text="Chequeo de seguimiento después de tratamiento" FontFamily="MohaveRegular" TextColor="#000000" />
+                        <Label Text="Día de la cita" FontFamily="MohaveRegular" FontAttributes="Bold" TextColor="#000000" />
+                        <Label Text="20/15/2024 14:12" FontFamily="MohaveRegular" TextColor="#000000" />
+                        <Label Text="Tipo de cita" FontFamily="MohaveRegular" FontAttributes="Bold" TextColor="#000000" />
+                        <Label Text="Seguimiento" FontFamily="MohaveRegular" TextColor="#000000" />
+                    </VerticalStackLayout>
+                </Frame>
 
-    </ScrollView>
+            </FlexLayout>
+        </ScrollView>
+
+        
+    </Grid>
 </ContentPage>
