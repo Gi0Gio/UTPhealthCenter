@@ -9,16 +9,16 @@ public partial class StudentHomePage : ContentPage
         InitializeComponent();
 
     }
-    private async void Request(object sender, EventArgs e)
-    {
-        await Navigation.PushAsync(new PatientRequestPage());
-    }
     private async void History(object sender, EventArgs e)
     {
-        await Navigation.PushAsync(new PatientHistoryPage());   
+        await Navigation.PushAsync(new PatientHistoryPage());
     }
     private async void Prescription(object sender, EventArgs e)
     {
         await Navigation.PushAsync(new PatientPrescriptionPage());
+    }
+    private async void Request(object sender, EventArgs e)
+    {
+        await Navigation.PushAsync(new PatientRequestPage());   
     }
 }

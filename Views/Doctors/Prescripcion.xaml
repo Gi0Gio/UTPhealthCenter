@@ -78,20 +78,19 @@
                                     <Frame BackgroundColor="#f0efeb" CornerRadius="15" HasShadow="True" BorderColor="Transparent" Margin="0,10">
                                         <VerticalStackLayout Padding="5">
                                             <Grid RowDefinitions="Auto, Auto" ColumnDefinitions="Auto, Auto, Auto" VerticalOptions="Center" HorizontalOptions="Center">
-                                               
+
                                                 <Label Text="Paciente" TextColor="Black" FontAttributes="Bold" Grid.Row="0" Grid.Column="0" Margin="0, 0, 150, 0"/>
                                                 <Label Text="Giovanny" FontSize="14" TextColor="Black" Grid.Row="0" Grid.Column="0"  Margin="0, 20, 10, 10"/>
-                                                <Label Text="Medicamento" TextColor="Black" FontAttributes="Bold" Grid.Row="0" Grid.Column="1" Margin="0, 0, 150, 0"/>
+                                                <Label Text="Medicamento" TextColor="Black" FontAttributes="Bold" Grid.Row="0" Grid.Column="1" Margin="0, 0, 120, 0"/>
                                                 <Label Text="Paracetamol" TextColor="Black" Grid.Row="0" Grid.Column="1" Margin="0, 20, 10, 10"/>
                                                 <Label Text="Dosis" TextColor="Black" FontAttributes="Bold" Grid.Row="0" Grid.Column="2"/>
                                                 <Label Text="200 mg cada 6-8 horas" TextColor="Black" Grid.Row="0" Grid.Column="2" Margin="0, 20, 10, 20"/>
 
-                                                
+
                                                 <Label Text="Descripción de la cita" TextColor="Black" FontAttributes="Bold" Grid.Row="1" Grid.Column="0"/>
                                                 <Label Text="Revisión boeeeee" TextColor="Black" Grid.Row="1" Grid.Column="0" Margin="0, 20, 10, 0"/>
                                                 <Button Text="Eliminar Prescripción" BackgroundColor="Red" TextColor="White" HeightRequest="20" WidthRequest="180" Grid.Row="1" Grid.Column="2" />
                                             </Grid>
-
                                         </VerticalStackLayout>
                                     </Frame>
                                 </VerticalStackLayout>
@@ -156,7 +155,7 @@
 
                                                 <Label Text="Paciente" TextColor="Black" FontAttributes="Bold" Grid.Row="0" Grid.Column="0" Margin="0, 0, 150, 0"/>
                                                 <Label Text="Giovanny" FontSize="14" TextColor="Black" Grid.Row="0" Grid.Column="0"  Margin="0, 20, 10, 10"/>
-                                                <Label Text="Medicamento" TextColor="Black" FontAttributes="Bold" Grid.Row="0" Grid.Column="1" Margin="0, 0, 150, 0"/>
+                                                <Label Text="Medicamento" TextColor="Black" FontAttributes="Bold" Grid.Row="0" Grid.Column="1" Margin="0, 0, 120, 0"/>
                                                 <Label Text="Paracetamol" TextColor="Black" Grid.Row="0" Grid.Column="1" Margin="0, 20, 10, 10"/>
                                                 <Label Text="Dosis" TextColor="Black" FontAttributes="Bold" Grid.Row="0" Grid.Column="2"/>
                                                 <Label Text="200 mg cada 6-8 horas" TextColor="Black" Grid.Row="0" Grid.Column="2" Margin="0, 20, 10, 20"/>
@@ -166,7 +165,6 @@
                                                 <Label Text="Revisión boeeeee" TextColor="Black" Grid.Row="1" Grid.Column="0" Margin="0, 20, 10, 0"/>
                                                 <Button Text="Eliminar Prescripción" BackgroundColor="Red" TextColor="White" HeightRequest="20" WidthRequest="180" Grid.Row="1" Grid.Column="2" />
                                             </Grid>
-
                                         </VerticalStackLayout>
                                     </Frame>
                                 </VerticalStackLayout>

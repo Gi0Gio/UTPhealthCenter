@@ -38,7 +38,7 @@
                                            Margin="0, 0, 0, 10"/>
 
                                     <Label Text="Tipo de cita" TextColor="Black" FontSize="18" FontAttributes="Bold" />
-                                    <Picker Title="Seleccione tipo de cita" />
+                                    <Picker BackgroundColor="#f6f6f6" />
 
                                     <Label Text="Día de la cita" TextColor="Black" FontSize="18" FontAttributes="Bold" />
                                     <DatePicker TextColor="Black" Date="{Binding FechaCita}" />
@@ -72,7 +72,7 @@
                                                 
                                                 <Label Text="Paciente" TextColor="Black" FontAttributes="Bold" Grid.Row="0" Grid.Column="0" Margin="0, 0, 150, 0"/>
                                                 <Label Text="Giovanny" FontSize="14" TextColor="Black" Grid.Row="0" Grid.Column="0"  Margin="0, 20, 10, 10"/>
-                                                <Label Text="Estado de la cita " TextColor="Black" FontAttributes="Bold" Grid.Row="0" Grid.Column="1" Margin="0, 0, 150, 0"/>
+                                                <Label Text="Estado de la cita " TextColor="Black" FontAttributes="Bold" Grid.Row="0" Grid.Column="1" Margin="0, 0, 120, 0"/>
                                                 <Label Text="Confirmada" TextColor="Black" Grid.Row="0" Grid.Column="1" Margin="0, 20, 10, 10"/>
                                                 <Label Text="Descripción de la cita" TextColor="Black" FontAttributes="Bold" Grid.Row="0" Grid.Column="2"/>
                                                 <Label Text="Revisión boeeeee" TextColor="Black" Grid.Row="0" Grid.Column="2" Margin="0, 20, 10, 20"/>
@@ -81,7 +81,7 @@
                                                 <Label Text="Día de la cita" TextColor="Black" FontAttributes="Bold" Grid.Row="1" Grid.Column="0"/>
                                                 <Label Text="11/09/2024 7:44" TextColor="Black" Grid.Row="1" Grid.Column="0" Margin="0, 20, 10, 0"/>
                                                 <Label Text="Tipo de cita" FontAttributes="Bold" TextColor="Black" Grid.Row="1" Grid.Column="1" />
-                                                <Label Text="Revisión" TextColor="Black" Grid.Row="1" Grid.Column="1" Margin="0, 20, 10, 10"/>
+                                                <Label Text="Revisión" TextColor="Black" Grid.Row="1" Grid.Column="1" Margin="0, 20, 0, 0"/>
                                                 <Button Text="Cancelar Cita" BackgroundColor="Red" TextColor="White" HeightRequest="20" WidthRequest="150" Grid.Row="1" Grid.Column="2" />
                                             </Grid>
 
@@ -142,7 +142,7 @@
 
                                                 <Label Text="Paciente" TextColor="Black" FontAttributes="Bold" Grid.Row="0" Grid.Column="0" Margin="0, 0, 150, 0"/>
                                                 <Label Text="Giovanny" FontSize="14" TextColor="Black" Grid.Row="0" Grid.Column="0"  Margin="0, 20, 10, 10"/>
-                                                <Label Text="Estado de la cita " TextColor="Black" FontAttributes="Bold" Grid.Row="0" Grid.Column="1" Margin="0, 0, 150, 0"/>
+                                                <Label Text="Estado de la cita " TextColor="Black" FontAttributes="Bold" Grid.Row="0" Grid.Column="1" Margin="0, 0, 120, 0"/>
                                                 <Label Text="Confirmada" TextColor="Black" Grid.Row="0" Grid.Column="1" Margin="0, 20, 10, 10"/>
                                                 <Label Text="Descripción de la cita" TextColor="Black" FontAttributes="Bold" Grid.Row="0" Grid.Column="2"/>
                                                 <Label Text="Revisión boeeeee" TextColor="Black" Grid.Row="0" Grid.Column="2" Margin="0, 20, 10, 20"/>
@@ -151,7 +151,7 @@
                                                 <Label Text="Día de la cita" TextColor="Black" FontAttributes="Bold" Grid.Row="1" Grid.Column="0"/>
                                                 <Label Text="11/09/2024 7:44" TextColor="Black" Grid.Row="1" Grid.Column="0" Margin="0, 20, 10, 0"/>
                                                 <Label Text="Tipo de cita" FontAttributes="Bold" TextColor="Black" Grid.Row="1" Grid.Column="1" />
-                                                <Label Text="Revisión" TextColor="Black" Grid.Row="1" Grid.Column="1" Margin="0, 20, 10, 10"/>
+                                                <Label Text="Revisión" TextColor="Black" Grid.Row="1" Grid.Column="1" Margin="0, 20, 0, 0"/>
                                                 <Button Text="Cancelar Cita" BackgroundColor="Red" TextColor="White" HeightRequest="20" WidthRequest="150" Grid.Row="1" Grid.Column="2" />
                                             </Grid>
 

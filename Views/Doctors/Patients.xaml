@@ -87,18 +87,17 @@
                                     TextColor="#006AAB" />
 
                                     <Frame BackgroundColor="White" CornerRadius="15" HasShadow="True" BorderColor="Black" Margin="0,10" HorizontalOptions="Center">
-                                        <VerticalStackLayout Padding="5">
+                                        <VerticalStackLayout Padding="5" >
                                             <Grid ColumnDefinitions="Auto, Auto, Auto, Auto, Auto, Auto" HorizontalOptions="Center">
-                                                <Label Text="Doctor:" TextColor="Black" FontSize="20" FontAttributes="Bold" Grid.Row="0" Grid.Column="0"  Margin="0, 0, 10, 0" VerticalOptions="Center"/>
+                                                <Label Text="Doctor:" TextColor="Black" FontSize="20" FontAttributes="Bold" Grid.Row="0" Grid.Column="0"  Margin="0, 0, 10, 0" />
                                                 <Label Text="Jovanné" FontSize="18" TextColor="Black" Grid.Row="0" Grid.Column="1"  Margin="0, 0, 15, 0" VerticalOptions="Center"/>
-                                                <Label Text="Estado:" TextColor="Black" FontSize="20" FontAttributes="Bold" Grid.Row="0" Grid.Column="2" Margin="0, 0, 10, 0" VerticalOptions="Center"/>
+                                                <Label Text="Estado:" TextColor="Black" FontSize="20" FontAttributes="Bold" Grid.Row="0" Grid.Column="2" Margin="0, 0, 10, 0" />
                                                 <Label Text="Pendiente" TextColor="Black" FontSize="18" Grid.Row="0" Grid.Column="3" Margin="0, 0, 15, 0" VerticalOptions="Center"/>
-                                                <Label Text="Tipo de cita:" TextColor="Black" FontSize="20" FontAttributes="Bold" Grid.Row="0" Grid.Column="4" Margin="0, 0, 10, 0" VerticalOptions="Center"/>
+                                                <Label Text="Tipo de cita:" TextColor="Black" FontSize="20" FontAttributes="Bold" Grid.Row="0" Grid.Column="4" Margin="0, 0, 10, 0"/>
                                                 <Label Text="Seguimiento" TextColor="Black" FontSize="18" Grid.Row="0" Grid.Column="5" Margin="0, 0, 15, 0" VerticalOptions="Center"/>
                                             </Grid>
                                         </VerticalStackLayout>
                                     </Frame>
-
                                 </VerticalStackLayout>
                             </ContentView>
                         </Frame>

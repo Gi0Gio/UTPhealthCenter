@@ -102,7 +102,7 @@ namespace HealthCare.Views.Doctors
                     .Add(new Text("Especialidad: ").SetBold()) 
                     .Add(new Text(referencia.Especialidad))    
                     .Add(new Text("\n"))               
-                    .Add(new Text("Clínica: ").SetBold()) 
+                    .Add(new Text("Clínica en la que atiende: ").SetBold()) 
                     .Add(new Text(referencia.Clinica))    
                     .SetFontSize(12)
                     .SetMarginBottom(10));
