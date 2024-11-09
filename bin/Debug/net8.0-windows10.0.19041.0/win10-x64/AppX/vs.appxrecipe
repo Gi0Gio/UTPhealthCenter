@@ -30,7 +30,7 @@
     <AppXManifest Include="C:\Users\Kris\source\repos\GithubUTPhealthCare\UTPhealthCenter\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2024-11-09T04:34:12.634</Modified>
+      <Modified>2024-11-09T16:18:43.090</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
@@ -44,11 +44,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Kris\source\repos\GithubUTPhealthCare\UTPhealthCenter\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\HealthCare.dll">
       <PackagePath>HealthCare.dll</PackagePath>
-      <Modified>2024-11-09T04:34:10.674</Modified>
+      <Modified>2024-11-09T16:18:41.877</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Kris\source\repos\GithubUTPhealthCare\UTPhealthCenter\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\apphost.exe">
       <PackagePath>HealthCare.exe</PackagePath>
-      <Modified>2024-11-09T04:34:10.795</Modified>
+      <Modified>2024-11-09T16:18:41.917</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Kris\source\repos\GithubUTPhealthCare\UTPhealthCenter\Resources\Raw\AboutAssets.txt">
       <PackagePath>AboutAssets.txt</PackagePath>
