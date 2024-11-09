@@ -6,4 +6,8 @@ public partial class PatientRequestPage : ContentPage
 	{
 		InitializeComponent();
 	}
+	private async void ToPending(object sender, EventArgs e)
+	{
+		await Navigation.PushAsync(new PatientPendingPage());
+	}
 }

@@ -2,11 +2,107 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="HealthCare.Views.Students.Appointments.PatientHistoryPage"
-             Title="PatientHistoryPage">
-    <VerticalStackLayout>
-        <Label 
-            Text="Welcome to .NET MAUI!"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
-    </VerticalStackLayout>
+             xmlns:components="clr-namespace:HealthCare.Components"
+             BackgroundColor="#fff">
+    <ScrollView>
+        <VerticalStackLayout Padding="20">
+            <components:Navbar IsVisible="{OnIdiom Desktop=true, Phone=false, Tablet=true}" />
+            <components:SideMenu IsVisible="{OnIdiom Desktop=false, Phone=true, Tablet=false}" />
+
+            <Label Text="Historial de Citas"
+               FontSize="24"
+               FontAttributes="Bold"
+               HorizontalOptions="Center"
+               TextColor="#000000" />
+
+            <!-- Grid for Cards -->
+            <Grid ColumnDefinitions="*,*"
+              RowSpacing="20"
+              ColumnSpacing="20"
+              Padding="0,20,0,0">
+
+                <!-- Appointment Card 1 -->
+                <Frame BackgroundColor="#d9d9d9"
+                   CornerRadius="8"
+                   Padding="10"
+                   HasShadow="True"
+                   Grid.Row="0" Grid.Column="0">
+                    <VerticalStackLayout>
+                        <Label Text="Doctor" FontAttributes="Bold" TextColor="#000000" />
+                        <Label Text="Chavarría" TextColor="#000000" />
+                        <Label Text="Estado de la cita" FontAttributes="Bold" TextColor="#000000" />
+                        <Label Text="Pendiente" TextColor="#000000" />
+                        <Label Text="Descripción de la cita" FontAttributes="Bold" TextColor="#000000" />
+                        <Label Text="Chequeo de seguimiento después de tratamiento" TextColor="#000000" />
+                        <Label Text="Día de la cita" FontAttributes="Bold" TextColor="#000000" />
+                        <Label Text="20/15/2024 14:12" TextColor="#000000" />
+                        <Label Text="Tipo de cita" FontAttributes="Bold" TextColor="#000000" />
+                        <Label Text="Seguimiento" TextColor="#000000" />
+                    </VerticalStackLayout>
+                </Frame>
+
+                <!-- Appointment Card 2 -->
+                <Frame BackgroundColor="#d9d9d9"
+                   CornerRadius="8"
+                   Padding="10"
+                   HasShadow="True"
+                   Grid.Row="0" Grid.Column="1">
+                    <VerticalStackLayout>
+                        <Label Text="Doctor" FontAttributes="Bold" TextColor="#000000" />
+                        <Label Text="Chavarría" TextColor="#000000" />
+                        <Label Text="Estado de la cita" FontAttributes="Bold" TextColor="#000000" />
+                        <Label Text="Pendiente" TextColor="#000000" />
+                        <Label Text="Descripción de la cita" FontAttributes="Bold" TextColor="#000000" />
+                        <Label Text="Chequeo de seguimiento después de tratamiento" TextColor="#000000" />
+                        <Label Text="Día de la cita" FontAttributes="Bold" TextColor="#000000" />
+                        <Label Text="20/15/2024 14:12" TextColor="#000000" />
+                        <Label Text="Tipo de cita" FontAttributes="Bold" TextColor="#000000" />
+                        <Label Text="Seguimiento" TextColor="#000000" />
+                    </VerticalStackLayout>
+                </Frame>
+
+                <!-- Appointment Card 3 -->
+                <Frame BackgroundColor="#d9d9d9"
+                   CornerRadius="8"
+                   Padding="10"
+                   HasShadow="True"
+                   Grid.Row="1" Grid.Column="0">
+                    <VerticalStackLayout>
+                        <Label Text="Doctor" FontAttributes="Bold" TextColor="#000000" />
+                        <Label Text="Chavarría" TextColor="#000000" />
+                        <Label Text="Estado de la cita" FontAttributes="Bold" TextColor="#000000" />
+                        <Label Text="Pendiente" TextColor="#000000" />
+                        <Label Text="Descripción de la cita" FontAttributes="Bold" TextColor="#000000" />
+                        <Label Text="Chequeo de seguimiento después de tratamiento" TextColor="#000000" />
+                        <Label Text="Día de la cita" FontAttributes="Bold" TextColor="#000000" />
+                        <Label Text="20/15/2024 14:12" TextColor="#000000" />
+                        <Label Text="Tipo de cita" FontAttributes="Bold" TextColor="#000000" />
+                        <Label Text="Seguimiento" TextColor="#000000" />
+                    </VerticalStackLayout>
+                </Frame>
+
+                <!-- Appointment Card 4 -->
+                <Frame BackgroundColor="#d9d9d9"
+                   CornerRadius="8"
+                   Padding="10"
+                   HasShadow="True"
+                   Grid.Row="1" Grid.Column="1">
+                    <VerticalStackLayout>
+                        <Label Text="Doctor" FontAttributes="Bold" TextColor="#000000" />
+                        <Label Text="Chavarría" TextColor="#000000" />
+                        <Label Text="Estado de la cita" FontAttributes="Bold" TextColor="#000000" />
+                        <Label Text="Pendiente" TextColor="#000000" />
+                        <Label Text="Descripción de la cita" FontAttributes="Bold" TextColor="#000000" />
+                        <Label Text="Chequeo de seguimiento después de tratamiento" TextColor="#000000" />
+                        <Label Text="Día de la cita" FontAttributes="Bold" TextColor="#000000" />
+                        <Label Text="20/15/2024 14:12" TextColor="#000000" />
+                        <Label Text="Tipo de cita" FontAttributes="Bold" TextColor="#000000" />
+                        <Label Text="Seguimiento" TextColor="#000000" />
+                    </VerticalStackLayout>
+                </Frame>
+            </Grid>
+            
+        </VerticalStackLayout>
+
+    </ScrollView>
 </ContentPage>

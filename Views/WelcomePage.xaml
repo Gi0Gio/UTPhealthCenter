@@ -1,13 +1,13 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="HealthCare.Views.WelcomePage"
-             BackgroundColor="{OnIdiom Phone=#fff, Desktop=#a1c5c5}"
+             BackgroundColor="{OnIdiom Phone=#fff, Desktop=#a1c5c5, Tablet=#a1c5c5}"
              NavigationPage.HasBackButton="False"
              NavigationPage.HasNavigationBar="False">
     
 
     <ScrollView>
-        <VerticalStackLayout VerticalOptions="{OnIdiom Phone=Center, Desktop=FillAndExpand}" HorizontalOptions="Center" Padding="60" Spacing="25">
+        <VerticalStackLayout VerticalOptions="{OnIdiom Phone=Center, Desktop=FillAndExpand, Tablet=FillAndExpand}" HorizontalOptions="Center" Padding="60" Spacing="25">
             <!-- Layout para Escritorio -->
             <OnIdiom x:TypeArguments="View">
                 <OnIdiom.Desktop>
@@ -24,7 +24,7 @@
 
                         <!-- Envolver StackLayout dentro de un Frame para redondear esquinas -->
                         <Frame CornerRadius="25" Padding="0" HasShadow="True" BorderColor="LightGray" BackgroundColor="White"
-       HorizontalOptions="Center" VerticalOptions="Center">
+                                HorizontalOptions="Center" VerticalOptions="Center">
 
                             <!-- Columna 1: Sección de Texto -->
                             <StackLayout Grid.Column="0" HorizontalOptions="Center" Padding="10" BackgroundColor="Transparent">
@@ -39,27 +39,80 @@
 
                                 <!-- Título -->
                                 <Label Text="Bienvenido a UTP Health Care"
-               FontSize="36" FontFamily="MohaveRegular" TextColor="#000"
-               HorizontalOptions="Start" VerticalOptions="Center"/>
+                                       FontSize="36" FontFamily="MohaveRegular" TextColor="#000"
+                                       HorizontalOptions="Start" VerticalOptions="Center"/>
 
                                 <!-- Descripción -->
                                 <Label Text="Aquí encontrarás todo lo que necesitas para tu salud universitaria. Conoce más sobre nuestros servicios."
-               FontSize="20" FontFamily="MohaveRegular" TextColor="#000"
-               Margin="0,20,100,20" HorizontalOptions="Start"/>
+                                       FontSize="20" FontFamily="MohaveRegular" TextColor="#000"
+                                       Margin="0,20,100,20" HorizontalOptions="Start"/>
 
                                 <!-- Botón -->
                                 <Button Text="Iniciar Sesión" BackgroundColor="#014671" TextColor="White"
-                FontSize="25" FontFamily="MohaveRegular" Padding="10"
-                CornerRadius="25" HeightRequest="70" WidthRequest="300"
-                HorizontalOptions="Start" Clicked="ParaLogin"/>
+                                    FontSize="25" FontFamily="MohaveRegular" Padding="10"
+                                    CornerRadius="25" HeightRequest="70" WidthRequest="300"
+                                    HorizontalOptions="Start" Clicked="ParaLogin"/>
                             </StackLayout>
                         </Frame>
 
                         <!-- Columna 2: Imagen -->
-                        <Image Grid.Column="1" Source="doctol.png" 
-                           HeightRequest="300" HorizontalOptions="FillAndExpand" VerticalOptions="Center" />
+                        <Image Grid.Column="1" Source="doctol.png" HeightRequest="300" HorizontalOptions="FillAndExpand" VerticalOptions="Center" />
                     </Grid>
                 </OnIdiom.Desktop>
+            </OnIdiom>
+            
+            <!--Layout para Table  = Es el mismo que el de escritorio
+            Pero hay computadoras que .NET considera que son tablets y hay vistas que no se pueden visualizar-->
+            <OnIdiom x:TypeArguments="View">
+                <OnIdiom.Tablet>
+                    <Grid Padding="20,40" ColumnSpacing="0" RowSpacing="0">
+                        <Grid.ColumnDefinitions>
+                            <!-- Dos columnas: una para el texto y otra para la imagen -->
+                            <ColumnDefinition Width="2*" />
+                            <ColumnDefinition Width="*" />
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <!-- Dividimos el área principal para que el contenido esté centrado -->
+                            <RowDefinition Height="Auto" />
+                        </Grid.RowDefinitions>
+
+                        <!-- Envolver StackLayout dentro de un Frame para redondear esquinas -->
+                        <Frame CornerRadius="25" Padding="0" HasShadow="True" BorderColor="LightGray" BackgroundColor="White"
+                    HorizontalOptions="Center" VerticalOptions="Center">
+
+                            <!-- Columna 1: Sección de Texto -->
+                            <StackLayout Grid.Column="0" HorizontalOptions="Center" Padding="10" BackgroundColor="Transparent">
+
+                                <!-- Logo Circular -->
+                                <Frame BackgroundColor="White" CornerRadius="75"
+                        HeightRequest="150" WidthRequest="150"
+                        BorderColor="white"
+                        HorizontalOptions="Start" VerticalOptions="Center" Padding="0">
+                                    <Image Source="logo2.png" Aspect="AspectFit"/>
+                                </Frame>
+
+                                <!-- Título -->
+                                <Label Text="Bienvenido a UTP Health Care"
+                           FontSize="36" FontFamily="MohaveRegular" TextColor="#000"
+                           HorizontalOptions="Start" VerticalOptions="Center"/>
+
+                                <!-- Descripción -->
+                                <Label Text="Aquí encontrarás todo lo que necesitas para tu salud universitaria. Conoce más sobre nuestros servicios."
+                           FontSize="20" FontFamily="MohaveRegular" TextColor="#000"
+                           Margin="0,20,100,20" HorizontalOptions="Start"/>
+
+                                <!-- Botón -->
+                                <Button Text="Iniciar Sesión" BackgroundColor="#014671" TextColor="White"
+                        FontSize="25" FontFamily="MohaveRegular" Padding="10"
+                        CornerRadius="25" HeightRequest="70" WidthRequest="300"
+                        HorizontalOptions="Start" Clicked="ParaLogin"/>
+                            </StackLayout>
+                        </Frame>
+
+                        <!-- Columna 2: Imagen -->
+                        <Image Grid.Column="1" Source="doctol.png" HeightRequest="300" HorizontalOptions="FillAndExpand" VerticalOptions="Center" />
+                    </Grid>
+                </OnIdiom.Tablet>
             </OnIdiom>
 
             <!-- Layout para Móvil -->
