@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="HealthCare.Views.Doctors.Patients"
+             Title="Patients"
+             xmlns:components="clr-namespace:HealthCare.Components"
+             BackgroundImageSource="fondete.jpeg"
+             BackgroundColor="{OnIdiom Phone=#fff, Desktop=#fff, Tablet=#fff}"
+             NavigationPage.HasBackButton="False"
+             NavigationPage.HasNavigationBar="False">
+
+    <ScrollView>
+        <VerticalStackLayout Padding="20" Spacing="15">
+
+            <components:Navbar IsVisible="{OnIdiom Desktop=true, Phone=false, Tablet=true}" />
+            <components:SideMenu IsVisible="{OnIdiom Desktop=false, Phone=true, Tablet=false}" />
+
+            
+            <Label Text="Pacientes"
+            FontSize="35"
+            FontAttributes="Bold"
+            TextColor="#000"
+            HorizontalOptions="Center"
+            Margin="0,0,0,20"/>
+
+           
+            <OnIdiom x:TypeArguments="View">
+                <OnIdiom.Tablet>
+                    <Grid ColumnDefinitions="*,*"
+                    RowDefinitions="Auto"
+                    ColumnSpacing="20">
+
+
+                        <Frame BackgroundColor="#fff" Grid.Column="0" CornerRadius="15" BorderColor="#fff">
+                            <ContentView BackgroundColor="#fff" Grid.Column="0" Padding="20">
+                                <VerticalStackLayout>
+                                    <SearchBar Placeholder="Buscar Paciente..."
+                                    FontSize="24"
+                                    FontAttributes="Bold"
+                                    TextColor="#006AAB"
+                                    PlaceholderColor="#006AAB"
+                                    Margin="0, 0, 0, 10"/>
+
+                                    <Frame BackgroundColor="White" CornerRadius="15" HasShadow="True" BorderColor="Black" Margin="0,10" HorizontalOptions="Center">
+                                        <VerticalStackLayout Padding="5">
+                                            <Grid ColumnDefinitions="Auto, Auto, Auto, Auto" HorizontalOptions="Center">
+                                                <Label Text="Paciente" TextColor="Black" FontSize="20" FontAttributes="Bold" Grid.Row="0" Grid.Column="0"  Margin="0, 0, 10, 0" VerticalOptions="Center"/>
+                                                <Label Text="Giovanny Jovanné" FontSize="18" TextColor="Black" Grid.Row="0" Grid.Column="1"  Margin="0, 0, 150, 0" VerticalOptions="Center"/>
+                                                <Label Text="Cédula" TextColor="Black" FontSize="20" FontAttributes="Bold" Grid.Row="0" Grid.Column="2" Margin="0, 0, 10, 0" VerticalOptions="Center"/>
+                                                <Label Text="4-000-0000" TextColor="Black" FontSize="18" Grid.Row="0" Grid.Column="3" Margin="0, 0, 0, 0" VerticalOptions="Center"/>
+                                            </Grid>
+                                        </VerticalStackLayout>
+                                    </Frame>
+                                </VerticalStackLayout>
+                            </ContentView>
+                        </Frame>
+
+                        <Frame BackgroundColor="#fff" Grid.Column="1" CornerRadius="15" BorderColor="#fff">
+                            <ContentView Grid.Column="1" Padding="20">
+                                <VerticalStackLayout>
+
+                                    <Frame BackgroundColor="White" CornerRadius="15" HasShadow="True" BorderColor="Transparent" Margin="0,10">
+                                        <VerticalStackLayout Padding="5">
+                                            <Grid RowDefinitions="Auto, Auto" ColumnDefinitions="Auto, Auto, Auto" HorizontalOptions="Center" >
+
+                                                <Label Text="Nombre" TextColor="Black" FontAttributes="Bold" Grid.Row="0" Grid.Column="0" Margin="0, 0, 150, 0"/>
+                                                <Label Text="Giovanny Jovanné" FontSize="14" TextColor="Black" Grid.Row="0" Grid.Column="0"  Margin="0, 20, 10, 10"/>
+                                                <Label Text="Teléfono" TextColor="Black" FontAttributes="Bold" Grid.Row="0" Grid.Column="1" Margin="0, 0, 150, 0"/>
+                                                <Label Text="6997-1648" TextColor="Black" Grid.Row="0" Grid.Column="1" Margin="0, 20, 10, 10"/>
+                                                <Label Text="Ubicación" TextColor="Black" FontAttributes="Bold" Grid.Row="0" Grid.Column="2"/>
+                                                <Label Text="David, Panamá" TextColor="Black" Grid.Row="0" Grid.Column="2" Margin="0, 20, 10, 20"/>
+
+
+                                                <Label Text="Cédula" TextColor="Black" FontAttributes="Bold" Grid.Row="1" Grid.Column="0"/>
+                                                <Label Text="8-1007-851" TextColor="Black" Grid.Row="1" Grid.Column="0" Margin="0, 20, 10, 0"/>
+                                                <Label Text="Edad" FontAttributes="Bold" TextColor="Black" Grid.Row="1" Grid.Column="1" />
+                                                <Label Text="20 años" TextColor="Black" Grid.Row="1" Grid.Column="1" Margin="0, 20, 10, 10"/>
+                                                <Button Text="Generar Certificado" BackgroundColor="#006AAB" TextColor="White" HeightRequest="20" WidthRequest="160" Grid.Row="1" Grid.Column="2" Clicked="Pdf"/>
+                                            </Grid>
+
+                                        </VerticalStackLayout>
+                                    </Frame>
+
+                                    <Label Text="Historial del paciente"
+                                    FontSize="24"
+                                    FontAttributes="Bold"
+                                    TextColor="#006AAB" />
+
+                                    <Frame BackgroundColor="White" CornerRadius="15" HasShadow="True" BorderColor="Black" Margin="0,10" HorizontalOptions="Center">
+                                        <VerticalStackLayout Padding="5" >
+                                            <Grid ColumnDefinitions="Auto, Auto, Auto, Auto, Auto, Auto" HorizontalOptions="Center">
+                                                <Label Text="Doctor:" TextColor="Black" FontSize="20" FontAttributes="Bold" Grid.Row="0" Grid.Column="0"  Margin="0, 0, 10, 0" />
+                                                <Label Text="Jovanné" FontSize="18" TextColor="Black" Grid.Row="0" Grid.Column="1"  Margin="0, 0, 15, 0" VerticalOptions="Center"/>
+                                                <Label Text="Estado:" TextColor="Black" FontSize="20" FontAttributes="Bold" Grid.Row="0" Grid.Column="2" Margin="0, 0, 10, 0" />
+                                                <Label Text="Pendiente" TextColor="Black" FontSize="18" Grid.Row="0" Grid.Column="3" Margin="0, 0, 15, 0" VerticalOptions="Center"/>
+                                                <Label Text="Tipo de cita:" TextColor="Black" FontSize="20" FontAttributes="Bold" Grid.Row="0" Grid.Column="4" Margin="0, 0, 10, 0"/>
+                                                <Label Text="Seguimiento" TextColor="Black" FontSize="18" Grid.Row="0" Grid.Column="5" Margin="0, 0, 15, 0" VerticalOptions="Center"/>
+                                            </Grid>
+                                        </VerticalStackLayout>
+                                    </Frame>
+                                </VerticalStackLayout>
+                            </ContentView>
+                        </Frame>
+                    </Grid>
+                </OnIdiom.Tablet>
+                <OnIdiom.Desktop>
+                    <Grid ColumnDefinitions="*,*"
+                        RowDefinitions="Auto"
+                        ColumnSpacing="20">
+
+
+                        <Frame BackgroundColor="#fff" Grid.Column="0" CornerRadius="15" BorderColor="#fff">
+                            <ContentView BackgroundColor="#fff" Grid.Column="0" Padding="20">
+                                <VerticalStackLayout>
+                                    <SearchBar Placeholder="Buscar Paciente..."
+                                    FontSize="24"
+                                    FontAttributes="Bold"
+                                    TextColor="#006AAB"
+                                    PlaceholderColor="#006AAB"
+                                    Margin="0, 0, 0, 10"/>
+
+                                    <Frame BackgroundColor="White" CornerRadius="15" HasShadow="True" BorderColor="Black" Margin="0,10" HorizontalOptions="Center">
+                                        <VerticalStackLayout Padding="5">
+                                            <Grid ColumnDefinitions="Auto, Auto, Auto, Auto" HorizontalOptions="Center">
+                                                <Label Text="Paciente" TextColor="Black" FontSize="20" FontAttributes="Bold" Grid.Row="0" Grid.Column="0"  Margin="0, 0, 10, 0" VerticalOptions="Center"/>
+                                                <Label Text="Giovanny Jovanné" FontSize="18" TextColor="Black" Grid.Row="0" Grid.Column="1"  Margin="0, 0, 150, 0" VerticalOptions="Center"/>
+                                                <Label Text="Cédula" TextColor="Black" FontSize="20" FontAttributes="Bold" Grid.Row="0" Grid.Column="2" Margin="0, 0, 10, 0" VerticalOptions="Center"/>
+                                                <Label Text="4-000-0000" TextColor="Black" FontSize="18" Grid.Row="0" Grid.Column="3" Margin="0, 0, 0, 0" VerticalOptions="Center"/>
+                                            </Grid>
+                                        </VerticalStackLayout>
+                                    </Frame>
+                                </VerticalStackLayout>
+                            </ContentView>
+                        </Frame>
+
+                        <Frame BackgroundColor="#fff" Grid.Column="1" CornerRadius="15" BorderColor="#fff">
+                            <ContentView Grid.Column="1" Padding="20">
+                                <VerticalStackLayout>
+
+                                    <Frame BackgroundColor="White" CornerRadius="15" HasShadow="True" BorderColor="Transparent" Margin="0,10">
+                                        <VerticalStackLayout Padding="5">
+                                            <Grid RowDefinitions="Auto, Auto" ColumnDefinitions="Auto, Auto, Auto" HorizontalOptions="Center" >
+
+                                                <Label Text="Nombre" TextColor="Black" FontAttributes="Bold" Grid.Row="0" Grid.Column="0" Margin="0, 0, 150, 0"/>
+                                                <Label Text="Giovanny Jovanné" FontSize="14" TextColor="Black" Grid.Row="0" Grid.Column="0"  Margin="0, 20, 10, 10"/>
+                                                <Label Text="Teléfono" TextColor="Black" FontAttributes="Bold" Grid.Row="0" Grid.Column="1" Margin="0, 0, 150, 0"/>
+                                                <Label Text="6997-1648" TextColor="Black" Grid.Row="0" Grid.Column="1" Margin="0, 20, 10, 10"/>
+                                                <Label Text="Ubicación" TextColor="Black" FontAttributes="Bold" Grid.Row="0" Grid.Column="2"/>
+                                                <Label Text="David, Panamá" TextColor="Black" Grid.Row="0" Grid.Column="2" Margin="0, 20, 10, 20"/>
+
+
+                                                <Label Text="Cédula" TextColor="Black" FontAttributes="Bold" Grid.Row="1" Grid.Column="0"/>
+                                                <Label Text="8-1007-851" TextColor="Black" Grid.Row="1" Grid.Column="0" Margin="0, 20, 10, 0"/>
+                                                <Label Text="Edad" FontAttributes="Bold" TextColor="Black" Grid.Row="1" Grid.Column="1" />
+                                                <Label Text="20 años" TextColor="Black" Grid.Row="1" Grid.Column="1" Margin="0, 20, 10, 10"/>
+                                                <Button Text="Generar Certificado" BackgroundColor="#006AAB" TextColor="White" HeightRequest="20" WidthRequest="160" Grid.Row="1" Grid.Column="2" Clicked="Pdf"/>
+                                            </Grid>
+
+                                        </VerticalStackLayout>
+                                    </Frame>
+
+                                    <Label Text="Historial del paciente"
+                                    FontSize="24"
+                                    FontAttributes="Bold"
+                                    TextColor="#006AAB" />
+
+                                    <Frame BackgroundColor="White" CornerRadius="15" HasShadow="True" BorderColor="Black" Margin="0,10" HorizontalOptions="Center">
+                                        <VerticalStackLayout Padding="5">
+                                            <Grid ColumnDefinitions="Auto, Auto, Auto, Auto, Auto, Auto" HorizontalOptions="Center">
+                                                <Label Text="Doctor:" TextColor="Black" FontSize="20" FontAttributes="Bold" Grid.Row="0" Grid.Column="0"  Margin="0, 0, 10, 0" VerticalOptions="Center"/>
+                                                <Label Text="Jovanné" FontSize="18" TextColor="Black" Grid.Row="0" Grid.Column="1"  Margin="0, 0, 15, 0" VerticalOptions="Center"/>
+                                                <Label Text="Estado:" TextColor="Black" FontSize="20" FontAttributes="Bold" Grid.Row="0" Grid.Column="2" Margin="0, 0, 10, 0" VerticalOptions="Center"/>
+                                                <Label Text="Pendiente" TextColor="Black" FontSize="18" Grid.Row="0" Grid.Column="3" Margin="0, 0, 15, 0" VerticalOptions="Center"/>
+                                                <Label Text="Tipo de cita:" TextColor="Black" FontSize="20" FontAttributes="Bold" Grid.Row="0" Grid.Column="4" Margin="0, 0, 10, 0" VerticalOptions="Center"/>
+                                                <Label Text="Seguimiento" TextColor="Black" FontSize="18" Grid.Row="0" Grid.Column="5" Margin="0, 0, 15, 0" VerticalOptions="Center"/>
+                                            </Grid>
+                                        </VerticalStackLayout>
+                                    </Frame>
+
+                                </VerticalStackLayout>
+                            </ContentView>
+                        </Frame>
+                    </Grid>
+                </OnIdiom.Desktop>
+            </OnIdiom>
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

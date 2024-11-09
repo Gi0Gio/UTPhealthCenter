@@ -10,6 +10,8 @@ obj\Debug\net8.0-android\resizetizer\r\drawable\hamburger.png
 obj\Debug\net8.0-android\resizetizer\r\drawable\logo.png
 obj\Debug\net8.0-android\resizetizer\r\drawable\logo2.png
 obj\Debug\net8.0-android\resizetizer\r\drawable\logo5.png
+obj\Debug\net8.0-android\resizetizer\r\drawable\logoclinica.png
+obj\Debug\net8.0-android\resizetizer\r\drawable\logouniver.png
 obj\Debug\net8.0-android\resizetizer\r\drawable\micrologo.png
 obj\Debug\net8.0-android\resizetizer\r\drawable\perfil.png
 obj\Debug\net8.0-android\resizetizer\r\drawable\pesoytalla.png
