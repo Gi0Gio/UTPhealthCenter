@@ -5,8 +5,7 @@
         public App()
         {
             InitializeComponent();
-            MainPage = new NavigationPage(new Views.Doctors.DoctorProfilePage());
-
+            MainPage = new NavigationPage(new Views.Doctors.Referencia());
         }
     }
 }

@@ -60,6 +60,12 @@ build_metadata.AdditionalFiles.ManifestResourceName = HealthCare.Views.Clinic.Ad
 build_metadata.AdditionalFiles.TargetPath = Views\Clinic\AdminRegisterPage.xaml
 build_metadata.AdditionalFiles.RelativePath = Views\Clinic\AdminRegisterPage.xaml
 
+[C:/Users/Kris/source/repos/GithubUTPhealthCare/UTPhealthCenter/Views/Clinic/BloodDonor.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = HealthCare.Views.Clinic.BloodDonor.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\Clinic\BloodDonor.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\Clinic\BloodDonor.xaml
+
 [C:/Users/Kris/source/repos/GithubUTPhealthCare/UTPhealthCenter/Views/Clinic/CitasPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = HealthCare.Views.Clinic.CitasPage.xaml
@@ -125,6 +131,12 @@ build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = HealthCare.Views.Doctors.DoctorRegisterPage.xaml
 build_metadata.AdditionalFiles.TargetPath = Views\Doctors\DoctorRegisterPage.xaml
 build_metadata.AdditionalFiles.RelativePath = Views\Doctors\DoctorRegisterPage.xaml
+
+[C:/Users/Kris/source/repos/GithubUTPhealthCare/UTPhealthCenter/Views/Doctors/MedicalProcedure.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = HealthCare.Views.Doctors.MedicalProcedure.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\Doctors\MedicalProcedure.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\Doctors\MedicalProcedure.xaml
 
 [C:/Users/Kris/source/repos/GithubUTPhealthCare/UTPhealthCenter/Views/Doctors/Patients.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
