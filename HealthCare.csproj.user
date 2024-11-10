@@ -26,6 +26,9 @@
     <MauiXaml Update="Views\Doctors\DoctorHomePage.xaml">
       <SubType>Designer</SubType>
     </MauiXaml>
+    <MauiXaml Update="Views\Doctors\DoctorProfilePage.xaml">
+      <SubType>Designer</SubType>
+    </MauiXaml>
     <MauiXaml Update="Views\Doctors\DoctorRegisterPage.xaml">
       <SubType>Designer</SubType>
     </MauiXaml>
@@ -45,6 +48,9 @@
       <SubType>Designer</SubType>
     </MauiXaml>
     <MauiXaml Update="Views\Students\Appointments\PatientRequestPage.xaml">
+      <SubType>Designer</SubType>
+    </MauiXaml>
+    <MauiXaml Update="Views\Students\PatientProfilePage.xaml">
       <SubType>Designer</SubType>
     </MauiXaml>
     <MauiXaml Update="Views\Students\PatientRegisterPage.xaml">

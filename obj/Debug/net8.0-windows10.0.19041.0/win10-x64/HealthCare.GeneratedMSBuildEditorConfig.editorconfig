@@ -114,6 +114,12 @@ build_metadata.AdditionalFiles.ManifestResourceName = HealthCare.Views.Doctors.D
 build_metadata.AdditionalFiles.TargetPath = Views\Doctors\DoctorHomePage.xaml
 build_metadata.AdditionalFiles.RelativePath = Views\Doctors\DoctorHomePage.xaml
 
+[C:/Users/Kris/source/repos/GithubUTPhealthCare/UTPhealthCenter/Views/Doctors/DoctorProfilePage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = HealthCare.Views.Doctors.DoctorProfilePage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\Doctors\DoctorProfilePage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\Doctors\DoctorProfilePage.xaml
+
 [C:/Users/Kris/source/repos/GithubUTPhealthCare/UTPhealthCenter/Views/Doctors/DoctorRegisterPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = HealthCare.Views.Doctors.DoctorRegisterPage.xaml
@@ -161,6 +167,12 @@ build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = HealthCare.Views.Students.Appointments.PatientRequestPage.xaml
 build_metadata.AdditionalFiles.TargetPath = Views\Students\Appointments\PatientRequestPage.xaml
 build_metadata.AdditionalFiles.RelativePath = Views\Students\Appointments\PatientRequestPage.xaml
+
+[C:/Users/Kris/source/repos/GithubUTPhealthCare/UTPhealthCenter/Views/Students/PatientProfilePage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = HealthCare.Views.Students.PatientProfilePage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\Students\PatientProfilePage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\Students\PatientProfilePage.xaml
 
 [C:/Users/Kris/source/repos/GithubUTPhealthCare/UTPhealthCenter/Views/Students/PatientRegisterPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
