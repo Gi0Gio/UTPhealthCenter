@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="HealthCare.Views.Clinic.BloodDonor"
+             Title="BloodDonor"
+             xmlns:components="clr-namespace:HealthCare.Components"
+             BackgroundImageSource="fondete.jpeg"
+             BackgroundColor="{OnIdiom Phone=#fff, Desktop=#fff, Tablet=#fff}"
+             NavigationPage.HasBackButton="False"
+             NavigationPage.HasNavigationBar="False">
+
+    <ScrollView>
+        <VerticalStackLayout Padding="20" Spacing="15">
+
+            <components:Navbar IsVisible="{OnIdiom Desktop=true, Phone=false, Tablet=true}" />
+            <components:SideMenu IsVisible="{OnIdiom Desktop=false, Phone=true, Tablet=false}" />
+
+
+            <Label Text="Informe de Donadores de Sangre"
+            FontSize="35"
+            FontAttributes="Bold"
+            TextColor="#000"
+            HorizontalOptions="Center"
+            Margin="0,0,0,20"/>
+
+
+            <OnIdiom x:TypeArguments="View">
+                <OnIdiom.Tablet>
+                    <Grid ColumnDefinitions="*,*"
+                    RowDefinitions="Auto"
+                    ColumnSpacing="20">
+
+
+                        <Frame BackgroundColor="#fff" Grid.Column="0" CornerRadius="15" BorderColor="#fff">
+                            <ContentView BackgroundColor="#fff" Grid.Column="0" Padding="20">
+                                <VerticalStackLayout>
+                                    <Label Text="Información del Donador"
+                                    FontSize="24"
+                                    FontAttributes="Bold"
+                                    TextColor="#333"
+                                    Margin="0, 0, 0, 10"/>
+
+                                    <Label Text="Paciente" TextColor="Black" FontSize="18" FontAttributes="Bold" />
+                                    <Entry Placeholder="Nombre del donador" 
+                                    Text="" 
+                                    Keyboard="Text" 
+                                    TextColor="Black" 
+                                    FontSize="{OnIdiom Phone=22, Desktop=25}"
+                                    PlaceholderColor="#000" />
+
+                                    <Label Text="Número de Identificación" TextColor="Black" FontSize="18" FontAttributes="Bold" />
+                                    <Entry Placeholder="Identificación del Donador" 
+                                    Text="" 
+                                    Keyboard="Text" 
+                                    TextColor="Black" 
+                                    FontSize="{OnIdiom Phone=22, Desktop=25}"
+                                    PlaceholderColor="#000" />
+
+                                    <Label Text="Tipo de Sangre" TextColor="Black" FontSize="18" FontAttributes="Bold" />
+                                    <Entry Placeholder="Tipaje de sangre del Donador" 
+                                    Text="" 
+                                    Keyboard="Text" 
+                                    TextColor="Black" 
+                                    FontSize="{OnIdiom Phone=22, Desktop=25}"
+                                    PlaceholderColor="#000" 
+                                    Margin="0, 0, 0, 10"/>
+
+                                    <Button Text="Guardar Información del Donador" BackgroundColor="#006AAB" TextColor="White" />
+                                </VerticalStackLayout>
+                            </ContentView>
+                        </Frame>
+
+                        <Frame BackgroundColor="#fff" Grid.Column="1" CornerRadius="15" BorderColor="#fff">
+                            <ContentView Grid.Column="1" Padding="20">
+                                <VerticalStackLayout>
+                                    <Label Text="Lista de Procedimientos"
+                                    FontSize="24"
+                                    FontAttributes="Bold"
+                                    TextColor="#333"
+                                    Margin="0, 0, 0, 10"/>
+
+                                    <Frame BackgroundColor="#f0efeb" CornerRadius="15" HasShadow="True" BorderColor="Transparent" Margin="0,10">
+                                        <VerticalStackLayout Padding="5">
+                                            <Grid RowDefinitions="Auto, Auto" ColumnDefinitions="Auto, Auto, Auto" HorizontalOptions="Center" >
+
+                                                <Label Text="Paciente" TextColor="Black" FontAttributes="Bold" Grid.Row="0" Grid.Column="0" Margin="0, 0, 150, 0"/>
+                                                <Label Text="Giovanny Jovanné" FontSize="14" TextColor="Black" Grid.Row="0" Grid.Column="0"  Margin="0, 20, 10, 10"/>
+                                                <Label Text="Identificaión" TextColor="Black" FontAttributes="Bold" Grid.Row="0" Grid.Column="1" Margin="0, 0, 150, 0"/>
+                                                <Label Text="4-000-0000" TextColor="Black" Grid.Row="0" Grid.Column="1" Margin="0, 20, 10, 10"/>
+                                                <Label Text="Tipo de Sangre" TextColor="Black" FontAttributes="Bold" Grid.Row="0" Grid.Column="2"/>
+                                                <Label Text="AB +" TextColor="Black" Grid.Row="0" Grid.Column="2" Margin="0, 20, 10, 20"/>
+
+
+                                                <Label Text="Fecha de Donación" TextColor="Black" FontAttributes="Bold" Grid.Row="1" Grid.Column="0"/>
+                                                <Label Text="11/09/2024" TextColor="Black" Grid.Row="1" Grid.Column="0" Margin="0, 20, 10, 0"/>
+                                                <Button Text="Eliminar Donador" BackgroundColor="Red" TextColor="White" HeightRequest="20" WidthRequest="150" Grid.Row="1" Grid.Column="2"/>
+                                            </Grid>
+
+                                        </VerticalStackLayout>
+                                    </Frame>
+                                </VerticalStackLayout>
+                            </ContentView>
+                        </Frame>
+                    </Grid>
+                </OnIdiom.Tablet>
+                <OnIdiom.Desktop>
+                    <Grid ColumnDefinitions="*,*"
+                    RowDefinitions="Auto"
+                    ColumnSpacing="20">
+
+
+                        <Frame BackgroundColor="#fff" Grid.Column="0" CornerRadius="15" BorderColor="#fff">
+                            <ContentView BackgroundColor="#fff" Grid.Column="0" Padding="20">
+                                <VerticalStackLayout>
+                                    <Label Text="Información del Donador"
+                                    FontSize="24"
+                                    FontAttributes="Bold"
+                                    TextColor="#333"
+                                    Margin="0, 0, 0, 10"/>
+
+                                    <Label Text="Paciente" TextColor="Black" FontSize="18" FontAttributes="Bold" />
+                                    <Entry Placeholder="Nombre del donador" 
+                                    Text="" 
+                                    Keyboard="Text" 
+                                    TextColor="Black" 
+                                    FontSize="{OnIdiom Phone=22, Desktop=25}"
+                                    PlaceholderColor="#000" />
+
+                                    <Label Text="Número de Identificación" TextColor="Black" FontSize="18" FontAttributes="Bold" />
+                                    <Entry Placeholder="Identificación del Donador" 
+                                    Text="" 
+                                    Keyboard="Text" 
+                                    TextColor="Black" 
+                                    FontSize="{OnIdiom Phone=22, Desktop=25}"
+                                    PlaceholderColor="#000" />
+
+                                    <Label Text="Tipo de Sangre" TextColor="Black" FontSize="18" FontAttributes="Bold" />
+                                    <Entry Placeholder="Tipaje de sangre del Donador" 
+                                    Text="" 
+                                    Keyboard="Text" 
+                                    TextColor="Black" 
+                                    FontSize="{OnIdiom Phone=22, Desktop=25}"
+                                    PlaceholderColor="#000" 
+                                    Margin="0, 0, 0, 10"/>
+
+                                    <Button Text="Guardar Información del Donador" BackgroundColor="#006AAB" TextColor="White" />
+                                </VerticalStackLayout>
+                            </ContentView>
+                        </Frame>
+
+                        <Frame BackgroundColor="#fff" Grid.Column="1" CornerRadius="15" BorderColor="#fff">
+                            <ContentView Grid.Column="1" Padding="20">
+                                <VerticalStackLayout>
+                                    <Label Text="Lista de Procedimientos"
+                                    FontSize="24"
+                                    FontAttributes="Bold"
+                                    TextColor="#333"
+                                    Margin="0, 0, 0, 10"/>
+
+                                    <Frame BackgroundColor="#f0efeb" CornerRadius="15" HasShadow="True" BorderColor="Transparent" Margin="0,10">
+                                        <VerticalStackLayout Padding="5">
+                                            <Grid RowDefinitions="Auto, Auto" ColumnDefinitions="Auto, Auto, Auto" HorizontalOptions="Center" >
+
+                                                <Label Text="Paciente" TextColor="Black" FontAttributes="Bold" Grid.Row="0" Grid.Column="0" Margin="0, 0, 150, 0"/>
+                                                <Label Text="Giovanny Jovanné" FontSize="14" TextColor="Black" Grid.Row="0" Grid.Column="0"  Margin="0, 20, 10, 10"/>
+                                                <Label Text="Identificaión" TextColor="Black" FontAttributes="Bold" Grid.Row="0" Grid.Column="1" Margin="0, 0, 150, 0"/>
+                                                <Label Text="4-000-0000" TextColor="Black" Grid.Row="0" Grid.Column="1" Margin="0, 20, 10, 10"/>
+                                                <Label Text="Tipo de Sangre" TextColor="Black" FontAttributes="Bold" Grid.Row="0" Grid.Column="2"/>
+                                                <Label Text="AB +" TextColor="Black" Grid.Row="0" Grid.Column="2" Margin="0, 20, 10, 20"/>
+
+
+                                                <Label Text="Fecha de Donación" TextColor="Black" FontAttributes="Bold" Grid.Row="1" Grid.Column="0"/>
+                                                <Label Text="11/09/2024" TextColor="Black" Grid.Row="1" Grid.Column="0" Margin="0, 20, 10, 0"/>
+                                                <Button Text="Eliminar Donador" BackgroundColor="Red" TextColor="White" HeightRequest="20" WidthRequest="150" Grid.Row="1" Grid.Column="2"/>
+                                            </Grid>
+
+                                        </VerticalStackLayout>
+                                    </Frame>
+                                </VerticalStackLayout>
+                            </ContentView>
+                        </Frame>
+                    </Grid>
+                </OnIdiom.Desktop>
+            </OnIdiom>
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

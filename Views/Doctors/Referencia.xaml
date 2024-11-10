@@ -62,7 +62,7 @@
                     </ContentView>
                 </Frame>
 
-                <!-- Sección Referencias Añadidas -->
+                
                 <Frame BackgroundColor="#fff" Grid.Column="1" CornerRadius="15" BorderColor="#fff">
                     <ContentView Grid.Column="1" Padding="20">
                         <VerticalStackLayout>
