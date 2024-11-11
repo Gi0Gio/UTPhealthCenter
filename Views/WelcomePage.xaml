@@ -51,22 +51,10 @@
                                 Margin="0,20,100,20" HorizontalOptions="Start"/>
 
                                 <!-- Botón -->
-                                    <Button Text="Iniciar Sesión" BackgroundColor="#014671" TextColor="White"
+                                <Button Text="Iniciar Sesión" BackgroundColor="#014671" TextColor="White"
                                 FontSize="25" FontFamily="MohaveRegular" Padding="10"
                                 CornerRadius="25" HeightRequest="70" WidthRequest="300"
                                 HorizontalOptions="Start" Clicked="ParaLogin"/>
-
-                                    <!-- Descripción -->
-                                <Label Text="Aquí encontrarás todo lo que necesitas para tu salud universitaria. Conoce más sobre nuestros servicios."
-                                       FontSize="20" FontFamily="MohaveRegular" TextColor="#000"
-                                       Margin="0,20,100,20" HorizontalOptions="Start"/>
-
-                                <!-- Botón -->
-                                <Button Text="Iniciar Sesión" BackgroundColor="#014671" TextColor="White"
-                                    FontSize="25" FontFamily="MohaveRegular" Padding="10"
-                                    CornerRadius="25" HeightRequest="70" WidthRequest="300"
-                                    HorizontalOptions="Start" Clicked="ParaLogin"/>
-
                             </StackLayout>
                         </Frame>
 
@@ -74,56 +62,6 @@
                         <Image Grid.Column="1" Source="doctol.png" HeightRequest="300" HorizontalOptions="FillAndExpand" VerticalOptions="Center" />
                     </Grid>
                 </OnIdiom.Desktop>
-                <OnIdiom.Tablet>
-                    <Grid Padding="20,40" ColumnSpacing="0" RowSpacing="0">
-                        <Grid.ColumnDefinitions>
-                            <!-- Dos columnas: una para el texto y otra para la imagen -->
-                            <ColumnDefinition Width="2*" />
-                            <ColumnDefinition Width="*" />
-                        </Grid.ColumnDefinitions>
-                        <Grid.RowDefinitions>
-                            <!-- Dividimos el área principal para que el contenido esté centrado -->
-                            <RowDefinition Height="Auto" />
-                        </Grid.RowDefinitions>
-
-                        <!-- Envolver StackLayout dentro de un Frame para redondear esquinas -->
-                        <Frame CornerRadius="25" Padding="0" HasShadow="True" BorderColor="LightGray" BackgroundColor="White"
-            HorizontalOptions="Center" VerticalOptions="Center">
-
-                            <!-- Columna 1: Sección de Texto -->
-                            <StackLayout Grid.Column="0" HorizontalOptions="Center" Padding="10" BackgroundColor="Transparent">
-
-                                <!-- Logo Circular -->
-                                <Frame BackgroundColor="White" CornerRadius="75"
-                        HeightRequest="150" WidthRequest="150"
-                        BorderColor="white"
-                        HorizontalOptions="Start" VerticalOptions="Center" Padding="0">
-                                    <Image Source="logo2.png" Aspect="AspectFit"/>
-                                </Frame>
-
-                                <!-- Título -->
-                                <Label Text="Bienvenido a UTP Health Care"
-                    FontSize="36" FontFamily="MohaveRegular" TextColor="#000"
-                    HorizontalOptions="Start" VerticalOptions="Center"/>
-
-                                <!-- Descripción -->
-                                <Label Text="Aquí encontrarás todo lo que necesitas para tu salud universitaria. Conoce más sobre nuestros servicios."
-                    FontSize="20" FontFamily="MohaveRegular" TextColor="#000"
-                    Margin="0,20,100,20" HorizontalOptions="Start"/>
-
-                                <!-- Botón -->
-                                <Button Text="Iniciar Sesión" BackgroundColor="#014671" TextColor="White"
-                    FontSize="25" FontFamily="MohaveRegular" Padding="10"
-                    CornerRadius="25" HeightRequest="70" WidthRequest="300"
-                    HorizontalOptions="Start" Clicked="ParaLogin"/>
-                            </StackLayout>
-                        </Frame>
-
-                        <!-- Columna 2: Imagen -->
-                        <Image Grid.Column="1" Source="doctol.png" 
-               HeightRequest="300" HorizontalOptions="FillAndExpand" VerticalOptions="Center" />
-                    </Grid>
-                </OnIdiom.Tablet>
             </OnIdiom>
             
             <!--Layout para Table  = Es el mismo que el de escritorio

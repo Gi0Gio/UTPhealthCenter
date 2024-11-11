@@ -29,9 +29,9 @@ public partial class DoctorHomePage : ContentPage
         await Navigation.PushAsync(new Referencia());
     }
 
-    private async void StudentRegister(object sender, EventArgs e)
+    private async void Historial(object sender, EventArgs e)
     {
-        await Navigation.PushAsync(new StudentRegisterPage());
+        await Navigation.PushAsync(new Historial());
     }
 
 }

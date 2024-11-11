@@ -20,26 +20,54 @@ namespace HealthCare.Views.Doctors
 
             EliminarReferenciaCommand = new Command<ReferenciaModel>(EliminarReferencia);
 
-            BindingContext = this; 
+            BindingContext = this;
         }
 
         private async void AgregarReferencia(object sender, EventArgs e)
         {
+            string doctorTexto;
+            string especialidadTexto;
+            string clinicaTexto;
 
+            // Verificar si es Tablet o Desktop y capturar el valor adecuado
+            if (DeviceInfo.Idiom == DeviceIdiom.Tablet)
+            {
+                doctorTexto = doctor.Text;
+                especialidadTexto = especialidad.Text;
+                clinicaTexto = clinica.Text;
+            }
+            else // En caso de Desktop
+            {
+                doctorTexto = DoctorEntry.Text;
+                especialidadTexto = EspecialidadEntry.Text;
+                clinicaTexto = ClinicaEntry.Text;
+            }
+
+            // Agregar la referencia con los datos obtenidos
             var referencia = new ReferenciaModel
             {
-                Doctor = doctor.Text,
-                Especialidad = especialidad.Text,
-                Clinica = clinica.Text
+                Doctor = doctorTexto,
+                Especialidad = especialidadTexto,
+                Clinica = clinicaTexto
             };
 
             Referencias.Add(referencia);
 
-            doctor.Text = string.Empty;
-            especialidad.Text = string.Empty;
-            clinica.Text = string.Empty;
+            // Limpiar campos
+            if (DeviceInfo.Idiom == DeviceIdiom.Tablet)
+            {
+                doctor.Text = string.Empty;
+                especialidad.Text = string.Empty;
+                clinica.Text = string.Empty;
+            }
+            else
+            {
+                DoctorEntry.Text = string.Empty;
+                EspecialidadEntry.Text = string.Empty;
+                ClinicaEntry.Text = string.Empty;
+            }
 
-            await DisplayAlert("…xito", "La referencia ha sido aÒadida exitosamente.", "OK");
+            await DisplayAlert("√âxito", "La referencia ha sido a√±adida exitosamente.", "OK");
         }
 
 
@@ -50,14 +78,14 @@ namespace HealthCare.Views.Doctors
 
         private async void GenerarPdf(object sender, EventArgs e)
         {
-            string filePath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.UserProfile), "Downloads","ReferenciasClinica.pdf");
+            string filePath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.UserProfile), "Downloads", "ReferenciasClinica.pdf");
             using (PdfWriter writer = new PdfWriter(filePath))
             {
                 PdfDocument pdf = new PdfDocument(writer);
                 Document document = new Document(pdf);
 
-                string logoClinicaPath = "C:\\Users\\manue\\Desktop\\ClinicaApp\\UTPhealthCenter\\Resources\\Images\\logoclinica.png";
-                string logoUniversidadPath = "C:\\Users\\manue\\Desktop\\ClinicaApp\\UTPhealthCenter\\Resources\\Images\\logouniver.png";
+                string logoClinicaPath = "C:\\Users\\Kris\\source\\repos\\GithubUTPhealthCare\\UTPhealthCenter\\Resources\\Images\\logoclinica.png";
+                string logoUniversidadPath = "C:\\Users\\Kris\\source\\repos\\GithubUTPhealthCare\\UTPhealthCenter\\Resources\\Images\\logouniver.png";
 
                 iText.Layout.Element.Image logoClinica = new iText.Layout.Element.Image(ImageDataFactory.Create(logoClinicaPath)).SetWidth(100);
                 iText.Layout.Element.Image logoUniversidad = new iText.Layout.Element.Image(ImageDataFactory.Create(logoUniversidadPath)).SetWidth(100);
@@ -68,7 +96,7 @@ namespace HealthCare.Views.Doctors
                     .SetBorder(iText.Layout.Borders.Border.NO_BORDER)
                     .SetVerticalAlignment(iText.Layout.Properties.VerticalAlignment.MIDDLE));
 
-                Paragraph encabezado = new Paragraph("Universidad TecnolÛgica de Panam·\nClÌnica HealthCare")
+                Paragraph encabezado = new Paragraph("Universidad Tecnol√≥gica de Panam√°\nCl√≠nica HealthCare")
                     .SetTextAlignment(iText.Layout.Properties.TextAlignment.CENTER)
                     .SetFontSize(18)
                     .SetBold();
@@ -86,24 +114,24 @@ namespace HealthCare.Views.Doctors
 
                 document.Add(new Paragraph("\n\n\n"));
 
-              
-                document.Add(new Paragraph("Referencias ClÌnicas")
+
+                document.Add(new Paragraph("Referencias Cl√≠nicas")
                     .SetFontSize(20)
                     .SetBold()
                     .SetTextAlignment(iText.Layout.Properties.TextAlignment.CENTER));
 
-          
+
                 foreach (var referencia in Referencias)
                 {
                     document.Add(new Paragraph()
-                    .Add(new Text("Doctor: ").SetBold()) 
-                    .Add(new Text(referencia.Doctor))  
-                    .Add(new Text("\n"))             
-                    .Add(new Text("Especialidad: ").SetBold()) 
-                    .Add(new Text(referencia.Especialidad))    
-                    .Add(new Text("\n"))               
-                    .Add(new Text("ClÌnica en la que atiende: ").SetBold()) 
-                    .Add(new Text(referencia.Clinica))    
+                    .Add(new Text("Doctor: ").SetBold())
+                    .Add(new Text(referencia.Doctor))
+                    .Add(new Text("\n"))
+                    .Add(new Text("Especialidad: ").SetBold())
+                    .Add(new Text(referencia.Especialidad))
+                    .Add(new Text("\n"))
+                    .Add(new Text("Cl√≠nica en la que atiende: ").SetBold())
+                    .Add(new Text(referencia.Clinica))
                     .SetFontSize(12)
                     .SetMarginBottom(10));
                 }
@@ -113,7 +141,7 @@ namespace HealthCare.Views.Doctors
 
             Referencias.Clear();
 
-        
+
             await Launcher.Default.OpenAsync(new OpenFileRequest
             {
                 File = new ReadOnlyFile(filePath)

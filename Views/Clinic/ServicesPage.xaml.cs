@@ -1,3 +1,5 @@
+using HealthCare.Views.Clinic;
+
 namespace HealthCare.Views;
 
 public partial class ServicesPage : ContentPage
@@ -30,5 +32,9 @@ public partial class ServicesPage : ContentPage
     private async void StudentRegister(object sender, EventArgs e)
     {
         await Navigation.PushAsync(new StudentRegisterPage());
+    }
+    private async void Donadores(object sender, EventArgs e)
+    {
+        await Navigation.PushAsync(new BloodDonor());
     }
 }

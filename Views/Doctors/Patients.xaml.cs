@@ -23,8 +23,8 @@ public partial class Patients : ContentPage
             Document document = new Document(pdf);
 
             
-            string logoClinicaPath = "C:\\Users\\manue\\Desktop\\ClinicaApp\\UTPhealthCenter\\Resources\\Images\\logoclinica.png";
-            string logoUniversidadPath = "C:\\Users\\manue\\Desktop\\ClinicaApp\\UTPhealthCenter\\Resources\\Images\\logouniver.png";
+            string logoClinicaPath = "C:\\Users\\Kris\\source\\repos\\GithubUTPhealthCare\\UTPhealthCenter\\Resources\\Images\\logoclinica.png";
+            string logoUniversidadPath = "C:\\Users\\Kris\\source\\repos\\GithubUTPhealthCare\\UTPhealthCenter\\Resources\\Images\\logouniver.png";
 
             iText.Layout.Element.Image logoClinica = new iText.Layout.Element.Image(ImageDataFactory.Create(logoClinicaPath)).SetWidth(100);
             iText.Layout.Element.Image logoUniversidad = new iText.Layout.Element.Image(ImageDataFactory.Create(logoUniversidadPath)).SetWidth(100);
@@ -38,7 +38,7 @@ public partial class Patients : ContentPage
                 .SetVerticalAlignment(iText.Layout.Properties.VerticalAlignment.MIDDLE));
 
             
-            Paragraph encabezado = new Paragraph("Universidad Tecnológica de Panamá\nClínica HealthCare")
+            Paragraph encabezado = new Paragraph("Universidad Tecnolï¿½gica de Panamï¿½\nClï¿½nica HealthCare")
                 .SetTextAlignment(iText.Layout.Properties.TextAlignment.CENTER)
                 .SetFontSize(18)
                 .SetBold();
@@ -60,12 +60,12 @@ public partial class Patients : ContentPage
 
             string fechaActual = DateTime.Now.ToString("dd 'de' MMMM 'de' yyyy");
 
-            string nombrePaciente = "Giovany Jovanné"; 
+            string nombrePaciente = "Giovany Jovannï¿½"; 
             string numeroIdentificacion = "123456789";  
-            string nombreMedico = "Dr. Ana Gómez";  
+            string nombreMedico = "Dr. Ana Gï¿½mez";  
 
           
-            Paragraph fechaLugar = new Paragraph($"Fecha: {fechaActual}\nLugar: David, Chiriquí")
+            Paragraph fechaLugar = new Paragraph($"Fecha: {fechaActual}\nLugar: David, Chiriquï¿½")
                 .SetTextAlignment(iText.Layout.Properties.TextAlignment.LEFT)
                 .SetFontSize(12);
             document.Add(fechaLugar);
@@ -73,10 +73,10 @@ public partial class Patients : ContentPage
             document.Add(new Paragraph("\n\n\n"));
 
             Paragraph contenido = new Paragraph($"Por la presente, hago constar que el/la estudiante {nombrePaciente}, " +
-                $"con número de identificación {numeroIdentificacion}, ha sido evaluado/a en esta institución " +
+                $"con nï¿½mero de identificaciï¿½n {numeroIdentificacion}, ha sido evaluado/a en esta instituciï¿½n " +
                 "y se encuentra en buen estado de salud.\n\n" +
-                "Certifico que el/la paciente no presenta ninguna condición de salud que le impida realizar " +
-                "actividades físicas o laborales normales y no presenta signos de enfermedades contagiosas " +
+                "Certifico que el/la paciente no presenta ninguna condiciï¿½n de salud que le impida realizar " +
+                "actividades fï¿½sicas o laborales normales y no presenta signos de enfermedades contagiosas " +
                 "que puedan representar un riesgo para otros.")
                 .SetTextAlignment(iText.Layout.Properties.TextAlignment.JUSTIFIED)
                 .SetFontSize(12);
@@ -86,13 +86,13 @@ public partial class Patients : ContentPage
 
             Table firmaTable = new Table(2).UseAllAvailableWidth();
 
-            iText.Layout.Element.Cell firmaMedico = new iText.Layout.Element.Cell().Add(new Paragraph("_______________________\nMédico " + nombreMedico)
+            iText.Layout.Element.Cell firmaMedico = new iText.Layout.Element.Cell().Add(new Paragraph("_______________________\nMï¿½dico " + nombreMedico)
                 .SetTextAlignment(iText.Layout.Properties.TextAlignment.CENTER)
                 .SetFontSize(12))
                 .SetBorder(iText.Layout.Borders.Border.NO_BORDER);
             firmaTable.AddCell(firmaMedico);
 
-            iText.Layout.Element.Cell selloMedico = new iText.Layout.Element.Cell().Add(new Paragraph("_______________________\n[Sello del Médico o Clínica]")
+            iText.Layout.Element.Cell selloMedico = new iText.Layout.Element.Cell().Add(new Paragraph("_______________________\n[Sello del Mï¿½dico o Clï¿½nica]")
                 .SetTextAlignment(iText.Layout.Properties.TextAlignment.CENTER)
                 .SetFontSize(12))
                 .SetBorder(iText.Layout.Borders.Border.NO_BORDER);

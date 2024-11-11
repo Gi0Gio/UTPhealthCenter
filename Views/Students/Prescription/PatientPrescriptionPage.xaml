@@ -11,7 +11,7 @@
         <StackLayout Grid.Row="0">
             <components:Navbar IsVisible="{OnIdiom Desktop=true, Phone=false, Tablet=true}" />
             <components:SideMenu IsVisible="{OnIdiom Desktop=false, Phone=true, Tablet=false}" />
-            <Label Text="Citas pendientes"
+            <Label Text="Preescripciones"
                FontSize="24"
                FontAttributes="Bold"
                HorizontalOptions="Center"

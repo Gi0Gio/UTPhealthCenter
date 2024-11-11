@@ -3,78 +3,44 @@
   "WorkspaceRootPath": "C:\\Users\\manue\\Desktop\\ClinicaApp\\UTPhealthCenter\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{4F4AABB1-96B0-4368-9E7F-A1D6F1B2DCD4}|HealthCare.csproj|c:\\users\\manue\\desktop\\clinicaapp\\utphealthcenter\\views\\doctors\\citas\\historial.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{4F4AABB1-96B0-4368-9E7F-A1D6F1B2DCD4}|HealthCare.csproj|solutionrelative:views\\doctors\\citas\\historial.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{4F4AABB1-96B0-4368-9E7F-A1D6F1B2DCD4}|HealthCare.csproj|c:\\users\\manue\\desktop\\clinicaapp\\utphealthcenter\\views\\clinic\\servicespage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{4F4AABB1-96B0-4368-9E7F-A1D6F1B2DCD4}|HealthCare.csproj|solutionrelative:views\\clinic\\servicespage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4F4AABB1-96B0-4368-9E7F-A1D6F1B2DCD4}|HealthCare.csproj|c:\\users\\manue\\desktop\\clinicaapp\\utphealthcenter\\views\\doctors\\patients.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4F4AABB1-96B0-4368-9E7F-A1D6F1B2DCD4}|HealthCare.csproj|solutionrelative:views\\doctors\\patients.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4F4AABB1-96B0-4368-9E7F-A1D6F1B2DCD4}|HealthCare.csproj|c:\\users\\manue\\desktop\\clinicaapp\\utphealthcenter\\views\\doctors\\referencia.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4F4AABB1-96B0-4368-9E7F-A1D6F1B2DCD4}|HealthCare.csproj|solutionrelative:views\\doctors\\referencia.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4F4AABB1-96B0-4368-9E7F-A1D6F1B2DCD4}|HealthCare.csproj|c:\\users\\manue\\desktop\\clinicaapp\\utphealthcenter\\views\\doctors\\referencia.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{4F4AABB1-96B0-4368-9E7F-A1D6F1B2DCD4}|HealthCare.csproj|solutionrelative:views\\doctors\\referencia.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4F4AABB1-96B0-4368-9E7F-A1D6F1B2DCD4}|HealthCare.csproj|c:\\users\\manue\\desktop\\clinicaapp\\utphealthcenter\\views\\doctors\\medicalprocedure.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{4F4AABB1-96B0-4368-9E7F-A1D6F1B2DCD4}|HealthCare.csproj|solutionrelative:views\\doctors\\medicalprocedure.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{4F4AABB1-96B0-4368-9E7F-A1D6F1B2DCD4}|HealthCare.csproj|c:\\users\\manue\\desktop\\clinicaapp\\utphealthcenter\\views\\doctors\\doctorhomepage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4F4AABB1-96B0-4368-9E7F-A1D6F1B2DCD4}|HealthCare.csproj|solutionrelative:views\\doctors\\doctorhomepage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{4F4AABB1-96B0-4368-9E7F-A1D6F1B2DCD4}|HealthCare.csproj|c:\\users\\manue\\desktop\\clinicaapp\\utphealthcenter\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4F4AABB1-96B0-4368-9E7F-A1D6F1B2DCD4}|HealthCare.csproj|solutionrelative:app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4F4AABB1-96B0-4368-9E7F-A1D6F1B2DCD4}|HealthCare.csproj|c:\\users\\manue\\desktop\\clinicaapp\\utphealthcenter\\views\\clinic\\blooddonor.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{4F4AABB1-96B0-4368-9E7F-A1D6F1B2DCD4}|HealthCare.csproj|solutionrelative:views\\clinic\\blooddonor.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{4F4AABB1-96B0-4368-9E7F-A1D6F1B2DCD4}|HealthCare.csproj|c:\\users\\manue\\desktop\\clinicaapp\\utphealthcenter\\views\\students\\appointments\\patienthistorypage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{4F4AABB1-96B0-4368-9E7F-A1D6F1B2DCD4}|HealthCare.csproj|solutionrelative:views\\students\\appointments\\patienthistorypage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4F4AABB1-96B0-4368-9E7F-A1D6F1B2DCD4}|HealthCare.csproj|c:\\users\\manue\\desktop\\clinicaapp\\utphealthcenter\\views\\doctors\\prescripcion.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{4F4AABB1-96B0-4368-9E7F-A1D6F1B2DCD4}|HealthCare.csproj|solutionrelative:views\\doctors\\prescripcion.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\manue\\.nuget\\packages\\microsoft.windowsappsdk\\1.5.240607001\\buildTransitive\\Microsoft.UI.Xaml.Markup.Compiler.interop.targets||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4F4AABB1-96B0-4368-9E7F-A1D6F1B2DCD4}|HealthCare.csproj|c:\\users\\manue\\desktop\\clinicaapp\\utphealthcenter\\views\\doctors\\patients.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{4F4AABB1-96B0-4368-9E7F-A1D6F1B2DCD4}|HealthCare.csproj|solutionrelative:views\\doctors\\patients.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Program Files\\dotnet\\packs\\Microsoft.Android.Sdk.Windows\\34.0.113\\tools\\Xamarin.Android.EmbeddedResource.targets||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4F4AABB1-96B0-4368-9E7F-A1D6F1B2DCD4}|HealthCare.csproj|c:\\users\\manue\\desktop\\clinicaapp\\utphealthcenter\\views\\welcomepage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{4F4AABB1-96B0-4368-9E7F-A1D6F1B2DCD4}|HealthCare.csproj|solutionrelative:views\\welcomepage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{4F4AABB1-96B0-4368-9E7F-A1D6F1B2DCD4}|HealthCare.csproj|c:\\users\\manue\\desktop\\clinicaapp\\utphealthcenter\\views\\doctors\\citas\\historial.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{4F4AABB1-96B0-4368-9E7F-A1D6F1B2DCD4}|HealthCare.csproj|solutionrelative:views\\doctors\\citas\\historial.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{4F4AABB1-96B0-4368-9E7F-A1D6F1B2DCD4}|HealthCare.csproj|c:\\users\\manue\\desktop\\clinicaapp\\utphealthcenter\\views\\doctors\\doctorhomepage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{4F4AABB1-96B0-4368-9E7F-A1D6F1B2DCD4}|HealthCare.csproj|solutionrelative:views\\doctors\\doctorhomepage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4F4AABB1-96B0-4368-9E7F-A1D6F1B2DCD4}|HealthCare.csproj|c:\\users\\manue\\desktop\\clinicaapp\\utphealthcenter\\views\\loginpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4F4AABB1-96B0-4368-9E7F-A1D6F1B2DCD4}|HealthCare.csproj|solutionrelative:views\\loginpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4F4AABB1-96B0-4368-9E7F-A1D6F1B2DCD4}|HealthCare.csproj|c:\\users\\manue\\desktop\\clinicaapp\\utphealthcenter\\views\\doctors\\referencia.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4F4AABB1-96B0-4368-9E7F-A1D6F1B2DCD4}|HealthCare.csproj|solutionrelative:views\\doctors\\referencia.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4F4AABB1-96B0-4368-9E7F-A1D6F1B2DCD4}|HealthCare.csproj|c:\\users\\manue\\desktop\\clinicaapp\\utphealthcenter\\views\\userregisterpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4F4AABB1-96B0-4368-9E7F-A1D6F1B2DCD4}|HealthCare.csproj|solutionrelative:views\\userregisterpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4F4AABB1-96B0-4368-9E7F-A1D6F1B2DCD4}|HealthCare.csproj|c:\\users\\manue\\desktop\\clinicaapp\\utphealthcenter\\views\\doctors\\patients.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4F4AABB1-96B0-4368-9E7F-A1D6F1B2DCD4}|HealthCare.csproj|solutionrelative:views\\doctors\\patients.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4F4AABB1-96B0-4368-9E7F-A1D6F1B2DCD4}|HealthCare.csproj|c:\\users\\manue\\desktop\\clinicaapp\\utphealthcenter\\views\\doctors\\doctorregisterpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{4F4AABB1-96B0-4368-9E7F-A1D6F1B2DCD4}|HealthCare.csproj|solutionrelative:views\\doctors\\doctorregisterpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{4F4AABB1-96B0-4368-9E7F-A1D6F1B2DCD4}|HealthCare.csproj|c:\\users\\manue\\desktop\\clinicaapp\\utphealthcenter\\views\\doctors\\referencia.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{4F4AABB1-96B0-4368-9E7F-A1D6F1B2DCD4}|HealthCare.csproj|solutionrelative:views\\doctors\\referencia.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4F4AABB1-96B0-4368-9E7F-A1D6F1B2DCD4}|HealthCare.csproj|c:\\users\\manue\\desktop\\clinicaapp\\utphealthcenter\\views\\clinic\\servicespage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4F4AABB1-96B0-4368-9E7F-A1D6F1B2DCD4}|HealthCare.csproj|solutionrelative:views\\clinic\\servicespage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4F4AABB1-96B0-4368-9E7F-A1D6F1B2DCD4}|HealthCare.csproj|c:\\users\\manue\\desktop\\clinicaapp\\utphealthcenter\\views\\students\\studenthomepage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{4F4AABB1-96B0-4368-9E7F-A1D6F1B2DCD4}|HealthCare.csproj|solutionrelative:views\\students\\studenthomepage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4F4AABB1-96B0-4368-9E7F-A1D6F1B2DCD4}|HealthCare.csproj|c:\\users\\manue\\desktop\\clinicaapp\\utphealthcenter\\views\\students\\studenthomepage.xaml.cs||{8B382828-6202-11D1-8870-0000F87579D2}|",
-      "RelativeMoniker": "D:0:0:{4F4AABB1-96B0-4368-9E7F-A1D6F1B2DCD4}|HealthCare.csproj|solutionrelative:views\\students\\studenthomepage.xaml.cs||{8B382828-6202-11D1-8870-0000F87579D2}|"
+      "AbsoluteMoniker": "D:0:0:{4F4AABB1-96B0-4368-9E7F-A1D6F1B2DCD4}|HealthCare.csproj|c:\\users\\manue\\desktop\\clinicaapp\\utphealthcenter\\views\\doctors\\prescripcion.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{4F4AABB1-96B0-4368-9E7F-A1D6F1B2DCD4}|HealthCare.csproj|solutionrelative:views\\doctors\\prescripcion.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     }
   ],
   "DocumentGroupContainers": [
@@ -99,19 +65,58 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "ServicesPage.xaml",
+              "DocumentMoniker": "C:\\Users\\manue\\Desktop\\ClinicaApp\\UTPhealthCenter\\Views\\Clinic\\ServicesPage.xaml",
+              "RelativeDocumentMoniker": "Views\\Clinic\\ServicesPage.xaml",
+              "ToolTip": "C:\\Users\\manue\\Desktop\\ClinicaApp\\UTPhealthCenter\\Views\\Clinic\\ServicesPage.xaml",
+              "RelativeToolTip": "Views\\Clinic\\ServicesPage.xaml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-11-11T06:11:21.849Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "PatientHistoryPage.xaml",
+              "DocumentMoniker": "C:\\Users\\manue\\Desktop\\ClinicaApp\\UTPhealthCenter\\Views\\Students\\Appointments\\PatientHistoryPage.xaml",
+              "RelativeDocumentMoniker": "Views\\Students\\Appointments\\PatientHistoryPage.xaml",
+              "ToolTip": "C:\\Users\\manue\\Desktop\\ClinicaApp\\UTPhealthCenter\\Views\\Students\\Appointments\\PatientHistoryPage.xaml",
+              "RelativeToolTip": "Views\\Students\\Appointments\\PatientHistoryPage.xaml",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAABYAAABBAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-11-11T06:07:36.302Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "DoctorHomePage.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\manue\\Desktop\\ClinicaApp\\UTPhealthCenter\\Views\\Doctors\\DoctorHomePage.xaml.cs",
+              "RelativeDocumentMoniker": "Views\\Doctors\\DoctorHomePage.xaml.cs",
+              "ToolTip": "C:\\Users\\manue\\Desktop\\ClinicaApp\\UTPhealthCenter\\Views\\Doctors\\DoctorHomePage.xaml.cs",
+              "RelativeToolTip": "Views\\Doctors\\DoctorHomePage.xaml.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAYwB0AAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-11T05:59:46.486Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "Historial.xaml",
               "DocumentMoniker": "C:\\Users\\manue\\Desktop\\ClinicaApp\\UTPhealthCenter\\Views\\Doctors\\Citas\\Historial.xaml",
               "RelativeDocumentMoniker": "Views\\Doctors\\Citas\\Historial.xaml",
               "ToolTip": "C:\\Users\\manue\\Desktop\\ClinicaApp\\UTPhealthCenter\\Views\\Doctors\\Citas\\Historial.xaml",
               "RelativeToolTip": "Views\\Doctors\\Citas\\Historial.xaml",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAABsAAAAeAAAAAAAAAA==",
+              "ViewState": "AgIAAGYAAAAAAAAAAAAAAHIAAAA6AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2024-11-11T05:46:41.258Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 7,
               "Title": "Patients.xaml.cs",
               "DocumentMoniker": "C:\\Users\\manue\\Desktop\\ClinicaApp\\UTPhealthCenter\\Views\\Doctors\\Patients.xaml.cs",
               "RelativeDocumentMoniker": "Views\\Doctors\\Patients.xaml.cs",
@@ -119,25 +124,24 @@
               "RelativeToolTip": "Views\\Doctors\\Patients.xaml.cs",
               "ViewState": "AgIAADkAAAAAAAAAAAAYwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-11T05:31:43.237Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-11T05:31:43.237Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 6,
               "Title": "Referencia.xaml.cs",
               "DocumentMoniker": "C:\\Users\\manue\\Desktop\\ClinicaApp\\UTPhealthCenter\\Views\\Doctors\\Referencia.xaml.cs",
               "RelativeDocumentMoniker": "Views\\Doctors\\Referencia.xaml.cs",
               "ToolTip": "C:\\Users\\manue\\Desktop\\ClinicaApp\\UTPhealthCenter\\Views\\Doctors\\Referencia.xaml.cs",
               "RelativeToolTip": "Views\\Doctors\\Referencia.xaml.cs",
-              "ViewState": "AgIAADEAAAAAAAAAAAAwwAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-10T04:21:50.974Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 8,
               "Title": "Referencia.xaml",
               "DocumentMoniker": "C:\\Users\\manue\\Desktop\\ClinicaApp\\UTPhealthCenter\\Views\\Doctors\\Referencia.xaml",
               "RelativeDocumentMoniker": "Views\\Doctors\\Referencia.xaml",
@@ -145,48 +149,11 @@
               "RelativeToolTip": "Views\\Doctors\\Referencia.xaml",
               "ViewState": "AgIAAJ8AAAAAAAAAAAAAAL0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-11-10T04:21:46.986Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-10T04:21:46.986Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "MedicalProcedure.xaml",
-              "DocumentMoniker": "C:\\Users\\manue\\Desktop\\ClinicaApp\\UTPhealthCenter\\Views\\Doctors\\MedicalProcedure.xaml",
-              "RelativeDocumentMoniker": "Views\\Doctors\\MedicalProcedure.xaml",
-              "ToolTip": "C:\\Users\\manue\\Desktop\\ClinicaApp\\UTPhealthCenter\\Views\\Doctors\\MedicalProcedure.xaml",
-              "RelativeToolTip": "Views\\Doctors\\MedicalProcedure.xaml",
-              "ViewState": "AgIAAFoAAAAAAAAAAAAAAHEAAAA2AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-11-10T01:55:43.176Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "Microsoft.UI.Xaml.Markup.Compiler.interop.targets",
-              "DocumentMoniker": "C:\\Users\\manue\\.nuget\\packages\\microsoft.windowsappsdk\\1.5.240607001\\buildTransitive\\Microsoft.UI.Xaml.Markup.Compiler.interop.targets",
-              "RelativeDocumentMoniker": "..\\..\\..\\.nuget\\packages\\microsoft.windowsappsdk\\1.5.240607001\\buildTransitive\\Microsoft.UI.Xaml.Markup.Compiler.interop.targets",
-              "ToolTip": "C:\\Users\\manue\\.nuget\\packages\\microsoft.windowsappsdk\\1.5.240607001\\buildTransitive\\Microsoft.UI.Xaml.Markup.Compiler.interop.targets",
-              "RelativeToolTip": "..\\..\\..\\.nuget\\packages\\microsoft.windowsappsdk\\1.5.240607001\\buildTransitive\\Microsoft.UI.Xaml.Markup.Compiler.interop.targets",
-              "ViewState": "AgIAAGcBAAAAAAAAAAAuwHkBAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003801|",
-              "WhenOpened": "2024-11-10T00:54:31.04Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "BloodDonor.xaml",
-              "DocumentMoniker": "C:\\Users\\manue\\Desktop\\ClinicaApp\\UTPhealthCenter\\Views\\Clinic\\BloodDonor.xaml",
-              "RelativeDocumentMoniker": "Views\\Clinic\\BloodDonor.xaml",
-              "ToolTip": "C:\\Users\\manue\\Desktop\\ClinicaApp\\UTPhealthCenter\\Views\\Clinic\\BloodDonor.xaml",
-              "RelativeToolTip": "Views\\Clinic\\BloodDonor.xaml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAGwAAAAnAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-11-10T00:35:16.9Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 9,
               "Title": "Prescripcion.xaml",
               "DocumentMoniker": "C:\\Users\\manue\\Desktop\\ClinicaApp\\UTPhealthCenter\\Views\\Doctors\\Prescripcion.xaml",
               "RelativeDocumentMoniker": "Views\\Doctors\\Prescripcion.xaml",
@@ -198,135 +165,29 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "Xamarin.Android.EmbeddedResource.targets",
-              "DocumentMoniker": "C:\\Program Files\\dotnet\\packs\\Microsoft.Android.Sdk.Windows\\34.0.113\\tools\\Xamarin.Android.EmbeddedResource.targets",
-              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\Program Files\\dotnet\\packs\\Microsoft.Android.Sdk.Windows\\34.0.113\\tools\\Xamarin.Android.EmbeddedResource.targets",
-              "ToolTip": "C:\\Program Files\\dotnet\\packs\\Microsoft.Android.Sdk.Windows\\34.0.113\\tools\\Xamarin.Android.EmbeddedResource.targets",
-              "RelativeToolTip": "..\\..\\..\\..\\..\\Program Files\\dotnet\\packs\\Microsoft.Android.Sdk.Windows\\34.0.113\\tools\\Xamarin.Android.EmbeddedResource.targets",
-              "ViewState": "AgIAACUAAAAAAAAAAAAQwDsAAAAEAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003801|",
-              "WhenOpened": "2024-11-09T11:18:59.696Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 5,
               "Title": "DoctorHomePage.xaml",
               "DocumentMoniker": "C:\\Users\\manue\\Desktop\\ClinicaApp\\UTPhealthCenter\\Views\\Doctors\\DoctorHomePage.xaml",
               "RelativeDocumentMoniker": "Views\\Doctors\\DoctorHomePage.xaml",
               "ToolTip": "C:\\Users\\manue\\Desktop\\ClinicaApp\\UTPhealthCenter\\Views\\Doctors\\DoctorHomePage.xaml",
               "RelativeToolTip": "Views\\Doctors\\DoctorHomePage.xaml",
-              "ViewState": "AgIAAKIAAAAAAAAAAIBJwAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAFEAAAAAAAAAAAAtwF4AAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-11-09T11:18:19.537Z"
+              "WhenOpened": "2024-11-09T11:18:19.537Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "LoginPage.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\manue\\Desktop\\ClinicaApp\\UTPhealthCenter\\Views\\LoginPage.xaml.cs",
-              "RelativeDocumentMoniker": "Views\\LoginPage.xaml.cs",
-              "ToolTip": "C:\\Users\\manue\\Desktop\\ClinicaApp\\UTPhealthCenter\\Views\\LoginPage.xaml.cs",
-              "RelativeToolTip": "Views\\LoginPage.xaml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-09T11:13:53.262Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "Patients.xaml",
-              "DocumentMoniker": "C:\\Users\\manue\\Desktop\\ClinicaApp\\UTPhealthCenter\\Views\\Doctors\\Patients.xaml",
-              "RelativeDocumentMoniker": "Views\\Doctors\\Patients.xaml",
-              "ToolTip": "C:\\Users\\manue\\Desktop\\ClinicaApp\\UTPhealthCenter\\Views\\Doctors\\Patients.xaml",
-              "RelativeToolTip": "Views\\Doctors\\Patients.xaml",
-              "ViewState": "AgIAAI8AAAAAAAAAAAAAALsAAAAOAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-11-09T10:51:35.628Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "UserRegisterPage.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\manue\\Desktop\\ClinicaApp\\UTPhealthCenter\\Views\\UserRegisterPage.xaml.cs",
-              "RelativeDocumentMoniker": "Views\\UserRegisterPage.xaml.cs",
-              "ToolTip": "C:\\Users\\manue\\Desktop\\ClinicaApp\\UTPhealthCenter\\Views\\UserRegisterPage.xaml.cs",
-              "RelativeToolTip": "Views\\UserRegisterPage.xaml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-09T10:09:43.677Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "DoctorRegisterPage.xaml",
-              "DocumentMoniker": "C:\\Users\\manue\\Desktop\\ClinicaApp\\UTPhealthCenter\\Views\\Doctors\\DoctorRegisterPage.xaml",
-              "RelativeDocumentMoniker": "Views\\Doctors\\DoctorRegisterPage.xaml",
-              "ToolTip": "C:\\Users\\manue\\Desktop\\ClinicaApp\\UTPhealthCenter\\Views\\Doctors\\DoctorRegisterPage.xaml",
-              "RelativeToolTip": "Views\\Doctors\\DoctorRegisterPage.xaml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-11-07T04:29:13.545Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "ServicesPage.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\manue\\Desktop\\ClinicaApp\\UTPhealthCenter\\Views\\Clinic\\ServicesPage.xaml.cs",
-              "RelativeDocumentMoniker": "Views\\Clinic\\ServicesPage.xaml.cs",
-              "ToolTip": "C:\\Users\\manue\\Desktop\\ClinicaApp\\UTPhealthCenter\\Views\\Clinic\\ServicesPage.xaml.cs",
-              "RelativeToolTip": "Views\\Clinic\\ServicesPage.xaml.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAAAAwBoAAAA/AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-07T01:13:08.295Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "WelcomePage.xaml",
-              "DocumentMoniker": "C:\\Users\\manue\\Desktop\\ClinicaApp\\UTPhealthCenter\\Views\\WelcomePage.xaml",
-              "RelativeDocumentMoniker": "Views\\WelcomePage.xaml",
-              "ToolTip": "C:\\Users\\manue\\Desktop\\ClinicaApp\\UTPhealthCenter\\Views\\WelcomePage.xaml",
-              "RelativeToolTip": "Views\\WelcomePage.xaml",
-              "ViewState": "AgIAAAAAAAAAAAAAAIBJwBgAAABgAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-11-08T00:30:09.283Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "StudentHomePage.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\manue\\Desktop\\ClinicaApp\\UTPhealthCenter\\Views\\Students\\StudentHomePage.xaml.cs",
-              "RelativeDocumentMoniker": "Views\\Students\\StudentHomePage.xaml.cs",
-              "ToolTip": "C:\\Users\\manue\\Desktop\\ClinicaApp\\UTPhealthCenter\\Views\\Students\\StudentHomePage.xaml.cs",
-              "RelativeToolTip": "Views\\Students\\StudentHomePage.xaml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAeAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-06T21:59:52.964Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "StudentHomePage.xaml",
-              "DocumentMoniker": "C:\\Users\\manue\\Desktop\\ClinicaApp\\UTPhealthCenter\\Views\\Students\\StudentHomePage.xaml",
-              "RelativeDocumentMoniker": "Views\\Students\\StudentHomePage.xaml",
-              "ToolTip": "C:\\Users\\manue\\Desktop\\ClinicaApp\\UTPhealthCenter\\Views\\Students\\StudentHomePage.xaml",
-              "RelativeToolTip": "Views\\Students\\StudentHomePage.xaml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAmAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-11-06T18:00:23.02Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 2,
               "Title": "App.xaml.cs",
               "DocumentMoniker": "C:\\Users\\manue\\Desktop\\ClinicaApp\\UTPhealthCenter\\App.xaml.cs",
               "RelativeDocumentMoniker": "App.xaml.cs",
               "ToolTip": "C:\\Users\\manue\\Desktop\\ClinicaApp\\UTPhealthCenter\\App.xaml.cs",
               "RelativeToolTip": "App.xaml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAABBAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-06T21:31:32.874Z"
+              "WhenOpened": "2024-11-06T21:31:32.874Z",
+              "EditorCaption": ""
             }
           ]
         }
