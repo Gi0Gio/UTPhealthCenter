@@ -14,179 +14,181 @@
 
     <ScrollView>
         <VerticalStackLayout Padding="10" Spacing="10">
-            <components:Navbar IsVisible="{OnIdiom Desktop=true, Phone=false, Tablet=false}" />
-            <components:SideMenu IsVisible="{OnIdiom Desktop=false, Phone=true, Tablet=true}" />
-            <!-- Título (Se adapta según la plataforma) -->
+            <components:Navbar IsVisible="{OnIdiom Desktop=true, Phone=false, Tablet=true}" />
+            <components:SideMenu IsVisible="{OnIdiom Desktop=false, Phone=true, Tablet=false}" />
+
+            <!-- Page Title -->
             <Label Text="Gestión de Citas" 
+                   
+                   
                    FontFamily="MohaveRegular"
                    FontAttributes="Bold,Italic"
                    TextColor="#000" 
                    HorizontalOptions="Center"
                    FontSize="{OnIdiom Phone=29, Desktop=35}" />
 
-            <!-- Botones de navegación -->
-            <OnIdiom x:TypeArguments="Layout">
-                <OnIdiom.Phone>
-                    <!-- Diseño para móviles (StackLayout vertical) -->
-                    <VerticalStackLayout HorizontalOptions="Fill" Spacing="15">
-                        <Button Text="Citas Pendientes" 
-                                Clicked="ShowPendingCitas" 
-                                BackgroundColor="#014671" 
-                                TextColor="White" 
-                                FontSize="20"
-                                FontFamily="MohaveRegular"
-                                CornerRadius="10" />
-                        <Button Text="Citas Programadas" 
-                                Clicked="ShowScheduledCitas" 
-                                BackgroundColor="#014671" 
-                                TextColor="White" 
-                                FontSize="20"
-                                FontFamily="MohaveRegular"
-                                CornerRadius="10" />
-                        <Button Text="Agregar Cita" 
-                                Clicked="ShowAppointmentForm" 
-                                BackgroundColor="#014671" 
-                                TextColor="White" 
-                                FontSize="20"
-                                FontFamily="MohaveRegular"
-                                CornerRadius="10" />
-                    </VerticalStackLayout>
-                </OnIdiom.Phone>
+            <!-- Main Grid Layout -->
+            <Grid ColumnDefinitions="*,*" RowSpacing="10" ColumnSpacing="10">
 
-                <OnIdiom.Desktop>
-                    <!-- Diseño para escritorio (Grid con botones alineados horizontalmente) -->
-                    <Grid ColumnDefinitions="*,*,*" 
-                          Padding="0" 
-                          ColumnSpacing="10">
-                        <Button Text="Citas Pendientes" 
-                                Clicked="ShowPendingCitas" 
-                                BackgroundColor="#014671" 
-                                TextColor="White" 
-                                FontSize="20"
-                                CornerRadius="10"
-                                Grid.Column="0"/>
-                        <Button Text="Citas Programadas" 
-                                Clicked="ShowScheduledCitas" 
-                                BackgroundColor="#014671" 
-                                TextColor="White" 
-                                FontSize="20"
-                                CornerRadius="10"
-                                Grid.Column="1"/>
-                        <Button Text="Agregar Cita" 
-                                Clicked="ShowAppointmentForm" 
-                                BackgroundColor="#014671" 
-                                TextColor="White" 
-                                FontSize="20"
-                                CornerRadius="10"
-                                Grid.Column="2"/>
-                    </Grid>
-                </OnIdiom.Desktop>
-            </OnIdiom>
+                <!-- Appointment Form (Left Side) -->
+                <StackLayout Grid.Column="0" Padding="10">
+                    <Label Text="Crear Cita" 
+                           FontFamily="MohaveRegular"
+                           FontAttributes="Bold" 
+                           TextColor="#000"
+                           FontSize="{OnIdiom Phone=22, Desktop=30}" />
 
-            <!-- Citas Pendientes -->
-            <VerticalStackLayout x:Name="PendingCitasSection" IsVisible="True" Padding="30" >
-                <Label Text="Citas Pendientes" 
-                       FontFamily="MohaveRegular"
-                       FontAttributes="Bold" 
-                       TextColor="#000"
-                       FontSize="{OnIdiom Phone=22, Desktop=24}" />
+                    <!-- Patient Selector -->
+                    <Label Text="Seleccionar Paciente" 
+                           FontSize="{OnIdiom Phone=18, Desktop=20}" 
+                           FontAttributes="Bold"
+                           TextColor="#000" />
+                    <Picker 
+                            ItemsSource="{Binding Patients}" 
+                            ItemDisplayBinding="{Binding FullName}"
+                            SelectedItem="{Binding SelectedPatient}"
+                            FontFamily="MohaveRegular"
+                            BackgroundColor="#E6F2FD"
+                            TextColor="Black"
+                            FontSize="{OnIdiom Phone=22, Desktop=25}" />
 
-                <CollectionView ItemsSource="{Binding PendingAppointments}">
-                    <CollectionView.ItemTemplate>
-                        <DataTemplate>
-                            <Frame BackgroundColor="#E3F2FD" 
-                                   CornerRadius="10" 
-                                   Padding="20" 
-                                   Margin="0,5"
-                                   BorderColor="#00000020">
-                                <Grid ColumnDefinitions="*, Auto">
-                                    <VerticalStackLayout Grid.Column="0" Spacing="5" HorizontalOptions="StartAndExpand">
-                                        <Label Text="Paciente:" FontSize="{OnIdiom Phone=18, Desktop=20}" TextColor="#000" FontFamily="MohaveRegular" TextDecorations="Underline"/>
-                                        <Label Text= "{Binding patientName}" FontSize="{OnIdiom Phone=16, Desktop=18}" TextColor="#000" FontFamily="MohaveRegular"/>
-                                        <Label Text="Doctor:" FontSize="{OnIdiom Phone=18, Desktop=20}" TextColor="#000" FontFamily="MohaveRegular" TextDecorations="Underline"/>
-                                        <Label Text="{Binding doctorName}" FontSize="{OnIdiom Phone=16, Desktop=18}" TextColor="#000"/>
-                                        <Label Text="Asunto:" FontSize="{OnIdiom Phone=18, Desktop=20}" TextColor="#000" FontFamily="MohaveRegular" TextDecorations="Underline"/>
-                                        <Label Text="{Binding description}" FontSize="{OnIdiom Phone=14, Desktop=16}" TextColor="#000"/>
-                                        <Label Text="Fecha Programada:" FontSize="{OnIdiom Phone=18, Desktop=20}" TextColor="#000" FontFamily="MohaveRegular" TextDecorations="Underline"/>
-                                        <Label Text="{Binding AppointmentDate}" FontSize="{OnIdiom Phone=14, Desktop=16}" TextColor="#000"/>
-                                    </VerticalStackLayout>
-                                    <Button Grid.Column="1"
-                                            Text="✖" 
-                                            BackgroundColor="#E53935" 
-                                            TextColor="White" 
-                                            CornerRadius="10"
-                                            Command="{Binding BindingContext.DeleteAppointmentCommand, Source={x:Reference CitasPage}}"
-                                            CommandParameter="{Binding}" 
-                                            WidthRequest="{OnIdiom Phone=80, Desktop=60}" 
-                                            HeightRequest="{OnIdiom Phone=80, Desktop=100}" 
-                                            HorizontalOptions="End"
-                                            Clicked="OnDeleteAppointment"/>
-                                </Grid>
-                            </Frame>
-                        </DataTemplate>
-                    </CollectionView.ItemTemplate>
-                </CollectionView>
-            </VerticalStackLayout>
+                    <!-- Doctor Selector -->
+                    <Label Text="Seleccionar Doctor" 
+                           FontSize="{OnIdiom Phone=18, Desktop=20}" 
+                           FontAttributes="Bold"
+                           TextColor="#000" />
+                    <Picker 
+                            ItemsSource="{Binding Doctors}" 
+                            ItemDisplayBinding="{Binding FullName}"
+                            SelectedItem="{Binding SelectedDoctor}"
+                            FontFamily="MohaveRegular"
+                            BackgroundColor="#E3F2FD"
+                            TextColor="Black"
+                            FontSize="{OnIdiom Phone=22, Desktop=25}" />
 
-            <!-- Formulario de Crear Cita -->
-            <VerticalStackLayout x:Name="AppointmentFormSection" IsVisible="False">
-                <Label Text="Crear Cita" 
-                       FontFamily="MohaveRegular"
-                       FontAttributes="Bold" 
-                       TextColor="#000"
-                       FontSize="{OnIdiom Phone=22, Desktop=30}" />
+                    <!-- Appointment Date -->
+                    <Label Text="Seleccionar Fecha" 
+       FontSize="{OnIdiom Phone=18, Desktop=20}" 
+       FontAttributes="Bold"
+       TextColor="#000" />
+                    <DatePicker Date="{Binding NewAppointment.AppointmentDate}" 
+                    TextColor="Black" 
+                    FontFamily="MohaveRegular"
+                    BackgroundColor="#E3F2FD" 
+                    FontSize="{OnIdiom Phone=22, Desktop=25}" />
 
-                <Entry Placeholder="ID del Paciente" 
-                       Text="{Binding NewAppointment.patientId}" 
-                       Keyboard="Numeric" 
-                       TextColor="Black" 
-                       FontFamily="MohaveRegular"
-                       BackgroundColor="#E3F2FD" 
-                       FontSize="{OnIdiom Phone=22, Desktop=25}"
-                       PlaceholderColor="#000" />
 
-                <Entry Placeholder="ID del Doctor" 
-                       Text="{Binding NewAppointment.doctorId}" 
-                       Keyboard="Numeric" 
-                       TextColor="Black" 
-                       FontFamily="MohaveRegular"
-                       BackgroundColor="#E3F2FD" 
-                       FontSize="{OnIdiom Phone=22, Desktop=25}"
-                       PlaceholderColor="#000" />
 
-                <DatePicker Date="{Binding NewAppointment.AppointmentDate}" 
-                             TextColor="Black" 
-                             FontFamily="MohaveRegular"
-                             BackgroundColor="#E3F2FD" 
-                             FontSize="{OnIdiom Phone=22, Desktop=25}" />
+                    <!-- Description -->
+                    <Label Text="Descripción de la cita" 
+       FontSize="{OnIdiom Phone=18, Desktop=20}" 
+       FontAttributes="Bold"
+       TextColor="#000" />
+                    <Entry Placeholder="Descripción" 
+                           Text="{Binding NewAppointment.description}" 
+                           TextColor="Black" 
+                           FontFamily="MohaveRegular"
+                           BackgroundColor="#E3F2FD" 
+                           FontSize="{OnIdiom Phone=22, Desktop=25}"
+                           PlaceholderColor="#000" />
 
-                <Entry Placeholder="Descripción" 
-                       Text="{Binding NewAppointment.description}" 
-                       TextColor="Black" 
-                       FontFamily="MohaveRegular"
-                       BackgroundColor="#E3F2FD" 
-                       FontSize="{OnIdiom Phone=22, Desktop=25}"
-                       PlaceholderColor="#000" />
+                    <!-- Appointment Type -->
+                    <Label Text="Seleccione tipo de Cita" 
+       FontSize="{OnIdiom Phone=18, Desktop=20}" 
+       FontAttributes="Bold"
+       TextColor="#000" />
+                    <Picker 
+                            ItemsSource="{Binding AppointmentTypes}" 
+                            SelectedItem="{Binding NewAppointment.type}" 
+                            TitleColor="#000"
+                            TextColor="#000"
+                            FontFamily="MohaveRegular"
+                            BackgroundColor="#E3F2FD" 
+                            FontSize="{OnIdiom Phone=22, Desktop=25}" />
 
-                <Picker Title="Seleccione tipo de cita:" 
-                        ItemsSource="{Binding AppointmentTypes}" 
-                        SelectedItem="{Binding NewAppointment.type}" 
-                        TitleColor="#000"
-                        TextColor="#000"
-                        FontFamily="MohaveRegular"
-                        BackgroundColor="#E3F2FD" 
-                        FontSize="{OnIdiom Phone=22, Desktop=25}"
-                        />
-
-                <Button Text="Guardar Cita" 
-                        Clicked="OnSaveAppointment" 
+                    <!-- Submit Button -->
+                    <Button Text="Guardar Cita" 
                         BackgroundColor="#014671" 
                         TextColor="White" 
                         CornerRadius="10" 
                         FontSize="{OnIdiom Phone=18, Desktop=20}"
-                        Margin="0,15,0,0"/>
-            </VerticalStackLayout>
+                        Margin="0,15,0,0"
+                        Clicked="OnSaveAppointment"/>
+                </StackLayout>
 
+                <!-- Upcoming Appointments (Right Side) with Scrollable Area -->
+                <StackLayout Grid.Column="1" Padding="10">
+                    <Label Text="Próximas Citas" 
+                           FontFamily="MohaveRegular"
+                           FontAttributes="Bold" 
+                           TextColor="#000"
+                           FontSize="{OnIdiom Phone=22, Desktop=24}" />
+
+                    <!-- Scrollable CollectionView Section -->
+                    <ScrollView HeightRequest="300">
+                        <CollectionView ItemsSource="{Binding PendingAppointments}">
+                            <CollectionView.ItemTemplate>
+                                <DataTemplate>
+                                    <Frame BackgroundColor="#E3F2FD" 
+                       CornerRadius="10" 
+                       Padding="10" 
+                       Margin="0,5"
+                       BorderColor="#00000020">
+                                        <Grid ColumnDefinitions="*, Auto, Auto">
+                                            <StackLayout Grid.Column="0" Spacing="5" HorizontalOptions="StartAndExpand">
+                                                <Label Text="Paciente:" FontSize="{OnIdiom Phone=18, Desktop=20}" TextColor="#000" FontFamily="MohaveRegular" TextDecorations="Underline"/>
+                                                <Label Text="{Binding patientName}" FontSize="{OnIdiom Phone=16, Desktop=18}" TextColor="#000" FontFamily="MohaveRegular"/>
+
+                                                <Label Text="Doctor:" FontSize="{OnIdiom Phone=18, Desktop=20}" TextColor="#000" FontFamily="MohaveRegular" TextDecorations="Underline"/>
+                                                <Label Text="{Binding doctorName}" FontSize="{OnIdiom Phone=16, Desktop=18}" TextColor="#000"/>
+
+                                                <Label Text="Asunto:" FontSize="{OnIdiom Phone=18, Desktop=20}" TextColor="#000" FontFamily="MohaveRegular" TextDecorations="Underline"/>
+                                                <Label Text="{Binding description}" FontSize="{OnIdiom Phone=14, Desktop=16}" TextColor="#000"/>
+
+                                                <Label Text="Fecha Programada:" 
+                                               FontSize="{OnIdiom Phone=18, Desktop=20}" 
+                                               TextColor="#000" 
+                                               FontFamily="MohaveRegular" 
+                                               TextDecorations="Underline"/>
+                                                <Label Text="{Binding ParsedAppointmentDate, StringFormat='{0:MM/dd/yyyy hh:mm tt}'}" 
+                                               FontSize="{OnIdiom Phone=14, Desktop=16}" 
+                                               TextColor="#000"/>
+
+                                            </StackLayout>
+
+                                            <!-- Edit Button -->
+                                            <Button Grid.Column="1"
+                                                Text="✎" 
+                                                BackgroundColor="#4CAF50" 
+                                                TextColor="White" 
+                                                Margin="5"
+                                                CornerRadius="10"
+                                                WidthRequest="{OnIdiom Phone=80, Desktop=60}" 
+                                                HeightRequest="{OnIdiom Phone=80, Desktop=100}" 
+                                                HorizontalOptions="End"
+                                                Clicked="OnEditAppointment"
+                                                CommandParameter="{Binding}" />     
+
+                                            <!-- Delete Button -->
+                                            <Button Grid.Column="2"
+                                Text="✖" 
+                                BackgroundColor="#E53935" 
+                                TextColor="White" 
+                                CornerRadius="10"
+                                WidthRequest="{OnIdiom Phone=80, Desktop=60}" 
+                                HeightRequest="{OnIdiom Phone=80, Desktop=100}" 
+                                HorizontalOptions="End"
+                                Clicked="OnDeleteAppointment"
+                                CommandParameter="{Binding}" />
+                                        </Grid>
+                                    </Frame>
+                                </DataTemplate>
+                            </CollectionView.ItemTemplate>
+                        </CollectionView>
+                    </ScrollView>
+                </StackLayout>
+
+            </Grid>
         </VerticalStackLayout>
     </ScrollView>
 </ContentPage>

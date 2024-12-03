@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:components="clr-namespace:HealthCare.Components"
              x:Class="HealthCare.Views.Students.Appointments.PatientRequestPage"
+             xmlns:components="clr-namespace:HealthCare.Components"
              BackgroundColor="{OnIdiom Phone=#fff, Desktop=#fff, Tablet=#fff}"
              NavigationPage.HasNavigationBar="False">
 
@@ -12,7 +12,6 @@
         <components:Navbar IsVisible="{OnIdiom Desktop=true, Phone=false, Tablet=true}" />
         <components:SideMenu IsVisible="{OnIdiom Desktop=false, Phone=true, Tablet=false}" />
 
-        <!-- Contenido principal con espaciado adicional -->
         <VerticalStackLayout HorizontalOptions="Center" VerticalOptions="Center" Spacing="30" Padding="40">
             <Label Text="Gestión de Citas" 
                    FontFamily="MohaveRegular"
@@ -21,7 +20,6 @@
                    HorizontalOptions="Center"
                    FontSize="{OnIdiom Phone=22, Desktop=30, Tablet=30}" />
 
-            <!-- Grid con espaciado adicional en filas y columnas -->
             <Grid ColumnDefinitions="*, *" RowDefinitions="Auto, Auto, Auto" 
                   HorizontalOptions="Center" ColumnSpacing="25" RowSpacing="50">
 
@@ -41,7 +39,20 @@
                         BackgroundColor="#E3F2FD" 
                         TextColor="#666" 
                         Grid.Row="0" 
-                        Grid.Column="1" />
+                        Grid.Column="1"
+                        x:Name="TypeEntry">
+                    <Picker.ItemsSource>
+                        <x:Array Type="{x:Type x:String}">
+                            <x:String>Consulta General</x:String>
+                            <x:String>Chequeo de Rutina</x:String>
+                            <x:String>Especialista</x:String>
+                            <x:String>Examen de Laboratorio</x:String>
+                            <x:String>Revisión Médica</x:String>
+                            <x:String>Consulta Pediátrica</x:String>
+                            <x:String>Psicología</x:String>
+                        </x:Array>
+                    </Picker.ItemsSource>
+                </Picker>
 
                 <Label Text="Día de la cita" 
                        TextColor="#000"
@@ -52,7 +63,8 @@
                        Grid.Column="0" 
                        VerticalTextAlignment="Center" />
 
-                <DatePicker FontSize="18" 
+                <DatePicker x:Name="AppointmentDatePicker"
+                            FontSize="18" 
                             BackgroundColor="#E3F2FD" 
                             TextColor="#666" 
                             FontFamily="MohaveRegular"
@@ -67,16 +79,17 @@
                        Grid.Column="0" 
                        VerticalTextAlignment="Center" />
 
-                <Entry  Placeholder="Describa el motivo de su cita" 
-                        FontSize="{OnIdiom Phone=22, Desktop=30, Tablet=30}" 
-                        FontFamily="MohaveRegular"
-                        BackgroundColor="#f5f5f5" 
-                        TextColor="#666" 
-                        Grid.Row="2" 
-                        Grid.Column="1" />
+                <Entry x:Name="DescriptionEditor" 
+                       Placeholder="Describa el motivo de su cita" 
+                       FontSize="{OnIdiom Phone=22, Desktop=30, Tablet=30}" 
+                       FontFamily="MohaveRegular"
+                       BackgroundColor="#f5f5f5" 
+                       TextColor="#666" 
+                       Grid.Row="2" 
+                       Grid.Column="1" />
             </Grid>
 
-            <!-- Botón con espaciado adicional arriba -->
+            <!-- Updated button to call OnRequestAppointmentClicked -->
             <Button Text="Hacer Solicitud" 
                     FontSize="18" 
                     BackgroundColor="#006aab" 
@@ -85,7 +98,7 @@
                     HorizontalOptions="Center" 
                     WidthRequest="200" 
                     Margin="0,20,0,0"
-                    Clicked="ToPending"/>
+                    Clicked="OnRequestAppointmentClicked"/>
         </VerticalStackLayout>
     </VerticalStackLayout>
 </ContentPage>

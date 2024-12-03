@@ -78,24 +78,38 @@
             </OnIdiom>
 
             <!-- Lista de Medicinas -->
-            <VerticalStackLayout x:Name="MedicineListSection" IsVisible="False" Padding="30">
+            <VerticalStackLayout Padding="10" Spacing="10">
                 <Label Text="Lista de Medicinas"
-                       FontFamily="MohaveRegular"
-                       FontAttributes="Bold"
-                       TextColor="#000"
-                       FontSize="{OnIdiom Phone=22, Desktop=24, Tablet=24}" />
+                   FontFamily="MohaveRegular"
+                   FontAttributes="Bold"
+                   TextColor="#000"
+                   FontSize="{OnIdiom Phone=22, Desktop=24, Tablet=24}"
+                   HorizontalOptions="Center" />
 
-                <!-- Aquí irá un CollectionView para mostrar las medicinas -->
-                <CollectionView ItemsSource="{Binding MedicineList}">
+                <CollectionView ItemsSource="{Binding Medications}" Margin="20">
+                    <CollectionView.ItemsLayout>
+                        <GridItemsLayout Orientation="Vertical" Span="4" />
+                    </CollectionView.ItemsLayout>
                     <CollectionView.ItemTemplate>
                         <DataTemplate>
-                            <Frame BackgroundColor="#E3F2FD" CornerRadius="10" Padding="20" Margin="0,5" BorderColor="#00000020">
-                                <Label Text="{Binding MedicineName}" FontSize="{OnIdiom Phone=16, Desktop=18, Tablet=18}" TextColor="#000" />
+                            <Frame BackgroundColor="#E3F2FD" CornerRadius="10" Padding="10" Margin="5" BorderColor="#00000020">
+                                <VerticalStackLayout>
+                                    <Label Text="{Binding Name}" FontAttributes="Bold" FontSize="16" TextColor="#000" />
+                                    <Label Text="{Binding Description}" Margin="0,0,0,10" FontSize="14" TextColor="#000" />
+                                    <HorizontalStackLayout>
+                                        <Label Text="Se recomienda:" FontSize="14" Margin="0,0,5,0" TextColor="#000" />
+                                        <Label Text="{Binding Quantity}" FontSize="14" TextColor="#000" />
+                                    </HorizontalStackLayout>
+                                    <Label Text="{Binding RecommendedDosage}" Margin="0,0,0,10" FontSize="14" TextColor="#000" />
+                                    <Label Text="{Binding ExpirationDate}" FontSize="14" TextColor="#000" />
+                                    <Button Text="Eliminar" BackgroundColor="Red" TextColor="White" Clicked="OnDeleteMedication" CommandParameter="{Binding}" />
+                                </VerticalStackLayout>
                             </Frame>
                         </DataTemplate>
                     </CollectionView.ItemTemplate>
                 </CollectionView>
             </VerticalStackLayout>
+
 
             <!-- Asignar Medicina al Paciente -->
             <VerticalStackLayout x:Name="AssignMedicineSection" IsVisible="False" Padding="30">
@@ -111,23 +125,55 @@
                 <Picker Title="Seleccione una Medicina" ItemsSource="{Binding MedicineList}" SelectedItem="{Binding SelectedMedicine}"  
                         TitleColor="#000" FontSize="{OnIdiom Phone=22, Desktop=24, Tablet=24}" FontFamily="MohaveRegular"/>
 
-                <Button Text="Asignar" BackgroundColor="#014671" TextColor="White" FontSize="20" Clicked="OnAssignMedicine" />
+                <Button Text="Asignar" BackgroundColor="#014671" TextColor="White" FontSize="20" />
             </VerticalStackLayout>
 
-            <!-- Formulario de Registrar Nueva Medicina -->
-            <VerticalStackLayout x:Name="MedicineFormSection" IsVisible="True" Padding="30">
-                <Label Text="Registrar Nueva Medicina"
+            <VerticalStackLayout Padding="10" Spacing="10">
+                <!-- Formulario de Registrar Nueva Medicina -->
+                <VerticalStackLayout x:Name="MedicineFormSection" IsVisible="True" Padding="30">
+                    <Label Text="Registrar Nueva Medicina"
                        FontFamily="MohaveRegular"
                        FontAttributes="Bold"
                        TextColor="#000"
                        FontSize="{OnIdiom Phone=22, Desktop=30, Tablet=30}" />
 
-                <Entry Placeholder="Nombre de la Medicina" Text="{Binding NewMedicine.Name}" TextColor="#000" BackgroundColor="#E3F2FD"  FontSize="{OnIdiom Phone=22, Desktop=25, Tablet=25}" />
-                <Entry Placeholder="Frecuencia" Text="{Binding NewMedicine.Frequency}" TextColor="#000" BackgroundColor="#E3F2FD"  FontSize="{OnIdiom Phone=22, Desktop=25, Tablet=25}" />
-                <Entry Placeholder="Dosis" Text="{Binding NewMedicine.Dosage}" TextColor="#000" BackgroundColor="#E3F2FD"  FontSize="{OnIdiom Phone=22, Desktop=25, Tablet=25}" />
-                <Editor Placeholder="Instrucciones/Descripción" Text="{Binding NewMedicine.Description}" BackgroundColor="#E3F2FD"  TextColor="#000" FontSize="{OnIdiom Phone=22, Desktop=25, Tablet=25}" />
+                    <Entry x:Name="EntryNombre"
+                       Placeholder="Nombre de la Medicina"
+                       TextColor="#000"
+                       BackgroundColor="#E3F2FD"
+                       FontSize="{OnIdiom Phone=22, Desktop=25, Tablet=20}" />
 
-                <Button Text="Registrar Medicina" Clicked="OnSaveMedicine" BackgroundColor="#014671" TextColor="White" FontSize="{OnIdiom Phone=18, Desktop=20, Tablet=20}" Margin="0,15,0,0" />
+                    <Entry Placeholder="Dosis"
+                       x:Name="EntryDosis"
+                       TextColor="#000"
+                       BackgroundColor="#E3F2FD"
+                       FontSize="{OnIdiom Phone=22, Desktop=25, Tablet=20}" />
+
+                    <Entry Placeholder="Cantidad de medicamento"
+                       x:Name="EntryQuantity"
+                       TextColor="#000"
+                       BackgroundColor="#E3F2FD"
+                       FontSize="{OnIdiom Phone=22, Desktop=25, Tablet=20}" />
+
+                    <Editor Placeholder="Instrucciones/Descripción"
+                        x:Name="EntryDescription"
+                        BackgroundColor="#E3F2FD"
+                        TextColor="#000"
+                        FontSize="{OnIdiom Phone=22, Desktop=25, Tablet=20}" />
+
+                    <Label Text="Fecha de Expiración"
+                       FontFamily="MohaveRegular"
+                       TextColor="#000"
+                       FontSize="{OnIdiom Phone=15, Desktop=15, Tablet=15}" />
+
+                    <DatePicker x:Name="EntryExpirationDate"
+                            FontSize="18"
+                            BackgroundColor="#E3F2FD"
+                            TextColor="#666"
+                            FontFamily="MohaveRegular" />
+
+                    <Button Text="Registrar Medicina" Clicked="OnSaveMedicine" BackgroundColor="#014671" TextColor="White" FontSize="{OnIdiom Phone=18, Desktop=20, Tablet=20}" Margin="0,15,0,0" />
+                </VerticalStackLayout>
             </VerticalStackLayout>
 
         </VerticalStackLayout>

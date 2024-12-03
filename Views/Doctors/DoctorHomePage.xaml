@@ -171,7 +171,7 @@
                                 </Frame.GestureRecognizers>
                                 <VerticalStackLayout Spacing="10" HorizontalOptions="Center">
                                     <Image Source="consulta.png" WidthRequest="70" HeightRequest="70"/>
-                                    <Label Text="Historial" FontSize="30" FontFamily="Mohave-Regular" 
+                                    <Label Text="Procedimiento médico" FontSize="30" FontFamily="Mohave-Regular" 
                                TextColor="Black" VerticalOptions="Center" HorizontalTextAlignment="Center"/>
                                 </VerticalStackLayout>
                             </Frame>

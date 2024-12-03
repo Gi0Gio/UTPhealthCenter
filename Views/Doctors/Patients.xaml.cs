@@ -23,8 +23,8 @@ public partial class Patients : ContentPage
             Document document = new Document(pdf);
 
             
-            string logoClinicaPath = "C:\\Users\\Kris\\source\\repos\\GithubUTPhealthCare\\UTPhealthCenter\\Resources\\Images\\logoclinica.png";
-            string logoUniversidadPath = "C:\\Users\\Kris\\source\\repos\\GithubUTPhealthCare\\UTPhealthCenter\\Resources\\Images\\logouniver.png";
+            string logoClinicaPath = "C:\\Users\\Gio\\Desktop\\All\\code\\UTPhealthCenter\\Resources\\Images\\logoclinica.png";
+            string logoUniversidadPath = "C:\\Users\\Gio\\Desktop\\All\\code\\UTPhealthCenter\\Resources\\Images\\logouniver.png";
 
             iText.Layout.Element.Image logoClinica = new iText.Layout.Element.Image(ImageDataFactory.Create(logoClinicaPath)).SetWidth(100);
             iText.Layout.Element.Image logoUniversidad = new iText.Layout.Element.Image(ImageDataFactory.Create(logoUniversidadPath)).SetWidth(100);
@@ -38,7 +38,7 @@ public partial class Patients : ContentPage
                 .SetVerticalAlignment(iText.Layout.Properties.VerticalAlignment.MIDDLE));
 
             
-            Paragraph encabezado = new Paragraph("Universidad Tecnol�gica de Panam�\nCl�nica HealthCare")
+            Paragraph encabezado = new Paragraph("Universidad Tecnol�gica de Panama\nClinica HealthCare")
                 .SetTextAlignment(iText.Layout.Properties.TextAlignment.CENTER)
                 .SetFontSize(18)
                 .SetBold();
@@ -60,9 +60,9 @@ public partial class Patients : ContentPage
 
             string fechaActual = DateTime.Now.ToString("dd 'de' MMMM 'de' yyyy");
 
-            string nombrePaciente = "Giovany Jovann�"; 
+            string nombrePaciente = "Giovany Jovanne"; 
             string numeroIdentificacion = "123456789";  
-            string nombreMedico = "Dr. Ana G�mez";  
+            string nombreMedico = "Dr. Ana Gomez";  
 
           
             Paragraph fechaLugar = new Paragraph($"Fecha: {fechaActual}\nLugar: David, Chiriqu�")

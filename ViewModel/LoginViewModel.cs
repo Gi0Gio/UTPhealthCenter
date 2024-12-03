@@ -15,49 +15,54 @@ namespace HealthCare.ViewModel
             _httpClient = new HttpClient { BaseAddress = new Uri("https://giohealthcareservice-e0hba0b3f2d0bsh6.canadacentral-01.azurewebsites.net/api/") };
         }
 
-        public async Task<bool> PerformLoginAsync(string username, string password)
+        public async Task<bool> AttemptLogin(string usernameOrEmail, string password)
         {
-            var loginDto = new { UsernameOrEmail = username, Password = password };
-
-            try
+            using (HttpClient client = new HttpClient())
             {
-                // Realizar la solicitud POST a la API de autenticación
-                var response = await _httpClient.PostAsJsonAsync("auth/login", loginDto);
+                client.BaseAddress = new Uri("https://giohealthcareservice-e0hba0b3f2d0bsh6.canadacentral-01.azurewebsites.net/api/");
 
-                if (response.IsSuccessStatusCode)
+                var loginDto = new
                 {
+                    UsernameOrEmail = usernameOrEmail,
+                    Password = password
+                };
+
+                HttpResponseMessage response = await client.PostAsJsonAsync("auth/login", loginDto);
+                if (response.IsSuccessStatusCode) {
                     var loginResponse = await response.Content.ReadFromJsonAsync<LoginResponse>();
-
-                    // Guardar la sesión del usuario en SecureStorage
-                    if (loginResponse != null)
-                    {
-                        await SecureStorage.SetAsync("UserId", loginResponse.UserId.ToString());
-                        await SecureStorage.SetAsync("RoleId", loginResponse.RoleId.ToString());
-                        //await SecureStorage.SetAsync("UserRole", loginResponse.Role);
-
-                        return true;
-                    }
+                    await SecureStorage.SetAsync("userId", loginResponse.UserId.ToString());
+                    await SecureStorage.SetAsync("roleId", loginResponse.RoleId.ToString());
+                    await SecureStorage.SetAsync("roleName", loginResponse.RoleName);
+                    await SecureStorage.SetAsync("displayName", loginResponse.DisplayName);
+                    return true;
                 }
-                else
-                {
-                    
-                    await Application.Current.MainPage.DisplayAlert("Error", "Usuario o contraseña incorrectos.", "OK");
-                }
+                return false;
             }
-            catch (Exception ex)
-            {
-                
-                await Application.Current.MainPage.DisplayAlert("Error", $"Ocurrió un error: {ex.Message}", "OK");
-            }
-
-            return false;
         }
 
-        public class LoginResponse
+        public async Task LoadUserDataAsync()
+        {
+            var userId = await SecureStorage.GetAsync("userId");
+            var roleId = await SecureStorage.GetAsync("roleId");
+            var roleName = await SecureStorage.GetAsync("roleName");
+            var displayName = await SecureStorage.GetAsync("displayName");
+        }
+
+        public async Task LogoutAsync()
+        {
+            SecureStorage.Remove("userId");
+            SecureStorage.Remove("roleId");
+            SecureStorage.Remove("roleName");
+            SecureStorage.Remove("displayName");
+
+            await Task.CompletedTask;
+        }
+        class LoginResponse
         {
             public int UserId { get; set; }
             public int RoleId { get; set; }
-            //public string Role { get; set; }
+            public string RoleName { get; set; }
+            public string DisplayName { get; set; }
         }
     }
 }

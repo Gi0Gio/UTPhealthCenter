@@ -46,7 +46,7 @@ public class DoctorRegisterViewModel : INotifyPropertyChanged
         }
     }
 
-    public string Specialty // Cambiado a 'Specialty'
+    public string Specialty
     {
         get => _specialty;
         set
@@ -84,7 +84,7 @@ public class DoctorRegisterViewModel : INotifyPropertyChanged
             FirstName = this.FirstName,
             LastName = this.LastName,
             OfficeHours = this.OfficeHours,
-            Specialty = this.Specialty, // Cambiado a 'Specialty'
+            Specialty = this.Specialty,
             PhoneNumber = this.PhoneNumber
         };
 

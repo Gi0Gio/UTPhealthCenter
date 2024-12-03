@@ -3086,11 +3086,12 @@ int drawable notification_tile_bg 0x7f0700c6
 int drawable notify_panel_notification_icon_bg 0x7f0700c7
 int drawable perfil 0x7f0700c8
 int drawable pesoytalla 0x7f0700c9
-int drawable pulso 0x7f0700ca
-int drawable receta2 0x7f0700cb
-int drawable test_level_drawable 0x7f0700cc
-int drawable tooltip_frame_dark 0x7f0700cd
-int drawable tooltip_frame_light 0x7f0700ce
+int drawable pill 0x7f0700ca
+int drawable pulso 0x7f0700cb
+int drawable receta2 0x7f0700cc
+int drawable test_level_drawable 0x7f0700cd
+int drawable tooltip_frame_dark 0x7f0700ce
+int drawable tooltip_frame_light 0x7f0700cf
 int id accelerate 0x7f080000
 int id accessibility_action_clickable_span 0x7f080001
 int id accessibility_custom_action_0 0x7f080002

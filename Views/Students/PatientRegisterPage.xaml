@@ -5,56 +5,55 @@
              NavigationPage.HasNavigationBar="False">
     <AbsoluteLayout>
         <Image Source="backgroundlogin.png"
-           Aspect="AspectFill"
-           AbsoluteLayout.LayoutBounds="0,0,1,1"
-           AbsoluteLayout.LayoutFlags="All"/>
+               Aspect="AspectFill"
+               AbsoluteLayout.LayoutBounds="0,0,1,1"
+               AbsoluteLayout.LayoutFlags="All"/>
         <Frame BackgroundColor="#fff"
-           CornerRadius="15"
-           HasShadow="True"
-           WidthRequest="500"
-           AbsoluteLayout.LayoutBounds="0.5,0.5,-1,-1"
-           AbsoluteLayout.LayoutFlags="PositionProportional">
-
+               CornerRadius="15"
+               HasShadow="True"
+               WidthRequest="500"
+               AbsoluteLayout.LayoutBounds="0.5,0.5,-1,-1"
+               AbsoluteLayout.LayoutFlags="PositionProportional">
             <VerticalStackLayout Padding="20" Spacing="10">
                 <Image Source="logo2.png"
-                   WidthRequest="100"
-                   HeightRequest="100"
-                   HorizontalOptions="Center"/>
+                       WidthRequest="100"
+                       HeightRequest="100"
+                       HorizontalOptions="Center"/>
 
-                <Entry Placeholder="Nombre de usuario"
-                       Text="{Binding FirstName}"
+                <Entry x:Name="FirstNameEntry"
+                       Placeholder="Nombre de usuario"
                        BackgroundColor="#F5F5F5"
                        FontFamily="MohaveRegular"
                        FontSize="20"
                        TextColor="#000"
                        Margin="0,5"/>
 
-                <Entry Placeholder="Apellido"
-                       Text="{Binding LastName}"
+                <Entry x:Name="LastNameEntry"
+                       Placeholder="Apellido"
                        BackgroundColor="#F5F5F5"
                        FontFamily="MohaveRegular"
                        FontSize="20"
                        TextColor="#000"
                        Margin="0,5"/>
 
-                <Entry Placeholder="Cédula (DNI)"
-                       Text="{Binding Dni}"
+                <Entry x:Name="DniEntry"
+                       Placeholder="Cédula (DNI)"
                        BackgroundColor="#F5F5F5"
                        FontFamily="MohaveRegular"
                        FontSize="20"
                        TextColor="#000"
                        Margin="0,5"/>
 
-                <Entry Placeholder="Dirección"
-                       Text="{Binding Address}"
+                <Entry x:Name="AddressEntry"
+                       Placeholder="Dirección"
                        BackgroundColor="#F5F5F5"
                        FontFamily="MohaveRegular"
                        FontSize="20"
                        TextColor="#000"
                        Margin="0,5"/>
 
-                <Entry Placeholder="Número de Teléfono"
-                       Text="{Binding PhoneNumber}"
+                <Entry x:Name="PhoneNumberEntry"
+                       Placeholder="Número de Teléfono"
                        BackgroundColor="#F5F5F5"
                        FontFamily="MohaveRegular"
                        FontSize="20"
@@ -66,7 +65,7 @@
                        FontSize="20"
                        FontFamily="MohaveRegular"
                        Margin="0,5"/>
-                <DatePicker Date="{Binding BirthDate}"
+                <DatePicker x:Name="BirthDatePicker"
                             BackgroundColor="#F5F5F5"
                             FontFamily="MohaveRegular"
                             FontSize="20"
@@ -82,7 +81,7 @@
                             TextColor="White"
                             CornerRadius="10"
                             Margin="5"
-                            Command="{Binding RegisterCommand}"/>
+                            Clicked="OnRegisterClicked"/>
                 </StackLayout>
             </VerticalStackLayout>
         </Frame>

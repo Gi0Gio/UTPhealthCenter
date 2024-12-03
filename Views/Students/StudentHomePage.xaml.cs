@@ -21,4 +21,9 @@ public partial class StudentHomePage : ContentPage
     {
         await Navigation.PushAsync(new PatientRequestPage());   
     }
+
+    private async void Perfil(object sender, EventArgs e)
+    {
+        await Navigation.PushAsync(new PatientProfilePage());
+    }
 }

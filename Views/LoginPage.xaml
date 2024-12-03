@@ -51,7 +51,7 @@
                             TextColor="White"
                             CornerRadius="10"
                             Margin="5"
-                            Clicked="ToServices"
+                            Clicked="OnLoginClicked"
                             WidthRequest="120"/>
                     <Button Text="Register" 
                             BackgroundColor="#FFFFFF"

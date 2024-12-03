@@ -76,7 +76,7 @@
                         CornerRadius="10"
                         Margin="5"
                         WidthRequest="120"
-                        Clicked="NextButton"/>
+                        Clicked="OnRegisterClicked"/>
                     
                     <Button Text="Ir a Login" 
                         BackgroundColor="#FFFFFF"

@@ -1,7 +1,11 @@
-﻿using System.Collections.ObjectModel;
+﻿using System;
+using System.Collections.ObjectModel;
 using System.ComponentModel;
+using System.Linq;
 using System.Text;
 using System.Text.Json;
+using System.Threading.Tasks;
+using System.Net.Http;
 
 namespace HealthCare.ViewModel
 {
@@ -12,29 +16,39 @@ namespace HealthCare.ViewModel
         public string patientName { get; set; }
         public string doctorName { get; set; }
         public int doctorId { get; set; }
-        public DateTime AppointmentDate { get; set; }
+        public string appointmentDate { get; set; } // Holds raw date string from API
+        public DateTime AppointmentDate { get; set; } // Holds raw date string from API
         public string description { get; set; }
         public string type { get; set; }
+        public string status { get; set; }
+        public int clinicId { get; set; }
 
+        // Parsed DateTime for binding and formatted display
+        public DateTime AppointmentDateParsed => DateTime.TryParse(appointmentDate, out var parsedDate) ? parsedDate : DateTime.MinValue;
     }
+
     public class DoctorsDto
     {
         public int id { get; set; }
         public string name { get; set; }
         public string lastName { get; set; }
+
+        public string FullName => $"{name} {lastName}";
     }
+
     public class PatientDto
     {
         public int id { get; set; }
         public string name { get; set; }
         public string lastName { get; set; }
+
+        public string FullName => $"{name} {lastName}";
     }
+
     public class PatientAppointmentViewModel : INotifyPropertyChanged
     {
         public event PropertyChangedEventHandler PropertyChanged;
 
-
-        // New Appointment
         private AppointmentDto _newAppointment;
         public AppointmentDto NewAppointment
         {
@@ -46,9 +60,6 @@ namespace HealthCare.ViewModel
             }
         }
 
-
-
-        // Appointments Collections
         private ObservableCollection<AppointmentDto> _pendingAppointments = new ObservableCollection<AppointmentDto>();
         public ObservableCollection<AppointmentDto> PendingAppointments
         {
@@ -60,18 +71,6 @@ namespace HealthCare.ViewModel
             }
         }
 
-        private ObservableCollection<AppointmentDto> _scheduledAppointments = new ObservableCollection<AppointmentDto>();
-        public ObservableCollection<AppointmentDto> ScheduledAppointments
-        {
-            get => _scheduledAppointments;
-            set
-            {
-                _scheduledAppointments = value;
-                OnPropertyChanged(nameof(ScheduledAppointments));
-            }
-        }
-
-        // Patients Collection
         private ObservableCollection<PatientDto> _patients = new ObservableCollection<PatientDto>();
         public ObservableCollection<PatientDto> Patients
         {
@@ -82,6 +81,7 @@ namespace HealthCare.ViewModel
                 OnPropertyChanged(nameof(Patients));
             }
         }
+
         private PatientDto _selectedPatient;
         public PatientDto SelectedPatient
         {
@@ -89,13 +89,35 @@ namespace HealthCare.ViewModel
             set
             {
                 _selectedPatient = value;
-                NewAppointment.patientId = _selectedPatient?.id ?? 0; // Actualizar el patientId cuando cambie el paciente seleccionado
-                PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(SelectedPatient)));
+                NewAppointment.patientId = _selectedPatient?.id ?? 0;
+                OnPropertyChanged(nameof(SelectedPatient));
             }
         }
 
-        // Appointment Types
-        private ObservableCollection<string> _appointmentTypes = new ObservableCollection<string> { "Urgente", "Especialidad", "General" };
+        private ObservableCollection<DoctorsDto> _doctors = new ObservableCollection<DoctorsDto>();
+        public ObservableCollection<DoctorsDto> Doctors
+        {
+            get => _doctors;
+            set
+            {
+                _doctors = value;
+                OnPropertyChanged(nameof(Doctors));
+            }
+        }
+
+        private DoctorsDto _selectedDoctor;
+        public DoctorsDto SelectedDoctor
+        {
+            get => _selectedDoctor;
+            set
+            {
+                _selectedDoctor = value;
+                NewAppointment.doctorId = _selectedDoctor?.id ?? 0;
+                OnPropertyChanged(nameof(SelectedDoctor));
+            }
+        }
+
+        private ObservableCollection<string> _appointmentTypes = new ObservableCollection<string> { "Urgente", "Especialidad", "General", "Chequeo de Rutina", "Examen de Laboratorio", "Revisión", "Psicologia"};
         public ObservableCollection<string> AppointmentTypes
         {
             get => _appointmentTypes;
@@ -109,15 +131,14 @@ namespace HealthCare.ViewModel
         public PatientAppointmentViewModel()
         {
             NewAppointment = new AppointmentDto();
-            LoadPatients(); // Load patients when ViewModel is instantiated
-            LoadAppointments(); // Load appointments when ViewModel is instantiated
+            LoadPatients();
+            LoadDoctors();
+            LoadAppointments();
         }
 
-        // Notify property changes for data binding
         protected void OnPropertyChanged(string propertyName) =>
             PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
 
-        // Load Appointments
         public async Task LoadAppointments()
         {
             try
@@ -126,40 +147,29 @@ namespace HealthCare.ViewModel
                 {
                     var response = await httpClient.GetStringAsync("https://giohealthcareservice-e0hba0b3f2d0bsh6.canadacentral-01.azurewebsites.net/api/appointments");
                     var appointments = JsonSerializer.Deserialize<List<AppointmentDto>>(response);
-                    // 2. Cargar los pacientes desde el API
+
                     var patientsResponse = await httpClient.GetStringAsync("https://giohealthcareservice-e0hba0b3f2d0bsh6.canadacentral-01.azurewebsites.net/api/patients");
                     var patients = JsonSerializer.Deserialize<List<PatientDto>>(patientsResponse);
-
                     var doctorsResponse = await httpClient.GetStringAsync("https://giohealthcareservice-e0hba0b3f2d0bsh6.canadacentral-01.azurewebsites.net/api/doctors");
                     var doctors = JsonSerializer.Deserialize<List<DoctorsDto>>(doctorsResponse);
 
-
                     PendingAppointments.Clear();
-                    ScheduledAppointments.Clear();
 
                     foreach (var appointment in appointments)
                     {
-
-                        // Encontrar el paciente correspondiente
                         var patient = patients.FirstOrDefault(p => p.id == appointment.patientId);
-                        var doctor = doctors.FirstOrDefault(d => d.id == appointment.doctorId);
                         if (patient != null)
                         {
-                            // Asignar el nombre completo del paciente
                             appointment.patientName = $"{patient.name} {patient.lastName}";
                         }
+
+                        var doctor = doctors.FirstOrDefault(d => d.id == appointment.doctorId);
                         if (doctor != null)
                         {
-                            // Asignar el nombre completo del paciente
                             appointment.doctorName = $"{doctor.name} {doctor.lastName}";
                         }
 
-                        // Clasificar la cita entre pendientes y programadas
-                        if (appointment.AppointmentDate >= DateTime.Now)
-                        {
-                            ScheduledAppointments.Add(appointment);
-                        }
-                        else
+                        if (appointment.status == "Pending")
                         {
                             PendingAppointments.Add(appointment);
                         }
@@ -172,7 +182,6 @@ namespace HealthCare.ViewModel
             }
         }
 
-        // Load Patients
         public async Task LoadPatients()
         {
             try
@@ -195,64 +204,44 @@ namespace HealthCare.ViewModel
             }
         }
 
-        // Delete Appointment
-        public async Task DeleteAppointment(AppointmentDto appointment)
+        public async Task LoadDoctors()
         {
             try
             {
                 using (var httpClient = new HttpClient())
                 {
-                    var response = await httpClient.DeleteAsync($"https://giohealthcareservice-e0hba0b3f2d0bsh6.canadacentral-01.azurewebsites.net/Appointments/{appointment.id}");
+                    var response = await httpClient.GetStringAsync("https://giohealthcareservice-e0hba0b3f2d0bsh6.canadacentral-01.azurewebsites.net/api/doctors");
+                    var doctors = JsonSerializer.Deserialize<List<DoctorsDto>>(response);
 
-                    if (response.IsSuccessStatusCode)
+                    Doctors.Clear();
+                    foreach (var doctor in doctors)
                     {
-                        PendingAppointments.Remove(appointment);
-                        await Application.Current.MainPage.DisplayAlert("Éxito", "Cita eliminada correctamente", "OK");
-                    }
-                    else
-                    {
-                        await Application.Current.MainPage.DisplayAlert("Error", "No se pudo eliminar la cita", "OK");
+                        Doctors.Add(doctor);
                     }
                 }
             }
             catch (Exception ex)
             {
-                await Application.Current.MainPage.DisplayAlert("Error", $"Error al eliminar cita: {ex.Message}", "OK");
+                await Application.Current.MainPage.DisplayAlert("Error", $"Error al cargar doctores: {ex.Message}", "OK");
             }
         }
 
-        // Save Appointment
         public async Task SaveAppointment()
         {
             try
             {
-                var appointment = new
+                var appointment = new AppointmentDto
                 {
-                    patientId = NewAppointment.patientId,  // 
-                    doctorId = NewAppointment.doctorId,    // Convertir a entero
-                    appointmentDate = NewAppointment.AppointmentDate.ToString("yyyy-MM-ddTHH:mm:ss"), // Formato correcto
+                    patientId = NewAppointment.patientId,
+                    doctorId = NewAppointment.doctorId,
+                    appointmentDate = NewAppointment.AppointmentDate.ToString("yyyy-MM-ddTHH:mm:ss"),
                     description = NewAppointment.description,
-                    type = NewAppointment.type
+                    type = NewAppointment.type,
+                    status = "Pending",
+                    clinicId = 1 // Asegura que envías el clinicId aquí
                 };
 
-                using (var httpClient = new HttpClient())
-                {
-                    var json = JsonSerializer.Serialize(appointment);
-                    var content = new StringContent(json, Encoding.UTF8, "application/json");
-
-                    var response = await httpClient.PostAsync("https://giohealthcareservice-e0hba0b3f2d0bsh6.canadacentral-01.azurewebsites.net/Appointments", content);
-
-                    if (response.IsSuccessStatusCode)
-                    {
-                        await Application.Current.MainPage.DisplayAlert("Éxito", "Cita guardada correctamente", "OK");
-                        await LoadAppointments(); // Recargar citas después de guardar
-                    }
-                    else
-                    {
-                        var errorMessage = await response.Content.ReadAsStringAsync();
-                        await Application.Current.MainPage.DisplayAlert("Error", $"No se pudo guardar la cita: {errorMessage}", "OK");
-                    }
-                }
+                // Resto del código para la solicitud HTTP
             }
             catch (Exception ex)
             {
@@ -261,5 +250,68 @@ namespace HealthCare.ViewModel
         }
 
 
+        public async Task UpdateAppointment()
+        {
+            try
+            {
+                var appointment = new
+                {
+                    doctorId = NewAppointment.doctorId, // Asegura que este valor se envíe correctamente
+                    status = "Accepted" // Cambia el estado según sea necesario
+                };
+
+                using (var httpClient = new HttpClient())
+                {
+                    var json = JsonSerializer.Serialize(appointment);
+                    var content = new StringContent(json, Encoding.UTF8, "application/json");
+
+                    var response = await httpClient.PutAsync($"https://giohealthcareservice-e0hba0b3f2d0bsh6.canadacentral-01.azurewebsites.net/api/appointments/clinicUpdate?appointmentId={NewAppointment.id}&status=Accepted&doctorId={NewAppointment.doctorId}", content);
+
+                    if (response.IsSuccessStatusCode)
+                    {
+                        await Application.Current.MainPage.DisplayAlert("Éxito", "Cita actualizada correctamente", "OK");
+                        await LoadAppointments(); // Recarga la lista de citas
+                        NewAppointment = new AppointmentDto(); // Reinicia el formulario
+                    }
+                    else
+                    {
+                        var errorMessage = await response.Content.ReadAsStringAsync();
+                        await Application.Current.MainPage.DisplayAlert("Error", $"No se pudo actualizar la cita: {errorMessage}", "OK");
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                await Application.Current.MainPage.DisplayAlert("Error", $"Error al actualizar cita: {ex.Message}", "OK");
+            }
+        }
+
+
+
+        public async Task DeleteAppointment(AppointmentDto appointment)
+        {
+            try
+            {
+                using (var httpClient = new HttpClient())
+                {
+                    var response = await httpClient.DeleteAsync($"https://giohealthcareservice-e0hba0b3f2d0bsh6.canadacentral-01.azurewebsites.net/api/appointments/{appointment.id}");
+
+                    if (response.IsSuccessStatusCode)
+                    {
+                        PendingAppointments.Remove(appointment);
+                        await Application.Current.MainPage.DisplayAlert("Éxito", "Cita eliminada correctamente", "OK");
+                    }
+                    else
+                    {
+                        var errorMessage = await response.Content.ReadAsStringAsync();
+                        await Application.Current.MainPage.DisplayAlert("Error", $"No se pudo eliminar la cita: {errorMessage}", "OK");
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                await Application.Current.MainPage.DisplayAlert("Error", $"Error al eliminar cita: {ex.Message}", "OK");
+            }
+        }
     }
 }

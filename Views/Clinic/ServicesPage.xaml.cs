@@ -23,6 +23,10 @@ public partial class ServicesPage : ContentPage
     {
         await Navigation.PushAsync(new CitasPage());
     }
+    private async void Meds(object sender, EventArgs e)
+    {
+        await Navigation.PushAsync(new MedicinesPage());
+    }
 
     private async void Profile(object sender, EventArgs e)
     {

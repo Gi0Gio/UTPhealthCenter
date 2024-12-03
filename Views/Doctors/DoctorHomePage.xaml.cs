@@ -31,7 +31,7 @@ public partial class DoctorHomePage : ContentPage
 
     private async void Historial(object sender, EventArgs e)
     {
-        await Navigation.PushAsync(new Historial());
+        await Navigation.PushAsync(new MedicalProcedure());
     }
 
 }

@@ -1,148 +1,62 @@
-﻿using HealthCare.Views.Doctors;
-using HealthCare.Views.Students;
-using System.ComponentModel;
-using System.Text;
-using System.Text.Json;
-using System.Windows.Input;
+﻿using System.Net.Http;
+using System.Net.Http.Json;
+using System.Threading.Tasks;
+using Newtonsoft.Json;
 
 namespace HealthCare.ViewModel
 {
-    public class UserRegisterViewModel : INotifyPropertyChanged
+    public class UserRegisterViewModel
     {
-        public event PropertyChangedEventHandler PropertyChanged;
+        private readonly HttpClient _httpClient;
 
-        private string _username;
-        private string _email;
-        private string _password;
-        private string _selectedUserType;
-        private bool _isBusy;
-
-        public string Username
+        public UserRegisterViewModel()
         {
-            get => _username;
-            set
-            {
-                _username = value;
-                PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(Username)));
-            }
+            _httpClient = new HttpClient { BaseAddress = new Uri("https://giohealthcareservice-e0hba0b3f2d0bsh6.canadacentral-01.azurewebsites.net/api/") };
         }
 
-        public string Email
+        public async Task<int?> AttemptRegister(string username, string email, string password, int roleId)
         {
-            get => _email;
-            set
+            var registerDto = new RegisterDto
             {
-                _email = value;
-                PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(Email)));
-            }
-        }
-
-        public string Password
-        {
-            get => _password;
-            set
-            {
-                _password = value;
-                PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(Password)));
-            }
-        }
-
-        public string SelectedUserType
-        {
-            get => _selectedUserType;
-            set
-            {
-                _selectedUserType = value;
-                PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(SelectedUserType)));
-            }
-        }
-
-        public bool IsBusy
-        {
-            get => _isBusy;
-            set
-            {
-                _isBusy = value;
-                PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(IsBusy)));
-            }
-        }
-
-        public ICommand RegisterCommand => new Command(async () => await RegisterUser());
-
-        public async Task RegisterUser()
-        {
-            if (string.IsNullOrWhiteSpace(Username) ||
-                string.IsNullOrWhiteSpace(Email) ||
-                string.IsNullOrWhiteSpace(Password) ||
-                string.IsNullOrWhiteSpace(SelectedUserType))
-            {
-                await Application.Current.MainPage.DisplayAlert("Campos requeridos", "Por favor, completa todos los campos antes de continuar.", "OK");
-                return;
-            }
+                Username = username,
+                Email = email,
+                Password = password,
+                RoleId = roleId
+            };
 
             try
             {
-                IsBusy = true;
-                int roleId = SelectedUserType == "Doctor" ? 2 : 3;
-
-                var userDto = new
-                {
-                    Username = this.Username,
-                    Email = this.Email,
-                    PasswordHash = this.Password,
-                    RoleId = roleId
-                };
-
-                var json = JsonSerializer.Serialize(userDto);
-                var content = new StringContent(json, Encoding.UTF8, "application/json");
-
-                using var httpClient = new HttpClient();
-                httpClient.DefaultRequestHeaders.Accept.Add(new System.Net.Http.Headers.MediaTypeWithQualityHeaderValue("application/json"));
-
-                var response = await httpClient.PostAsync("https://giohealthcareservice-e0hba0b3f2d0bsh6.canadacentral-01.azurewebsites.net/api/users", content);
+                var response = await _httpClient.PostAsJsonAsync("auth/register", registerDto);
 
                 if (response.IsSuccessStatusCode)
                 {
-                    var responseContent = await response.Content.ReadAsStringAsync();
-                    using (var document = JsonDocument.Parse(responseContent))
-                    {
-                        var root = document.RootElement;
-
-                        int parsedUserId = root.GetProperty("id").GetInt32();
-                        int parsedRoleId = root.GetProperty("roleId").GetInt32();
-
-                        if (parsedRoleId > 0)
-                        {
-                            if (parsedRoleId == 2)
-                            {
-                                await Application.Current.MainPage.Navigation.PushAsync(new DoctorRegisterPage(parsedUserId));
-                            }
-                            else if (parsedRoleId == 3)
-                            {
-                                await Application.Current.MainPage.Navigation.PushAsync(new PatientRegisterPage(parsedUserId));
-                            }
-                        }
-                        else
-                        {
-                            await Application.Current.MainPage.DisplayAlert("Error", "No se pudo obtener el RoleId del usuario.", "OK");
-                        }
-                    }
+                    var registerResponse = await response.Content.ReadFromJsonAsync<RegisterResponseDto>();
+                    return registerResponse?.UserId;
                 }
                 else
                 {
-                    var errorContent = await response.Content.ReadAsStringAsync();
-                    await Application.Current.MainPage.DisplayAlert("Error", $"No se pudo registrar el usuario: {errorContent}", "OK");
+                    var errorResponse = await response.Content.ReadAsStringAsync();
+                    System.Diagnostics.Debug.WriteLine($"Error: {errorResponse}");
                 }
-
             }
             catch (Exception ex)
             {
-                await Application.Current.MainPage.DisplayAlert("Error", $"Ocurrió un error: {ex.Message}", "OK");
+                System.Diagnostics.Debug.WriteLine($"Exception: {ex.Message}");
             }
-            finally
-            {
-                IsBusy = false;
-            }
+
+            return null;
+        }
+
+        private class RegisterDto
+        {
+            public string Username { get; set; }
+            public string Email { get; set; }
+            public string Password { get; set; }
+            public int RoleId { get; set; }
+        }
+        public class RegisterResponseDto
+        {
+            public int UserId { get; set; }
         }
     }
 }

@@ -7,22 +7,22 @@
 
     <AbsoluteLayout>
         <Image Source="backgroundlogin.png"
-           Aspect="AspectFill"
-           AbsoluteLayout.LayoutBounds="0,0,1,1"
-           AbsoluteLayout.LayoutFlags="All"/>
+               Aspect="AspectFill"
+               AbsoluteLayout.LayoutBounds="0,0,1,1"
+               AbsoluteLayout.LayoutFlags="All"/>
 
         <Frame BackgroundColor="#fff"
-           CornerRadius="15"
-           HasShadow="True"
-           WidthRequest="500"
-           AbsoluteLayout.LayoutBounds="0.5,0.5,-1,-1"
-           AbsoluteLayout.LayoutFlags="PositionProportional">
+               CornerRadius="15"
+               HasShadow="True"
+               WidthRequest="500"
+               AbsoluteLayout.LayoutBounds="0.5,0.5,-1,-1"
+               AbsoluteLayout.LayoutFlags="PositionProportional">
 
             <VerticalStackLayout Padding="20" Spacing="10">
                 <Image Source="logo2.png"
-                   WidthRequest="100"
-                   HeightRequest="100"
-                   HorizontalOptions="Center"/>
+                       WidthRequest="100"
+                       HeightRequest="100"
+                       HorizontalOptions="Center"/>
 
                 <Entry Placeholder="Nombre"
                        Text="{Binding FirstName}"
@@ -55,7 +55,6 @@
                        FontSize="20"
                        TextColor="#000"
                        Margin="0,5"/>
-
 
                 <Entry Placeholder="Horario de Oficina"
                        Text="{Binding OfficeHours}"
