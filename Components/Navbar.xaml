@@ -34,10 +34,8 @@
                            HorizontalOptions="Center"
                            VerticalOptions="Center"
                            Spacing="20">
-                <Button Text="INICIO" BackgroundColor="Transparent" FontSize="20" TextColor="#000" FontFamily="MohaveRegular" Clicked="WelcomePage" />
-                <Button Text="SERVICIOS" BackgroundColor="Transparent" FontSize="20" TextColor="#000" FontFamily="MohaveRegular" Clicked="ServicePage"/>
-                <Button Text="CITAS" BackgroundColor="Transparent" FontSize="20" TextColor="#000" FontFamily="MohaveRegular" />
-                <Button Text="REGISTROS" BackgroundColor="Transparent" FontSize="20" TextColor="#000" FontFamily="MohaveRegular" />
+                <Button Text="CERRAR SESION" BackgroundColor="Transparent" FontSize="20" TextColor="#000" FontFamily="MohaveRegular" Clicked="WelcomePage" />
+                <Button Text="INICIO" BackgroundColor="Transparent" FontSize="20" TextColor="#000" FontFamily="MohaveRegular" Clicked="ServicePage"/>
             </HorizontalStackLayout>
 
             <!-- Perfil de usuario -->

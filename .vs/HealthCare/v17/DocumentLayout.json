@@ -1,13 +1,17 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\manue\\Desktop\\ClinicaApp\\UTPhealthCenter\\",
+  "WorkspaceRootPath": "C:\\Users\\Kris\\Desktop\\DS8Semestral\\UTPhealthCenter\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{4F4AABB1-96B0-4368-9E7F-A1D6F1B2DCD4}|HealthCare.csproj|c:\\users\\manue\\desktop\\clinicaapp\\utphealthcenter\\views\\clinic\\servicespage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "AbsoluteMoniker": "D:0:0:{4F4AABB1-96B0-4368-9E7F-A1D6F1B2DCD4}|HealthCare.csproj|c:\\users\\kris\\desktop\\ds8semestral\\utphealthcenter\\components\\navbar.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{4F4AABB1-96B0-4368-9E7F-A1D6F1B2DCD4}|HealthCare.csproj|solutionrelative:components\\navbar.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4F4AABB1-96B0-4368-9E7F-A1D6F1B2DCD4}|HealthCare.csproj|c:\\users\\kris\\desktop\\ds8semestral\\utphealthcenter\\views\\clinic\\servicespage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{4F4AABB1-96B0-4368-9E7F-A1D6F1B2DCD4}|HealthCare.csproj|solutionrelative:views\\clinic\\servicespage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4F4AABB1-96B0-4368-9E7F-A1D6F1B2DCD4}|HealthCare.csproj|c:\\users\\manue\\desktop\\clinicaapp\\utphealthcenter\\views\\clinic\\servicespage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{4F4AABB1-96B0-4368-9E7F-A1D6F1B2DCD4}|HealthCare.csproj|c:\\users\\kris\\desktop\\ds8semestral\\utphealthcenter\\views\\clinic\\servicespage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4F4AABB1-96B0-4368-9E7F-A1D6F1B2DCD4}|HealthCare.csproj|solutionrelative:views\\clinic\\servicespage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -31,10 +35,23 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "Navbar.xaml",
+              "DocumentMoniker": "C:\\Users\\Kris\\Desktop\\DS8Semestral\\UTPhealthCenter\\Components\\Navbar.xaml",
+              "RelativeDocumentMoniker": "Components\\Navbar.xaml",
+              "ToolTip": "C:\\Users\\Kris\\Desktop\\DS8Semestral\\UTPhealthCenter\\Components\\Navbar.xaml",
+              "RelativeToolTip": "Components\\Navbar.xaml",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAACUAAACVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-12-04T04:54:29.568Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "ServicesPage.xaml",
-              "DocumentMoniker": "C:\\Users\\manue\\Desktop\\ClinicaApp\\UTPhealthCenter\\Views\\Clinic\\ServicesPage.xaml",
+              "DocumentMoniker": "C:\\Users\\Kris\\Desktop\\DS8Semestral\\UTPhealthCenter\\Views\\Clinic\\ServicesPage.xaml",
               "RelativeDocumentMoniker": "Views\\Clinic\\ServicesPage.xaml",
-              "ToolTip": "C:\\Users\\manue\\Desktop\\ClinicaApp\\UTPhealthCenter\\Views\\Clinic\\ServicesPage.xaml",
+              "ToolTip": "C:\\Users\\Kris\\Desktop\\DS8Semestral\\UTPhealthCenter\\Views\\Clinic\\ServicesPage.xaml",
               "RelativeToolTip": "Views\\Clinic\\ServicesPage.xaml",
               "ViewState": "AgIAANYAAAAAAAAAAAAUwPsAAAAuAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
@@ -43,11 +60,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "ServicesPage.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\manue\\Desktop\\ClinicaApp\\UTPhealthCenter\\Views\\Clinic\\ServicesPage.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Kris\\Desktop\\DS8Semestral\\UTPhealthCenter\\Views\\Clinic\\ServicesPage.xaml.cs",
               "RelativeDocumentMoniker": "Views\\Clinic\\ServicesPage.xaml.cs",
-              "ToolTip": "C:\\Users\\manue\\Desktop\\ClinicaApp\\UTPhealthCenter\\Views\\Clinic\\ServicesPage.xaml.cs",
+              "ToolTip": "C:\\Users\\Kris\\Desktop\\DS8Semestral\\UTPhealthCenter\\Views\\Clinic\\ServicesPage.xaml.cs",
               "RelativeToolTip": "Views\\Clinic\\ServicesPage.xaml.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
