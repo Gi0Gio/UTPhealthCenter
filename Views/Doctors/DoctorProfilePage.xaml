@@ -7,6 +7,8 @@
             BackgroundColor="#fff"
             NavigationPage.HasBackButton="False"
             NavigationPage.HasNavigationBar="False">
+
+    <ScrollView Orientation="Vertical">
     <!-- Main Layout -->
     <VerticalStackLayout>
 
@@ -40,7 +42,7 @@
         <!-- Footer Section -->
             <Frame BackgroundColor="White" CornerRadius="8" Margin="100" HasShadow="True" Grid.Row="1">
                 <VerticalStackLayout HorizontalOptions="Center" VerticalOptions="EndAndExpand" Padding="20" Margin="20">
-                    <FlexLayout Direction="Row" JustifyContent="SpaceAround" AlignItems="Center" Wrap="NoWrap">
+                    <FlexLayout Direction="Row" JustifyContent="SpaceAround" AlignItems="Center" Wrap="NoWrap" >
                         <Image Source="logouniver.png" WidthRequest="150" HeightRequest="150" />
                         <Label Text="{Binding phoneNumber}"
                             FontFamily="Mohave-Regular" FontSize="20" TextColor="#000000" HorizontalTextAlignment="Center" />
@@ -54,4 +56,5 @@
             </Frame>
         </Grid>
     </VerticalStackLayout>
+    </ScrollView>
 </ContentPage>

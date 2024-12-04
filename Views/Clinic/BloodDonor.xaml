@@ -75,21 +75,21 @@
                     <Frame BackgroundColor="#fff" Grid.Column="1" CornerRadius="15" BorderColor="#fff"
                     HeightRequest="590">
                         <ScrollView Orientation="Vertical">
-                            <ContentView Padding="20">
+                            <ContentView Padding="10">
                                 <VerticalStackLayout>
                                     <Label Text="Lista de Donadores de Sangre"
-                           FontSize="24"
-                           FontAttributes="Bold"
-                           TextColor="#000"
-                           HorizontalOptions="Center"
-                           Margin="0,0,0,20"/>
-                                    <CollectionView ItemsSource="{Binding Donors}" Margin="10">
+                                       FontSize="24"
+                                       FontAttributes="Bold"
+                                       TextColor="#000"
+                                       HorizontalOptions="Center"
+                                       Margin="0,0,0,20"/>
+                                    <CollectionView ItemsSource="{Binding Donors}" >
                                         <CollectionView.ItemsLayout>
                                             <GridItemsLayout Orientation="Vertical" Span="4" VerticalItemSpacing="10" HorizontalItemSpacing="10"/>
                                         </CollectionView.ItemsLayout>
                                         <CollectionView.ItemTemplate>
                                             <DataTemplate>
-                                                <Frame BackgroundColor="#E3F2FD" BorderColor="Transparent" CornerRadius="10" >
+                                                <Frame BackgroundColor="#E3F2FD" BorderColor="Transparent" CornerRadius="10">
                                                     <VerticalStackLayout>
                                                         <Label Text="{Binding Name}" FontAttributes="Bold" FontSize="16" TextColor="#000" />
                                                         <HorizontalStackLayout>
@@ -101,6 +101,7 @@
                                                         <Button Text="Eliminar Donador"
                                                         BackgroundColor="#C7253E"
                                                         TextColor="White"
+                                                        WidthRequest="150"
                                                         Clicked="OnDeleteDonor"
                                                         CommandParameter="{Binding}" />
                                                     </VerticalStackLayout>

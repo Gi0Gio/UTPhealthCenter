@@ -13,7 +13,7 @@
             <components:SideMenu IsVisible="{OnIdiom Desktop=false, Phone=true, Tablet=false}" />
 
 
-            <Frame BackgroundColor="#E6EFF8"
+            <Frame BackgroundColor="White"
                    CornerRadius="15"
                    Padding="20"
                    Margin="0,5">

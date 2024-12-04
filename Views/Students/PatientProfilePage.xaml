@@ -8,6 +8,8 @@
              NavigationPage.HasBackButton="False"
              NavigationPage.HasNavigationBar="False">
 
+    <ScrollView Orientation="Vertical">
+
     <!-- Main Layout -->
     <VerticalStackLayout>
 
@@ -61,5 +63,5 @@
             </Frame>
         </Grid>
     </VerticalStackLayout>
-
+    </ScrollView>
 </ContentPage>
