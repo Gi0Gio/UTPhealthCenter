@@ -6,41 +6,43 @@
              BackgroundColor="{OnIdiom Phone=#fff, Desktop=#fff, Tablet=#fff}"
              NavigationPage.HasNavigationBar="False">
 
-    <VerticalStackLayout>
+    <ScrollView>
+        <VerticalStackLayout Spacing="30" Padding="20,10,20,10">
 
-        <!-- Navbar para escritorio y SideMenu para móvil -->
-        <components:Navbar IsVisible="{OnIdiom Desktop=true, Phone=false, Tablet=true}" />
-        <components:SideMenu IsVisible="{OnIdiom Desktop=false, Phone=true, Tablet=false}" />
+            <!-- Navbar para escritorio y SideMenu para móvil -->
+            <components:Navbar IsVisible="{OnIdiom Desktop=true, Phone=false, Tablet=true}" />
+            <components:SideMenu IsVisible="{OnIdiom Desktop=false, Phone=true, Tablet=false}" />
 
-        <VerticalStackLayout HorizontalOptions="Center" VerticalOptions="Center" Spacing="30" Padding="40">
-            <Label Text="Gestión de Citas" 
+            <!-- Título principal -->
+            <Label Text="Gestión de Citas"
+               FontFamily="MohaveRegular"
+               FontAttributes="Bold, Italic"
+               FontSize="{OnIdiom Phone=22, Desktop=30, Tablet=30}"
+               TextColor="#000"
+               HorizontalOptions="Center"
+               Margin="0,20,0,10" />
+
+            <!-- Formulario -->
+            <Grid ColumnDefinitions="*,*" RowDefinitions="Auto,Auto,Auto" 
+              ColumnSpacing="25" RowSpacing="20"
+              HorizontalOptions="FillAndExpand"
+              Padding="10,0">
+
+                <!-- Tipo de cita -->
+                <Label Text="Tipo de cita"
                    FontFamily="MohaveRegular"
-                   FontAttributes="Bold,Italic"
-                   TextColor="#000" 
-                   HorizontalOptions="Center"
-                   FontSize="{OnIdiom Phone=22, Desktop=30, Tablet=30}" />
-
-            <Grid ColumnDefinitions="*, *" RowDefinitions="Auto, Auto, Auto" 
-                  HorizontalOptions="Center" ColumnSpacing="25" RowSpacing="50">
-
-                <Label Text="Tipo de cita" 
-                       FontFamily="MohaveRegular"
-                       FontSize="{OnIdiom Phone=22, Desktop=30, Tablet=30}"
-                       FontAttributes="Bold"
-                       TextColor="#000" 
-                       Grid.Row="0" 
-                       Grid.Column="0" 
-                       VerticalTextAlignment="Center" />
-
-                <Picker Title="Seleccione tipo de cita" 
-                        TitleColor="#000"
-                        FontFamily="MohaveRegular"
-                        FontSize="{OnIdiom Phone=22, Desktop=30, Tablet=30}" 
-                        BackgroundColor="#E3F2FD" 
-                        TextColor="#666" 
-                        Grid.Row="0" 
-                        Grid.Column="1"
-                        x:Name="TypeEntry">
+                   FontSize="{OnIdiom Phone=20, Desktop=26, Tablet=26}"
+                   FontAttributes="Bold"
+                   TextColor="#000"
+                   VerticalTextAlignment="Center"
+                   Grid.Row="0" Grid.Column="0" />
+                <Picker x:Name="TypeEntry"
+                    Title="Seleccione tipo de cita"
+                    FontFamily="MohaveRegular"
+                    FontSize="{OnIdiom Phone=20, Desktop=22, Tablet=22}"
+                    BackgroundColor="#d2d2d2"
+                    TextColor="#000"
+                    Grid.Row="0" Grid.Column="1">
                     <Picker.ItemsSource>
                         <x:Array Type="{x:Type x:String}">
                             <x:String>Consulta General</x:String>
@@ -54,51 +56,49 @@
                     </Picker.ItemsSource>
                 </Picker>
 
-                <Label Text="Día de la cita" 
-                       TextColor="#000"
-                       FontFamily="MohaveRegular"
-                       FontSize="{OnIdiom Phone=22, Desktop=30, Tablet=30}" 
-                       FontAttributes="Bold"
-                       Grid.Row="1" 
-                       Grid.Column="0" 
-                       VerticalTextAlignment="Center" />
-
+                <!-- Día de la cita -->
+                <Label Text="Día de la cita"
+                   FontFamily="MohaveRegular"
+                   FontSize="{OnIdiom Phone=20, Desktop=26, Tablet=26}"
+                   FontAttributes="Bold"
+                   TextColor="#000"
+                   VerticalTextAlignment="Center"
+                   Grid.Row="1" Grid.Column="0" />
                 <DatePicker x:Name="AppointmentDatePicker"
-                            FontSize="18" 
-                            BackgroundColor="#E3F2FD" 
-                            TextColor="#666" 
-                            FontFamily="MohaveRegular"
-                            Grid.Row="1" 
-                            Grid.Column="1" />
+                        FontFamily="MohaveRegular"
+                        FontSize="20"
+                        BackgroundColor="#E3F2FD"
+                        TextColor="#000"
+                        Grid.Row="1" Grid.Column="1" />
 
-                <Label Text="Descripción de la cita" 
-                       FontSize="{OnIdiom Phone=22, Desktop=30, Tablet=30}"
-                       FontAttributes="Bold"
-                       TextColor="#000" 
-                       Grid.Row="2" 
-                       Grid.Column="0" 
-                       VerticalTextAlignment="Center" />
-
-                <Entry x:Name="DescriptionEditor" 
-                       Placeholder="Describa el motivo de su cita" 
-                       FontSize="{OnIdiom Phone=22, Desktop=30, Tablet=30}" 
-                       FontFamily="MohaveRegular"
-                       BackgroundColor="#f5f5f5" 
-                       TextColor="#666" 
-                       Grid.Row="2" 
-                       Grid.Column="1" />
+                <!-- Descripción -->
+                <Label Text="Descripción de la cita"
+                   FontFamily="MohaveRegular"
+                   FontSize="{OnIdiom Phone=20, Desktop=26, Tablet=26}"
+                   FontAttributes="Bold"
+                   TextColor="#000"
+                   VerticalTextAlignment="Center"
+                   Grid.Row="2" Grid.Column="0" />
+                <Entry x:Name="DescriptionEditor"
+                   Placeholder="Describa el motivo de su cita"
+                   FontFamily="MohaveRegular"
+                   FontSize="{OnIdiom Phone=20, Desktop=22, Tablet=22}"
+                   BackgroundColor="#f5f5f5"
+                   TextColor="#666"
+                   Grid.Row="2" Grid.Column="1" />
             </Grid>
 
-            <!-- Updated button to call OnRequestAppointmentClicked -->
-            <Button Text="Hacer Solicitud" 
-                    FontSize="18" 
-                    BackgroundColor="#006aab" 
-                    TextColor="#fff" 
-                    CornerRadius="10" 
-                    HorizontalOptions="Center" 
-                    WidthRequest="200" 
-                    Margin="0,20,0,0"
-                    Clicked="OnRequestAppointmentClicked"/>
+            <!-- Botón de solicitud -->
+            <Button Text="Hacer Solicitud"
+                FontSize="18"
+                BackgroundColor="#006aab"
+                TextColor="#fff"
+                CornerRadius="10"
+                HorizontalOptions="Center"
+                WidthRequest="200"
+                Margin="0,30,0,0"
+                Clicked="OnRequestAppointmentClicked" />
+
         </VerticalStackLayout>
-    </VerticalStackLayout>
+    </ScrollView>
 </ContentPage>
