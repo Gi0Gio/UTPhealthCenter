@@ -22,9 +22,9 @@ public partial class Patients : ContentPage
             PdfDocument pdf = new PdfDocument(writer);
             Document document = new Document(pdf);
 
-            
-            string logoClinicaPath = "C:\\Users\\Gio\\Desktop\\All\\code\\UTPhealthCenter\\Resources\\Images\\logoclinica.png";
-            string logoUniversidadPath = "C:\\Users\\Gio\\Desktop\\All\\code\\UTPhealthCenter\\Resources\\Images\\logouniver.png";
+
+            string logoClinicaPath = "C:\\Users\\manue\\Desktop\\ClinicaApp\\UTPhealthCenter\\Resources\\Images\\logoclinica.png";
+            string logoUniversidadPath = "C:\\Users\\manue\\Desktop\\ClinicaApp\\UTPhealthCenter\\Resources\\Images\\logouniver.png";
 
             iText.Layout.Element.Image logoClinica = new iText.Layout.Element.Image(ImageDataFactory.Create(logoClinicaPath)).SetWidth(100);
             iText.Layout.Element.Image logoUniversidad = new iText.Layout.Element.Image(ImageDataFactory.Create(logoUniversidadPath)).SetWidth(100);

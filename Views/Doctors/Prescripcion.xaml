@@ -20,56 +20,62 @@
             FontAttributes="Bold"
             TextColor="#000"
             HorizontalOptions="Center"
-            Margin="0,0,0,20"/>
+            Margin="0,40,0,40"/>
 
             <Grid ColumnDefinitions="*,*" RowDefinitions="Auto" ColumnSpacing="20">
 
-                <!-- Formulario de Crear Prescripción -->
+
                 <Frame BackgroundColor="#fff" Grid.Column="0" CornerRadius="15" BorderColor="#fff">
                     <ContentView BackgroundColor="#fff" Padding="20">
                         <VerticalStackLayout>
                             <Label Text="Crear Prescripción"
-                       FontSize="24"
-                       FontAttributes="Bold"
-                       TextColor="#333"
-                       Margin="0, 0, 0, 10"/>
+                               FontSize="24"
+                               FontAttributes="Bold"
+                               TextColor="#333"
+                               Margin="0, 0, 0, 10"/>
 
-                            <Label Text="Paciente" TextColor="Black" FontSize="18" FontAttributes="Bold" />
-                            <Picker x:Name="PatientPicker" TextColor="Black" BackgroundColor="#f6f6f6" />
+                            <Grid ColumnDefinitions="*,*" RowDefinitions="Auto,Auto,Auto" ColumnSpacing="20" RowSpacing="50">
+                                
+                                <Label Text="Paciente" TextColor="Black" FontSize="18" FontAttributes="Bold" Grid.Row="0" Grid.Column="0" />
+                                <Picker x:Name="PatientPicker" BackgroundColor="#f6f6f6" TextColor="Black" Grid.Row="0" Grid.Column="0" Margin="0,30,0,0"/>
 
-                            <Label Text="Medicamento" TextColor="Black" FontSize="18" FontAttributes="Bold" />
-                            <Picker x:Name="MedicationPicker" TextColor="Black" BackgroundColor="#f6f6f6" />
+                                <Label Text="Medicamento" TextColor="Black" FontSize="18" FontAttributes="Bold" Grid.Row="0" Grid.Column="1" />
+                                <Picker x:Name="MedicationPicker" BackgroundColor="#f6f6f6" TextColor="Black" Grid.Row="0" Grid.Column="1" Margin="0,30,0,0"/>
 
-                            <Label Text="Dosis" TextColor="Black" FontSize="18" FontAttributes="Bold" />
-                            <Entry x:Name="DosageEntry" Placeholder="Informe de la dosis" TextColor="Black" FontSize="18" PlaceholderColor="#000" />
+                                <Label Text="Dosis" TextColor="Black" FontSize="18" FontAttributes="Bold" Grid.Row="1" Grid.Column="0" />
+                                <Entry x:Name="DosageEntry" Placeholder="Informe de la dosis" TextColor="Black" FontSize="18" 
+                                    PlaceholderColor="#000" Grid.Row="1" Grid.Column="0" Margin="0,30,0,0"/>
 
-                            <Label Text="Descripción de la cita" TextColor="Black" FontSize="18" FontAttributes="Bold" />
-                            <Entry x:Name="DescriptionEntry" Placeholder="Describa su necesidad" TextColor="Black" FontSize="18" PlaceholderColor="#000" Margin="0, 0, 0, 10"/>
+                                <Label Text="Descripción de la cita" TextColor="Black" FontSize="18" FontAttributes="Bold" Grid.Row="1" Grid.Column="1" />
+                                <Entry x:Name="DescriptionEntry" Placeholder="Describa su necesidad" TextColor="Black" FontSize="18" 
+                                    PlaceholderColor="#000" Grid.Row="1" Grid.Column="1" Margin="0,30,0,0"/>
+                            </Grid>
 
-                            <Button Text="Asignar Prescripción" BackgroundColor="#006AAB" TextColor="White" Clicked="OnAssignPrescription" />
+                            <Button Text="Asignar Prescripción" BackgroundColor="#006AAB" TextColor="White" 
+                                Clicked="OnAssignPrescription" Margin="0,20,0,0" />
                         </VerticalStackLayout>
                     </ContentView>
                 </Frame>
 
-                <!-- Lista de Prescripciones -->
-                <Frame BackgroundColor="#fff" Grid.Column="1" CornerRadius="15" BorderColor="#fff">
-                    <ScrollView>
+                <Frame BackgroundColor="#fff" Grid.Column="1" CornerRadius="15" BorderColor="#fff"
+                       HeightRequest="500">
+                    <ScrollView Orientation="Vertical">
                         <VerticalStackLayout Padding="20">
-                            <Label Text="Lista de Prescripciones" FontSize="24" FontAttributes="Bold" TextColor="#333" />
+                            <Label Text="Lista de Prescripciones" FontSize="24" FontAttributes="Bold" TextColor="#333" Margin="0, 0, 0, 10"/>
                             <CollectionView x:Name="PrescriptionList" Margin="10">
                                 <CollectionView.ItemsLayout>
-                                    <GridItemsLayout Orientation="Vertical" Span="1" />
+                                    <GridItemsLayout Orientation="Vertical" Span="1" VerticalItemSpacing="10"/>
                                 </CollectionView.ItemsLayout>
                                 <CollectionView.ItemTemplate>
                                     <DataTemplate>
-                                        <Frame BackgroundColor="#f0efeb" CornerRadius="10" Padding="20" Margin="5">
+                                        <Frame BackgroundColor="#fbfbfb" BorderColor="Black" CornerRadius="10" Padding="20" Margin="5">
                                             <VerticalStackLayout>
                                                 <Label Text="{Binding PatientName}" FontAttributes="Bold" FontSize="16" TextColor="#000" />
                                                 <Label Text="{Binding MedicationName}" FontSize="14" TextColor="#000" />
                                                 <Label Text="{Binding Dosage}" FontSize="14" TextColor="#000" />
                                                 <Label Text="{Binding Description}" FontSize="12" TextColor="#000" />
                                                 <Label Text="{Binding IssueDate, StringFormat='{0:dd/MM/yyyy}'}" FontSize="12" TextColor="#000" />
-                                                <Button Text="Eliminar Prescripción" BackgroundColor="Red" TextColor="White" Clicked="OnDeletePrescription" CommandParameter="{Binding}" />
+                                                <Button Text="Eliminar Prescripción" BackgroundColor="#C7253E" TextColor="White" Clicked="OnDeletePrescription" CommandParameter="{Binding}" />
                                             </VerticalStackLayout>
                                         </Frame>
                                     </DataTemplate>

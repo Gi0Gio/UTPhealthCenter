@@ -14,75 +14,83 @@
             <components:SideMenu IsVisible="{OnIdiom Desktop=false, Phone=true, Tablet=false}" />
 
             <Label Text="Procedimientos Médicos"
-                   FontSize="35"
-                   FontAttributes="Bold"
-                   TextColor="#000"
-                   HorizontalOptions="Center"
-                   Margin="0,0,0,20"/>
+               FontSize="35"
+               FontAttributes="Bold"
+               TextColor="#000"
+               HorizontalOptions="Center"
+               Margin="0,0,0,20"/>
 
             <Grid ColumnDefinitions="*,*"
-                  RowDefinitions="Auto"
-                  ColumnSpacing="20">
+              RowDefinitions="Auto"
+              ColumnSpacing="20">
+
                 <!-- Formulario de Procedimiento Médico -->
                 <Frame BackgroundColor="#fff" Grid.Column="0" CornerRadius="15" BorderColor="#fff">
                     <ContentView BackgroundColor="#fff" Padding="20">
                         <VerticalStackLayout>
                             <Label Text="Registrar Procedimiento"
-                                   FontSize="24"
-                                   FontAttributes="Bold"
-                                   TextColor="#333"
-                                   Margin="0, 0, 0, 10"/>
+                               FontSize="24"
+                               FontAttributes="Bold"
+                               TextColor="#333"
+                               Margin="0, 0, 0, 10"/>
 
-                            <Label Text="Paciente" TextColor="Black" FontSize="18" FontAttributes="Bold" />
-                            <Picker x:Name="PatientPicker" BackgroundColor="#f6f6f6" TextColor="Black" />
+                            <Grid ColumnDefinitions="*,*" RowDefinitions="Auto,Auto,Auto,Auto" ColumnSpacing="20" RowSpacing="50">
+                             
+                                <Label Text="Paciente" TextColor="Black" FontSize="18" FontAttributes="Bold" Grid.Row="0" Grid.Column="0" />
+                                <Picker x:Name="PatientPicker" BackgroundColor="#f6f6f6" TextColor="Black" Grid.Row="0" Grid.Column="0" Margin="0,30,0,0"/>
 
-                            <Label Text="Diagnóstico" TextColor="Black" FontSize="18" FontAttributes="Bold" />
-                            <Entry x:Name="DiagnosisEntry" Placeholder="Descripción del diagnóstico"
-                                   TextColor="Black" FontSize="18" PlaceholderColor="#000" />
+                                <Label Text="Diagnóstico" TextColor="Black" FontSize="18" FontAttributes="Bold" Grid.Row="0" Grid.Column="1" />
+                                <Entry x:Name="DiagnosisEntry" Placeholder="Descripción del diagnóstico"
+                                    TextColor="Black" FontSize="18" PlaceholderColor="#000" Grid.Row="0" Grid.Column="1" Margin="0,30,0,0"/>
 
-                            <Label Text="Medicamento" TextColor="Black" FontSize="18" FontAttributes="Bold" />
-                            <Picker x:Name="MedicationPicker" BackgroundColor="#f6f6f6" TextColor="Black" />
+                                <Label Text="Medicamento" TextColor="Black" FontSize="18" FontAttributes="Bold" Grid.Row="1" Grid.Column="0"/>
+                                <Picker x:Name="MedicationPicker" BackgroundColor="#f6f6f6" TextColor="Black" Grid.Row="1" Grid.Column="0" Margin="0,30,0,0"/>
 
-                            <Label Text="Procedimiento" TextColor="Black" FontSize="18" FontAttributes="Bold" />
-                            <Entry x:Name="ProcedureEntry" Placeholder="Procedimiento realizado"
-                                   TextColor="Black" FontSize="18" PlaceholderColor="#000" />
+                                <Label Text="Procedimiento" TextColor="Black" FontSize="18" FontAttributes="Bold" Grid.Row="1" Grid.Column="1" />
+                                <Entry x:Name="ProcedureEntry" Placeholder="Procedimiento realizado"
+                                    TextColor="Black" FontSize="18" PlaceholderColor="#000" Grid.Row="1" Grid.Column="1" Margin="0,30,0,0" />
 
-                            <Label Text="Notas" TextColor="Black" FontSize="18" FontAttributes="Bold" />
-                            <Entry x:Name="NotesEntry" Placeholder="Notas adicionales"
-                                   TextColor="Black" FontSize="18" PlaceholderColor="#000" Margin="0, 0, 0, 10"/>
+                                <Label Text="Notas" TextColor="Black" FontSize="18" FontAttributes="Bold" Grid.Row="2" Grid.Column="0" />
+                                <Entry x:Name="NotesEntry" Placeholder="Notas adicionales"
+                                    TextColor="Black" FontSize="18" PlaceholderColor="#000" WidthRequest="435" Grid.Row="2" Grid.Column="0" Margin="0,30,0,0"/>
+                            </Grid>
 
-                            <Button Text="Guardar Procedimiento" BackgroundColor="#006AAB" TextColor="White" Clicked="OnSaveProcedure" />
+                            <!-- Botón Guardar -->
+                            <Button Text="Guardar Procedimiento" BackgroundColor="#006AAB" TextColor="White" Clicked="OnSaveProcedure" Margin="0,20,0,0" />
                         </VerticalStackLayout>
                     </ContentView>
                 </Frame>
 
                 <!-- Lista de Procedimientos -->
-                <Frame BackgroundColor="#fff" Grid.Column="1" CornerRadius="15" BorderColor="#fff">
-                    <ContentView Padding="20">
-                        <VerticalStackLayout>
-                            <Label Text="Lista de Procedimientos" FontSize="24" FontAttributes="Bold" TextColor="#333" Margin="0, 0, 0, 10"/>
-                            <CollectionView x:Name="ProcedureList" Margin="10">
-                                <CollectionView.ItemsLayout>
-                                    <GridItemsLayout Orientation="Vertical" Span="1" />
-                                </CollectionView.ItemsLayout>
-                                <CollectionView.ItemTemplate>
-                                    <DataTemplate>
-                                        <Frame BackgroundColor="#f0efeb" CornerRadius="10" Padding="10" Margin="5">
-                                            <VerticalStackLayout>
-                                                <Label Text="{Binding PatientName}" FontAttributes="Bold" FontSize="16" TextColor="#000" />
-                                                <Label Text="{Binding Diagnosis}" FontSize="14" TextColor="#000" />
-                                                <Label Text="{Binding ProcedurePerformed}" FontSize="14" TextColor="#000" />
-                                                <Label Text="{Binding Notes}" FontSize="12" TextColor="#000" />
-                                                <Label Text="{Binding RecordDate, StringFormat='{0:dd/MM/yyyy}'}" FontSize="12" TextColor="#000" />
-                                                <Label Text="{Binding MedicationName}" FontSize="12" TextColor="#000" />
-                                                <Button Text="Eliminar Procedimiento" BackgroundColor="Red" TextColor="White" Clicked="OnDeleteProcedure" CommandParameter="{Binding}" />
-                                            </VerticalStackLayout>
-                                        </Frame>
-                                    </DataTemplate>
-                                </CollectionView.ItemTemplate>
-                            </CollectionView>
-                        </VerticalStackLayout>
-                    </ContentView>
+                <Frame BackgroundColor="#fff" Grid.Column="1" CornerRadius="15" BorderColor="#fff"
+                    HeightRequest="560">
+                    <ScrollView Orientation="Vertical">
+                        <ContentView Padding="20">
+                            <VerticalStackLayout>
+                                <Label Text="Lista de Procedimientos" FontSize="24" FontAttributes="Bold" TextColor="#333" Margin="0, 0, 0, 10"/>
+                                <CollectionView x:Name="ProcedureList" Margin="10">
+                                    <CollectionView.ItemsLayout>
+                                        <GridItemsLayout Orientation="Vertical" Span="1" VerticalItemSpacing="10"/>
+                                    </CollectionView.ItemsLayout>
+                                    <CollectionView.ItemTemplate>
+                                        <DataTemplate>
+                                            <Frame BackgroundColor="#FBFBFB" CornerRadius="10"  >
+                                                <VerticalStackLayout>
+                                                    <Label Text="{Binding PatientName}" FontAttributes="Bold" FontSize="18" TextColor="#000" />
+                                                    <Label Text="{Binding Diagnosis}" FontSize="16" TextColor="#000" />
+                                                    <Label Text="{Binding ProcedurePerformed}" FontSize="14" TextColor="#000" />
+                                                    <Label Text="{Binding Notes}" FontSize="14" TextColor="#000" />
+                                                    <Label Text="{Binding RecordDate, StringFormat='{0:dd/MM/yyyy}'}" FontSize="12" TextColor="#000" />
+                                                    <Label Text="{Binding MedicationName}" FontSize="14" TextColor="#000" />
+                                                    <Button Text="Eliminar Procedimiento" BackgroundColor="#C7253E" TextColor="White" Clicked="OnDeleteProcedure" CommandParameter="{Binding}" />
+                                                </VerticalStackLayout>
+                                            </Frame>
+                                        </DataTemplate>
+                                    </CollectionView.ItemTemplate>
+                                </CollectionView>
+                            </VerticalStackLayout>
+                        </ContentView>
+                    </ScrollView>
                 </Frame>
             </Grid>
         </VerticalStackLayout>

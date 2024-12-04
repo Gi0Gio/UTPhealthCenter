@@ -63,7 +63,9 @@
                         </Frame>
 
 
-                        <Frame BackgroundColor="#fff" Grid.Column="1" CornerRadius="15" BorderColor="#fff">
+                        <Frame BackgroundColor="#fff" Grid.Column="1" CornerRadius="15" BorderColor="#fff"
+                               HeightRequest="400">
+                            <ScrollView Orientation="Vertical">
                             <ContentView Grid.Column="1" Padding="20">
                                 <VerticalStackLayout>
                                     <Label Text="Referencias añadidas"
@@ -105,6 +107,7 @@
                                     <Button Text="Generar PDF" BackgroundColor="#006AAB" TextColor="White" Clicked="GenerarPdf" />
                                 </VerticalStackLayout>
                             </ContentView>
+                            </ScrollView>
                         </Frame>
                     </Grid>
                 </OnIdiom.Tablet>
