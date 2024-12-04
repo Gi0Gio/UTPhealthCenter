@@ -122,38 +122,40 @@
                                     <Label Text="Añadir Referencia"
                                     FontSize="24"
                                     FontAttributes="Bold"
+                                    FontFamily="MohaveRegular"
                                     TextColor="#333"
                                     Margin="0, 0, 0, 10"/>
 
                                     <Label Text="Doctor" TextColor="Black" FontSize="18" FontAttributes="Bold" />
-                                    <Entry x:Name="DoctorEntry" Placeholder="Nombre del Doctor" 
-                                    Keyboard="Text" TextColor="Black" 
+                                    <Entry x:Name="DoctorEntry" Placeholder="Nombre del Doctor" FontFamily="MohaveRegular"
+                                    Keyboard="Text" TextColor="Black" BackgroundColor="#E3F2FD"
                                     FontSize="{OnIdiom Phone=22, Desktop=25}" 
                                     PlaceholderColor="#000" />
 
-                                    <Label Text="Especialidad" TextColor="Black" FontSize="18" FontAttributes="Bold" />
-                                    <Entry x:Name="EspecialidadEntry" Placeholder="Especialidad del Doctor" 
-                                    Keyboard="Text" TextColor="Black" 
+                                    <Label Text="Especialidad" TextColor="Black" FontSize="18" FontAttributes="Bold" FontFamily="MohaveRegular"/>
+                                    <Entry x:Name="EspecialidadEntry" Placeholder="Especialidad del Doctor"  FontFamily="MohaveRegular"
+                                    Keyboard="Text" TextColor="Black" BackgroundColor="#E3F2FD"
                                     FontSize="{OnIdiom Phone=22, Desktop=25}" 
                                     PlaceholderColor="#000" />
 
-                                    <Label Text="Clínica donde atiende" TextColor="Black" FontSize="18" FontAttributes="Bold" />
-                                    <Entry x:Name="ClinicaEntry" Placeholder="Nombre de la clínica" 
-                                    Keyboard="Text" TextColor="Black" 
+                                    <Label Text="Clínica donde atiende" TextColor="Black" FontSize="18" FontAttributes="Bold" FontFamily="MohaveRegular"/>
+                                    <Entry x:Name="ClinicaEntry" Placeholder="Nombre de la clínica" FontFamily="MohaveRegular"
+                                    Keyboard="Text" TextColor="Black" BackgroundColor="#E3F2FD"
                                     FontSize="{OnIdiom Phone=22, Desktop=25}" 
                                     PlaceholderColor="#000" 
                                     Margin="0, 0, 0, 10"/>
 
-                                    <Button Text="Añadir Referencia" BackgroundColor="#006AAB" TextColor="White" Clicked="AgregarReferencia" />
+                                    <Button Text="Añadir Referencia" BackgroundColor="#006AAB" TextColor="White" Clicked="AgregarReferencia" FontFamily="MohaveRegular" FontSize="20" />
                                 </VerticalStackLayout>
                             </ContentView>
                         </Frame>
 
-                        <Frame BackgroundColor="#fff" Grid.Column="1" CornerRadius="15" BorderColor="#fff">
-                            <ContentView Grid.Column="1" Padding="20">
+                        <Frame BackgroundColor="#fff" Grid.Column="1" CornerRadius="15" BorderColor="#fff"> 
+                            <ContentView Grid.Column="1" Padding="20"> 
                                 <VerticalStackLayout>
                                     <Label Text="Referencias añadidas"
                                     FontSize="24"
+                                    FontFamily="MohaveRegular"
                                     FontAttributes="Bold"
                                     TextColor="#333" />
 
@@ -161,15 +163,16 @@
                                         <VerticalStackLayout BindableLayout.ItemsSource="{Binding Referencias}">
                                             <BindableLayout.ItemTemplate>
                                                 <DataTemplate>
-                                                    <Frame BackgroundColor="#f0efeb" CornerRadius="15" HasShadow="True" BorderColor="Transparent" Margin="0,10">
+                                                    <Frame BackgroundColor="#E3F2FD" CornerRadius="15" HasShadow="True" BorderColor="Transparent" Margin="0,10">
                                                         <VerticalStackLayout Padding="5">
-                                                            <Label Text="{Binding Doctor}" FontAttributes="Bold" TextColor="Black" />
-                                                            <Label Text="{Binding Especialidad}" TextColor="Black" />
-                                                            <Label Text="{Binding Clinica}" TextColor="Black" />
+                                                            <Label Text="{Binding Doctor}" FontAttributes="Bold" TextColor="Black" FontFamily="MohaveRegular" FontSize="20"/>
+                                                            <Label Text="{Binding Especialidad}" TextColor="Black" FontFamily="MohaveRegular" FontSize="20"/>
+                                                            <Label Text="{Binding Clinica}" TextColor="Black" FontFamily="MohaveRegular" FontSize="20" />
 
                                                             <Button Text="Eliminar Referencia" 
-                                                             BackgroundColor="Red" 
+                                                             BackgroundColor="#C7253E" 
                                                              TextColor="White" 
+                                                             FontSize="15"
                                                              Command="{Binding EliminarReferenciaCommand, Source={x:Reference ThisPage}}" 
                                                              CommandParameter="{Binding .}" 
                                                              HeightRequest="20" 
@@ -180,7 +183,7 @@
                                             </BindableLayout.ItemTemplate>
                                         </VerticalStackLayout>
                                     </ScrollView>
-                                    <Button Text="Generar PDF" BackgroundColor="#006AAB" TextColor="White" Clicked="GenerarPdf" />
+                                    <Button Text="Generar PDF" BackgroundColor="#006AAB" TextColor="White" Clicked="GenerarPdf" FontFamily="MohaveRegular" FontSize="20"/>
                                 </VerticalStackLayout>
                             </ContentView>
                         </Frame>
