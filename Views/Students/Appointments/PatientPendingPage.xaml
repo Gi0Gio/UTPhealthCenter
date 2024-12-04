@@ -2,8 +2,10 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:components="clr-namespace:HealthCare.Components"
              x:Class="HealthCare.Views.Students.Appointments.PatientPendingPage"
-             BackgroundColor="#ffffff"
-             NavigationPage.HasNavigationBar="False">
+             BackgroundImageSource="fondete.jpeg"
+            BackgroundColor="{OnIdiom Phone=#fff, Desktop=#fff}"
+            NavigationPage.HasBackButton="False"
+            NavigationPage.HasNavigationBar="False">
 
     <!-- Main Layout -->
     <Grid RowDefinitions="Auto,*,Auto" BackgroundColor="#ffffff">

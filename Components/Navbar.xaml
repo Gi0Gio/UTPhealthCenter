@@ -34,8 +34,8 @@
                            HorizontalOptions="Center"
                            VerticalOptions="Center"
                            Spacing="20">
-                <Button Text="CERRAR SESION" BackgroundColor="Transparent" FontSize="20" TextColor="#000" FontFamily="MohaveRegular" Clicked="WelcomePage" />
                 <Button Text="INICIO" BackgroundColor="Transparent" FontSize="20" TextColor="#000" FontFamily="MohaveRegular" Clicked="ServicePage"/>
+                <Button Text="CERRAR SESION" BackgroundColor="Transparent" FontSize="20" TextColor="#000" FontFamily="MohaveRegular" Clicked="WelcomePage" />
             </HorizontalStackLayout>
 
             <!-- Perfil de usuario -->

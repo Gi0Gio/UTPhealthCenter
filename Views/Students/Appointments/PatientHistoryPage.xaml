@@ -3,8 +3,10 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="HealthCare.Views.Students.Appointments.PatientHistoryPage"
              xmlns:components="clr-namespace:HealthCare.Components"
-             BackgroundColor="#fff"
-             NavigationPage.HasNavigationBar="False">
+             BackgroundImageSource="fondete.jpeg"
+            BackgroundColor="{OnIdiom Phone=#fff, Desktop=#fff}"
+            NavigationPage.HasBackButton="False"
+            NavigationPage.HasNavigationBar="False">
 
 
     <VerticalStackLayout>
@@ -28,7 +30,7 @@
             <BoxView HeightRequest="10" BackgroundColor="Transparent" />
 
             <!-- Grid con dos columnas -->
-            <Grid RowDefinitions="Auto" ColumnDefinitions="*,*" ColumnSpacing="15" BackgroundColor="#ffffff" Padding="10">
+            <Grid RowDefinitions="Auto" ColumnDefinitions="*,*" ColumnSpacing="15" BackgroundColor="Transparent" Padding="10">
 
                 <!-- Columna: Citas Aceptadas -->
                 <VerticalStackLayout Grid.Column="0" Spacing="10">
@@ -39,6 +41,9 @@
                        TextColor="#000000" />
 
                     <CollectionView x:Name="AcceptedAppointmentsList" HeightRequest="300" Margin="0, 0, 10, 0">
+                        <CollectionView.ItemsLayout>
+                            <GridItemsLayout Orientation="Vertical" Span="1" VerticalItemSpacing="10"/>
+                        </CollectionView.ItemsLayout>
                         <CollectionView.ItemTemplate>
                             <DataTemplate>
                                 <Frame BackgroundColor="#fbfbfb" CornerRadius="8" Padding="10" HasShadow="True" Margin="10">
@@ -70,6 +75,9 @@
                        TextColor="#000000" />
 
                     <CollectionView x:Name="PendingAppointmentsList" HeightRequest="300">
+                        <CollectionView.ItemsLayout>
+                            <GridItemsLayout Orientation="Vertical" Span="1" VerticalItemSpacing="10"/>
+                        </CollectionView.ItemsLayout>
                         <CollectionView.ItemTemplate>
                             <DataTemplate>
                                 <Frame BackgroundColor="#fbfbfb" CornerRadius="8" Padding="10" HasShadow="True" Margin="10">

@@ -3,8 +3,10 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="HealthCare.Views.Students.Appointments.PatientRequestPage"
              xmlns:components="clr-namespace:HealthCare.Components"
-             BackgroundColor="{OnIdiom Phone=#fff, Desktop=#fff, Tablet=#fff}"
-             NavigationPage.HasNavigationBar="False">
+             BackgroundImageSource="fondete.jpeg"
+            BackgroundColor="{OnIdiom Phone=#fff, Desktop=#fff}"
+            NavigationPage.HasBackButton="False"
+            NavigationPage.HasNavigationBar="False">
 
     <ScrollView>
         <VerticalStackLayout Spacing="30" Padding="20,10,20,10">
