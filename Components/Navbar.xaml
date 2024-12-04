@@ -43,7 +43,7 @@
                            HorizontalOptions="End"
                            VerticalOptions="Center">
                 <Label Text="{Binding ProfileName}" FontSize="25" TextColor="#000" FontFamily="MohaveRegular" VerticalOptions="Center"/>
-                <ImageButton Source="perfil.png" HeightRequest="30" WidthRequest="30" Margin="10,0,0,0"/>
+                <ImageButton Source="perfil.png" HeightRequest="30" WidthRequest="30" Margin="10,0,0,0" Clicked="ProfilePage"/>
             </HorizontalStackLayout>
         </Grid>
     </Frame>

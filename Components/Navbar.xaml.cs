@@ -58,11 +58,29 @@ namespace HealthCare.Components
                 await Navigation.PushAsync(new ServicesPage());
             }
         }
+        private async void ProfilePage(object sender, EventArgs e)
+        {
+            var roleName = await SecureStorage.GetAsync("roleName");
+
+            if (roleName == "Patient")
+            {
+                await Navigation.PushAsync(new PatientProfilePage()); // Perfil de Paciente
+            }
+            else if (roleName == "Doctor")
+            {
+                await Navigation.PushAsync(new DoctorProfilePage()); // Perfil de Doctor
+            }
+            else if (roleName == "Administrator")
+            {
+                await Navigation.PushAsync(new ProfilePage()); // Perfil de Administrador
+            }
+        }
 
         public event PropertyChangedEventHandler PropertyChanged;
         protected void OnPropertyChanged([CallerMemberName] string name = null)
         {
             PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(name));
         }
+
     }
 }

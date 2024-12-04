@@ -39,7 +39,10 @@ namespace HealthCare.Views.Students.Prescription
                     {
                         // Cargar el nombre del doctor
                         var doctorResponse = await _httpClient.GetFromJsonAsync<DoctorDto>($"https://giohealthcareservice-e0hba0b3f2d0bsh6.canadacentral-01.azurewebsites.net/api/Doctors/{prescription.DoctorId}");
+                        var medicationResponse = await _httpClient.GetFromJsonAsync<MedicationDto>($"https://giohealthcareservice-e0hba0b3f2d0bsh6.canadacentral-01.azurewebsites.net/api/Medications/{prescription.MedicationId}");
                         prescription.DoctorName = doctorResponse?.FullName;
+                        prescription.MedicationName = medicationResponse?.Name;
+                        
                     }
 
                     PrescriptionList.ItemsSource = prescriptions;
@@ -72,5 +75,11 @@ namespace HealthCare.Views.Students.Prescription
         public string FirstName { get; set; }
         public string LastName { get; set; }
         public string FullName => $"{FirstName} {LastName}"; // Nombre completo del doctor
+    }
+
+    public class MedicationDto
+    {
+        public int Id { get; set; }
+        public string Name { get; set; }
     }
 }

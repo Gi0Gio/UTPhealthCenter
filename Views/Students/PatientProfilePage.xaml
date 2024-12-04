@@ -4,34 +4,40 @@
              x:Class="HealthCare.Views.Students.PatientProfilePage"
              xmlns:components="clr-namespace:HealthCare.Components"
              BackgroundImageSource="fondete.jpeg"
-            BackgroundColor="{OnIdiom Phone=#fff, Desktop=#fff}"
-            NavigationPage.HasBackButton="False"
-            NavigationPage.HasNavigationBar="False">
+             BackgroundColor="{OnIdiom Phone=#fff, Desktop=#fff}"
+             NavigationPage.HasBackButton="False"
+             NavigationPage.HasNavigationBar="False">
 
     <!-- Main Layout -->
     <VerticalStackLayout>
 
+        <!-- Navbar and Side Menu -->
         <components:Navbar IsVisible="{OnIdiom Desktop=true, Phone=false, Tablet=true}" />
         <components:SideMenu IsVisible="{OnIdiom Desktop=false, Phone=true, Tablet=false}" />
 
-        <Frame BackgroundColor="#d9d9d9" CornerRadius="8" Margin="100" HasShadow="True">
-            <FlexLayout Direction="Row" Wrap="Wrap" JustifyContent="SpaceEvenly" AlignContent="Center"  HeightRequest="100">
+        <!-- Patient Info -->
+        <Frame BackgroundColor="#d9d9d9" CornerRadius="8" Margin="20" HasShadow="True">
+            <FlexLayout Direction="Row" Wrap="Wrap" JustifyContent="SpaceEvenly" AlignContent="Center" HeightRequest="150">
 
-                <Image Source="perfil.png" WidthRequest="50" HeightRequest="100" />
+                <!-- Profile Image -->
+                <Image Source="perfil.png" WidthRequest="80" HeightRequest="80" />
 
+                <!-- Name and DNI -->
                 <StackLayout>
-                    <Label Text="Giovanny Jované" FontFamily="Mohave-Regular" FontSize="25" TextColor="#000000" FontAttributes="Bold"/>
-                    <Label Text="8-1007-851" FontFamily="Mohave-Regular" FontSize="20" TextColor="#000000" />
+                    <Label Text="{Binding FullName}" FontFamily="Mohave-Regular" FontSize="25" TextColor="#000000" FontAttributes="Bold"/>
+                    <Label Text="{Binding Dni}" FontFamily="Mohave-Regular" FontSize="20" TextColor="#000000" />
                 </StackLayout>
 
+                <!-- Birthdate and Age -->
                 <StackLayout>
-                    <Label Text="Nacimiento/ Edad" FontFamily="Mohave-Regular" FontAttributes="Bold" FontSize="25" TextColor="#000000" />
-                    <Label Text="02/03/2004, 20 años" FontFamily="Mohave-Regular" FontSize="20" TextColor="#000000" />
+                    <Label Text="Nacimiento / Edad" FontFamily="Mohave-Regular" FontAttributes="Bold" FontSize="25" TextColor="#000000" />
+                    <Label Text="{Binding BirthDateAge}" FontFamily="Mohave-Regular" FontSize="20" TextColor="#000000" />
                 </StackLayout>
 
+                <!-- Address and Phone -->
                 <StackLayout>
-                    <Label Text="CHC4+H74 David, Panamá." FontFamily="Mohave-Regular" FontSize="25" TextColor="#000000" />
-                    <Label Text="69971648" FontFamily="Mohave-Regular" FontSize="20" TextColor="#000000" />
+                    <Label Text="{Binding Address}" FontFamily="Mohave-Regular" FontSize="25" TextColor="#000000" />
+                    <Label Text="{Binding PhoneNumber}" FontFamily="Mohave-Regular" FontSize="20" TextColor="#000000" />
                 </StackLayout>
 
             </FlexLayout>
@@ -42,15 +48,13 @@
             <FlexLayout Direction="Row" JustifyContent="SpaceAround" AlignItems="Center" Wrap="NoWrap">
                 <Image Source="logouniver.png" WidthRequest="150" HeightRequest="150" />
                 <Label Text="Dirección: David, Chiriquí    Correo Electrónico: clinicautp@utp.ac.pa"
-                   FontFamily="Mohave-Regular" FontSize="20" TextColor="#000000" HorizontalTextAlignment="Center" />
+                       FontFamily="Mohave-Regular" FontSize="20" TextColor="#000000" HorizontalTextAlignment="Center" />
                 <Image Source="logo2.png" WidthRequest="150" HeightRequest="150" />
             </FlexLayout>
             <FlexLayout Direction="Row" JustifyContent="Center" AlignItems="Center" Wrap="NoWrap">
                 <Label Text="Horario de Atención: 8:00 am a 4:00 pm     Teléfono: 777-4000"
-                   FontFamily="Mohave-Regular" FontSize="20" TextColor="#000000" HorizontalTextAlignment="Center" />
+                       FontFamily="Mohave-Regular" FontSize="20" TextColor="#000000" HorizontalTextAlignment="Center" />
             </FlexLayout>
-
-            
         </VerticalStackLayout>
 
     </VerticalStackLayout>

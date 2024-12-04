@@ -1,1 +1,1 @@
-C:\Users\Kris\Desktop\DS8Semestral\UTPhealthCenter\HealthCare.csproj;x64
+C:\Users\Gio\Desktop\All\code\UTPhealthCenter\HealthCare.csproj;x64

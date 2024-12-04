@@ -17,18 +17,17 @@
                 <Image Source="perfil.png" WidthRequest="50" HeightRequest="100" />
 
                 <StackLayout>
-                    <Label Text="Giovanny Jované" FontFamily="Mohave-Regular" FontSize="25" TextColor="#000000" FontAttributes="Bold"/>
-                    <Label Text="8-1007-851" FontFamily="Mohave-Regular" FontSize="20" TextColor="#000000" />
+                    <Label Text="{Binding FullName}" FontFamily="Mohave-Regular" FontSize="25" TextColor="#000000" FontAttributes="Bold"/>
                 </StackLayout>
 
                 <StackLayout>
                     <Label Text="Especialidad" FontFamily="Mohave-Regular" FontAttributes="Bold" FontSize="25" TextColor="#000000" />
-                    <Label Text="Diagnosta" FontFamily="Mohave-Regular" FontSize="20" TextColor="#000000" />
+                    <Label Text="{Binding specialty}" FontFamily="Mohave-Regular" FontSize="20" TextColor="#000000" />
                 </StackLayout>
 
                 <StackLayout>
                     <Label Text="Horario de Oficina" FontFamily="Mohave-Regular" FontSize="25" TextColor="#000000" />
-                    <Label Text="lunes a viernes de 6:am a 4:pm" FontFamily="Mohave-Regular" FontSize="20" TextColor="#000000" />
+                    <Label Text="{Binding officeHours}" FontFamily="Mohave-Regular" FontSize="20" TextColor="#000000" />
                 </StackLayout>
 
             </FlexLayout>
@@ -38,7 +37,7 @@
         <VerticalStackLayout HorizontalOptions="Center" VerticalOptions="EndAndExpand" Padding="20" Margin="20">
             <FlexLayout Direction="Row" JustifyContent="SpaceAround" AlignItems="Center" Wrap="NoWrap">
                 <Image Source="logouniver.png" WidthRequest="150" HeightRequest="150" />
-                <Label Text="Dirección: David, Chiriquí    Correo Electrónico: clinicautp@utp.ac.pa"
+                <Label Text="{Binding phoneNumber}"
                FontFamily="Mohave-Regular" FontSize="20" TextColor="#000000" HorizontalTextAlignment="Center" />
                 <Image Source="logo2.png" WidthRequest="150" HeightRequest="150" />
             </FlexLayout>
