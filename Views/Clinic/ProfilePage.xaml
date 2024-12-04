@@ -2,11 +2,17 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="HealthCare.Views.ProfilePage"
-             BackgroundColor="#F0F4F8">
+             xmlns:components="clr-namespace:HealthCare.Components"
+             BackgroundImageSource="fondete.jpeg"
+            BackgroundColor="{OnIdiom Phone=#fff, Desktop=#fff}"
+            NavigationPage.HasBackButton="False"
+            NavigationPage.HasNavigationBar="False">
     <ScrollView>
         <VerticalStackLayout Padding="20" Spacing="15">
+            <components:Navbar IsVisible="{OnIdiom Desktop=true, Phone=false, Tablet=true}" />
+            <components:SideMenu IsVisible="{OnIdiom Desktop=false, Phone=true, Tablet=false}" />
 
-            <!-- Imagen y Nombre del Usuario -->
+
             <Frame BackgroundColor="#E6EFF8"
                    CornerRadius="15"
                    Padding="20"
@@ -31,7 +37,6 @@
                 </HorizontalStackLayout>
             </Frame>
 
-            <!-- Información del Usuario -->
             <Frame BackgroundColor="White"
                    CornerRadius="10"
                    HasShadow="True"
@@ -54,25 +59,6 @@
                            FontSize="16" TextColor="#3E4A59" Grid.ColumnSpan="2"/>
                 </Grid>
             </Frame>
-
-            <!-- Condiciones Médicas 
-            <Frame BackgroundColor="White"
-                   CornerRadius="10"
-                   HasShadow="True"
-                   Padding="10"
-                   Margin="0,5">
-                <VerticalStackLayout>
-                    <Label Text="Condiciones Médicas"
-                           FontFamily="MohaveRegular"
-                           FontSize="16"
-                           FontAttributes="Bold"
-                           TextColor="#3E4A59"/>
-                    <Label Text="{Binding MedicalConditions}"
-                           FontFamily="MohaveRegular"
-                           FontSize="16"
-                           TextColor="#3E4A59"/>
-                </VerticalStackLayout>
-            </Frame>-->
         </VerticalStackLayout>
     </ScrollView>
 </ContentPage>

@@ -8,99 +8,101 @@
             NavigationPage.HasBackButton="False"
             NavigationPage.HasNavigationBar="False">
 
-
-    <VerticalStackLayout>
+    <ScrollView Orientation="Vertical">
+        <VerticalStackLayout>
 
         <!-- Navbar para escritorio y SideMenu para móvil -->
         <components:Navbar IsVisible="{OnIdiom Desktop=true, Phone=false, Tablet=true}" />
         <components:SideMenu IsVisible="{OnIdiom Desktop=false, Phone=true, Tablet=false}" />
 
         <!-- Contenedor principal -->
-        <VerticalStackLayout Padding="20" Spacing="30">
+            <VerticalStackLayout Padding="20" Spacing="30">
 
-            <!-- Encabezado -->
-            <Label Text="Historial de Citas"
+                <!-- Encabezado -->
+                <Label Text="Historial de Citas"
                FontSize="24"
                FontAttributes="Bold"
                HorizontalOptions="Center"
                TextColor="#000000"
                Margin="0,10,0,0" />
 
-            <!-- Espacio entre el encabezado y el Grid -->
-            <BoxView HeightRequest="10" BackgroundColor="Transparent" />
 
-            <!-- Grid con dos columnas -->
-            <Grid RowDefinitions="Auto" ColumnDefinitions="*,*" ColumnSpacing="15" BackgroundColor="Transparent" Padding="10">
+                <!-- Espacio entre el encabezado y el Grid -->
+                <BoxView HeightRequest="10" BackgroundColor="Transparent" />
 
-                <!-- Columna: Citas Aceptadas -->
-                <VerticalStackLayout Grid.Column="0" Spacing="10">
-                    <Label Text="Citas Aceptadas"
+                <!-- Grid con dos columnas -->
+                <Grid RowDefinitions="Auto" ColumnDefinitions="*,*" ColumnSpacing="15" BackgroundColor="Transparent" Padding="10">
+
+                    <!-- Columna: Citas Aceptadas -->
+                    <VerticalStackLayout Grid.Column="0" Spacing="10">
+                        <Label Text="Citas Aceptadas"
                        FontSize="20"
                        FontAttributes="Bold"
                        HorizontalOptions="Center"
                        TextColor="#000000" />
 
-                    <CollectionView x:Name="AcceptedAppointmentsList" HeightRequest="300" Margin="0, 0, 10, 0">
-                        <CollectionView.ItemsLayout>
-                            <GridItemsLayout Orientation="Vertical" Span="1" VerticalItemSpacing="10"/>
-                        </CollectionView.ItemsLayout>
-                        <CollectionView.ItemTemplate>
-                            <DataTemplate>
-                                <Frame BackgroundColor="#fbfbfb" CornerRadius="8" Padding="10" HasShadow="True" Margin="10">
-                                    <VerticalStackLayout>
-                                        <Label Text="Doctor" FontAttributes="Bold" TextColor="#000000" />
-                                        <Label Text="{Binding DoctorName}" TextColor="#000000" />
-                                        <Label Text="Descripción" FontAttributes="Bold" TextColor="#000000" />
-                                        <Label Text="{Binding Description}" TextColor="#000000" />
-                                        <Label Text="Fecha de la cita" FontAttributes="Bold" TextColor="#000000" />
-                                        <Label Text="{Binding AppointmentDate}" TextColor="#000000" />
-                                        <Label Text="Tipo de cita" FontAttributes="Bold" TextColor="#000000" />
-                                        <Label Text="{Binding Type}" TextColor="#000000" />
-                                    </VerticalStackLayout>
-                                </Frame>
-                            </DataTemplate>
-                        </CollectionView.ItemTemplate>
-                    </CollectionView>
-                </VerticalStackLayout>
+                        <CollectionView x:Name="AcceptedAppointmentsList" HeightRequest="300" Margin="0, 0, 10, 0">
+                            <CollectionView.ItemsLayout>
+                                <GridItemsLayout Orientation="Vertical" Span="1" VerticalItemSpacing="10"/>
+                            </CollectionView.ItemsLayout>
+                            <CollectionView.ItemTemplate>
+                                <DataTemplate>
+                                    <Frame BackgroundColor="#fbfbfb" CornerRadius="8" Padding="10" HasShadow="True" Margin="10">
+                                        <VerticalStackLayout>
+                                            <Label Text="Doctor" FontAttributes="Bold" TextColor="#000000" />
+                                            <Label Text="{Binding DoctorName}" TextColor="#000000" />
+                                            <Label Text="Descripción" FontAttributes="Bold" TextColor="#000000" />
+                                            <Label Text="{Binding Description}" TextColor="#000000" />
+                                            <Label Text="Fecha de la cita" FontAttributes="Bold" TextColor="#000000" />
+                                            <Label Text="{Binding AppointmentDate}" TextColor="#000000" />
+                                            <Label Text="Tipo de cita" FontAttributes="Bold" TextColor="#000000" />
+                                            <Label Text="{Binding Type}" TextColor="#000000" />
+                                        </VerticalStackLayout>
+                                    </Frame>
+                                </DataTemplate>
+                            </CollectionView.ItemTemplate>
+                        </CollectionView>
+                    </VerticalStackLayout>
 
-                <!-- Espacio entre las dos columnas del Grid -->
-                <BoxView WidthRequest="15" BackgroundColor="Transparent" />
+                    <!-- Espacio entre las dos columnas del Grid -->
+                    <BoxView WidthRequest="15" BackgroundColor="Transparent" />
 
-                <!-- Columna: Citas Pendientes -->
-                <VerticalStackLayout Grid.Column="1" Spacing="10">
-                    <Label Text="Citas Pendientes"
+                    <!-- Columna: Citas Pendientes -->
+                    <VerticalStackLayout Grid.Column="1" Spacing="10">
+                        <Label Text="Citas Pendientes"
                        FontSize="20"
                        FontAttributes="Bold"
                        HorizontalOptions="Center"
                        TextColor="#000000" />
 
-                    <CollectionView x:Name="PendingAppointmentsList" HeightRequest="300">
-                        <CollectionView.ItemsLayout>
-                            <GridItemsLayout Orientation="Vertical" Span="1" VerticalItemSpacing="10"/>
-                        </CollectionView.ItemsLayout>
-                        <CollectionView.ItemTemplate>
-                            <DataTemplate>
-                                <Frame BackgroundColor="#fbfbfb" CornerRadius="8" Padding="10" HasShadow="True" Margin="10">
-                                    <VerticalStackLayout>
-                                        <Label Text="Doctor" FontAttributes="Bold" TextColor="#000000" />
-                                        <Label Text="{Binding DoctorName}" TextColor="#000000" />
-                                        <Label Text="Descripción" FontAttributes="Bold" TextColor="#000000" />
-                                        <Label Text="{Binding Description}" TextColor="#000000" />
-                                        <Label Text="Fecha de la cita" FontAttributes="Bold" TextColor="#000000" />
-                                        <Label Text="{Binding AppointmentDate}" TextColor="#000000" />
-                                        <Label Text="Tipo de cita" FontAttributes="Bold" TextColor="#000000" />
-                                        <Label Text="{Binding Type}" TextColor="#000000" />
-                                    </VerticalStackLayout>
-                                </Frame>
-                            </DataTemplate>
-                        </CollectionView.ItemTemplate>
-                    </CollectionView>
-                </VerticalStackLayout>
-            </Grid>
+                        <CollectionView x:Name="PendingAppointmentsList" >
+                            <CollectionView.ItemsLayout>
+                                <GridItemsLayout Orientation="Vertical" Span="1" VerticalItemSpacing="10"/>
+                            </CollectionView.ItemsLayout>
+                            <CollectionView.ItemTemplate>
+                                <DataTemplate>
+                                    <Frame BackgroundColor="#fbfbfb" CornerRadius="8" Padding="10" HasShadow="True" Margin="10">
+                                        <VerticalStackLayout>
+                                            <Label Text="Doctor" FontAttributes="Bold" TextColor="#000000" />
+                                            <Label Text="{Binding DoctorName}" TextColor="#000000" />
+                                            <Label Text="Descripción" FontAttributes="Bold" TextColor="#000000" />
+                                            <Label Text="{Binding Description}" TextColor="#000000" />
+                                            <Label Text="Fecha de la cita" FontAttributes="Bold" TextColor="#000000" />
+                                            <Label Text="{Binding AppointmentDate}" TextColor="#000000" />
+                                            <Label Text="Tipo de cita" FontAttributes="Bold" TextColor="#000000" />
+                                            <Label Text="{Binding Type}" TextColor="#000000" />
+                                        </VerticalStackLayout>
+                                    </Frame>
+                                </DataTemplate>
+                            </CollectionView.ItemTemplate>
+                        </CollectionView>
+                    </VerticalStackLayout>
+                </Grid>
 
-            <!-- Espacio entre el Grid y la parte inferior del contenedor -->
-            <BoxView HeightRequest="20" BackgroundColor="Transparent" />
+                <!-- Espacio entre el Grid y la parte inferior del contenedor -->
+                <BoxView HeightRequest="20" BackgroundColor="Transparent" />
 
+            </VerticalStackLayout>
         </VerticalStackLayout>
-    </VerticalStackLayout>
+    </ScrollView>
 </ContentPage>

@@ -1,42 +1,10 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Gio\\Desktop\\All\\code\\UTPhealthCenter\\",
+  "WorkspaceRootPath": "C:\\Users\\manue\\Desktop\\App\\UTPhealthCenter\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{4F4AABB1-96B0-4368-9E7F-A1D6F1B2DCD4}|HealthCare.csproj|c:\\users\\gio\\desktop\\all\\code\\utphealthcenter\\views\\doctors\\patients.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{4F4AABB1-96B0-4368-9E7F-A1D6F1B2DCD4}|HealthCare.csproj|solutionrelative:views\\doctors\\patients.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4F4AABB1-96B0-4368-9E7F-A1D6F1B2DCD4}|HealthCare.csproj|c:\\users\\gio\\desktop\\all\\code\\utphealthcenter\\views\\doctors\\referencia.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{4F4AABB1-96B0-4368-9E7F-A1D6F1B2DCD4}|HealthCare.csproj|solutionrelative:views\\doctors\\referencia.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4F4AABB1-96B0-4368-9E7F-A1D6F1B2DCD4}|HealthCare.csproj|c:\\users\\gio\\desktop\\all\\code\\utphealthcenter\\views\\students\\patientprofilepage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4F4AABB1-96B0-4368-9E7F-A1D6F1B2DCD4}|HealthCare.csproj|solutionrelative:views\\students\\patientprofilepage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4F4AABB1-96B0-4368-9E7F-A1D6F1B2DCD4}|HealthCare.csproj|c:\\users\\gio\\desktop\\all\\code\\utphealthcenter\\views\\doctors\\doctorprofilepage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4F4AABB1-96B0-4368-9E7F-A1D6F1B2DCD4}|HealthCare.csproj|solutionrelative:views\\doctors\\doctorprofilepage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4F4AABB1-96B0-4368-9E7F-A1D6F1B2DCD4}|HealthCare.csproj|c:\\users\\gio\\desktop\\all\\code\\utphealthcenter\\views\\doctors\\doctorprofilepage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{4F4AABB1-96B0-4368-9E7F-A1D6F1B2DCD4}|HealthCare.csproj|solutionrelative:views\\doctors\\doctorprofilepage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4F4AABB1-96B0-4368-9E7F-A1D6F1B2DCD4}|HealthCare.csproj|c:\\users\\gio\\desktop\\all\\code\\utphealthcenter\\views\\students\\patientprofilepage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{4F4AABB1-96B0-4368-9E7F-A1D6F1B2DCD4}|HealthCare.csproj|solutionrelative:views\\students\\patientprofilepage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4F4AABB1-96B0-4368-9E7F-A1D6F1B2DCD4}|HealthCare.csproj|c:\\users\\gio\\desktop\\all\\code\\utphealthcenter\\components\\navbar.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4F4AABB1-96B0-4368-9E7F-A1D6F1B2DCD4}|HealthCare.csproj|solutionrelative:components\\navbar.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4F4AABB1-96B0-4368-9E7F-A1D6F1B2DCD4}|HealthCare.csproj|c:\\users\\gio\\desktop\\all\\code\\utphealthcenter\\views\\clinic\\profilepage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4F4AABB1-96B0-4368-9E7F-A1D6F1B2DCD4}|HealthCare.csproj|solutionrelative:views\\clinic\\profilepage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4F4AABB1-96B0-4368-9E7F-A1D6F1B2DCD4}|HealthCare.csproj|c:\\users\\gio\\desktop\\all\\code\\utphealthcenter\\views\\clinic\\profilepage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{4F4AABB1-96B0-4368-9E7F-A1D6F1B2DCD4}|HealthCare.csproj|solutionrelative:views\\clinic\\profilepage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{4F4AABB1-96B0-4368-9E7F-A1D6F1B2DCD4}|HealthCare.csproj|c:\\users\\manue\\desktop\\app\\utphealthcenter\\views\\clinic\\blooddonor.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{4F4AABB1-96B0-4368-9E7F-A1D6F1B2DCD4}|HealthCare.csproj|solutionrelative:views\\clinic\\blooddonor.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     }
   ],
   "DocumentGroupContainers": [
@@ -59,118 +27,14 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Patients.xaml",
-              "DocumentMoniker": "C:\\Users\\Gio\\Desktop\\All\\code\\UTPhealthCenter\\Views\\Doctors\\Patients.xaml",
-              "RelativeDocumentMoniker": "Views\\Doctors\\Patients.xaml",
-              "ToolTip": "C:\\Users\\Gio\\Desktop\\All\\code\\UTPhealthCenter\\Views\\Doctors\\Patients.xaml",
-              "RelativeToolTip": "Views\\Doctors\\Patients.xaml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAABDAAAAAAAAAA==",
+              "Title": "BloodDonor.xaml",
+              "DocumentMoniker": "C:\\Users\\manue\\Desktop\\App\\UTPhealthCenter\\Views\\Clinic\\BloodDonor.xaml",
+              "RelativeDocumentMoniker": "Views\\Clinic\\BloodDonor.xaml",
+              "ToolTip": "C:\\Users\\manue\\Desktop\\App\\UTPhealthCenter\\Views\\Clinic\\BloodDonor.xaml",
+              "RelativeToolTip": "Views\\Clinic\\BloodDonor.xaml",
+              "ViewState": "AgIAAE4AAAAAAAAAAAAAAHUAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-12-04T17:37:28.695Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Referencia.xaml",
-              "DocumentMoniker": "C:\\Users\\Gio\\Desktop\\All\\code\\UTPhealthCenter\\Views\\Doctors\\Referencia.xaml",
-              "RelativeDocumentMoniker": "Views\\Doctors\\Referencia.xaml",
-              "ToolTip": "C:\\Users\\Gio\\Desktop\\All\\code\\UTPhealthCenter\\Views\\Doctors\\Referencia.xaml",
-              "RelativeToolTip": "Views\\Doctors\\Referencia.xaml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAANAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-12-04T17:46:07.991Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "PatientProfilePage.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\Gio\\Desktop\\All\\code\\UTPhealthCenter\\Views\\Students\\PatientProfilePage.xaml.cs",
-              "RelativeDocumentMoniker": "Views\\Students\\PatientProfilePage.xaml.cs",
-              "ToolTip": "C:\\Users\\Gio\\Desktop\\All\\code\\UTPhealthCenter\\Views\\Students\\PatientProfilePage.xaml.cs",
-              "RelativeToolTip": "Views\\Students\\PatientProfilePage.xaml.cs",
-              "ViewState": "AgIAAAoAAAAAAAAAAAAQwBQAAABFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-04T17:38:31.138Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "PatientProfilePage.xaml",
-              "DocumentMoniker": "C:\\Users\\Gio\\Desktop\\All\\code\\UTPhealthCenter\\Views\\Students\\PatientProfilePage.xaml",
-              "RelativeDocumentMoniker": "Views\\Students\\PatientProfilePage.xaml",
-              "ToolTip": "C:\\Users\\Gio\\Desktop\\All\\code\\UTPhealthCenter\\Views\\Students\\PatientProfilePage.xaml",
-              "RelativeToolTip": "Views\\Students\\PatientProfilePage.xaml",
-              "ViewState": "AgIAACIAAAAAAAAAAAAkwD4AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-12-04T17:37:49.412Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "DoctorProfilePage.xaml",
-              "DocumentMoniker": "C:\\Users\\Gio\\Desktop\\All\\code\\UTPhealthCenter\\Views\\Doctors\\DoctorProfilePage.xaml",
-              "RelativeDocumentMoniker": "Views\\Doctors\\DoctorProfilePage.xaml",
-              "ToolTip": "C:\\Users\\Gio\\Desktop\\All\\code\\UTPhealthCenter\\Views\\Doctors\\DoctorProfilePage.xaml",
-              "RelativeToolTip": "Views\\Doctors\\DoctorProfilePage.xaml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAADQAAAAOAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-12-04T17:26:17.168Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "DoctorProfilePage.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\Gio\\Desktop\\All\\code\\UTPhealthCenter\\Views\\Doctors\\DoctorProfilePage.xaml.cs",
-              "RelativeDocumentMoniker": "Views\\Doctors\\DoctorProfilePage.xaml.cs",
-              "ToolTip": "C:\\Users\\Gio\\Desktop\\All\\code\\UTPhealthCenter\\Views\\Doctors\\DoctorProfilePage.xaml.cs",
-              "RelativeToolTip": "Views\\Doctors\\DoctorProfilePage.xaml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAEAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-04T17:26:20.911Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "ProfilePage.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\Gio\\Desktop\\All\\code\\UTPhealthCenter\\Views\\Clinic\\ProfilePage.xaml.cs",
-              "RelativeDocumentMoniker": "Views\\Clinic\\ProfilePage.xaml.cs",
-              "ToolTip": "C:\\Users\\Gio\\Desktop\\All\\code\\UTPhealthCenter\\Views\\Clinic\\ProfilePage.xaml.cs",
-              "RelativeToolTip": "Views\\Clinic\\ProfilePage.xaml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAADIAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-04T17:06:37.129Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "ProfilePage.xaml",
-              "DocumentMoniker": "C:\\Users\\Gio\\Desktop\\All\\code\\UTPhealthCenter\\Views\\Clinic\\ProfilePage.xaml",
-              "RelativeDocumentMoniker": "Views\\Clinic\\ProfilePage.xaml",
-              "ToolTip": "C:\\Users\\Gio\\Desktop\\All\\code\\UTPhealthCenter\\Views\\Clinic\\ProfilePage.xaml",
-              "RelativeToolTip": "Views\\Clinic\\ProfilePage.xaml",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAABMAAAAfAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-12-04T17:06:30.701Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Navbar.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\Gio\\Desktop\\All\\code\\UTPhealthCenter\\Components\\Navbar.xaml.cs",
-              "RelativeDocumentMoniker": "Components\\Navbar.xaml.cs",
-              "ToolTip": "C:\\Users\\Gio\\Desktop\\All\\code\\UTPhealthCenter\\Components\\Navbar.xaml.cs",
-              "RelativeToolTip": "Components\\Navbar.xaml.cs",
-              "ViewState": "AgIAAB8AAAAAAAAAAADwvzsAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-04T16:17:40.639Z",
+              "WhenOpened": "2024-12-04T21:10:29.526Z",
               "EditorCaption": ""
             }
           ]

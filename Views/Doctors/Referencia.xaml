@@ -10,24 +10,24 @@
              BackgroundColor="{OnIdiom Phone=#fff, Desktop=#fff, Tablet=#fff}"
              NavigationPage.HasBackButton="False"
              NavigationPage.HasNavigationBar="False">
-    <ScrollView>
-        <VerticalStackLayout Padding="20" Spacing="15">
+    <ScrollView Orientation="Vertical">
+    <VerticalStackLayout Padding="20" Spacing="15">
 
-            <components:Navbar IsVisible="{OnIdiom Desktop=true, Phone=false, Tablet=true}" />
-            <components:SideMenu IsVisible="{OnIdiom Desktop=false, Phone=true, Tablet=false}" />
+        <components:Navbar IsVisible="{OnIdiom Desktop=true, Phone=false, Tablet=true}" />
+        <components:SideMenu IsVisible="{OnIdiom Desktop=false, Phone=true, Tablet=false}" />
 
-            <Label Text="Referencias"
+        <Label Text="Referencias"
                    FontSize="35"
                    FontAttributes="Bold"
                    TextColor="#000"
                    HorizontalOptions="Center"
                    Margin="0,0,0,20"/>
 
-            <OnIdiom x:TypeArguments="View">
-                <OnIdiom.Tablet>
+        <OnIdiom x:TypeArguments="View">
+            <OnIdiom.Tablet>
                     <Grid ColumnDefinitions="*,*"
-                  RowDefinitions="Auto"
-                  ColumnSpacing="20">
+                      RowDefinitions="Auto"
+                      ColumnSpacing="20">
 
                         <Frame BackgroundColor="#fff" Grid.Column="0" CornerRadius="15" BorderColor="#fff">
                             <ContentView BackgroundColor="#fff" Grid.Column="0" Padding="20">
@@ -66,28 +66,28 @@
                         <Frame BackgroundColor="#fff" Grid.Column="1" CornerRadius="15" BorderColor="#fff"
                                HeightRequest="400">
                             <ScrollView Orientation="Vertical">
-                            <ContentView Grid.Column="1" Padding="20">
-                                <VerticalStackLayout>
-                                    <Label Text="Referencias añadidas"
+                                <ContentView Grid.Column="1" Padding="20">
+                                    <VerticalStackLayout>
+                                        <Label Text="Referencias añadidas"
                                    FontSize="24"
                                    FontAttributes="Bold"
                                    TextColor="#333" />
 
-                                    <ScrollView>
-                                        <VerticalStackLayout BindableLayout.ItemsSource="{Binding Referencias}">
-                                            <BindableLayout.ItemTemplate>
-                                                <DataTemplate>
+                                        <ScrollView>
+                                            <VerticalStackLayout BindableLayout.ItemsSource="{Binding Referencias}">
+                                                <BindableLayout.ItemTemplate>
+                                                    <DataTemplate>
                                                         <Frame BackgroundColor="#E3F2FD" CornerRadius="15" HasShadow="True" BorderColor="Transparent" Margin="0,10">
-                                                        <VerticalStackLayout Padding="5">
-                                                            <Grid RowDefinitions="Auto, Auto" ColumnDefinitions="Auto, Auto, Auto" HorizontalOptions="Center" >
-                                                                <Label Text="Nombre" TextColor="Black" FontAttributes="Bold" Grid.Row="0" Grid.Column="0" Margin="0, 0, 150, 0"/>
-                                                                <Label Text="{Binding Doctor}" FontSize="14" TextColor="Black" Grid.Row="0" Grid.Column="0"  Margin="0, 20, 10, 10"/>
-                                                                <Label Text="Especialidad" TextColor="Black" FontAttributes="Bold" Grid.Row="0" Grid.Column="1" Margin="0, 0, 150, 0"/>
-                                                                <Label Text="{Binding Especialidad}" TextColor="Black" Grid.Row="0" Grid.Column="1" Margin="0, 20, 10, 10" />
-                                                                <Label Text="Clínica en la que atiende" TextColor="Black" FontAttributes="Bold" Grid.Row="0" Grid.Column="2"/>
-                                                                <Label Text="{Binding Clinica}" TextColor="Black" Grid.Row="0" Grid.Column="2" Margin="0, 20, 10, 20"/>
+                                                            <VerticalStackLayout Padding="5">
+                                                                <Grid RowDefinitions="Auto, Auto" ColumnDefinitions="Auto, Auto, Auto" HorizontalOptions="Center" >
+                                                                    <Label Text="Nombre" TextColor="Black" FontAttributes="Bold" Grid.Row="0" Grid.Column="0" Margin="0, 0, 150, 0"/>
+                                                                    <Label Text="{Binding Doctor}" FontSize="14" TextColor="Black" Grid.Row="0" Grid.Column="0"  Margin="0, 20, 10, 10"/>
+                                                                    <Label Text="Especialidad" TextColor="Black" FontAttributes="Bold" Grid.Row="0" Grid.Column="1" Margin="0, 0, 150, 0"/>
+                                                                    <Label Text="{Binding Especialidad}" TextColor="Black" Grid.Row="0" Grid.Column="1" Margin="0, 20, 10, 10" />
+                                                                    <Label Text="Clínica en la que atiende" TextColor="Black" FontAttributes="Bold" Grid.Row="0" Grid.Column="2"/>
+                                                                    <Label Text="{Binding Clinica}" TextColor="Black" Grid.Row="0" Grid.Column="2" Margin="0, 20, 10, 20"/>
 
-                                                                <Button Text="Eliminar Referencia" 
+                                                                    <Button Text="Eliminar Referencia" 
                                                             BackgroundColor="#C7253E" 
                                                             TextColor="White" 
                                                             Command="{Binding EliminarReferenciaCommand, Source={x:Reference ThisPage}}" 
@@ -97,16 +97,16 @@
                                                             Grid.Row="0" 
                                                             Grid.Column="1" 
                                                             Margin="0, 60, 50, 0"/>
-                                                            </Grid>
-                                                        </VerticalStackLayout>
-                                                    </Frame>
-                                                </DataTemplate>
-                                            </BindableLayout.ItemTemplate>
-                                        </VerticalStackLayout>
-                                    </ScrollView>
-                                    <Button Text="Generar PDF" BackgroundColor="#006AAB" TextColor="White" Clicked="GenerarPdf" />
-                                </VerticalStackLayout>
-                            </ContentView>
+                                                                </Grid>
+                                                            </VerticalStackLayout>
+                                                        </Frame>
+                                                    </DataTemplate>
+                                                </BindableLayout.ItemTemplate>
+                                            </VerticalStackLayout>
+                                        </ScrollView>
+                                        <Button Text="Generar PDF" BackgroundColor="#006AAB" TextColor="White" Clicked="GenerarPdf" />
+                                    </VerticalStackLayout>
+                                </ContentView>
                             </ScrollView>
                         </Frame>
                     </Grid>
@@ -150,8 +150,8 @@
                             </ContentView>
                         </Frame>
 
-                        <Frame BackgroundColor="#fff" Grid.Column="1" CornerRadius="15" BorderColor="#fff"> 
-                            <ContentView Grid.Column="1" Padding="20"> 
+                        <Frame BackgroundColor="#fff" Grid.Column="1" CornerRadius="15" BorderColor="#fff">
+                            <ContentView Grid.Column="1" Padding="20">
                                 <VerticalStackLayout>
                                     <Label Text="Referencias añadidas"
                                     FontSize="24"
@@ -189,7 +189,7 @@
                         </Frame>
                     </Grid>
                 </OnIdiom.Desktop>
-            </OnIdiom>
-        </VerticalStackLayout>
+        </OnIdiom>
+    </VerticalStackLayout>
     </ScrollView>
 </ContentPage>

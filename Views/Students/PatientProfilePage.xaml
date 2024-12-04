@@ -15,9 +15,10 @@
         <components:Navbar IsVisible="{OnIdiom Desktop=true, Phone=false, Tablet=true}" />
         <components:SideMenu IsVisible="{OnIdiom Desktop=false, Phone=true, Tablet=false}" />
 
+        <Grid RowDefinitions="*,*" ColumnSpacing="15" BackgroundColor="Transparent" Padding="10">
         <!-- Patient Info -->
-        <Frame BackgroundColor="#d9d9d9" CornerRadius="8" Margin="20" HasShadow="True">
-            <FlexLayout Direction="Row" Wrap="Wrap" JustifyContent="SpaceEvenly" AlignContent="Center" HeightRequest="150">
+            <Frame BackgroundColor="White" CornerRadius="8" Margin="100" HasShadow="True" Grid.Row="0">
+                <FlexLayout Direction="Row" Wrap="Wrap" JustifyContent="SpaceEvenly" AlignContent="Center" HeightRequest="150">
 
                 <!-- Profile Image -->
                 <Image Source="perfil.png" WidthRequest="80" HeightRequest="80" />
@@ -44,19 +45,21 @@
         </Frame>
 
         <!-- Footer Section -->
-        <VerticalStackLayout HorizontalOptions="Center" VerticalOptions="EndAndExpand" Padding="20" Margin="20">
-            <FlexLayout Direction="Row" JustifyContent="SpaceAround" AlignItems="Center" Wrap="NoWrap">
-                <Image Source="logouniver.png" WidthRequest="150" HeightRequest="150" />
-                <Label Text="Dirección: David, Chiriquí    Correo Electrónico: clinicautp@utp.ac.pa"
+            <Frame BackgroundColor="White" CornerRadius="8" Margin="100" HasShadow="True" Grid.Row="1">
+                <VerticalStackLayout HorizontalOptions="Center" VerticalOptions="EndAndExpand" Padding="20" Margin="20">
+                    <FlexLayout Direction="Row" JustifyContent="SpaceAround" AlignItems="Center" Wrap="NoWrap">
+                        <Image Source="logouniver.png" WidthRequest="150" HeightRequest="150" />
+                        <Label Text="Dirección: David, Chiriquí    Correo Electrónico: clinicautp@utp.ac.pa"
                        FontFamily="Mohave-Regular" FontSize="20" TextColor="#000000" HorizontalTextAlignment="Center" />
-                <Image Source="logo2.png" WidthRequest="150" HeightRequest="150" />
-            </FlexLayout>
-            <FlexLayout Direction="Row" JustifyContent="Center" AlignItems="Center" Wrap="NoWrap">
-                <Label Text="Horario de Atención: 8:00 am a 4:00 pm     Teléfono: 777-4000"
+                        <Image Source="logo2.png" WidthRequest="150" HeightRequest="150" />
+                    </FlexLayout>
+                    <FlexLayout Direction="Row" JustifyContent="Center" AlignItems="Center" Wrap="NoWrap">
+                        <Label Text="Horario de Atención: 8:00 am a 4:00 pm     Teléfono: 777-4000"
                        FontFamily="Mohave-Regular" FontSize="20" TextColor="#000000" HorizontalTextAlignment="Center" />
-            </FlexLayout>
-        </VerticalStackLayout>
-
+                    </FlexLayout>
+                </VerticalStackLayout>
+            </Frame>
+        </Grid>
     </VerticalStackLayout>
 
 </ContentPage>

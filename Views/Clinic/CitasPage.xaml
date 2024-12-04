@@ -8,15 +8,19 @@
              NavigationPage.HasBackButton="False"
              NavigationPage.HasNavigationBar="False">
 
-    <ContentPage.BindingContext>
-        <vm:PatientAppointmentViewModel />
-    </ContentPage.BindingContext>
+
+        <ContentPage.BindingContext>
+            <vm:PatientAppointmentViewModel />
+        </ContentPage.BindingContext>
+    
+    <ScrollView Orientation="Vertical">
+
 
         <VerticalStackLayout Padding="10" Spacing="10">
             <components:Navbar IsVisible="{OnIdiom Desktop=true, Phone=false, Tablet=true}" />
             <components:SideMenu IsVisible="{OnIdiom Desktop=false, Phone=true, Tablet=false}" />
 
-            <Label Text="Gestión de Citas" 
+        <Label Text="Gestión de Citas" 
                    
                    
                    FontFamily="MohaveRegular"
@@ -31,20 +35,20 @@
                 <Frame BackgroundColor="#fff" Grid.Column="0" CornerRadius="15" BorderColor="#fff">
                     <ContentView BackgroundColor="#fff" Padding="20">
                         <StackLayout Padding="10">
-                    <Label Text="Crear Cita" 
+                            <Label Text="Crear Cita" 
                           FontSize="24"
                         FontAttributes="Bold"
                         TextColor="#333"
                         Margin="0, 0, 0, 10" />
 
-                        <Grid ColumnDefinitions="*,*" RowDefinitions="Auto,Auto,Auto,Auto" ColumnSpacing="20" RowSpacing="40">
-                         
-                            <Label Text="Seleccionar Paciente"
+                            <Grid ColumnDefinitions="*,*" RowDefinitions="Auto,Auto,Auto,Auto" ColumnSpacing="20" RowSpacing="40">
+
+                                <Label Text="Seleccionar Paciente"
                                FontSize="{OnIdiom Phone=18, Desktop=20}"
                                FontAttributes="Bold"
                                TextColor="#000"
                                Grid.Row="0" Grid.Column="0" />
-                            <Picker ItemsSource="{Binding Patients}" 
+                                <Picker ItemsSource="{Binding Patients}" 
                                 ItemDisplayBinding="{Binding FullName}"
                                 SelectedItem="{Binding SelectedPatient}"
                                 FontFamily="MohaveRegular"
@@ -53,12 +57,12 @@
                                 FontSize="{OnIdiom Phone=22, Desktop=25}" 
                                 Grid.Row="0" Grid.Column="0" Margin="0,30,0,0"/>
 
-                            <Label Text="Seleccionar Doctor"
+                                <Label Text="Seleccionar Doctor"
                                FontSize="{OnIdiom Phone=18, Desktop=20}"
                                FontAttributes="Bold"
                                TextColor="#000"
                                Grid.Row="0" Grid.Column="1" />
-                            <Picker ItemsSource="{Binding Doctors}" 
+                                <Picker ItemsSource="{Binding Doctors}" 
                                 ItemDisplayBinding="{Binding FullName}"
                                 SelectedItem="{Binding SelectedDoctor}"
                                 FontFamily="MohaveRegular"
@@ -67,24 +71,24 @@
                                 FontSize="{OnIdiom Phone=22, Desktop=25}"
                                 Grid.Row="0" Grid.Column="1" Margin="0,30,0,0" />
 
-                            <Label Text="Seleccionar Fecha"
+                                <Label Text="Seleccionar Fecha"
                                FontSize="{OnIdiom Phone=18, Desktop=20}"
                                FontAttributes="Bold"
                                TextColor="#000"
                                Grid.Row="1" Grid.Column="0" />
-                            <DatePicker Date="{Binding NewAppointment.AppointmentDate}" 
+                                <DatePicker Date="{Binding NewAppointment.AppointmentDate}" 
                                 TextColor="Black"
                                 FontFamily="MohaveRegular"
                                 BackgroundColor="#E3F2FD" 
                                 FontSize="{OnIdiom Phone=22, Desktop=25}"
                                 Grid.Row="1" Grid.Column="0" Margin="0,30,0,0"/>
 
-                            <Label Text="Seleccione tipo de Cita"
+                                <Label Text="Seleccione tipo de Cita"
                                FontSize="{OnIdiom Phone=18, Desktop=20}"
                                FontAttributes="Bold"
                                TextColor="#000"
                                Grid.Row="1" Grid.Column="1" />
-                            <Picker ItemsSource="{Binding AppointmentTypes}" 
+                                <Picker ItemsSource="{Binding AppointmentTypes}" 
                                 SelectedItem="{Binding NewAppointment.type}" 
                                 TitleColor="#000"
                                 TextColor="#000"
@@ -93,12 +97,12 @@
                                 FontSize="{OnIdiom Phone=22, Desktop=25}" 
                                 Grid.Row="1" Grid.Column="1" Margin="0,30,0,0" />
 
-                            <Label Text="Descripción de la cita"
+                                <Label Text="Descripción de la cita"
                                FontSize="{OnIdiom Phone=18, Desktop=20}"
                                FontAttributes="Bold"
                                TextColor="#000"
                                Grid.Row="2" Grid.Column="0" />
-                            <Entry Placeholder="Descripción" 
+                                <Entry Placeholder="Descripción" 
                                Text="{Binding NewAppointment.description}" 
                                TextColor="Black"
                                FontFamily="MohaveRegular"
@@ -107,17 +111,17 @@
                                PlaceholderColor="#000" 
                                Grid.Row="2" Grid.Column="0" Margin="0,30,0,0" />
 
-                        </Grid>
+                            </Grid>
 
 
-                        <Button Text="Guardar Cita" 
+                            <Button Text="Guardar Cita" 
                         BackgroundColor="#014671" 
                         TextColor="White" 
                         CornerRadius="10" 
                         FontSize="{OnIdiom Phone=18, Desktop=20}"
                         Margin="0,15,0,0"
                         Clicked="OnSaveAppointment"/>
-                </StackLayout>
+                        </StackLayout>
                     </ContentView>
                 </Frame>
 
@@ -128,10 +132,10 @@
                             <StackLayout Padding="10">
                                 <Label Text="Próximas Citas" FontSize="24" FontAttributes="Bold" TextColor="#333" Margin="0, 0, 0, 10"/>
                                 <CollectionView ItemsSource="{Binding PendingAppointments}">
-                                <CollectionView.ItemsLayout>
-                                    <GridItemsLayout Orientation="Vertical" Span="1" VerticalItemSpacing="10"/>
-                                </CollectionView.ItemsLayout>
-                                <CollectionView.ItemTemplate>
+                                    <CollectionView.ItemsLayout>
+                                        <GridItemsLayout Orientation="Vertical" Span="1" VerticalItemSpacing="10"/>
+                                    </CollectionView.ItemsLayout>
+                                    <CollectionView.ItemTemplate>
                                         <DataTemplate>
                                             <Frame BackgroundColor="#E3F2FD" 
                                                CornerRadius="10" 
@@ -184,15 +188,16 @@
                                                         HorizontalOptions="End"
                                                         Clicked="OnDeleteAppointment"
                                                         CommandParameter="{Binding}" />
-                                                        </Grid>
+                                                </Grid>
                                             </Frame>
                                         </DataTemplate>
                                     </CollectionView.ItemTemplate>
                                 </CollectionView>
                             </StackLayout>
-                    </ContentView>
-                </ScrollView>
-            </Frame>
-        </Grid>
+                        </ContentView>
+                    </ScrollView>
+                </Frame>
+            </Grid>
         </VerticalStackLayout>
+    </ScrollView>
 </ContentPage>

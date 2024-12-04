@@ -8,7 +8,8 @@
              NavigationPage.HasBackButton="False"
              NavigationPage.HasNavigationBar="False">
 
-    <VerticalStackLayout>
+    <ScrollView Orientation="Vertical">
+        <VerticalStackLayout>
         <components:Navbar IsVisible="{OnIdiom Desktop=true, Phone=false, Tablet=true}" />
         <components:SideMenu IsVisible="{OnIdiom Desktop=false, Phone=true, Tablet=false}" />
         <VerticalStackLayout  Spacing="15" Padding="20">
@@ -20,97 +21,99 @@
                HorizontalOptions="Center"
                Margin="0,0,0,20"/>
 
-            <Grid Padding="20" ColumnSpacing="20" RowDefinitions="Auto" ColumnDefinitions="*,*">
-        
-        <!-- Formulario de Registro de Donador (Columna Izquierda) -->
-                <Frame BackgroundColor="#fff" Grid.Column="0" CornerRadius="15" BorderColor="#fff">
-                    <ContentView BackgroundColor="#fff" Padding="20">
-                        <VerticalStackLayout Spacing="15">
-                <Label Text="Registrar Donador de Sangre"
+
+                <Grid Padding="20" ColumnSpacing="20" RowDefinitions="Auto" ColumnDefinitions="*,*">
+
+                    <!-- Formulario de Registro de Donador (Columna Izquierda) -->
+                    <Frame BackgroundColor="#fff" Grid.Column="0" CornerRadius="15" BorderColor="#fff">
+                        <ContentView BackgroundColor="#fff" Padding="20">
+                            <VerticalStackLayout Spacing="15">
+                                <Label Text="Registrar Donador de Sangre"
                        FontSize="24"
                        FontAttributes="Bold"
                        TextColor="#000"
                        HorizontalOptions="Center"
                        Margin="0,0,0,20"/>
 
-                <Label Text="Nombre del Donador" TextColor="Black" FontSize="18" FontAttributes="Bold" />
-                <Entry x:Name="EntryName"
+                                <Label Text="Nombre del Donador" TextColor="Black" FontSize="18" FontAttributes="Bold" />
+                                <Entry x:Name="EntryName"
                        Placeholder="Nombre del donador"
                        TextColor="Black"
                        BackgroundColor="#E3F2FD"
                        FontSize="18" />
 
-                <Label Text="Número de Identificación" TextColor="Black" FontSize="18" FontAttributes="Bold" />
-                <Entry x:Name="EntryIdentification"
+                                <Label Text="Número de Identificación" TextColor="Black" FontSize="18" FontAttributes="Bold" />
+                                <Entry x:Name="EntryIdentification"
                        Placeholder="Identificación del Donador"
                        TextColor="Black"
                        BackgroundColor="#E3F2FD"
                        FontSize="18" />
 
-                <Label Text="Tipo de Sangre" TextColor="Black" FontSize="18" FontAttributes="Bold" />
-                <Entry x:Name="EntryBloodType"
+                                <Label Text="Tipo de Sangre" TextColor="Black" FontSize="18" FontAttributes="Bold" />
+                                <Entry x:Name="EntryBloodType"
                        Placeholder="Tipaje de sangre del Donador"
                        TextColor="Black"
                        BackgroundColor="#E3F2FD"
                        FontSize="18" />
 
-                <Label Text="Última Fecha de Donación" TextColor="Black" FontSize="18" FontAttributes="Bold" />
-                <DatePicker x:Name="DatePickerLastDonation"
+                                <Label Text="Última Fecha de Donación" TextColor="Black" FontSize="18" FontAttributes="Bold" />
+                                <DatePicker x:Name="DatePickerLastDonation"
                             BackgroundColor="#E3F2FD"
                             TextColor="#666"
                             FontSize="18" />
 
-                <Button Text="Guardar Información del Donador"
+                                <Button Text="Guardar Información del Donador"
                         BackgroundColor="#006AAB"
                         TextColor="White"
                         FontSize="18"
                         Clicked="OnSaveDonor" />
-            </VerticalStackLayout>
-                    </ContentView>
-                </Frame>
+                            </VerticalStackLayout>
+                        </ContentView>
+                    </Frame>
 
-                <!-- Lista de Donadores de Sangre (Columna Derecha) -->
-                <Frame BackgroundColor="#fff" Grid.Column="1" CornerRadius="15" BorderColor="#fff"
+                    <!-- Lista de Donadores de Sangre (Columna Derecha) -->
+                    <Frame BackgroundColor="#fff" Grid.Column="1" CornerRadius="15" BorderColor="#fff"
                     HeightRequest="590">
-                    <ScrollView Orientation="Vertical">
-                        <ContentView Padding="20">
-                            <VerticalStackLayout>
-                                <Label Text="Lista de Donadores de Sangre"
+                        <ScrollView Orientation="Vertical">
+                            <ContentView Padding="20">
+                                <VerticalStackLayout>
+                                    <Label Text="Lista de Donadores de Sangre"
                            FontSize="24"
                            FontAttributes="Bold"
                            TextColor="#000"
                            HorizontalOptions="Center"
                            Margin="0,0,0,20"/>
-                                <CollectionView ItemsSource="{Binding Donors}" Margin="10">
-                                    <CollectionView.ItemsLayout>
-                                        <GridItemsLayout Orientation="Vertical" Span="4" VerticalItemSpacing="10" HorizontalItemSpacing="10"/>
-                                    </CollectionView.ItemsLayout>
-                                    <CollectionView.ItemTemplate>
-                                        <DataTemplate>
-                                            <Frame BackgroundColor="#E3F2FD" BorderColor="Transparent" CornerRadius="10" >
-                                                <VerticalStackLayout>
-                                                    <Label Text="{Binding Name}" FontAttributes="Bold" FontSize="16" TextColor="#000" />
-                                                    <HorizontalStackLayout>
-                                                        <Label Text="DNI: " TextColor="#000" FontSize="14"/>
-                                                        <Label Text="{Binding Identification}" FontSize="14" TextColor="#000" />
-                                                    </HorizontalStackLayout>
-                                                    <Label Text="{Binding BloodType}" FontSize="14" TextColor="#000" />
-                                                    <Label Text="{Binding LastDonationDate, StringFormat='{0:dd/MM/yyyy}'}" FontSize="14" TextColor="#000" />
-                                                    <Button Text="Eliminar Donador"
+                                    <CollectionView ItemsSource="{Binding Donors}" Margin="10">
+                                        <CollectionView.ItemsLayout>
+                                            <GridItemsLayout Orientation="Vertical" Span="4" VerticalItemSpacing="10" HorizontalItemSpacing="10"/>
+                                        </CollectionView.ItemsLayout>
+                                        <CollectionView.ItemTemplate>
+                                            <DataTemplate>
+                                                <Frame BackgroundColor="#E3F2FD" BorderColor="Transparent" CornerRadius="10" >
+                                                    <VerticalStackLayout>
+                                                        <Label Text="{Binding Name}" FontAttributes="Bold" FontSize="16" TextColor="#000" />
+                                                        <HorizontalStackLayout>
+                                                            <Label Text="DNI: " TextColor="#000" FontSize="14"/>
+                                                            <Label Text="{Binding Identification}" FontSize="14" TextColor="#000" />
+                                                        </HorizontalStackLayout>
+                                                        <Label Text="{Binding BloodType}" FontSize="14" TextColor="#000" />
+                                                        <Label Text="{Binding LastDonationDate, StringFormat='{0:dd/MM/yyyy}'}" FontSize="14" TextColor="#000" />
+                                                        <Button Text="Eliminar Donador"
                                                         BackgroundColor="#C7253E"
                                                         TextColor="White"
                                                         Clicked="OnDeleteDonor"
                                                         CommandParameter="{Binding}" />
-                                                </VerticalStackLayout>
-                                            </Frame>
-                                        </DataTemplate>
-                                    </CollectionView.ItemTemplate>
-                                </CollectionView>
-                            </VerticalStackLayout>
-                        </ContentView>
-                    </ScrollView>
-                </Frame>
-            </Grid>
+                                                    </VerticalStackLayout>
+                                                </Frame>
+                                            </DataTemplate>
+                                        </CollectionView.ItemTemplate>
+                                    </CollectionView>
+                                </VerticalStackLayout>
+                            </ContentView>
+                        </ScrollView>
+                    </Frame>
+                </Grid>
+            </VerticalStackLayout>
     </VerticalStackLayout>
-    </VerticalStackLayout>
+    </ScrollView>
 </ContentPage>

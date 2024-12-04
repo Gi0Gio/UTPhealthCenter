@@ -8,8 +8,8 @@
              BackgroundColor="#fff"
              NavigationPage.HasBackButton="False"
              NavigationPage.HasNavigationBar="False">
+    <ScrollView Orientation="Vertical">
 
-    <ScrollView>
         <VerticalStackLayout Padding="20" Spacing="15">
             <components:Navbar IsVisible="{OnIdiom Desktop=true, Phone=false, Tablet=true}" />
             <components:SideMenu IsVisible="{OnIdiom Desktop=false, Phone=true, Tablet=false}" />
@@ -21,78 +21,32 @@
                    HorizontalOptions="Center"
                    Margin="0,0,0,20" />
 
-            <!-- Patient Picker -->
-            <Picker x:Name="PatientPicker"
+            <Frame BackgroundColor="#fff" WidthRequest="800" HeightRequest="400" Grid.Column="0" CornerRadius="15" BorderColor="#fff">
+                <Grid VerticalOptions="Center" HorizontalOptions="Center" ColumnDefinitions="Auto" RowDefinitions="Auto, Auto" RowSpacing="50">
+                    <!-- Patient Picker -->
+                    <Picker x:Name="PatientPicker"
                     Title="Seleccione un paciente"
                     ItemsSource="{Binding PatientModel}"
                     ItemDisplayBinding="{Binding FullName}"
                     SelectedItem="{Binding SelectedPatient}"
-                    FontSize="20"
+                    BackgroundColor="#E3F2FD"
+                    WidthRequest="300"
+                    FontSize="28"
                     TitleColor="#006AAB"
-                    TextColor="#000"
-                    Margin="0,0,0,20" />
+                    TextColor="#000" 
+                    Grid.Row="0"/>
 
-            <!-- Patient Information Frame 
-            <Frame BackgroundColor="White"
-                   CornerRadius="15"
-                   BorderColor="#006AAB"
-                   HasShadow="True"
-                   Padding="20"
-                   IsVisible="{Binding SelectedPatient, Converter={StaticResource NullToBoolConverter}}">
-                <Grid ColumnDefinitions="Auto,*" RowSpacing="10">
-                    <Label Text="Nombre:"
-                           FontSize="20"
-                           FontAttributes="Bold"
-                           TextColor="Black" />
-                    <Label Text="{Binding SelectedPatient.FullName}"
-                           FontSize="20"
-                           TextColor="Black"
-                           Grid.Column="1" />
-
-                    <Label Text="Cédula:"
-                           FontSize="20"
-                           FontAttributes="Bold"
-                           TextColor="Black"
-                           Grid.Row="1" />
-                    <Label Text="{Binding SelectedPatient.Dni}"
-                           FontSize="20"
-                           TextColor="Black"
-                           Grid.Row="1"
-                           Grid.Column="1" />
-
-                    <Label Text="Teléfono:"
-                           FontSize="20"
-                           FontAttributes="Bold"
-                           TextColor="Black"
-                           Grid.Row="2" />
-                    <Label Text="{Binding SelectedPatient.PhoneNumber}"
-                           FontSize="20"
-                           TextColor="Black"
-                           Grid.Row="2"
-                           Grid.Column="1" />
-
-                    <Label Text="Dirección:"
-                           FontSize="20"
-                           FontAttributes="Bold"
-                           TextColor="Black"
-                           Grid.Row="3" />
-                    <Label Text="{Binding SelectedPatient.Address}"
-                           FontSize="20"
-                           TextColor="Black"
-                           Grid.Row="3"
-                           Grid.Column="1" />
-                </Grid>
-            </Frame>
--->
-            <!-- Generate PDF Button -->
-            <Button Text="Generar Certificado"
+                    <!-- Generate PDF Button -->
+                    <Button Text="Generar Certificado"
                     BackgroundColor="#006AAB"
                     TextColor="White"
-                    FontSize="20"
+                    FontSize="25"
                     CornerRadius="10"
-                    Margin="0,20"
                     HorizontalOptions="Center"
-                    Clicked="Pdf" />
+                    Clicked="Pdf"
+                    Grid.Row="1"/>
+                </Grid>
+            </Frame>
         </VerticalStackLayout>
     </ScrollView>
 </ContentPage>

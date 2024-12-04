@@ -8,12 +8,14 @@
              BackgroundColor="{OnIdiom Phone=#fff, Desktop=#fff, Tablet=#fff}"
              NavigationPage.HasBackButton="False"
              NavigationPage.HasNavigationBar="False">
-    <ScrollView>
+
+    <ScrollView Orientation="Vertical">
+
         <VerticalStackLayout Padding="20" Spacing="15">
             <components:Navbar IsVisible="{OnIdiom Desktop=true, Phone=false, Tablet=true}" />
             <components:SideMenu IsVisible="{OnIdiom Desktop=false, Phone=true, Tablet=false}" />
 
-            <Label Text="Procedimientos Médicos"
+        <Label Text="Procedimientos Médicos"
                FontSize="35"
                FontAttributes="Bold"
                TextColor="#000"
@@ -35,7 +37,7 @@
                                Margin="0, 0, 0, 10"/>
 
                             <Grid ColumnDefinitions="*,*" RowDefinitions="Auto,Auto,Auto,Auto" ColumnSpacing="20" RowSpacing="50">
-                             
+
                                 <Label Text="Paciente" TextColor="Black" FontSize="18" FontAttributes="Bold" Grid.Row="0" Grid.Column="0" />
                                 <Picker x:Name="PatientPicker" BackgroundColor="#E3F2FD" TextColor="Black" Grid.Row="0" Grid.Column="0" Margin="0,30,0,0"/>
 

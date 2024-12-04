@@ -62,8 +62,8 @@ public partial class Patients : ContentPage
             Document document = new Document(pdf);
 
             // Paths to logos
-            string logoClinicaPath = "C:\\Users\\Gio\\Desktop\\All\\code\\UTPhealthCenter\\Resources\\Images\\logoclinica.png";
-            string logoUniversidadPath = "C:\\Users\\Gio\\Desktop\\All\\code\\UTPhealthCenter\\Resources\\Images\\logouniver.png";
+            string logoClinicaPath = "C:\\Users\\manue\\Desktop\\ClinicaApp\\UTPhealthCenter\\Resources\\Images\\logoclinica.png";
+            string logoUniversidadPath = "C:\\Users\\manue\\Desktop\\ClinicaApp\\UTPhealthCenter\\Resources\\Images\\logouniver.png";
 
             // Add logos
             var logoClinica = new iText.Layout.Element.Image(ImageDataFactory.Create(logoClinicaPath)).SetWidth(100);

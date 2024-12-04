@@ -42,7 +42,7 @@
                     Title="Seleccione tipo de cita"
                     FontFamily="MohaveRegular"
                     FontSize="{OnIdiom Phone=20, Desktop=22, Tablet=22}"
-                    BackgroundColor="#d2d2d2"
+                    BackgroundColor="#E3F2FD"
                     TextColor="#000"
                     Grid.Row="0" Grid.Column="1">
                     <Picker.ItemsSource>
@@ -85,7 +85,7 @@
                    Placeholder="Describa el motivo de su cita"
                    FontFamily="MohaveRegular"
                    FontSize="{OnIdiom Phone=20, Desktop=22, Tablet=22}"
-                   BackgroundColor="#f5f5f5"
+                   BackgroundColor="#E3F2FD"
                    TextColor="#666"
                    Grid.Row="2" Grid.Column="1" />
             </Grid>
