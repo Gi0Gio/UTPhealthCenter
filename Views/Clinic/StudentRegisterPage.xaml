@@ -11,8 +11,8 @@
     <ScrollView>
         <VerticalStackLayout Padding="20" Spacing="15">
 
-            <components:Navbar IsVisible="{OnIdiom Desktop=true, Phone=false, Tablet=false}" />
-            <components:SideMenu IsVisible="{OnIdiom Desktop=false, Phone=true, Tablet=true}" />
+            <components:Navbar IsVisible="{OnIdiom Desktop=true, Phone=false, Tablet=true}" />
+            <components:SideMenu IsVisible="{OnIdiom Desktop=false, Phone=true, Tablet=false}" />
             <!-- Título -->
             <Label Text="Registro de Estudiantes/Pacientes"
                    FontFamily="MohaveRegular"

@@ -32,13 +32,6 @@
                                 FontSize="20"
                                 FontFamily="MohaveRegular"
                                 CornerRadius="10" />
-                        <Button Text="Asignar Medicina al Paciente"
-                                Clicked="ShowAssignMedicine"
-                                BackgroundColor="#014671"
-                                TextColor="White"
-                                FontSize="20"
-                                FontFamily="MohaveRegular"
-                                CornerRadius="10" />
                         <Button Text="Registrar Nueva Medicina"
                                 Clicked="ShowMedicineForm"
                                 BackgroundColor="#014671"
@@ -49,9 +42,8 @@
                     </VerticalStackLayout>
                 </OnIdiom.Phone>
 
-                <OnIdiom.Desktop>
-                    <!-- Diseño para escritorio -->
-                    <Grid ColumnDefinitions="*,*,*" Padding="0" ColumnSpacing="10">
+                <OnIdiom.Tablet>
+                    <Grid ColumnDefinitions="*,*" Padding="0" ColumnSpacing="10">
                         <Button Text="Lista de Medicinas"
                                 Clicked="ShowMedicineList"
                                 BackgroundColor="#014671"
@@ -59,26 +51,37 @@
                                 FontSize="20"
                                 CornerRadius="10"
                                 Grid.Column="0" />
-                        <Button Text="Asignar Medicina al Paciente"
-                                Clicked="ShowAssignMedicine"
-                                BackgroundColor="#014671"
-                                TextColor="White"
-                                FontSize="20"
-                                CornerRadius="10"
-                                Grid.Column="1" />
                         <Button Text="Registrar Nueva Medicina"
                                 Clicked="ShowMedicineForm"
                                 BackgroundColor="#014671"
                                 TextColor="White"
                                 FontSize="20"
                                 CornerRadius="10"
-                                Grid.Column="2" />
+                                Grid.Column="1" />
+                    </Grid>
+                </OnIdiom.Tablet>
+
+                <OnIdiom.Desktop>
+                    <Grid ColumnDefinitions="*,*" Padding="0" ColumnSpacing="10">
+                        <Button Text="Lista de Medicinas"
+                            Clicked="ShowMedicineList"
+                            BackgroundColor="#014671"
+                            TextColor="White"
+                            FontSize="20"
+                            CornerRadius="10"
+                            Grid.Column="0" />
+                        <Button Text="Registrar Nueva Medicina"
+                            Clicked="ShowMedicineForm"
+                            BackgroundColor="#014671"
+                            TextColor="White"
+                            FontSize="20"
+                            CornerRadius="10"
+                            Grid.Column="1" />
                     </Grid>
                 </OnIdiom.Desktop>
             </OnIdiom>
 
-            <!-- Lista de Medicinas -->
-            <VerticalStackLayout Padding="10" Spacing="10">
+            <VerticalStackLayout x:Name="MedicineListSection" IsVisible="True" Padding="10" Spacing="10">
                 <Label Text="Lista de Medicinas"
                    FontFamily="MohaveRegular"
                    FontAttributes="Bold"
@@ -111,7 +114,6 @@
             </VerticalStackLayout>
 
 
-            <!-- Asignar Medicina al Paciente -->
             <VerticalStackLayout x:Name="AssignMedicineSection" IsVisible="False" Padding="30">
                 <Label Text="Asignar Medicina al Paciente"
                        FontFamily="MohaveRegular"
@@ -119,7 +121,6 @@
                        TextColor="#000"
                        FontSize="{OnIdiom Phone=22, Desktop=26, Tablet=26}" />
 
-                <!-- Selector de pacientes y medicinas -->
                 <Picker Title="Seleccione un Paciente" ItemsSource="{Binding PatientList}" SelectedItem="{Binding SelectedPatient}" 
                         TextColor="#000" TitleColor="#000" FontSize="{OnIdiom Phone=22, Desktop=24, Tablet=24}" FontFamily="MohaveRegular"/>
                 <Picker Title="Seleccione una Medicina" ItemsSource="{Binding MedicineList}" SelectedItem="{Binding SelectedMedicine}"  
@@ -129,8 +130,8 @@
             </VerticalStackLayout>
 
             <VerticalStackLayout Padding="10" Spacing="10">
-                <!-- Formulario de Registrar Nueva Medicina -->
-                <VerticalStackLayout x:Name="MedicineFormSection" IsVisible="True" Padding="30">
+
+                <VerticalStackLayout x:Name="MedicineFormSection" IsVisible="False" Padding="30">
                     <Label Text="Registrar Nueva Medicina"
                        FontFamily="MohaveRegular"
                        FontAttributes="Bold"

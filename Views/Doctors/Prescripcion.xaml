@@ -37,17 +37,17 @@
                             <Grid ColumnDefinitions="*,*" RowDefinitions="Auto,Auto,Auto" ColumnSpacing="20" RowSpacing="50">
                                 
                                 <Label Text="Paciente" TextColor="Black" FontSize="18" FontAttributes="Bold" Grid.Row="0" Grid.Column="0" />
-                                <Picker x:Name="PatientPicker" BackgroundColor="#f6f6f6" TextColor="Black" Grid.Row="0" Grid.Column="0" Margin="0,30,0,0"/>
+                                <Picker x:Name="PatientPicker" BackgroundColor="#E3F2FD" TextColor="Black" Grid.Row="0" Grid.Column="0" Margin="0,30,0,0"/>
 
                                 <Label Text="Medicamento" TextColor="Black" FontSize="18" FontAttributes="Bold" Grid.Row="0" Grid.Column="1" />
-                                <Picker x:Name="MedicationPicker" BackgroundColor="#f6f6f6" TextColor="Black" Grid.Row="0" Grid.Column="1" Margin="0,30,0,0"/>
+                                <Picker x:Name="MedicationPicker" BackgroundColor="#E3F2FD" TextColor="Black" Grid.Row="0" Grid.Column="1" Margin="0,30,0,0"/>
 
                                 <Label Text="Dosis" TextColor="Black" FontSize="18" FontAttributes="Bold" Grid.Row="1" Grid.Column="0" />
-                                <Entry x:Name="DosageEntry" Placeholder="Informe de la dosis" TextColor="Black" FontSize="18" 
+                                <Entry x:Name="DosageEntry" BackgroundColor="#E3F2FD" Placeholder="Informe de la dosis" TextColor="Black" FontSize="18" 
                                     PlaceholderColor="#000" Grid.Row="1" Grid.Column="0" Margin="0,30,0,0"/>
 
                                 <Label Text="Descripción de la cita" TextColor="Black" FontSize="18" FontAttributes="Bold" Grid.Row="1" Grid.Column="1" />
-                                <Entry x:Name="DescriptionEntry" Placeholder="Describa su necesidad" TextColor="Black" FontSize="18" 
+                                <Entry x:Name="DescriptionEntry" BackgroundColor="#E3F2FD" Placeholder="Describa su necesidad" TextColor="Black" FontSize="18" 
                                     PlaceholderColor="#000" Grid.Row="1" Grid.Column="1" Margin="0,30,0,0"/>
                             </Grid>
 
@@ -68,7 +68,7 @@
                                 </CollectionView.ItemsLayout>
                                 <CollectionView.ItemTemplate>
                                     <DataTemplate>
-                                        <Frame BackgroundColor="#fbfbfb" BorderColor="Black" CornerRadius="10" Padding="20" Margin="5">
+                                        <Frame BackgroundColor="#E3F2FD" BorderColor="Transparent" CornerRadius="10" Padding="20" Margin="5">
                                             <VerticalStackLayout>
                                                 <Label Text="{Binding PatientName}" FontAttributes="Bold" FontSize="16" TextColor="#000" />
                                                 <Label Text="{Binding MedicationName}" FontSize="14" TextColor="#000" />

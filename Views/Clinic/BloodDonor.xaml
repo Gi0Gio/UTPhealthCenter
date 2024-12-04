@@ -11,13 +11,21 @@
     <VerticalStackLayout>
         <components:Navbar IsVisible="{OnIdiom Desktop=true, Phone=false, Tablet=true}" />
         <components:SideMenu IsVisible="{OnIdiom Desktop=false, Phone=true, Tablet=false}" />
-        <VerticalStackLayout HorizontalOptions="Center" VerticalOptions="Center" Spacing="30" Padding="40">
-        
-        <Grid Padding="20" ColumnSpacing="20" RowDefinitions="Auto" ColumnDefinitions="*,*">
+        <VerticalStackLayout  Spacing="15" Padding="20">
+
+            <Label Text="Donadores de Sangre"
+               FontSize="35"
+               FontAttributes="Bold"
+               TextColor="#000"
+               HorizontalOptions="Center"
+               Margin="0,0,0,20"/>
+
+            <Grid Padding="20" ColumnSpacing="20" RowDefinitions="Auto" ColumnDefinitions="*,*">
         
         <!-- Formulario de Registro de Donador (Columna Izquierda) -->
-        <ScrollView Grid.Column="0">
-            <VerticalStackLayout Spacing="15">
+                <Frame BackgroundColor="#fff" Grid.Column="0" CornerRadius="15" BorderColor="#fff">
+                    <ContentView BackgroundColor="#fff" Padding="20">
+                        <VerticalStackLayout Spacing="15">
                 <Label Text="Registrar Donador de Sangre"
                        FontSize="24"
                        FontAttributes="Bold"
@@ -58,46 +66,51 @@
                         FontSize="18"
                         Clicked="OnSaveDonor" />
             </VerticalStackLayout>
-        </ScrollView>
+                    </ContentView>
+                </Frame>
 
-        <!-- Lista de Donadores de Sangre (Columna Derecha) -->
-                <ScrollView Grid.Column="1">
-                    <VerticalStackLayout>
-                <Label Text="Lista de Donadores de Sangre"
-                       FontSize="24"
-                       FontAttributes="Bold"
-                       TextColor="#000"
-                       HorizontalOptions="Center"
-                       Margin="0,0,0,20"/>
-
-                <CollectionView ItemsSource="{Binding Donors}" Margin="10">
-                    <CollectionView.ItemsLayout>
-                        <GridItemsLayout Orientation="Vertical" Span="4" />
-                    </CollectionView.ItemsLayout>
-                    <CollectionView.ItemTemplate>
-                        <DataTemplate>
-                            <Frame BackgroundColor="#f0efeb" CornerRadius="10" Padding="10" Margin="5">
-                                <VerticalStackLayout>
-                                    <Label Text="{Binding Name}" FontAttributes="Bold" FontSize="16" TextColor="#000" />
-                                    <HorizontalStackLayout>
-                                        <Label Text="DNI: " TextColor="#000" FontSize="14"/>
-                                        <Label Text="{Binding Identification}" FontSize="14" TextColor="#000" />
-                                    </HorizontalStackLayout>
-                                    <Label Text="{Binding BloodType}" FontSize="14" TextColor="#000" />
-                                    <Label Text="{Binding LastDonationDate, StringFormat='{0:dd/MM/yyyy}'}" FontSize="14" TextColor="#000" />
-                                    <Button Text="Eliminar Donador"
-                                            BackgroundColor="Red"
-                                            TextColor="White"
-                                            Clicked="OnDeleteDonor"
-                                            CommandParameter="{Binding}" />
-                                </VerticalStackLayout>
-                            </Frame>
-                        </DataTemplate>
-                    </CollectionView.ItemTemplate>
-                </CollectionView>
-            </VerticalStackLayout>
-        </ScrollView>
-    </Grid>
+                <!-- Lista de Donadores de Sangre (Columna Derecha) -->
+                <Frame BackgroundColor="#fff" Grid.Column="1" CornerRadius="15" BorderColor="#fff"
+                    HeightRequest="590">
+                    <ScrollView Orientation="Vertical">
+                        <ContentView Padding="20">
+                            <VerticalStackLayout>
+                                <Label Text="Lista de Donadores de Sangre"
+                           FontSize="24"
+                           FontAttributes="Bold"
+                           TextColor="#000"
+                           HorizontalOptions="Center"
+                           Margin="0,0,0,20"/>
+                                <CollectionView ItemsSource="{Binding Donors}" Margin="10">
+                                    <CollectionView.ItemsLayout>
+                                        <GridItemsLayout Orientation="Vertical" Span="4" VerticalItemSpacing="10" HorizontalItemSpacing="10"/>
+                                    </CollectionView.ItemsLayout>
+                                    <CollectionView.ItemTemplate>
+                                        <DataTemplate>
+                                            <Frame BackgroundColor="#E3F2FD" BorderColor="Transparent" CornerRadius="10" >
+                                                <VerticalStackLayout>
+                                                    <Label Text="{Binding Name}" FontAttributes="Bold" FontSize="16" TextColor="#000" />
+                                                    <HorizontalStackLayout>
+                                                        <Label Text="DNI: " TextColor="#000" FontSize="14"/>
+                                                        <Label Text="{Binding Identification}" FontSize="14" TextColor="#000" />
+                                                    </HorizontalStackLayout>
+                                                    <Label Text="{Binding BloodType}" FontSize="14" TextColor="#000" />
+                                                    <Label Text="{Binding LastDonationDate, StringFormat='{0:dd/MM/yyyy}'}" FontSize="14" TextColor="#000" />
+                                                    <Button Text="Eliminar Donador"
+                                                        BackgroundColor="#C7253E"
+                                                        TextColor="White"
+                                                        Clicked="OnDeleteDonor"
+                                                        CommandParameter="{Binding}" />
+                                                </VerticalStackLayout>
+                                            </Frame>
+                                        </DataTemplate>
+                                    </CollectionView.ItemTemplate>
+                                </CollectionView>
+                            </VerticalStackLayout>
+                        </ContentView>
+                    </ScrollView>
+                </Frame>
+            </Grid>
     </VerticalStackLayout>
     </VerticalStackLayout>
 </ContentPage>

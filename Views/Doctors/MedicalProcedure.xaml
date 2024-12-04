@@ -37,21 +37,21 @@
                             <Grid ColumnDefinitions="*,*" RowDefinitions="Auto,Auto,Auto,Auto" ColumnSpacing="20" RowSpacing="50">
                              
                                 <Label Text="Paciente" TextColor="Black" FontSize="18" FontAttributes="Bold" Grid.Row="0" Grid.Column="0" />
-                                <Picker x:Name="PatientPicker" BackgroundColor="#f6f6f6" TextColor="Black" Grid.Row="0" Grid.Column="0" Margin="0,30,0,0"/>
+                                <Picker x:Name="PatientPicker" BackgroundColor="#E3F2FD" TextColor="Black" Grid.Row="0" Grid.Column="0" Margin="0,30,0,0"/>
 
                                 <Label Text="Diagnóstico" TextColor="Black" FontSize="18" FontAttributes="Bold" Grid.Row="0" Grid.Column="1" />
-                                <Entry x:Name="DiagnosisEntry" Placeholder="Descripción del diagnóstico"
+                                <Entry x:Name="DiagnosisEntry" BackgroundColor="#E3F2FD" Placeholder="Descripción del diagnóstico"
                                     TextColor="Black" FontSize="18" PlaceholderColor="#000" Grid.Row="0" Grid.Column="1" Margin="0,30,0,0"/>
 
                                 <Label Text="Medicamento" TextColor="Black" FontSize="18" FontAttributes="Bold" Grid.Row="1" Grid.Column="0"/>
-                                <Picker x:Name="MedicationPicker" BackgroundColor="#f6f6f6" TextColor="Black" Grid.Row="1" Grid.Column="0" Margin="0,30,0,0"/>
+                                <Picker x:Name="MedicationPicker" BackgroundColor="#E3F2FD" TextColor="Black" Grid.Row="1" Grid.Column="0" Margin="0,30,0,0"/>
 
                                 <Label Text="Procedimiento" TextColor="Black" FontSize="18" FontAttributes="Bold" Grid.Row="1" Grid.Column="1" />
-                                <Entry x:Name="ProcedureEntry" Placeholder="Procedimiento realizado"
+                                <Entry x:Name="ProcedureEntry" BackgroundColor="#E3F2FD" Placeholder="Procedimiento realizado"
                                     TextColor="Black" FontSize="18" PlaceholderColor="#000" Grid.Row="1" Grid.Column="1" Margin="0,30,0,0" />
 
                                 <Label Text="Notas" TextColor="Black" FontSize="18" FontAttributes="Bold" Grid.Row="2" Grid.Column="0" />
-                                <Entry x:Name="NotesEntry" Placeholder="Notas adicionales"
+                                <Entry x:Name="NotesEntry" BackgroundColor="#E3F2FD" Placeholder="Notas adicionales"
                                     TextColor="Black" FontSize="18" PlaceholderColor="#000" WidthRequest="435" Grid.Row="2" Grid.Column="0" Margin="0,30,0,0"/>
                             </Grid>
 
@@ -74,7 +74,7 @@
                                     </CollectionView.ItemsLayout>
                                     <CollectionView.ItemTemplate>
                                         <DataTemplate>
-                                            <Frame BackgroundColor="#FBFBFB" CornerRadius="10"  >
+                                            <Frame BackgroundColor="#E3F2FD" BorderColor="Transparent" CornerRadius="10"  >
                                                 <VerticalStackLayout>
                                                     <Label Text="{Binding PatientName}" FontAttributes="Bold" FontSize="18" TextColor="#000" />
                                                     <Label Text="{Binding Diagnosis}" FontSize="16" TextColor="#000" />

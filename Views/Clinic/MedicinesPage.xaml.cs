@@ -21,22 +21,19 @@ namespace HealthCare.Views
 
         private void ShowMedicineList(object sender, EventArgs e)
         {
-            //MedicineListSection.IsVisible = true;
-            AssignMedicineSection.IsVisible = false;
+            MedicineListSection.IsVisible = true;
             MedicineFormSection.IsVisible = false;
         }
 
         private void ShowAssignMedicine(object sender, EventArgs e)
         {
-            //MedicineListSection.IsVisible = false;
-            AssignMedicineSection.IsVisible = true;
+            MedicineListSection.IsVisible = false;
             MedicineFormSection.IsVisible = false;
         }
 
         private void ShowMedicineForm(object sender, EventArgs e)
         {
-            //MedicineListSection.IsVisible = false;
-            AssignMedicineSection.IsVisible = false;
+            MedicineListSection.IsVisible = false;
             MedicineFormSection.IsVisible = true;
         }
 
